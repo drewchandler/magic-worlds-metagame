@@ -14,6 +14,9 @@ DECKLISTS_FILE = DATA_DIR / "decklists.json"
 RESULTS_FILE = DATA_DIR / "results.json"
 OUTPUT_FILE = DATA_DIR / "analysis.json"
 
+# Draft rounds to exclude from archetype statistics
+DRAFT_ROUNDS = {1, 2, 3, 8, 9, 10}
+
 
 def load_data() -> Tuple[Dict, List]:
     """Load decklists and results from cache"""
@@ -132,6 +135,10 @@ def analyze_metagame(decklists: Dict, results: List) -> Dict:
         p2_wins = result.get('p2_wins', 0)
         
         if not p1_name or not p2_name:
+            continue
+        
+        # Skip draft rounds for archetype statistics
+        if round_num in DRAFT_ROUNDS:
             continue
         
         # Get archetypes

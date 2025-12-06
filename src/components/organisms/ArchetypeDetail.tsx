@@ -56,6 +56,9 @@ type CardSortColumn =
   | 'sideboardPercentage'
 type SortDirection = 'asc' | 'desc'
 
+// Draft rounds to exclude from constructed statistics
+const DRAFT_ROUNDS = new Set([1, 2, 3, 8, 9, 10])
+
 // Normalize player name for matching - handles both 'First Last' and 'Last, First' formats
 function normalizePlayerName(name: string): string {
   if (!name) return ''
@@ -133,8 +136,13 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
       })
     })
 
-    // Calculate stats from match results
+    // Calculate stats from match results (excluding draft rounds)
     results.forEach((match: MatchResult) => {
+      // Skip draft rounds for constructed statistics
+      if (DRAFT_ROUNDS.has(match.round)) {
+        return
+      }
+
       const p1Normalized = normalizePlayerName(match.player1)
       const p2Normalized = normalizePlayerName(match.player2)
 

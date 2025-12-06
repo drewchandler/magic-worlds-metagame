@@ -20,11 +20,11 @@
   },
   "archetype_stats": {
     "Izzet Lessons": {
-      "wins": 84,
-      "losses": 54,
-      "draws": 1,
-      "games_won": 241,
-      "games_lost": 195,
+      "wins": 53,
+      "losses": 25,
+      "draws": 0,
+      "games_won": 137,
+      "games_lost": 95,
       "matches": [
         {
           "round": 4,
@@ -853,765 +853,18 @@
           "archetype2": "Jeskai Control",
           "p1_wins": 2,
           "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Nass, Matthew",
-          "player2": "Kuisma, Matti",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "David, Julian",
-          "player2": "Plummer, Michael",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Korfine, Julian",
-          "player2": "Davis, Derrick",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Nakamura, Shuhei",
-          "player2": "Schnake, Abe",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "S\u00e1nchez, Francisco",
-          "player2": "Dota, Arch",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "To, Chun Him",
-          "player2": "Kassis, Eli",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Buonadonna, Mason",
-          "player2": "Choo, Clement",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Kikidis, Charis",
-          "player2": "Castell\u00e1n, Javier",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Asano, Tatsuro",
-          "player2": "Mackenzie, Connor",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Pardee, Sam",
-          "player2": "Fang, Percy",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Mono-Red Aggro",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Lack, Cory",
-          "player2": "Kans, Alexander",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Lack, Cory",
-          "player2": "Kans, Alexander",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Duke, Reid",
-          "player2": "Magalhaes, Edgar",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Duke, Reid",
-          "player2": "Magalhaes, Edgar",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Dang, Nam",
-          "player2": "Nassif, Gabriel",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Dang, Nam",
-          "player2": "Nassif, Gabriel",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Nasri, Bassel",
-          "player2": "Wright, Matthew",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Manfield, Seth",
-          "player2": "Garcia-Romo, Andy",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Chang, Samuel",
-          "player2": "Noah, Ma",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Shibata, Akira",
-          "player2": "Dore, Max",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Shibata, Akira",
-          "player2": "Dore, Max",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Ikawa, Yoshihiko",
-          "player2": "Costa, Matthew",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Schabel, Justin",
-          "player2": "Mazza, Raffaele",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Pich\u00e9, Simon",
-          "player2": "Dota, Arch",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Costa, Matthew",
-          "player2": "Miyaji-Thorne, Zen",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Sanfeliu, Josep",
-          "player2": "Nass, Matthew",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Nagao, Yasutaka",
-          "player2": "Wright, Matthew",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "David, Julian",
-          "player2": "Zhang, Yuxuan",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Orzhov Demons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Kans, Alexander",
-          "player2": "Dore, Max",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Kans, Alexander",
-          "player2": "Dore, Max",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Robb, Ian",
-          "player2": "Kikidis, Charis",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Burkhart, Corey",
-          "player2": "Choo, Clement",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Rohan, Alex",
-          "player2": "Duke, Reid",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Koot, Linden",
-          "player2": "Magalhaes, Edgar",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Davis, Derrick",
-          "player2": "Zhang, Rei",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Rood, David",
-          "player2": "To, Chun Him",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Dang, Nam",
-          "player2": "Tobiasch, Marc",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Simic Otters",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Noah, Ma",
-          "player2": "Pardee, Sam",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Noah, Ma",
-          "player2": "Pardee, Sam",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Portolan, Toni",
-          "player2": "Asano, Tatsuro",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "S\u00e1nchez, Francisco",
-          "player2": "Nassif, Gabriel",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Masukado, Kenta",
-          "player2": "Schabel, Justin",
-          "archetype1": "Dimir Midrange",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Manfield, Seth",
-          "player2": "Nasri, Bassel",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Carvalho, Marcio",
-          "player2": "Schnake, Abe",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Shibata, Akira",
-          "player2": "Lack, Cory",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Shibata, Akira",
-          "player2": "Lack, Cory",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Duke, Reid",
-          "player2": "Stark, Ben",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Golgari Dragons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Wright, Matthew",
-          "player2": "Garcia-Romo, Andy",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Lack, Cory",
-          "player2": "Fang, Percy",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Mono-Red Aggro",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Koot, Linden",
-          "player2": "David, Julian",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Dang, Nam",
-          "player2": "Dota, Arch",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Dang, Nam",
-          "player2": "Dota, Arch",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Shibata, Akira",
-          "player2": "Chang, Samuel",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "To, Chun Him",
-          "player2": "Duchow, Lucas",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Araujo, William",
-          "player2": "Asano, Tatsuro",
-          "archetype1": "Mono-Red Aggro",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Dore, Max",
-          "player2": "Pardee, Sam",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Dore, Max",
-          "player2": "Pardee, Sam",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Schabel, Justin",
-          "player2": "Moore, James",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Temur Otters",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Noah, Ma",
-          "player2": "Kans, Alexander",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Noah, Ma",
-          "player2": "Kans, Alexander",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Lip, Quinton",
-          "player2": "Nassif, Gabriel",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Nass, Matthew",
-          "player2": "Horiuchi, Makoto",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Costa, Matthew",
-          "player2": "Flores, Pedro",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Hori, Masataka",
-          "player2": "Choo, Clement",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Korfine, Julian",
-          "player2": "Schnake, Abe",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Magalhaes, Edgar",
-          "player2": "Zhang, Yuxuan",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Orzhov Demons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Manfield, Seth",
-          "player2": "Wang, Kunrui",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Davis, Derrick",
-          "player2": "Dominguez, Javier",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Kikidis, Charis",
-          "player2": "Schwartz, Adam",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Dimir Bounce",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 8,
-          "player1": "Lack, Cory",
-          "player2": "Friedrichsen, Alex",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Duke, Reid",
-          "player2": "Moriyama, Masahide",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Pardee, Sam",
-          "player2": "Wong, Charles",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Dore, Max",
-          "player2": "Moore, James",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Bodewes, Jelco",
-          "player2": "Asano, Tatsuro",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Nass, Matthew",
-          "player2": "Soto, Roberto",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Nassif, Gabriel",
-          "player2": "Mackenzie, Connor",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Dota, Arch",
-          "player2": "Offman, No\u00e9",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Schabel, Justin",
-          "player2": "Leonard Huu Nguyen, Christopher",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Dimir Bounce",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 8,
-          "player1": "Sarap, Karl",
-          "player2": "Shibata, Akira",
-          "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 8,
-          "player1": "Dang, Nam",
-          "player2": "Magalhaes, Edgar",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 8,
-          "player1": "Dang, Nam",
-          "player2": "Magalhaes, Edgar",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 8,
-          "player1": "Manfield, Seth",
-          "player2": "Sulimovich, Guillermo",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Davis, Derrick",
-          "player2": "Harane, Kenta",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 2,
-          "p2_wins": 1
         }
       ],
-      "win_rate": 0.6086956521739131,
-      "game_win_rate": 0.5527522935779816,
-      "total_matches": 138
+      "win_rate": 0.6794871794871795,
+      "game_win_rate": 0.5905172413793104,
+      "total_matches": 78
     },
     "Jeskai Control": {
-      "wins": 40,
-      "losses": 31,
-      "draws": 4,
-      "games_won": 100,
-      "games_lost": 81,
+      "wins": 21,
+      "losses": 15,
+      "draws": 3,
+      "games_won": 50,
+      "games_lost": 41,
       "matches": [
         {
           "round": 4,
@@ -1963,342 +1216,18 @@
           "archetype2": "Jeskai Control",
           "p1_wins": 2,
           "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Liu, Yuchen",
-          "player2": "Burkhart, Corey",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Wong, Charles",
-          "player2": "Miller, Casey",
-          "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Nielsen, Simon",
-          "player2": "Brace, Adam",
-          "archetype1": "Temur Otters",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Leonard Huu Nguyen, Christopher",
-          "player2": "Pich\u00e9, Simon",
-          "archetype1": "Dimir Bounce",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Harane, Kenta",
-          "player2": "Inoue, Toru",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Tamblyn, Mitchell",
-          "player2": "Flores, Mario",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Dimir Bounce",
-          "p1_wins": 1,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Schwartz, Adam",
-          "player2": "Holloway, Jennifer-Rose",
-          "archetype1": "Dimir Bounce",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Manfield, Seth",
-          "player2": "Garcia-Romo, Andy",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Ikawa, Yoshihiko",
-          "player2": "Costa, Matthew",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Moore, James",
-          "player2": "Botelho, Chris",
-          "archetype1": "Temur Otters",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Lausevic, Ivan",
-          "player2": "Tamblyn, Mitchell",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Pich\u00e9, Simon",
-          "player2": "Dota, Arch",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Nielsen, Simon",
-          "player2": "Inoue, Toru",
-          "archetype1": "Temur Otters",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Depraz, Jean-Emmanuel",
-          "player2": "Ikawa, Yoshihiko",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Burkhart, Corey",
-          "player2": "Choo, Clement",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Gimenez, Sergio",
-          "player2": "Botelho, Chris",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Offman, No\u00e9",
-          "player2": "Garcia-Romo, Andy",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Castell\u00e1n, Javier",
-          "player2": "Holloway, Jennifer-Rose",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Sulimovich, Guillermo",
-          "player2": "Miller, Casey",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Brace, Adam",
-          "player2": "Kane, Liam",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Wright, Matthew",
-          "player2": "Garcia-Romo, Andy",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Botelho, Chris",
-          "player2": "Yukuhiro, Ken",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Holloway, Jennifer-Rose",
-          "player2": "Moriyama, Masahide",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Harane, Kenta",
-          "player2": "Brace, Adam",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Tobiasch, Marc",
-          "player2": "Pich\u00e9, Simon",
-          "archetype1": "Simic Otters",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Huschenbeth, Arne",
-          "player2": "Tamblyn, Mitchell",
-          "archetype1": "Temur Otters",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Bodewes, Jelco",
-          "player2": "Burkhart, Corey",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Inoue, Toru",
-          "player2": "Chen, Szu-Yuan",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Karam, Vin\u00edcius",
-          "player2": "Ikawa, Yoshihiko",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Guttman, Jonny",
-          "player2": "Miller, Casey",
-          "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Portolan, Toni",
-          "player2": "Garcia-Romo, Andy",
-          "archetype1": "Temur Otters",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Tamblyn, Mitchell",
-          "player2": "Dimitrov, James",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Karam, Vin\u00edcius",
-          "player2": "Holloway, Jennifer-Rose",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Brace, Adam",
-          "player2": "Masukado, Kenta",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Dimir Midrange",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Botelho, Chris",
-          "player2": "Huschenbeth, Arne",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 8,
-          "player1": "Ikawa, Yoshihiko",
-          "player2": "Tobiasch, Marc",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Simic Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
         }
       ],
-      "win_rate": 0.5633802816901409,
-      "game_win_rate": 0.5524861878453039,
-      "total_matches": 71
+      "win_rate": 0.5833333333333334,
+      "game_win_rate": 0.5494505494505495,
+      "total_matches": 36
     },
     "Temur Otters": {
-      "wins": 73,
-      "losses": 51,
-      "draws": 1,
-      "games_won": 211,
-      "games_lost": 181,
+      "wins": 33,
+      "losses": 31,
+      "draws": 0,
+      "games_won": 100,
+      "games_lost": 104,
       "matches": [
         {
           "round": 4,
@@ -3019,675 +1948,18 @@
           "archetype2": "Temur Otters",
           "p1_wins": 1,
           "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Sanfeliu, Josep",
-          "player2": "Klepatch, Andrei",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Knorr, Jackson",
-          "player2": "Hori, Masataka",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Moriyama, Masahide",
-          "player2": "Husisian, Peter",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Koot, Linden",
-          "player2": "Stark, Ben",
-          "archetype1": "Temur Otters",
-          "archetype2": "Golgari Dragons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Zhang, Rei",
-          "player2": "Torres, Bernardo",
-          "archetype1": "Temur Otters",
-          "archetype2": "Jeskai Artifacts",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Rappaport, Max",
-          "player2": "Condon, Ryan",
-          "archetype1": "Dimir Midrange",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Nielsen, Simon",
-          "player2": "Brace, Adam",
-          "archetype1": "Temur Otters",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "To, Chun Him",
-          "player2": "Kassis, Eli",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Buonadonna, Mason",
-          "player2": "Choo, Clement",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Bot, Tom",
-          "player2": "Bodewes, Jelco",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Zhang, Yuxuan",
-          "player2": "Rohan, Alex",
-          "archetype1": "Orzhov Demons",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Baker, Christian",
-          "player2": "Faust, Zevin",
-          "archetype1": "Temur Otters",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Friedrichsen, Alex",
-          "player2": "Kane, Liam",
-          "archetype1": "Temur Otters",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Sch\u00fctz, Stefan",
-          "player2": "Rood, David",
-          "archetype1": "Temur Otters",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 1,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Moore, James",
-          "player2": "Botelho, Chris",
-          "archetype1": "Temur Otters",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Pham, Ha",
-          "player2": "Cordob\u00e9s, Albert",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Temur Otters",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Robkin, Jesse",
-          "player2": "Huschenbeth, Arne",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Henry, Shaun",
-          "player2": "Peral, Marc",
-          "archetype1": "Temur Otters",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Portolan, Toni",
-          "player2": "Airaksinen, Mikko",
-          "archetype1": "Temur Otters",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Portolan, Toni",
-          "player2": "Airaksinen, Mikko",
-          "archetype1": "Temur Otters",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Klepatch, Andrei",
-          "player2": "Giardini, Federico",
-          "archetype1": "Temur Otters",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Cordob\u00e9s, Albert",
-          "player2": "Araujo, William",
-          "archetype1": "Temur Otters",
-          "archetype2": "Mono-Red Aggro",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Bodewes, Jelco",
-          "player2": "Hori, Masataka",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Moore, James",
-          "player2": "Dimitrov, James",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Pham, Ha",
-          "player2": "Airaksinen, Mikko",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Nielsen, Simon",
-          "player2": "Inoue, Toru",
-          "archetype1": "Temur Otters",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Kassis, Eli",
-          "player2": "Sch\u00fctz, Stefan",
-          "archetype1": "Temur Otters",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Kassis, Eli",
-          "player2": "Sch\u00fctz, Stefan",
-          "archetype1": "Temur Otters",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Green, Paul",
-          "player2": "Huschenbeth, Arne",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Temur Otters",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Karam, Vin\u00edcius",
-          "player2": "Henry, Shaun",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Condon, Ryan",
-          "player2": "Tonole, Quinn",
-          "archetype1": "Temur Otters",
-          "archetype2": "Mono-Red Aggro",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Rohan, Alex",
-          "player2": "Duke, Reid",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Koot, Linden",
-          "player2": "Magalhaes, Edgar",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Chen, Szu-Yuan",
-          "player2": "Friedrichsen, Alex",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Davis, Derrick",
-          "player2": "Zhang, Rei",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Bot, Tom",
-          "player2": "Buonadonna, Mason",
-          "archetype1": "Temur Otters",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Bot, Tom",
-          "player2": "Buonadonna, Mason",
-          "archetype1": "Temur Otters",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Portolan, Toni",
-          "player2": "Asano, Tatsuro",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Husisian, Peter",
-          "player2": "Schwartz, Adam",
-          "archetype1": "Temur Otters",
-          "archetype2": "Dimir Bounce",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Baker, Christian",
-          "player2": "Soto, Roberto",
-          "archetype1": "Temur Otters",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Rohan, Alex",
-          "player2": "Plummer, Michael",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Condon, Ryan",
-          "player2": "Faust, Zevin",
-          "archetype1": "Temur Otters",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Zhang, Rei",
-          "player2": "Carvalho, Marcio",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Litman, Randall",
-          "player2": "Sch\u00fctz, Stefan",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Cordob\u00e9s, Albert",
-          "player2": "Portolan, Toni",
-          "archetype1": "Temur Otters",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Cordob\u00e9s, Albert",
-          "player2": "Portolan, Toni",
-          "archetype1": "Temur Otters",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Airaksinen, Mikko",
-          "player2": "Budisanjaya, Albert",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Koot, Linden",
-          "player2": "David, Julian",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Henry, Shaun",
-          "player2": "Depraz, Jean-Emmanuel",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Buonadonna, Mason",
-          "player2": "Liu, Yuchen",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Bot, Tom",
-          "player2": "Knorr, Jackson",
-          "archetype1": "Temur Otters",
-          "archetype2": "Jeskai Artifacts",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Robb, Ian",
-          "player2": "Husisian, Peter",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Baker, Christian",
-          "player2": "Del Pivo, Marco",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Klepatch, Andrei",
-          "player2": "Kuisma, Matti",
-          "archetype1": "Temur Otters",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Huschenbeth, Arne",
-          "player2": "Tamblyn, Mitchell",
-          "archetype1": "Temur Otters",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Schabel, Justin",
-          "player2": "Moore, James",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Temur Otters",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Hori, Masataka",
-          "player2": "Choo, Clement",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Friedrichsen, Alex",
-          "player2": "Nielsen, Simon",
-          "archetype1": "Temur Otters",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Friedrichsen, Alex",
-          "player2": "Nielsen, Simon",
-          "archetype1": "Temur Otters",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Kassis, Eli",
-          "player2": "Yasooka, Shota",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Zhang, Rei",
-          "player2": "Hori, Masataka",
-          "archetype1": "Temur Otters",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Zhang, Rei",
-          "player2": "Hori, Masataka",
-          "archetype1": "Temur Otters",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Lack, Cory",
-          "player2": "Friedrichsen, Alex",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Del Pivo, Marco",
-          "player2": "Airaksinen, Mikko",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Portolan, Toni",
-          "player2": "Garcia-Romo, Andy",
-          "archetype1": "Temur Otters",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Dominguez, Javier",
-          "player2": "Henry, Shaun",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 8,
-          "player1": "Klepatch, Andrei",
-          "player2": "Tonole, Quinn",
-          "archetype1": "Temur Otters",
-          "archetype2": "Mono-Red Aggro",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Plummer, Michael",
-          "player2": "Rohan, Alex",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Dore, Max",
-          "player2": "Moore, James",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Rappaport, Max",
-          "player2": "Kassis, Eli",
-          "archetype1": "Dimir Midrange",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Botelho, Chris",
-          "player2": "Huschenbeth, Arne",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 8,
-          "player1": "Nagao, Yasutaka",
-          "player2": "Cordob\u00e9s, Albert",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Temur Otters",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 8,
-          "player1": "Bot, Tom",
-          "player2": "Chang, Samuel",
-          "archetype1": "Temur Otters",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
         }
       ],
-      "win_rate": 0.5887096774193549,
-      "game_win_rate": 0.5382653061224489,
-      "total_matches": 124
+      "win_rate": 0.515625,
+      "game_win_rate": 0.49019607843137253,
+      "total_matches": 64
     },
     "Izzet Looting": {
-      "wins": 32,
-      "losses": 47,
+      "wins": 17,
+      "losses": 25,
       "draws": 0,
-      "games_won": 100,
-      "games_lost": 125,
+      "games_won": 51,
+      "games_lost": 62,
       "matches": [
         {
           "round": 4,
@@ -4102,423 +2374,18 @@
           "archetype2": "Izzet Looting",
           "p1_wins": 2,
           "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Flores, Pedro",
-          "player2": "Depraz, Jean-Emmanuel",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Waligora, Ryan",
-          "player2": "Green, Paul",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Liu, Yuchen",
-          "player2": "Burkhart, Corey",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Araujo, William",
-          "player2": "Budisanjaya, Albert",
-          "archetype1": "Mono-Red Aggro",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Ogasawara, Tomoaki",
-          "player2": "Duchow, Lucas",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Bot, Tom",
-          "player2": "Bodewes, Jelco",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Asano, Tatsuro",
-          "player2": "Mackenzie, Connor",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Nollen, Dylan",
-          "player2": "Lausevic, Ivan",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Nollen, Dylan",
-          "player2": "Lausevic, Ivan",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Sarap, Karl",
-          "player2": "Ichikawa, Yuuki",
-          "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Litman, Randall",
-          "player2": "Yasooka, Shota",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Giardini, Federico",
-          "player2": "Horiuchi, Makoto",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Schabel, Justin",
-          "player2": "Mazza, Raffaele",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Perrini, Pedro",
-          "player2": "Offman, No\u00e9",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Bodewes, Jelco",
-          "player2": "Hori, Masataka",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Lausevic, Ivan",
-          "player2": "Tamblyn, Mitchell",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Mackenzie, Connor",
-          "player2": "Budisanjaya, Albert",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Mackenzie, Connor",
-          "player2": "Budisanjaya, Albert",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Litman, Randall",
-          "player2": "Duchow, Lucas",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Litman, Randall",
-          "player2": "Duchow, Lucas",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Depraz, Jean-Emmanuel",
-          "player2": "Ikawa, Yoshihiko",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Perrini, Pedro",
-          "player2": "Wang, Kunrui",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Waligora, Ryan",
-          "player2": "Nollen, Dylan",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Waligora, Ryan",
-          "player2": "Nollen, Dylan",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Horiuchi, Makoto",
-          "player2": "Kuisma, Matti",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Knorr, Jackson",
-          "player2": "Liu, Yuchen",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Ichikawa, Yuuki",
-          "player2": "Guttman, Jonny",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Yukuhiro, Ken",
-          "player2": "Mazza, Raffaele",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Lindqvist, Kristoffer",
-          "player2": "Ichikawa, Yuuki",
-          "archetype1": "Boros Mobilize",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Nasri, Bassel",
-          "player2": "Perrini, Pedro",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Flores, Mario",
-          "player2": "Waligora, Ryan",
-          "archetype1": "Dimir Bounce",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Litman, Randall",
-          "player2": "Sch\u00fctz, Stefan",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Pham, Ha",
-          "player2": "Mackenzie, Connor",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Airaksinen, Mikko",
-          "player2": "Budisanjaya, Albert",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Lausevic, Ivan",
-          "player2": "Green, Paul",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Henry, Shaun",
-          "player2": "Depraz, Jean-Emmanuel",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Buonadonna, Mason",
-          "player2": "Liu, Yuchen",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "To, Chun Him",
-          "player2": "Duchow, Lucas",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Bodewes, Jelco",
-          "player2": "Burkhart, Corey",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Nass, Matthew",
-          "player2": "Horiuchi, Makoto",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Gimenez, Sergio",
-          "player2": "Mazza, Raffaele",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Nollen, Dylan",
-          "player2": "Robkin, Jesse",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Bodewes, Jelco",
-          "player2": "Asano, Tatsuro",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Nassif, Gabriel",
-          "player2": "Mackenzie, Connor",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Depraz, Jean-Emmanuel",
-          "player2": "Nakamura, Shuhei",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 2,
-          "p2_wins": 0
         }
       ],
-      "win_rate": 0.4050632911392405,
-      "game_win_rate": 0.4444444444444444,
-      "total_matches": 79
+      "win_rate": 0.40476190476190477,
+      "game_win_rate": 0.45132743362831856,
+      "total_matches": 42
     },
     "Golgari Ouroboroid": {
-      "wins": 20,
-      "losses": 15,
+      "wins": 13,
+      "losses": 7,
       "draws": 0,
-      "games_won": 51,
-      "games_lost": 44,
+      "games_won": 30,
+      "games_lost": 21,
       "matches": [
         {
           "round": 4,
@@ -4699,171 +2566,18 @@
           "archetype2": "Izzet Lessons",
           "p1_wins": 2,
           "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Nass, Matthew",
-          "player2": "Kuisma, Matti",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Wong, Charles",
-          "player2": "Miller, Casey",
-          "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Sarap, Karl",
-          "player2": "Ichikawa, Yuuki",
-          "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Baker, Christian",
-          "player2": "Faust, Zevin",
-          "archetype1": "Temur Otters",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Sato, Keisuke",
-          "player2": "Guttman, Jonny",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Wong, Charles",
-          "player2": "Sarap, Karl",
-          "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Wong, Charles",
-          "player2": "Sarap, Karl",
-          "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Horiuchi, Makoto",
-          "player2": "Kuisma, Matti",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Ichikawa, Yuuki",
-          "player2": "Guttman, Jonny",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Faust, Zevin",
-          "player2": "Palmero Garc\u00eda, Fernando",
-          "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Condon, Ryan",
-          "player2": "Faust, Zevin",
-          "archetype1": "Temur Otters",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Sulimovich, Guillermo",
-          "player2": "Sarap, Karl",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Klepatch, Andrei",
-          "player2": "Kuisma, Matti",
-          "archetype1": "Temur Otters",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Sato, Keisuke",
-          "player2": "Wong, Charles",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Guttman, Jonny",
-          "player2": "Miller, Casey",
-          "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Pardee, Sam",
-          "player2": "Wong, Charles",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Sarap, Karl",
-          "player2": "Shibata, Akira",
-          "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
         }
       ],
-      "win_rate": 0.5714285714285714,
-      "game_win_rate": 0.5368421052631579,
-      "total_matches": 35
+      "win_rate": 0.65,
+      "game_win_rate": 0.5882352941176471,
+      "total_matches": 20
     },
     "Simic Ouroboroid": {
-      "wins": 17,
-      "losses": 30,
-      "draws": 1,
-      "games_won": 52,
-      "games_lost": 72,
+      "wins": 8,
+      "losses": 17,
+      "draws": 0,
+      "games_won": 27,
+      "games_lost": 39,
       "matches": [
         {
           "round": 4,
@@ -5089,225 +2803,18 @@
           "archetype2": "Simic Ouroboroid",
           "p1_wins": 1,
           "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Moriyama, Masahide",
-          "player2": "Husisian, Peter",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "S\u00e1nchez, Francisco",
-          "player2": "Dota, Arch",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Soto, Roberto",
-          "player2": "Tonole, Quinn",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Mono-Red Aggro",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Giardini, Federico",
-          "player2": "Horiuchi, Makoto",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Ramboa, Thierry",
-          "player2": "Chen, Szu-Yuan",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Sato, Keisuke",
-          "player2": "Guttman, Jonny",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Gimenez, Sergio",
-          "player2": "Dimitrov, James",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Klepatch, Andrei",
-          "player2": "Giardini, Federico",
-          "archetype1": "Temur Otters",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Sato, Keisuke",
-          "player2": "Lindqvist, Kristoffer",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Boros Mobilize",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Moriyama, Masahide",
-          "player2": "Lin, Shih Feng",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Gimenez, Sergio",
-          "player2": "Botelho, Chris",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Chen, Szu-Yuan",
-          "player2": "Friedrichsen, Alex",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "S\u00e1nchez, Francisco",
-          "player2": "Nassif, Gabriel",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Baker, Christian",
-          "player2": "Soto, Roberto",
-          "archetype1": "Temur Otters",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "S\u00e1nchez, Francisco",
-          "player2": "Leonard Huu Nguyen, Christopher",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Dimir Bounce",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Holloway, Jennifer-Rose",
-          "player2": "Moriyama, Masahide",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Rappaport, Max",
-          "player2": "Soto, Roberto",
-          "archetype1": "Dimir Midrange",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Sanfeliu, Josep",
-          "player2": "Giardini, Federico",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Inoue, Toru",
-          "player2": "Chen, Szu-Yuan",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Gimenez, Sergio",
-          "player2": "Mazza, Raffaele",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Sato, Keisuke",
-          "player2": "Wong, Charles",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 8,
-          "player1": "Duke, Reid",
-          "player2": "Moriyama, Masahide",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Nass, Matthew",
-          "player2": "Soto, Roberto",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
         }
       ],
-      "win_rate": 0.3617021276595745,
-      "game_win_rate": 0.41935483870967744,
-      "total_matches": 47
+      "win_rate": 0.32,
+      "game_win_rate": 0.4090909090909091,
+      "total_matches": 25
     },
     "Bant Airbending": {
-      "wins": 40,
-      "losses": 59,
-      "draws": 1,
-      "games_won": 128,
-      "games_lost": 157,
+      "wins": 20,
+      "losses": 33,
+      "draws": 0,
+      "games_won": 69,
+      "games_lost": 84,
       "matches": [
         {
           "round": 4,
@@ -5857,495 +3364,18 @@
           "archetype2": "Bant Airbending",
           "p1_wins": 2,
           "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Waligora, Ryan",
-          "player2": "Green, Paul",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Tobiasch, Marc",
-          "player2": "Lip, Quinton",
-          "archetype1": "Simic Otters",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Korfine, Julian",
-          "player2": "Davis, Derrick",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Kikidis, Charis",
-          "player2": "Castell\u00e1n, Javier",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Karam, Vin\u00edcius",
-          "player2": "Miyaji-Thorne, Zen",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Karam, Vin\u00edcius",
-          "player2": "Miyaji-Thorne, Zen",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Sulimovich, Guillermo",
-          "player2": "Lindqvist, Kristoffer",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Boros Mobilize",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Chang, Samuel",
-          "player2": "Noah, Ma",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Friedrichsen, Alex",
-          "player2": "Kane, Liam",
-          "archetype1": "Temur Otters",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Sch\u00fctz, Stefan",
-          "player2": "Rood, David",
-          "archetype1": "Temur Otters",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 1,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Robb, Ian",
-          "player2": "Lin, Shih Feng",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Robkin, Jesse",
-          "player2": "Huschenbeth, Arne",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Ramboa, Thierry",
-          "player2": "Chen, Szu-Yuan",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Henry, Shaun",
-          "player2": "Peral, Marc",
-          "archetype1": "Temur Otters",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Perrini, Pedro",
-          "player2": "Offman, No\u00e9",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Carvalho, Marcio",
-          "player2": "Dominguez, Javier",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Costa, Matthew",
-          "player2": "Miyaji-Thorne, Zen",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Korfine, Julian",
-          "player2": "Torres, Bernardo",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Jeskai Artifacts",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Nakamura, Shuhei",
-          "player2": "Dominguez, Javier",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Robb, Ian",
-          "player2": "Kikidis, Charis",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Green, Paul",
-          "player2": "Huschenbeth, Arne",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Temur Otters",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Karam, Vin\u00edcius",
-          "player2": "Henry, Shaun",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Flores, Mario",
-          "player2": "Robkin, Jesse",
-          "archetype1": "Dimir Bounce",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Harane, Kenta",
-          "player2": "Ramboa, Thierry",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Chang, Samuel",
-          "player2": "Fang, Percy",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Mono-Red Aggro",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Leonard Huu Nguyen, Christopher",
-          "player2": "Lip, Quinton",
-          "archetype1": "Dimir Bounce",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Offman, No\u00e9",
-          "player2": "Garcia-Romo, Andy",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Rood, David",
-          "player2": "To, Chun Him",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Castell\u00e1n, Javier",
-          "player2": "Holloway, Jennifer-Rose",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Sulimovich, Guillermo",
-          "player2": "Miller, Casey",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Peral, Marc",
-          "player2": "Flores, Pedro",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Brace, Adam",
-          "player2": "Kane, Liam",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Ramboa, Thierry",
-          "player2": "Kane, Liam",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Ramboa, Thierry",
-          "player2": "Kane, Liam",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Shibata, Akira",
-          "player2": "Chang, Samuel",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Lausevic, Ivan",
-          "player2": "Green, Paul",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Offman, No\u00e9",
-          "player2": "Nagao, Yasutaka",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Jeskai Artifacts",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Sulimovich, Guillermo",
-          "player2": "Sarap, Karl",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Robb, Ian",
-          "player2": "Husisian, Peter",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Miyaji-Thorne, Zen",
-          "player2": "Peral, Marc",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Miyaji-Thorne, Zen",
-          "player2": "Peral, Marc",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Lip, Quinton",
-          "player2": "Nassif, Gabriel",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Karam, Vin\u00edcius",
-          "player2": "Ikawa, Yoshihiko",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Lin, Shih Feng",
-          "player2": "Castell\u00e1n, Javier",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Korfine, Julian",
-          "player2": "Schnake, Abe",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Rood, David",
-          "player2": "Ogasawara, Tomoaki",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Nollen, Dylan",
-          "player2": "Robkin, Jesse",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Davis, Derrick",
-          "player2": "Dominguez, Javier",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Dominguez, Javier",
-          "player2": "Henry, Shaun",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 8,
-          "player1": "Karam, Vin\u00edcius",
-          "player2": "Holloway, Jennifer-Rose",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Dota, Arch",
-          "player2": "Offman, No\u00e9",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Manfield, Seth",
-          "player2": "Sulimovich, Guillermo",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Bot, Tom",
-          "player2": "Chang, Samuel",
-          "archetype1": "Temur Otters",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
         }
       ],
-      "win_rate": 0.40404040404040403,
-      "game_win_rate": 0.44912280701754387,
-      "total_matches": 99
+      "win_rate": 0.37735849056603776,
+      "game_win_rate": 0.45098039215686275,
+      "total_matches": 53
     },
     "Dimir Bounce": {
-      "wins": 9,
-      "losses": 12,
-      "draws": 1,
-      "games_won": 25,
-      "games_lost": 30,
+      "wins": 4,
+      "losses": 8,
+      "draws": 0,
+      "games_won": 11,
+      "games_lost": 17,
       "matches": [
         {
           "round": 4,
@@ -6454,108 +3484,18 @@
           "archetype2": "Simic Ouroboroid",
           "p1_wins": 1,
           "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Leonard Huu Nguyen, Christopher",
-          "player2": "Pich\u00e9, Simon",
-          "archetype1": "Dimir Bounce",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Tamblyn, Mitchell",
-          "player2": "Flores, Mario",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Dimir Bounce",
-          "p1_wins": 1,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Schwartz, Adam",
-          "player2": "Holloway, Jennifer-Rose",
-          "archetype1": "Dimir Bounce",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Flores, Mario",
-          "player2": "Robkin, Jesse",
-          "archetype1": "Dimir Bounce",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Leonard Huu Nguyen, Christopher",
-          "player2": "Lip, Quinton",
-          "archetype1": "Dimir Bounce",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Husisian, Peter",
-          "player2": "Schwartz, Adam",
-          "archetype1": "Temur Otters",
-          "archetype2": "Dimir Bounce",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Flores, Mario",
-          "player2": "Waligora, Ryan",
-          "archetype1": "Dimir Bounce",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "S\u00e1nchez, Francisco",
-          "player2": "Leonard Huu Nguyen, Christopher",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Dimir Bounce",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Kikidis, Charis",
-          "player2": "Schwartz, Adam",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Dimir Bounce",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 8,
-          "player1": "Schabel, Justin",
-          "player2": "Leonard Huu Nguyen, Christopher",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Dimir Bounce",
-          "p1_wins": 1,
-          "p2_wins": 2
         }
       ],
-      "win_rate": 0.42857142857142855,
-      "game_win_rate": 0.45454545454545453,
-      "total_matches": 21
+      "win_rate": 0.3333333333333333,
+      "game_win_rate": 0.39285714285714285,
+      "total_matches": 12
     },
     "Sultai Reanimator": {
-      "wins": 25,
-      "losses": 21,
+      "wins": 12,
+      "losses": 12,
       "draws": 0,
-      "games_won": 60,
-      "games_lost": 60,
+      "games_won": 28,
+      "games_lost": 33,
       "matches": [
         {
           "round": 4,
@@ -6772,216 +3712,18 @@
           "archetype2": "Temur Otters",
           "p1_wins": 1,
           "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Nakamura, Shuhei",
-          "player2": "Schnake, Abe",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Ogasawara, Tomoaki",
-          "player2": "Duchow, Lucas",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Harane, Kenta",
-          "player2": "Inoue, Toru",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Yukuhiro, Ken",
-          "player2": "Masukado, Kenta",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Dimir Midrange",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Robb, Ian",
-          "player2": "Lin, Shih Feng",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Pham, Ha",
-          "player2": "Cordob\u00e9s, Albert",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Temur Otters",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Pham, Ha",
-          "player2": "Airaksinen, Mikko",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Moriyama, Masahide",
-          "player2": "Lin, Shih Feng",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Nakamura, Shuhei",
-          "player2": "Dominguez, Javier",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Harane, Kenta",
-          "player2": "Ramboa, Thierry",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Yasooka, Shota",
-          "player2": "Ogasawara, Tomoaki",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Yukuhiro, Ken",
-          "player2": "Mazza, Raffaele",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Nakamura, Shuhei",
-          "player2": "Torres, Bernardo",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Jeskai Artifacts",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Pham, Ha",
-          "player2": "Mackenzie, Connor",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Botelho, Chris",
-          "player2": "Yukuhiro, Ken",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Harane, Kenta",
-          "player2": "Brace, Adam",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Lin, Shih Feng",
-          "player2": "Castell\u00e1n, Javier",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Rood, David",
-          "player2": "Ogasawara, Tomoaki",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 8,
-          "player1": "Lin, Shih Feng",
-          "player2": "Stark, Ben",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Golgari Dragons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Yukuhiro, Ken",
-          "player2": "Carvalho, Marcio",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Davis, Derrick",
-          "player2": "Harane, Kenta",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Depraz, Jean-Emmanuel",
-          "player2": "Nakamura, Shuhei",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 2,
-          "p2_wins": 0
         }
       ],
-      "win_rate": 0.5434782608695652,
-      "game_win_rate": 0.5,
-      "total_matches": 46
+      "win_rate": 0.5,
+      "game_win_rate": 0.45901639344262296,
+      "total_matches": 24
     },
     "Jeskai Artifacts": {
-      "wins": 12,
-      "losses": 17,
+      "wins": 6,
+      "losses": 10,
       "draws": 0,
-      "games_won": 31,
-      "games_lost": 38,
+      "games_won": 16,
+      "games_lost": 23,
       "matches": [
         {
           "round": 4,
@@ -7124,899 +3866,431 @@
           "player2": "Knorr, Jackson",
           "archetype1": "Jeskai Control",
           "archetype2": "Jeskai Artifacts",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Sanfeliu, Josep",
-          "player2": "Klepatch, Andrei",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Knorr, Jackson",
-          "player2": "Hori, Masataka",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Nagao, Yasutaka",
-          "player2": "Wang, Kunrui",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Zhang, Rei",
-          "player2": "Torres, Bernardo",
-          "archetype1": "Temur Otters",
-          "archetype2": "Jeskai Artifacts",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Korfine, Julian",
-          "player2": "Torres, Bernardo",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Jeskai Artifacts",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Sanfeliu, Josep",
-          "player2": "Nass, Matthew",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Nagao, Yasutaka",
-          "player2": "Wright, Matthew",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Knorr, Jackson",
-          "player2": "Liu, Yuchen",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Nakamura, Shuhei",
-          "player2": "Torres, Bernardo",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Jeskai Artifacts",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Offman, No\u00e9",
-          "player2": "Nagao, Yasutaka",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Jeskai Artifacts",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Bot, Tom",
-          "player2": "Knorr, Jackson",
-          "archetype1": "Temur Otters",
-          "archetype2": "Jeskai Artifacts",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Sanfeliu, Josep",
-          "player2": "Giardini, Federico",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Nagao, Yasutaka",
-          "player2": "Cordob\u00e9s, Albert",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Temur Otters",
-          "p1_wins": 0,
-          "p2_wins": 2
-        }
-      ],
-      "win_rate": 0.41379310344827586,
-      "game_win_rate": 0.4492753623188406,
-      "total_matches": 29
-    },
-    "Izzet Prowess": {
-      "wins": 28,
-      "losses": 34,
-      "draws": 2,
-      "games_won": 82,
-      "games_lost": 84,
-      "matches": [
-        {
-          "round": 4,
-          "player1": "Bot, Tom",
-          "player2": "Yasooka, Shota",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 4,
-          "player1": "Ogasawara, Tomoaki",
-          "player2": "Plummer, Michael",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 4,
-          "player1": "Wang, Kunrui",
-          "player2": "Nassif, Gabriel",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 4,
-          "player1": "To, Chun Him",
-          "player2": "Flores, Pedro",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 4,
-          "player1": "Koot, Linden",
-          "player2": "Dimitrov, James",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 4,
-          "player1": "Friedrichsen, Alex",
-          "player2": "Del Pivo, Marco",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 4,
-          "player1": "Depraz, Jean-Emmanuel",
-          "player2": "Nasri, Bassel",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 4,
-          "player1": "Carvalho, Marcio",
-          "player2": "Kane, Liam",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 4,
-          "player1": "Palmero Garc\u00eda, Fernando",
-          "player2": "Chang, Samuel",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 5,
-          "player1": "Lausevic, Ivan",
-          "player2": "Nasri, Bassel",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 5,
-          "player1": "Cordob\u00e9s, Albert",
-          "player2": "Yasooka, Shota",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 5,
-          "player1": "Lindqvist, Kristoffer",
-          "player2": "Carvalho, Marcio",
-          "archetype1": "Boros Mobilize",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 5,
-          "player1": "Del Pivo, Marco",
-          "player2": "Karam, Vin\u00edcius",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 5,
-          "player1": "Dimitrov, James",
-          "player2": "Choo, Clement",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 5,
-          "player1": "Wang, Kunrui",
-          "player2": "Chen, Szu-Yuan",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 5,
-          "player1": "Kans, Alexander",
-          "player2": "Flores, Pedro",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 5,
-          "player1": "Guttman, Jonny",
-          "player2": "Palmero Garc\u00eda, Fernando",
-          "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 5,
-          "player1": "Plummer, Michael",
-          "player2": "Soto, Roberto",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 6,
-          "player1": "Schnake, Abe",
-          "player2": "Wang, Kunrui",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 6,
-          "player1": "Huschenbeth, Arne",
-          "player2": "Plummer, Michael",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 6,
-          "player1": "Ogasawara, Tomoaki",
-          "player2": "Yasooka, Shota",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 6,
-          "player1": "Burkhart, Corey",
-          "player2": "Palmero Garc\u00eda, Fernando",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 6,
-          "player1": "Sarap, Karl",
-          "player2": "Del Pivo, Marco",
-          "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 6,
-          "player1": "Flores, Pedro",
-          "player2": "Dimitrov, James",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 1,
-          "p2_wins": 1
-        },
-        {
-          "round": 6,
-          "player1": "Flores, Pedro",
-          "player2": "Dimitrov, James",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 1,
-          "p2_wins": 1
-        },
-        {
-          "round": 6,
-          "player1": "Schabel, Justin",
-          "player2": "Carvalho, Marcio",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 6,
-          "player1": "Knorr, Jackson",
-          "player2": "Nasri, Bassel",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 7,
-          "player1": "Yasooka, Shota",
-          "player2": "Miyaji-Thorne, Zen",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 7,
-          "player1": "Palmero Garc\u00eda, Fernando",
-          "player2": "Schnake, Abe",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 7,
-          "player1": "Dominguez, Javier",
-          "player2": "Carvalho, Marcio",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 7,
-          "player1": "Del Pivo, Marco",
-          "player2": "Henry, Shaun",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 7,
-          "player1": "Plummer, Michael",
-          "player2": "Hori, Masataka",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 7,
-          "player1": "Nasri, Bassel",
-          "player2": "Schabel, Justin",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 7,
-          "player1": "Dimitrov, James",
-          "player2": "Pich\u00e9, Simon",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 7,
-          "player1": "Tobiasch, Marc",
-          "player2": "Flores, Pedro",
-          "archetype1": "Simic Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Flores, Pedro",
-          "player2": "Depraz, Jean-Emmanuel",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Nagao, Yasutaka",
-          "player2": "Wang, Kunrui",
-          "archetype1": "Jeskai Artifacts",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "David, Julian",
-          "player2": "Plummer, Michael",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Nasri, Bassel",
-          "player2": "Wright, Matthew",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Palmero Garc\u00eda, Fernando",
-          "player2": "Del Pivo, Marco",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Palmero Garc\u00eda, Fernando",
-          "player2": "Del Pivo, Marco",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Litman, Randall",
-          "player2": "Yasooka, Shota",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Carvalho, Marcio",
-          "player2": "Dominguez, Javier",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Gimenez, Sergio",
-          "player2": "Dimitrov, James",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Moore, James",
-          "player2": "Dimitrov, James",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Plummer, Michael",
-          "player2": "Stark, Ben",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Golgari Dragons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Del Pivo, Marco",
-          "player2": "Rappaport, Max",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Dimir Midrange",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Perrini, Pedro",
-          "player2": "Wang, Kunrui",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Peral, Marc",
-          "player2": "Flores, Pedro",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Manfield, Seth",
-          "player2": "Nasri, Bassel",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Faust, Zevin",
-          "player2": "Palmero Garc\u00eda, Fernando",
-          "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Carvalho, Marcio",
-          "player2": "Schnake, Abe",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Yasooka, Shota",
-          "player2": "Ogasawara, Tomoaki",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Tonole, Quinn",
-          "player2": "Palmero Garc\u00eda, Fernando",
-          "archetype1": "Mono-Red Aggro",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Rohan, Alex",
-          "player2": "Plummer, Michael",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Nasri, Bassel",
-          "player2": "Perrini, Pedro",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Zhang, Rei",
-          "player2": "Carvalho, Marcio",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Baker, Christian",
-          "player2": "Del Pivo, Marco",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Masukado, Kenta",
-          "player2": "Dimitrov, James",
-          "archetype1": "Dimir Midrange",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Costa, Matthew",
-          "player2": "Flores, Pedro",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Kassis, Eli",
-          "player2": "Yasooka, Shota",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Manfield, Seth",
-          "player2": "Wang, Kunrui",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Del Pivo, Marco",
-          "player2": "Airaksinen, Mikko",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Tamblyn, Mitchell",
-          "player2": "Dimitrov, James",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Plummer, Michael",
-          "player2": "Rohan, Alex",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Yukuhiro, Ken",
-          "player2": "Carvalho, Marcio",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        }
-      ],
-      "win_rate": 0.45161290322580644,
-      "game_win_rate": 0.4939759036144578,
-      "total_matches": 62
-    },
-    "Dimir Midrange": {
-      "wins": 6,
-      "losses": 10,
-      "draws": 0,
-      "games_won": 18,
-      "games_lost": 24,
-      "matches": [
-        {
-          "round": 4,
-          "player1": "Airaksinen, Mikko",
-          "player2": "Masukado, Kenta",
-          "archetype1": "Temur Otters",
-          "archetype2": "Dimir Midrange",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 4,
-          "player1": "Rappaport, Max",
-          "player2": "Lin, Shih Feng",
-          "archetype1": "Dimir Midrange",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 5,
-          "player1": "Depraz, Jean-Emmanuel",
-          "player2": "Rappaport, Max",
-          "archetype1": "Izzet Looting",
-          "archetype2": "Dimir Midrange",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 5,
-          "player1": "Lin, Shih Feng",
-          "player2": "Masukado, Kenta",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Dimir Midrange",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 6,
-          "player1": "Rappaport, Max",
-          "player2": "Shibata, Akira",
-          "archetype1": "Dimir Midrange",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 6,
-          "player1": "Magalhaes, Edgar",
-          "player2": "Masukado, Kenta",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Dimir Midrange",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 7,
-          "player1": "Kikidis, Charis",
-          "player2": "Rappaport, Max",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Dimir Midrange",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 7,
-          "player1": "Nass, Matthew",
-          "player2": "Masukado, Kenta",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Dimir Midrange",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Rappaport, Max",
-          "player2": "Condon, Ryan",
-          "archetype1": "Dimir Midrange",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Yukuhiro, Ken",
-          "player2": "Masukado, Kenta",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Dimir Midrange",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Del Pivo, Marco",
-          "player2": "Rappaport, Max",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Dimir Midrange",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Masukado, Kenta",
-          "player2": "Schabel, Justin",
-          "archetype1": "Dimir Midrange",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Rappaport, Max",
-          "player2": "Soto, Roberto",
-          "archetype1": "Dimir Midrange",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Masukado, Kenta",
-          "player2": "Dimitrov, James",
-          "archetype1": "Dimir Midrange",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Rappaport, Max",
-          "player2": "Kassis, Eli",
-          "archetype1": "Dimir Midrange",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Brace, Adam",
-          "player2": "Masukado, Kenta",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Dimir Midrange",
           "p1_wins": 2,
           "p2_wins": 1
         }
       ],
       "win_rate": 0.375,
-      "game_win_rate": 0.42857142857142855,
+      "game_win_rate": 0.41025641025641024,
       "total_matches": 16
     },
-    "Mono-Red Aggro": {
-      "wins": 10,
-      "losses": 12,
+    "Izzet Prowess": {
+      "wins": 16,
+      "losses": 17,
+      "draws": 2,
+      "games_won": 47,
+      "games_lost": 41,
+      "matches": [
+        {
+          "round": 4,
+          "player1": "Bot, Tom",
+          "player2": "Yasooka, Shota",
+          "archetype1": "Temur Otters",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 4,
+          "player1": "Ogasawara, Tomoaki",
+          "player2": "Plummer, Michael",
+          "archetype1": "Sultai Reanimator",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 4,
+          "player1": "Wang, Kunrui",
+          "player2": "Nassif, Gabriel",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 4,
+          "player1": "To, Chun Him",
+          "player2": "Flores, Pedro",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 4,
+          "player1": "Koot, Linden",
+          "player2": "Dimitrov, James",
+          "archetype1": "Temur Otters",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 4,
+          "player1": "Friedrichsen, Alex",
+          "player2": "Del Pivo, Marco",
+          "archetype1": "Temur Otters",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 4,
+          "player1": "Depraz, Jean-Emmanuel",
+          "player2": "Nasri, Bassel",
+          "archetype1": "Izzet Looting",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 4,
+          "player1": "Carvalho, Marcio",
+          "player2": "Kane, Liam",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Bant Airbending",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 4,
+          "player1": "Palmero Garc\u00eda, Fernando",
+          "player2": "Chang, Samuel",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Bant Airbending",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 5,
+          "player1": "Lausevic, Ivan",
+          "player2": "Nasri, Bassel",
+          "archetype1": "Izzet Looting",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 5,
+          "player1": "Cordob\u00e9s, Albert",
+          "player2": "Yasooka, Shota",
+          "archetype1": "Temur Otters",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 5,
+          "player1": "Lindqvist, Kristoffer",
+          "player2": "Carvalho, Marcio",
+          "archetype1": "Boros Mobilize",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 5,
+          "player1": "Del Pivo, Marco",
+          "player2": "Karam, Vin\u00edcius",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Bant Airbending",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 5,
+          "player1": "Dimitrov, James",
+          "player2": "Choo, Clement",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 5,
+          "player1": "Wang, Kunrui",
+          "player2": "Chen, Szu-Yuan",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Simic Ouroboroid",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 5,
+          "player1": "Kans, Alexander",
+          "player2": "Flores, Pedro",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 5,
+          "player1": "Guttman, Jonny",
+          "player2": "Palmero Garc\u00eda, Fernando",
+          "archetype1": "Golgari Ouroboroid",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 5,
+          "player1": "Plummer, Michael",
+          "player2": "Soto, Roberto",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Simic Ouroboroid",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 6,
+          "player1": "Schnake, Abe",
+          "player2": "Wang, Kunrui",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 6,
+          "player1": "Huschenbeth, Arne",
+          "player2": "Plummer, Michael",
+          "archetype1": "Temur Otters",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 6,
+          "player1": "Ogasawara, Tomoaki",
+          "player2": "Yasooka, Shota",
+          "archetype1": "Sultai Reanimator",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 6,
+          "player1": "Burkhart, Corey",
+          "player2": "Palmero Garc\u00eda, Fernando",
+          "archetype1": "Jeskai Control",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 6,
+          "player1": "Sarap, Karl",
+          "player2": "Del Pivo, Marco",
+          "archetype1": "Golgari Ouroboroid",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 6,
+          "player1": "Flores, Pedro",
+          "player2": "Dimitrov, James",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 1,
+          "p2_wins": 1
+        },
+        {
+          "round": 6,
+          "player1": "Flores, Pedro",
+          "player2": "Dimitrov, James",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 1,
+          "p2_wins": 1
+        },
+        {
+          "round": 6,
+          "player1": "Schabel, Justin",
+          "player2": "Carvalho, Marcio",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 6,
+          "player1": "Knorr, Jackson",
+          "player2": "Nasri, Bassel",
+          "archetype1": "Jeskai Artifacts",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 7,
+          "player1": "Yasooka, Shota",
+          "player2": "Miyaji-Thorne, Zen",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Bant Airbending",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 7,
+          "player1": "Palmero Garc\u00eda, Fernando",
+          "player2": "Schnake, Abe",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 7,
+          "player1": "Dominguez, Javier",
+          "player2": "Carvalho, Marcio",
+          "archetype1": "Bant Airbending",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 7,
+          "player1": "Del Pivo, Marco",
+          "player2": "Henry, Shaun",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Temur Otters",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 7,
+          "player1": "Plummer, Michael",
+          "player2": "Hori, Masataka",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Temur Otters",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 7,
+          "player1": "Nasri, Bassel",
+          "player2": "Schabel, Justin",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 7,
+          "player1": "Dimitrov, James",
+          "player2": "Pich\u00e9, Simon",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Jeskai Control",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 7,
+          "player1": "Tobiasch, Marc",
+          "player2": "Flores, Pedro",
+          "archetype1": "Simic Otters",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 2,
+          "p2_wins": 1
+        }
+      ],
+      "win_rate": 0.48484848484848486,
+      "game_win_rate": 0.5340909090909091,
+      "total_matches": 33
+    },
+    "Dimir Midrange": {
+      "wins": 2,
+      "losses": 6,
       "draws": 0,
-      "games_won": 27,
-      "games_lost": 28,
+      "games_won": 7,
+      "games_lost": 13,
+      "matches": [
+        {
+          "round": 4,
+          "player1": "Airaksinen, Mikko",
+          "player2": "Masukado, Kenta",
+          "archetype1": "Temur Otters",
+          "archetype2": "Dimir Midrange",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 4,
+          "player1": "Rappaport, Max",
+          "player2": "Lin, Shih Feng",
+          "archetype1": "Dimir Midrange",
+          "archetype2": "Sultai Reanimator",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 5,
+          "player1": "Depraz, Jean-Emmanuel",
+          "player2": "Rappaport, Max",
+          "archetype1": "Izzet Looting",
+          "archetype2": "Dimir Midrange",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 5,
+          "player1": "Lin, Shih Feng",
+          "player2": "Masukado, Kenta",
+          "archetype1": "Sultai Reanimator",
+          "archetype2": "Dimir Midrange",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 6,
+          "player1": "Rappaport, Max",
+          "player2": "Shibata, Akira",
+          "archetype1": "Dimir Midrange",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 6,
+          "player1": "Magalhaes, Edgar",
+          "player2": "Masukado, Kenta",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Dimir Midrange",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 7,
+          "player1": "Kikidis, Charis",
+          "player2": "Rappaport, Max",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Dimir Midrange",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 7,
+          "player1": "Nass, Matthew",
+          "player2": "Masukado, Kenta",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Dimir Midrange",
+          "p1_wins": 2,
+          "p2_wins": 1
+        }
+      ],
+      "win_rate": 0.25,
+      "game_win_rate": 0.35,
+      "total_matches": 8
+    },
+    "Mono-Red Aggro": {
+      "wins": 8,
+      "losses": 4,
+      "draws": 0,
+      "games_won": 19,
+      "games_lost": 12,
       "matches": [
         {
           "round": 4,
@@ -8125,108 +4399,18 @@
           "archetype2": "Izzet Lessons",
           "p1_wins": 2,
           "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Araujo, William",
-          "player2": "Budisanjaya, Albert",
-          "archetype1": "Mono-Red Aggro",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Pardee, Sam",
-          "player2": "Fang, Percy",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Mono-Red Aggro",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Soto, Roberto",
-          "player2": "Tonole, Quinn",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Mono-Red Aggro",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "Cordob\u00e9s, Albert",
-          "player2": "Araujo, William",
-          "archetype1": "Temur Otters",
-          "archetype2": "Mono-Red Aggro",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Condon, Ryan",
-          "player2": "Tonole, Quinn",
-          "archetype1": "Temur Otters",
-          "archetype2": "Mono-Red Aggro",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Chang, Samuel",
-          "player2": "Fang, Percy",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Mono-Red Aggro",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Tonole, Quinn",
-          "player2": "Palmero Garc\u00eda, Fernando",
-          "archetype1": "Mono-Red Aggro",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Lack, Cory",
-          "player2": "Fang, Percy",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Mono-Red Aggro",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Araujo, William",
-          "player2": "Asano, Tatsuro",
-          "archetype1": "Mono-Red Aggro",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Klepatch, Andrei",
-          "player2": "Tonole, Quinn",
-          "archetype1": "Temur Otters",
-          "archetype2": "Mono-Red Aggro",
-          "p1_wins": 2,
-          "p2_wins": 1
         }
       ],
-      "win_rate": 0.45454545454545453,
-      "game_win_rate": 0.4909090909090909,
-      "total_matches": 22
+      "win_rate": 0.6666666666666666,
+      "game_win_rate": 0.6129032258064516,
+      "total_matches": 12
     },
     "Simic Otters": {
-      "wins": 5,
+      "wins": 1,
       "losses": 2,
       "draws": 1,
-      "games_won": 13,
-      "games_lost": 8,
+      "games_won": 5,
+      "games_lost": 6,
       "matches": [
         {
           "round": 4,
@@ -8263,54 +4447,18 @@
           "archetype2": "Izzet Prowess",
           "p1_wins": 2,
           "p2_wins": 1
-        },
-        {
-          "round": 1,
-          "player1": "Tobiasch, Marc",
-          "player2": "Lip, Quinton",
-          "archetype1": "Simic Otters",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Dang, Nam",
-          "player2": "Tobiasch, Marc",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Simic Otters",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Tobiasch, Marc",
-          "player2": "Pich\u00e9, Simon",
-          "archetype1": "Simic Otters",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 8,
-          "player1": "Ikawa, Yoshihiko",
-          "player2": "Tobiasch, Marc",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Simic Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
         }
       ],
-      "win_rate": 0.7142857142857143,
-      "game_win_rate": 0.6190476190476191,
-      "total_matches": 7
+      "win_rate": 0.3333333333333333,
+      "game_win_rate": 0.45454545454545453,
+      "total_matches": 3
     },
     "Orzhov Demons": {
-      "wins": 4,
-      "losses": 3,
+      "wins": 2,
+      "losses": 2,
       "draws": 0,
-      "games_won": 10,
-      "games_lost": 10,
+      "games_won": 5,
+      "games_lost": 6,
       "matches": [
         {
           "round": 4,
@@ -8347,45 +4495,18 @@
           "archetype2": "Orzhov Demons",
           "p1_wins": 2,
           "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Zhang, Yuxuan",
-          "player2": "Rohan, Alex",
-          "archetype1": "Orzhov Demons",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 2,
-          "player1": "David, Julian",
-          "player2": "Zhang, Yuxuan",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Orzhov Demons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 3,
-          "player1": "Magalhaes, Edgar",
-          "player2": "Zhang, Yuxuan",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Orzhov Demons",
-          "p1_wins": 2,
-          "p2_wins": 1
         }
       ],
-      "win_rate": 0.5714285714285714,
-      "game_win_rate": 0.5,
-      "total_matches": 7
+      "win_rate": 0.5,
+      "game_win_rate": 0.45454545454545453,
+      "total_matches": 4
     },
     "Golgari Dragons": {
       "wins": 2,
-      "losses": 6,
+      "losses": 2,
       "draws": 0,
-      "games_won": 6,
-      "games_lost": 14,
+      "games_won": 4,
+      "games_lost": 6,
       "matches": [
         {
           "round": 4,
@@ -8422,54 +4543,18 @@
           "archetype2": "Golgari Dragons",
           "p1_wins": 2,
           "p2_wins": 0
-        },
-        {
-          "round": 1,
-          "player1": "Koot, Linden",
-          "player2": "Stark, Ben",
-          "archetype1": "Temur Otters",
-          "archetype2": "Golgari Dragons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 2,
-          "player1": "Plummer, Michael",
-          "player2": "Stark, Ben",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Golgari Dragons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 3,
-          "player1": "Duke, Reid",
-          "player2": "Stark, Ben",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Golgari Dragons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 8,
-          "player1": "Lin, Shih Feng",
-          "player2": "Stark, Ben",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Golgari Dragons",
-          "p1_wins": 2,
-          "p2_wins": 1
         }
       ],
-      "win_rate": 0.25,
-      "game_win_rate": 0.3,
-      "total_matches": 8
+      "win_rate": 0.5,
+      "game_win_rate": 0.4,
+      "total_matches": 4
     },
     "Boros Mobilize": {
-      "wins": 2,
-      "losses": 5,
+      "wins": 1,
+      "losses": 3,
       "draws": 0,
-      "games_won": 6,
-      "games_lost": 10,
+      "games_won": 3,
+      "games_lost": 6,
       "matches": [
         {
           "round": 4,
@@ -8506,38 +4591,11 @@
           "archetype2": "Bant Airbending",
           "p1_wins": 1,
           "p2_wins": 2
-        },
-        {
-          "round": 1,
-          "player1": "Sulimovich, Guillermo",
-          "player2": "Lindqvist, Kristoffer",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Boros Mobilize",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 2,
-          "player1": "Sato, Keisuke",
-          "player2": "Lindqvist, Kristoffer",
-          "archetype1": "Simic Ouroboroid",
-          "archetype2": "Boros Mobilize",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 3,
-          "player1": "Lindqvist, Kristoffer",
-          "player2": "Ichikawa, Yuuki",
-          "archetype1": "Boros Mobilize",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 1,
-          "p2_wins": 2
         }
       ],
-      "win_rate": 0.2857142857142857,
-      "game_win_rate": 0.375,
-      "total_matches": 7
+      "win_rate": 0.25,
+      "game_win_rate": 0.3333333333333333,
+      "total_matches": 4
     }
   },
   "matchup_stats": {
@@ -8545,49 +4603,49 @@
       "archetype1": "Izzet Lessons",
       "archetype2": "Jeskai Control",
       "arch1_wins": 10,
-      "arch2_wins": 22,
-      "arch1_games": 28,
-      "arch2_games": 46,
-      "total_matches": 32,
-      "arch1_win_rate": 0.3125,
-      "arch2_win_rate": 0.6875,
-      "arch1_game_win_rate": 0.3783783783783784,
-      "arch2_game_win_rate": 0.6216216216216216
+      "arch2_wins": 12,
+      "arch1_games": 26,
+      "arch2_games": 26,
+      "total_matches": 22,
+      "arch1_win_rate": 0.45454545454545453,
+      "arch2_win_rate": 0.5454545454545454,
+      "arch1_game_win_rate": 0.5,
+      "arch2_game_win_rate": 0.5
     },
     "Jeskai Control vs Temur Otters": {
       "archetype1": "Temur Otters",
       "archetype2": "Jeskai Control",
-      "arch1_wins": 14,
-      "arch2_wins": 8,
-      "arch1_games": 30,
-      "arch2_games": 22,
-      "total_matches": 22,
-      "arch1_win_rate": 0.6363636363636364,
-      "arch2_win_rate": 0.36363636363636365,
-      "arch1_game_win_rate": 0.5769230769230769,
-      "arch2_game_win_rate": 0.4230769230769231
+      "arch1_wins": 6,
+      "arch2_wins": 4,
+      "arch1_games": 12,
+      "arch2_games": 10,
+      "total_matches": 10,
+      "arch1_win_rate": 0.6,
+      "arch2_win_rate": 0.4,
+      "arch1_game_win_rate": 0.5454545454545454,
+      "arch2_game_win_rate": 0.45454545454545453
     },
     "Izzet Lessons vs Temur Otters": {
       "archetype1": "Temur Otters",
       "archetype2": "Izzet Lessons",
-      "arch1_wins": 24,
-      "arch2_wins": 32,
-      "arch1_games": 62,
-      "arch2_games": 78,
-      "total_matches": 56,
-      "arch1_win_rate": 0.42857142857142855,
-      "arch2_win_rate": 0.5714285714285714,
-      "arch1_game_win_rate": 0.44285714285714284,
-      "arch2_game_win_rate": 0.5571428571428572
+      "arch1_wins": 10,
+      "arch2_wins": 24,
+      "arch1_games": 30,
+      "arch2_games": 54,
+      "total_matches": 34,
+      "arch1_win_rate": 0.29411764705882354,
+      "arch2_win_rate": 0.7058823529411765,
+      "arch1_game_win_rate": 0.35714285714285715,
+      "arch2_game_win_rate": 0.6428571428571429
     },
     "Izzet Looting vs Izzet Looting": {
       "archetype1": "Izzet Looting",
       "archetype2": "Izzet Looting",
-      "arch1_wins": 6,
-      "arch2_wins": 6,
-      "arch1_games": 15,
-      "arch2_games": 15,
-      "total_matches": 12,
+      "arch1_wins": 2,
+      "arch2_wins": 2,
+      "arch1_games": 5,
+      "arch2_games": 5,
+      "total_matches": 4,
       "arch1_win_rate": 0.5,
       "arch2_win_rate": 0.5,
       "arch1_game_win_rate": 0.5,
@@ -8596,57 +4654,18 @@
     "Golgari Ouroboroid vs Simic Ouroboroid": {
       "archetype1": "Golgari Ouroboroid",
       "archetype2": "Simic Ouroboroid",
-      "arch1_wins": 4,
-      "arch2_wins": 2,
-      "arch1_games": 10,
-      "arch2_games": 8,
-      "total_matches": 6,
-      "arch1_win_rate": 0.6666666666666666,
-      "arch2_win_rate": 0.3333333333333333,
-      "arch1_game_win_rate": 0.5555555555555556,
-      "arch2_game_win_rate": 0.4444444444444444
+      "arch1_wins": 2,
+      "arch2_wins": 0,
+      "arch1_games": 4,
+      "arch2_games": 2,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.6666666666666666,
+      "arch2_game_win_rate": 0.3333333333333333
     },
     "Bant Airbending vs Jeskai Control": {
       "archetype1": "Jeskai Control",
-      "archetype2": "Bant Airbending",
-      "arch1_wins": 10,
-      "arch2_wins": 12,
-      "arch1_games": 28,
-      "arch2_games": 26,
-      "total_matches": 22,
-      "arch1_win_rate": 0.45454545454545453,
-      "arch2_win_rate": 0.5454545454545454,
-      "arch1_game_win_rate": 0.5185185185185185,
-      "arch2_game_win_rate": 0.48148148148148145
-    },
-    "Bant Airbending vs Izzet Looting": {
-      "archetype1": "Izzet Looting",
-      "archetype2": "Bant Airbending",
-      "arch1_wins": 6,
-      "arch2_wins": 10,
-      "arch1_games": 14,
-      "arch2_games": 22,
-      "total_matches": 16,
-      "arch1_win_rate": 0.375,
-      "arch2_win_rate": 0.625,
-      "arch1_game_win_rate": 0.3888888888888889,
-      "arch2_game_win_rate": 0.6111111111111112
-    },
-    "Izzet Looting vs Temur Otters": {
-      "archetype1": "Izzet Looting",
-      "archetype2": "Temur Otters",
-      "arch1_wins": 12,
-      "arch2_wins": 18,
-      "arch1_games": 34,
-      "arch2_games": 44,
-      "total_matches": 30,
-      "arch1_win_rate": 0.4,
-      "arch2_win_rate": 0.6,
-      "arch1_game_win_rate": 0.4358974358974359,
-      "arch2_game_win_rate": 0.5641025641025641
-    },
-    "Bant Airbending vs Dimir Bounce": {
-      "archetype1": "Dimir Bounce",
       "archetype2": "Bant Airbending",
       "arch1_wins": 6,
       "arch2_wins": 4,
@@ -8658,27 +4677,66 @@
       "arch1_game_win_rate": 0.5833333333333334,
       "arch2_game_win_rate": 0.4166666666666667
     },
+    "Bant Airbending vs Izzet Looting": {
+      "archetype1": "Izzet Looting",
+      "archetype2": "Bant Airbending",
+      "arch1_wins": 2,
+      "arch2_wins": 6,
+      "arch1_games": 6,
+      "arch2_games": 12,
+      "total_matches": 8,
+      "arch1_win_rate": 0.25,
+      "arch2_win_rate": 0.75,
+      "arch1_game_win_rate": 0.3333333333333333,
+      "arch2_game_win_rate": 0.6666666666666666
+    },
+    "Izzet Looting vs Temur Otters": {
+      "archetype1": "Izzet Looting",
+      "archetype2": "Temur Otters",
+      "arch1_wins": 8,
+      "arch2_wins": 10,
+      "arch1_games": 22,
+      "arch2_games": 24,
+      "total_matches": 18,
+      "arch1_win_rate": 0.4444444444444444,
+      "arch2_win_rate": 0.5555555555555556,
+      "arch1_game_win_rate": 0.4782608695652174,
+      "arch2_game_win_rate": 0.5217391304347826
+    },
+    "Bant Airbending vs Dimir Bounce": {
+      "archetype1": "Dimir Bounce",
+      "archetype2": "Bant Airbending",
+      "arch1_wins": 4,
+      "arch2_wins": 2,
+      "arch1_games": 8,
+      "arch2_games": 6,
+      "total_matches": 6,
+      "arch1_win_rate": 0.6666666666666666,
+      "arch2_win_rate": 0.3333333333333333,
+      "arch1_game_win_rate": 0.5714285714285714,
+      "arch2_game_win_rate": 0.42857142857142855
+    },
     "Sultai Reanimator vs Temur Otters": {
       "archetype1": "Sultai Reanimator",
       "archetype2": "Temur Otters",
       "arch1_wins": 6,
-      "arch2_wins": 10,
-      "arch1_games": 18,
-      "arch2_games": 24,
-      "total_matches": 16,
-      "arch1_win_rate": 0.375,
-      "arch2_win_rate": 0.625,
-      "arch1_game_win_rate": 0.42857142857142855,
-      "arch2_game_win_rate": 0.5714285714285714
+      "arch2_wins": 6,
+      "arch1_games": 16,
+      "arch2_games": 16,
+      "total_matches": 12,
+      "arch1_win_rate": 0.5,
+      "arch2_win_rate": 0.5,
+      "arch1_game_win_rate": 0.5,
+      "arch2_game_win_rate": 0.5
     },
     "Izzet Lessons vs Izzet Lessons": {
       "archetype1": "Izzet Lessons",
       "archetype2": "Izzet Lessons",
-      "arch1_wins": 18,
-      "arch2_wins": 18,
-      "arch1_games": 43,
-      "arch2_games": 43,
-      "total_matches": 36,
+      "arch1_wins": 7,
+      "arch2_wins": 7,
+      "arch1_games": 15,
+      "arch2_games": 15,
+      "total_matches": 14,
       "arch1_win_rate": 0.5,
       "arch2_win_rate": 0.5,
       "arch1_game_win_rate": 0.5,
@@ -8687,71 +4745,123 @@
     "Jeskai Control vs Simic Ouroboroid": {
       "archetype1": "Jeskai Control",
       "archetype2": "Simic Ouroboroid",
-      "arch1_wins": 10,
+      "arch1_wins": 4,
       "arch2_wins": 0,
-      "arch1_games": 20,
-      "arch2_games": 4,
-      "total_matches": 10,
+      "arch1_games": 8,
+      "arch2_games": 2,
+      "total_matches": 4,
       "arch1_win_rate": 1.0,
       "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 0.8333333333333334,
-      "arch2_game_win_rate": 0.16666666666666666
+      "arch1_game_win_rate": 0.8,
+      "arch2_game_win_rate": 0.2
     },
     "Izzet Looting vs Jeskai Control": {
       "archetype1": "Izzet Looting",
       "archetype2": "Jeskai Control",
-      "arch1_wins": 6,
-      "arch2_wins": 8,
-      "arch1_games": 12,
-      "arch2_games": 18,
-      "total_matches": 14,
-      "arch1_win_rate": 0.42857142857142855,
-      "arch2_win_rate": 0.5714285714285714,
-      "arch1_game_win_rate": 0.4,
-      "arch2_game_win_rate": 0.6
+      "arch1_wins": 2,
+      "arch2_wins": 4,
+      "arch1_games": 4,
+      "arch2_games": 8,
+      "total_matches": 6,
+      "arch1_win_rate": 0.3333333333333333,
+      "arch2_win_rate": 0.6666666666666666,
+      "arch1_game_win_rate": 0.3333333333333333,
+      "arch2_game_win_rate": 0.6666666666666666
     },
     "Bant Airbending vs Simic Ouroboroid": {
       "archetype1": "Bant Airbending",
       "archetype2": "Simic Ouroboroid",
-      "arch1_wins": 10,
+      "arch1_wins": 8,
       "arch2_wins": 4,
-      "arch1_games": 22,
-      "arch2_games": 16,
-      "total_matches": 14,
-      "arch1_win_rate": 0.7142857142857143,
-      "arch2_win_rate": 0.2857142857142857,
-      "arch1_game_win_rate": 0.5789473684210527,
-      "arch2_game_win_rate": 0.42105263157894735
+      "arch1_games": 18,
+      "arch2_games": 14,
+      "total_matches": 12,
+      "arch1_win_rate": 0.6666666666666666,
+      "arch2_win_rate": 0.3333333333333333,
+      "arch1_game_win_rate": 0.5625,
+      "arch2_game_win_rate": 0.4375
     },
     "Bant Airbending vs Temur Otters": {
       "archetype1": "Bant Airbending",
       "archetype2": "Temur Otters",
-      "arch1_wins": 10,
-      "arch2_wins": 22,
-      "arch1_games": 36,
-      "arch2_games": 52,
-      "total_matches": 32,
-      "arch1_win_rate": 0.3125,
-      "arch2_win_rate": 0.6875,
-      "arch1_game_win_rate": 0.4090909090909091,
-      "arch2_game_win_rate": 0.5909090909090909
+      "arch1_wins": 6,
+      "arch2_wins": 10,
+      "arch1_games": 20,
+      "arch2_games": 22,
+      "total_matches": 16,
+      "arch1_win_rate": 0.375,
+      "arch2_win_rate": 0.625,
+      "arch1_game_win_rate": 0.47619047619047616,
+      "arch2_game_win_rate": 0.5238095238095238
     },
     "Bant Airbending vs Izzet Lessons": {
       "archetype1": "Izzet Lessons",
       "archetype2": "Bant Airbending",
-      "arch1_wins": 38,
-      "arch2_wins": 10,
-      "arch1_games": 82,
-      "arch2_games": 46,
-      "total_matches": 48,
-      "arch1_win_rate": 0.7916666666666666,
-      "arch2_win_rate": 0.20833333333333334,
-      "arch1_game_win_rate": 0.640625,
-      "arch2_game_win_rate": 0.359375
+      "arch1_wins": 22,
+      "arch2_wins": 2,
+      "arch1_games": 46,
+      "arch2_games": 22,
+      "total_matches": 24,
+      "arch1_win_rate": 0.9166666666666666,
+      "arch2_win_rate": 0.08333333333333333,
+      "arch1_game_win_rate": 0.6764705882352942,
+      "arch2_game_win_rate": 0.3235294117647059
     },
     "Jeskai Artifacts vs Sultai Reanimator": {
       "archetype1": "Sultai Reanimator",
       "archetype2": "Jeskai Artifacts",
+      "arch1_wins": 2,
+      "arch2_wins": 2,
+      "arch1_games": 6,
+      "arch2_games": 4,
+      "total_matches": 4,
+      "arch1_win_rate": 0.5,
+      "arch2_win_rate": 0.5,
+      "arch1_game_win_rate": 0.6,
+      "arch2_game_win_rate": 0.4
+    },
+    "Izzet Prowess vs Temur Otters": {
+      "archetype1": "Temur Otters",
+      "archetype2": "Izzet Prowess",
+      "arch1_wins": 8,
+      "arch2_wins": 6,
+      "arch1_games": 18,
+      "arch2_games": 18,
+      "total_matches": 14,
+      "arch1_win_rate": 0.5714285714285714,
+      "arch2_win_rate": 0.42857142857142855,
+      "arch1_game_win_rate": 0.5,
+      "arch2_game_win_rate": 0.5
+    },
+    "Dimir Midrange vs Temur Otters": {
+      "archetype1": "Temur Otters",
+      "archetype2": "Dimir Midrange",
+      "arch1_wins": 2,
+      "arch2_wins": 0,
+      "arch1_games": 4,
+      "arch2_games": 0,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 1.0,
+      "arch2_game_win_rate": 0.0
+    },
+    "Golgari Ouroboroid vs Izzet Looting": {
+      "archetype1": "Golgari Ouroboroid",
+      "archetype2": "Izzet Looting",
+      "arch1_wins": 6,
+      "arch2_wins": 0,
+      "arch1_games": 12,
+      "arch2_games": 4,
+      "total_matches": 6,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.75,
+      "arch2_game_win_rate": 0.25
+    },
+    "Izzet Looting vs Jeskai Artifacts": {
+      "archetype1": "Jeskai Artifacts",
+      "archetype2": "Izzet Looting",
       "arch1_wins": 4,
       "arch2_wins": 2,
       "arch1_games": 10,
@@ -8762,79 +4872,27 @@
       "arch1_game_win_rate": 0.7142857142857143,
       "arch2_game_win_rate": 0.2857142857142857
     },
-    "Izzet Prowess vs Temur Otters": {
-      "archetype1": "Temur Otters",
-      "archetype2": "Izzet Prowess",
-      "arch1_wins": 16,
-      "arch2_wins": 12,
-      "arch1_games": 40,
-      "arch2_games": 34,
-      "total_matches": 28,
-      "arch1_win_rate": 0.5714285714285714,
-      "arch2_win_rate": 0.42857142857142855,
-      "arch1_game_win_rate": 0.5405405405405406,
-      "arch2_game_win_rate": 0.4594594594594595
-    },
-    "Dimir Midrange vs Temur Otters": {
-      "archetype1": "Temur Otters",
-      "archetype2": "Dimir Midrange",
-      "arch1_wins": 2,
-      "arch2_wins": 4,
-      "arch1_games": 6,
-      "arch2_games": 8,
-      "total_matches": 6,
-      "arch1_win_rate": 0.3333333333333333,
-      "arch2_win_rate": 0.6666666666666666,
-      "arch1_game_win_rate": 0.42857142857142855,
-      "arch2_game_win_rate": 0.5714285714285714
-    },
-    "Golgari Ouroboroid vs Izzet Looting": {
-      "archetype1": "Golgari Ouroboroid",
-      "archetype2": "Izzet Looting",
-      "arch1_wins": 10,
-      "arch2_wins": 2,
-      "arch1_games": 20,
-      "arch2_games": 10,
-      "total_matches": 12,
-      "arch1_win_rate": 0.8333333333333334,
-      "arch2_win_rate": 0.16666666666666666,
-      "arch1_game_win_rate": 0.6666666666666666,
-      "arch2_game_win_rate": 0.3333333333333333
-    },
-    "Izzet Looting vs Jeskai Artifacts": {
-      "archetype1": "Jeskai Artifacts",
-      "archetype2": "Izzet Looting",
-      "arch1_wins": 6,
-      "arch2_wins": 2,
-      "arch1_games": 14,
-      "arch2_games": 4,
-      "total_matches": 8,
-      "arch1_win_rate": 0.75,
-      "arch2_win_rate": 0.25,
-      "arch1_game_win_rate": 0.7777777777777778,
-      "arch2_game_win_rate": 0.2222222222222222
-    },
     "Izzet Lessons vs Jeskai Artifacts": {
       "archetype1": "Izzet Lessons",
       "archetype2": "Jeskai Artifacts",
-      "arch1_wins": 8,
-      "arch2_wins": 2,
-      "arch1_games": 16,
-      "arch2_games": 6,
-      "total_matches": 10,
-      "arch1_win_rate": 0.8,
-      "arch2_win_rate": 0.2,
-      "arch1_game_win_rate": 0.7272727272727273,
-      "arch2_game_win_rate": 0.2727272727272727
+      "arch1_wins": 6,
+      "arch2_wins": 0,
+      "arch1_games": 12,
+      "arch2_games": 2,
+      "total_matches": 6,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.8571428571428571,
+      "arch2_game_win_rate": 0.14285714285714285
     },
     "Izzet Prowess vs Sultai Reanimator": {
       "archetype1": "Izzet Prowess",
       "archetype2": "Sultai Reanimator",
-      "arch1_wins": 4,
-      "arch2_wins": 4,
-      "arch1_games": 12,
-      "arch2_games": 8,
-      "total_matches": 8,
+      "arch1_wins": 2,
+      "arch2_wins": 2,
+      "arch1_games": 6,
+      "arch2_games": 4,
+      "total_matches": 4,
       "arch1_win_rate": 0.5,
       "arch2_win_rate": 0.5,
       "arch1_game_win_rate": 0.6,
@@ -8843,15 +4901,15 @@
     "Izzet Lessons vs Izzet Prowess": {
       "archetype1": "Izzet Lessons",
       "archetype2": "Izzet Prowess",
-      "arch1_wins": 16,
-      "arch2_wins": 12,
-      "arch1_games": 36,
-      "arch2_games": 34,
-      "total_matches": 28,
-      "arch1_win_rate": 0.5714285714285714,
-      "arch2_win_rate": 0.42857142857142855,
-      "arch1_game_win_rate": 0.5142857142857142,
-      "arch2_game_win_rate": 0.4857142857142857
+      "arch1_wins": 10,
+      "arch2_wins": 6,
+      "arch1_games": 22,
+      "arch2_games": 20,
+      "total_matches": 16,
+      "arch1_win_rate": 0.625,
+      "arch2_win_rate": 0.375,
+      "arch1_game_win_rate": 0.5238095238095238,
+      "arch2_game_win_rate": 0.47619047619047616
     },
     "Golgari Ouroboroid vs Jeskai Artifacts": {
       "archetype1": "Jeskai Artifacts",
@@ -8869,54 +4927,54 @@
     "Simic Ouroboroid vs Temur Otters": {
       "archetype1": "Temur Otters",
       "archetype2": "Simic Ouroboroid",
-      "arch1_wins": 12,
-      "arch2_wins": 4,
-      "arch1_games": 26,
-      "arch2_games": 16,
-      "total_matches": 16,
-      "arch1_win_rate": 0.75,
-      "arch2_win_rate": 0.25,
-      "arch1_game_win_rate": 0.6190476190476191,
-      "arch2_game_win_rate": 0.38095238095238093
+      "arch1_wins": 8,
+      "arch2_wins": 0,
+      "arch1_games": 16,
+      "arch2_games": 6,
+      "total_matches": 8,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.7272727272727273,
+      "arch2_game_win_rate": 0.2727272727272727
     },
     "Mono-Red Aggro vs Simic Ouroboroid": {
       "archetype1": "Mono-Red Aggro",
       "archetype2": "Simic Ouroboroid",
       "arch1_wins": 2,
-      "arch2_wins": 2,
-      "arch1_games": 6,
-      "arch2_games": 6,
-      "total_matches": 4,
-      "arch1_win_rate": 0.5,
-      "arch2_win_rate": 0.5,
-      "arch1_game_win_rate": 0.5,
-      "arch2_game_win_rate": 0.5
+      "arch2_wins": 0,
+      "arch1_games": 4,
+      "arch2_games": 2,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.6666666666666666,
+      "arch2_game_win_rate": 0.3333333333333333
     },
     "Dimir Midrange vs Sultai Reanimator": {
       "archetype1": "Dimir Midrange",
       "archetype2": "Sultai Reanimator",
       "arch1_wins": 2,
-      "arch2_wins": 4,
-      "arch1_games": 8,
-      "arch2_games": 8,
-      "total_matches": 6,
-      "arch1_win_rate": 0.3333333333333333,
-      "arch2_win_rate": 0.6666666666666666,
-      "arch1_game_win_rate": 0.5,
-      "arch2_game_win_rate": 0.5
+      "arch2_wins": 2,
+      "arch1_games": 6,
+      "arch2_games": 4,
+      "total_matches": 4,
+      "arch1_win_rate": 0.5,
+      "arch2_win_rate": 0.5,
+      "arch1_game_win_rate": 0.6,
+      "arch2_game_win_rate": 0.4
     },
     "Golgari Ouroboroid vs Jeskai Control": {
       "archetype1": "Jeskai Control",
       "archetype2": "Golgari Ouroboroid",
       "arch1_wins": 2,
-      "arch2_wins": 4,
-      "arch1_games": 6,
-      "arch2_games": 8,
-      "total_matches": 6,
-      "arch1_win_rate": 0.3333333333333333,
-      "arch2_win_rate": 0.6666666666666666,
-      "arch1_game_win_rate": 0.42857142857142855,
-      "arch2_game_win_rate": 0.5714285714285714
+      "arch2_wins": 0,
+      "arch1_games": 4,
+      "arch2_games": 0,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 1.0,
+      "arch2_game_win_rate": 0.0
     },
     "Simic Otters vs Temur Otters": {
       "archetype1": "Temur Otters",
@@ -8948,83 +5006,187 @@
       "archetype1": "Golgari Ouroboroid",
       "archetype2": "Izzet Lessons",
       "arch1_wins": 8,
-      "arch2_wins": 12,
+      "arch2_wins": 6,
       "arch1_games": 20,
-      "arch2_games": 30,
-      "total_matches": 20,
-      "arch1_win_rate": 0.4,
-      "arch2_win_rate": 0.6,
-      "arch1_game_win_rate": 0.4,
-      "arch2_game_win_rate": 0.6
+      "arch2_games": 18,
+      "total_matches": 14,
+      "arch1_win_rate": 0.5714285714285714,
+      "arch2_win_rate": 0.42857142857142855,
+      "arch1_game_win_rate": 0.5263157894736842,
+      "arch2_game_win_rate": 0.47368421052631576
     },
     "Izzet Lessons vs Sultai Reanimator": {
       "archetype1": "Izzet Lessons",
       "archetype2": "Sultai Reanimator",
-      "arch1_wins": 6,
-      "arch2_wins": 4,
-      "arch1_games": 14,
-      "arch2_games": 12,
-      "total_matches": 10,
-      "arch1_win_rate": 0.6,
-      "arch2_win_rate": 0.4,
-      "arch1_game_win_rate": 0.5384615384615384,
-      "arch2_game_win_rate": 0.46153846153846156
+      "arch1_wins": 4,
+      "arch2_wins": 2,
+      "arch1_games": 10,
+      "arch2_games": 6,
+      "total_matches": 6,
+      "arch1_win_rate": 0.6666666666666666,
+      "arch2_win_rate": 0.3333333333333333,
+      "arch1_game_win_rate": 0.625,
+      "arch2_game_win_rate": 0.375
     },
     "Izzet Looting vs Mono-Red Aggro": {
       "archetype1": "Mono-Red Aggro",
       "archetype2": "Izzet Looting",
+      "arch1_wins": 2,
+      "arch2_wins": 4,
+      "arch1_games": 8,
+      "arch2_games": 8,
+      "total_matches": 6,
+      "arch1_win_rate": 0.3333333333333333,
+      "arch2_win_rate": 0.6666666666666666,
+      "arch1_game_win_rate": 0.5,
+      "arch2_game_win_rate": 0.5
+    },
+    "Izzet Looting vs Simic Ouroboroid": {
+      "archetype1": "Simic Ouroboroid",
+      "archetype2": "Izzet Looting",
+      "arch1_wins": 6,
+      "arch2_wins": 0,
+      "arch1_games": 12,
+      "arch2_games": 4,
+      "total_matches": 6,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.75,
+      "arch2_game_win_rate": 0.25
+    },
+    "Izzet Looting vs Izzet Prowess": {
+      "archetype1": "Izzet Looting",
+      "archetype2": "Izzet Prowess",
+      "arch1_wins": 4,
+      "arch2_wins": 0,
+      "arch1_games": 8,
+      "arch2_games": 2,
+      "total_matches": 4,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.8,
+      "arch2_game_win_rate": 0.2
+    },
+    "Bant Airbending vs Sultai Reanimator": {
+      "archetype1": "Sultai Reanimator",
+      "archetype2": "Bant Airbending",
       "arch1_wins": 4,
       "arch2_wins": 4,
-      "arch1_games": 12,
-      "arch2_games": 8,
+      "arch1_games": 8,
+      "arch2_games": 10,
       "total_matches": 8,
+      "arch1_win_rate": 0.5,
+      "arch2_win_rate": 0.5,
+      "arch1_game_win_rate": 0.4444444444444444,
+      "arch2_game_win_rate": 0.5555555555555556
+    },
+    "Golgari Dragons vs Izzet Lessons": {
+      "archetype1": "Golgari Dragons",
+      "archetype2": "Izzet Lessons",
+      "arch1_wins": 2,
+      "arch2_wins": 0,
+      "arch1_games": 4,
+      "arch2_games": 2,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.6666666666666666,
+      "arch2_game_win_rate": 0.3333333333333333
+    },
+    "Temur Otters vs Temur Otters": {
+      "archetype1": "Temur Otters",
+      "archetype2": "Temur Otters",
+      "arch1_wins": 8,
+      "arch2_wins": 8,
+      "arch1_games": 22,
+      "arch2_games": 22,
+      "total_matches": 16,
+      "arch1_win_rate": 0.5,
+      "arch2_win_rate": 0.5,
+      "arch1_game_win_rate": 0.5,
+      "arch2_game_win_rate": 0.5
+    },
+    "Izzet Lessons vs Izzet Looting": {
+      "archetype1": "Izzet Lessons",
+      "archetype2": "Izzet Looting",
+      "arch1_wins": 12,
+      "arch2_wins": 0,
+      "arch1_games": 24,
+      "arch2_games": 8,
+      "total_matches": 12,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.75,
+      "arch2_game_win_rate": 0.25
+    },
+    "Dimir Bounce vs Temur Otters": {
+      "archetype1": "Temur Otters",
+      "archetype2": "Dimir Bounce",
+      "arch1_wins": 2,
+      "arch2_wins": 2,
+      "arch1_games": 4,
+      "arch2_games": 4,
+      "total_matches": 4,
+      "arch1_win_rate": 0.5,
+      "arch2_win_rate": 0.5,
+      "arch1_game_win_rate": 0.5,
+      "arch2_game_win_rate": 0.5
+    },
+    "Bant Airbending vs Boros Mobilize": {
+      "archetype1": "Boros Mobilize",
+      "archetype2": "Bant Airbending",
+      "arch1_wins": 2,
+      "arch2_wins": 2,
+      "arch1_games": 6,
+      "arch2_games": 4,
+      "total_matches": 4,
       "arch1_win_rate": 0.5,
       "arch2_win_rate": 0.5,
       "arch1_game_win_rate": 0.6,
       "arch2_game_win_rate": 0.4
     },
-    "Izzet Looting vs Simic Ouroboroid": {
-      "archetype1": "Simic Ouroboroid",
-      "archetype2": "Izzet Looting",
-      "arch1_wins": 8,
-      "arch2_wins": 2,
-      "arch1_games": 18,
-      "arch2_games": 10,
-      "total_matches": 10,
-      "arch1_win_rate": 0.8,
-      "arch2_win_rate": 0.2,
-      "arch1_game_win_rate": 0.6428571428571429,
-      "arch2_game_win_rate": 0.35714285714285715
-    },
-    "Izzet Looting vs Izzet Prowess": {
-      "archetype1": "Izzet Looting",
-      "archetype2": "Izzet Prowess",
-      "arch1_wins": 8,
-      "arch2_wins": 4,
-      "arch1_games": 18,
-      "arch2_games": 12,
-      "total_matches": 12,
-      "arch1_win_rate": 0.6666666666666666,
-      "arch2_win_rate": 0.3333333333333333,
-      "arch1_game_win_rate": 0.6,
-      "arch2_game_win_rate": 0.4
-    },
-    "Bant Airbending vs Sultai Reanimator": {
-      "archetype1": "Sultai Reanimator",
+    "Bant Airbending vs Izzet Prowess": {
+      "archetype1": "Izzet Prowess",
       "archetype2": "Bant Airbending",
-      "arch1_wins": 10,
-      "arch2_wins": 8,
-      "arch1_games": 24,
-      "arch2_games": 22,
-      "total_matches": 18,
-      "arch1_win_rate": 0.5555555555555556,
-      "arch2_win_rate": 0.4444444444444444,
-      "arch1_game_win_rate": 0.5217391304347826,
-      "arch2_game_win_rate": 0.4782608695652174
+      "arch1_wins": 6,
+      "arch2_wins": 4,
+      "arch1_games": 16,
+      "arch2_games": 12,
+      "total_matches": 10,
+      "arch1_win_rate": 0.6,
+      "arch2_win_rate": 0.4,
+      "arch1_game_win_rate": 0.5714285714285714,
+      "arch2_game_win_rate": 0.42857142857142855
     },
-    "Golgari Dragons vs Izzet Lessons": {
-      "archetype1": "Golgari Dragons",
-      "archetype2": "Izzet Lessons",
+    "Dimir Bounce vs Izzet Looting": {
+      "archetype1": "Izzet Looting",
+      "archetype2": "Dimir Bounce",
+      "arch1_wins": 6,
+      "arch2_wins": 0,
+      "arch1_games": 12,
+      "arch2_games": 2,
+      "total_matches": 6,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.8571428571428571,
+      "arch2_game_win_rate": 0.14285714285714285
+    },
+    "Bant Airbending vs Bant Airbending": {
+      "archetype1": "Bant Airbending",
+      "archetype2": "Bant Airbending",
+      "arch1_wins": 4,
+      "arch2_wins": 4,
+      "arch1_games": 8,
+      "arch2_games": 8,
+      "total_matches": 8,
+      "arch1_win_rate": 0.5,
+      "arch2_win_rate": 0.5,
+      "arch1_game_win_rate": 0.5,
+      "arch2_game_win_rate": 0.5
+    },
+    "Jeskai Control vs Sultai Reanimator": {
+      "archetype1": "Sultai Reanimator",
+      "archetype2": "Jeskai Control",
       "arch1_wins": 2,
       "arch2_wins": 2,
       "arch1_games": 4,
@@ -9035,122 +5197,18 @@
       "arch1_game_win_rate": 0.4,
       "arch2_game_win_rate": 0.6
     },
-    "Temur Otters vs Temur Otters": {
-      "archetype1": "Temur Otters",
-      "archetype2": "Temur Otters",
-      "arch1_wins": 14,
-      "arch2_wins": 14,
-      "arch1_games": 37,
-      "arch2_games": 37,
-      "total_matches": 28,
-      "arch1_win_rate": 0.5,
-      "arch2_win_rate": 0.5,
-      "arch1_game_win_rate": 0.5,
-      "arch2_game_win_rate": 0.5
-    },
-    "Izzet Lessons vs Izzet Looting": {
-      "archetype1": "Izzet Lessons",
-      "archetype2": "Izzet Looting",
-      "arch1_wins": 20,
-      "arch2_wins": 4,
-      "arch1_games": 42,
-      "arch2_games": 20,
-      "total_matches": 24,
-      "arch1_win_rate": 0.8333333333333334,
-      "arch2_win_rate": 0.16666666666666666,
-      "arch1_game_win_rate": 0.6774193548387096,
-      "arch2_game_win_rate": 0.3225806451612903
-    },
-    "Dimir Bounce vs Temur Otters": {
-      "archetype1": "Temur Otters",
-      "archetype2": "Dimir Bounce",
-      "arch1_wins": 2,
-      "arch2_wins": 4,
-      "arch1_games": 6,
-      "arch2_games": 8,
-      "total_matches": 6,
-      "arch1_win_rate": 0.3333333333333333,
-      "arch2_win_rate": 0.6666666666666666,
-      "arch1_game_win_rate": 0.42857142857142855,
-      "arch2_game_win_rate": 0.5714285714285714
-    },
-    "Bant Airbending vs Boros Mobilize": {
-      "archetype1": "Boros Mobilize",
-      "archetype2": "Bant Airbending",
-      "arch1_wins": 4,
-      "arch2_wins": 2,
-      "arch1_games": 10,
-      "arch2_games": 4,
-      "total_matches": 6,
-      "arch1_win_rate": 0.6666666666666666,
-      "arch2_win_rate": 0.3333333333333333,
-      "arch1_game_win_rate": 0.7142857142857143,
-      "arch2_game_win_rate": 0.2857142857142857
-    },
-    "Bant Airbending vs Izzet Prowess": {
-      "archetype1": "Izzet Prowess",
-      "archetype2": "Bant Airbending",
-      "arch1_wins": 6,
-      "arch2_wins": 8,
-      "arch1_games": 18,
-      "arch2_games": 20,
-      "total_matches": 14,
-      "arch1_win_rate": 0.42857142857142855,
-      "arch2_win_rate": 0.5714285714285714,
-      "arch1_game_win_rate": 0.47368421052631576,
-      "arch2_game_win_rate": 0.5263157894736842
-    },
-    "Dimir Bounce vs Izzet Looting": {
-      "archetype1": "Izzet Looting",
-      "archetype2": "Dimir Bounce",
-      "arch1_wins": 8,
-      "arch2_wins": 0,
-      "arch1_games": 16,
-      "arch2_games": 4,
-      "total_matches": 8,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 0.8,
-      "arch2_game_win_rate": 0.2
-    },
-    "Bant Airbending vs Bant Airbending": {
-      "archetype1": "Bant Airbending",
-      "archetype2": "Bant Airbending",
-      "arch1_wins": 7,
-      "arch2_wins": 7,
-      "arch1_games": 15,
-      "arch2_games": 15,
-      "total_matches": 14,
-      "arch1_win_rate": 0.5,
-      "arch2_win_rate": 0.5,
-      "arch1_game_win_rate": 0.5,
-      "arch2_game_win_rate": 0.5
-    },
-    "Jeskai Control vs Sultai Reanimator": {
-      "archetype1": "Sultai Reanimator",
-      "archetype2": "Jeskai Control",
-      "arch1_wins": 6,
-      "arch2_wins": 4,
-      "arch1_games": 14,
-      "arch2_games": 14,
-      "total_matches": 10,
-      "arch1_win_rate": 0.6,
-      "arch2_win_rate": 0.4,
-      "arch1_game_win_rate": 0.5,
-      "arch2_game_win_rate": 0.5
-    },
     "Mono-Red Aggro vs Temur Otters": {
       "archetype1": "Mono-Red Aggro",
       "archetype2": "Temur Otters",
       "arch1_wins": 2,
-      "arch2_wins": 8,
-      "arch1_games": 6,
-      "arch2_games": 18,
-      "total_matches": 10,
-      "arch1_win_rate": 0.2,
-      "arch2_win_rate": 0.8,
-      "arch1_game_win_rate": 0.25,
-      "arch2_game_win_rate": 0.75
+      "arch2_wins": 2,
+      "arch1_games": 4,
+      "arch2_games": 6,
+      "total_matches": 4,
+      "arch1_win_rate": 0.5,
+      "arch2_win_rate": 0.5,
+      "arch1_game_win_rate": 0.4,
+      "arch2_game_win_rate": 0.6
     },
     "Boros Mobilize vs Izzet Prowess": {
       "archetype1": "Izzet Prowess",
@@ -9182,14 +5240,14 @@
       "archetype1": "Dimir Bounce",
       "archetype2": "Jeskai Control",
       "arch1_wins": 2,
-      "arch2_wins": 4,
-      "arch1_games": 8,
-      "arch2_games": 10,
-      "total_matches": 6,
-      "arch1_win_rate": 0.3333333333333333,
-      "arch2_win_rate": 0.6666666666666666,
-      "arch1_game_win_rate": 0.4444444444444444,
-      "arch2_game_win_rate": 0.5555555555555556
+      "arch2_wins": 0,
+      "arch1_games": 4,
+      "arch2_games": 0,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 1.0,
+      "arch2_game_win_rate": 0.0
     },
     "Dimir Midrange vs Izzet Looting": {
       "archetype1": "Izzet Looting",
@@ -9208,14 +5266,14 @@
       "archetype1": "Golgari Ouroboroid",
       "archetype2": "Temur Otters",
       "arch1_wins": 4,
-      "arch2_wins": 6,
-      "arch1_games": 14,
-      "arch2_games": 12,
-      "total_matches": 10,
-      "arch1_win_rate": 0.4,
-      "arch2_win_rate": 0.6,
-      "arch1_game_win_rate": 0.5384615384615384,
-      "arch2_game_win_rate": 0.46153846153846156
+      "arch2_wins": 0,
+      "arch1_games": 8,
+      "arch2_games": 0,
+      "total_matches": 4,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 1.0,
+      "arch2_game_win_rate": 0.0
     },
     "Dimir Bounce vs Sultai Reanimator": {
       "archetype1": "Sultai Reanimator",
@@ -9233,50 +5291,50 @@
     "Izzet Lessons vs Mono-Red Aggro": {
       "archetype1": "Mono-Red Aggro",
       "archetype2": "Izzet Lessons",
-      "arch1_wins": 6,
-      "arch2_wins": 4,
-      "arch1_games": 14,
-      "arch2_games": 10,
-      "total_matches": 10,
-      "arch1_win_rate": 0.6,
-      "arch2_win_rate": 0.4,
-      "arch1_game_win_rate": 0.5833333333333334,
-      "arch2_game_win_rate": 0.4166666666666667
+      "arch1_wins": 4,
+      "arch2_wins": 0,
+      "arch1_games": 8,
+      "arch2_games": 2,
+      "total_matches": 4,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.8,
+      "arch2_game_win_rate": 0.2
     },
     "Bant Airbending vs Mono-Red Aggro": {
       "archetype1": "Mono-Red Aggro",
       "archetype2": "Bant Airbending",
       "arch1_wins": 4,
-      "arch2_wins": 2,
+      "arch2_wins": 0,
       "arch1_games": 8,
-      "arch2_games": 6,
-      "total_matches": 6,
-      "arch1_win_rate": 0.6666666666666666,
-      "arch2_win_rate": 0.3333333333333333,
-      "arch1_game_win_rate": 0.5714285714285714,
-      "arch2_game_win_rate": 0.42857142857142855
+      "arch2_games": 2,
+      "total_matches": 4,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.8,
+      "arch2_game_win_rate": 0.2
     },
     "Jeskai Control vs Simic Otters": {
       "archetype1": "Jeskai Control",
       "archetype2": "Simic Otters",
       "arch1_wins": 2,
-      "arch2_wins": 4,
-      "arch1_games": 10,
-      "arch2_games": 12,
-      "total_matches": 6,
-      "arch1_win_rate": 0.3333333333333333,
-      "arch2_win_rate": 0.6666666666666666,
-      "arch1_game_win_rate": 0.45454545454545453,
-      "arch2_game_win_rate": 0.5454545454545454
+      "arch2_wins": 0,
+      "arch1_games": 6,
+      "arch2_games": 4,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.6,
+      "arch2_game_win_rate": 0.4
     },
     "Izzet Prowess vs Simic Ouroboroid": {
       "archetype1": "Izzet Prowess",
       "archetype2": "Simic Ouroboroid",
-      "arch1_wins": 6,
+      "arch1_wins": 4,
       "arch2_wins": 0,
-      "arch1_games": 12,
+      "arch1_games": 8,
       "arch2_games": 0,
-      "total_matches": 6,
+      "total_matches": 4,
       "arch1_win_rate": 1.0,
       "arch2_win_rate": 0.0,
       "arch1_game_win_rate": 1.0,
@@ -9285,28 +5343,28 @@
     "Izzet Looting vs Sultai Reanimator": {
       "archetype1": "Izzet Looting",
       "archetype2": "Sultai Reanimator",
-      "arch1_wins": 4,
-      "arch2_wins": 6,
-      "arch1_games": 12,
-      "arch2_games": 12,
-      "total_matches": 10,
-      "arch1_win_rate": 0.4,
-      "arch2_win_rate": 0.6,
-      "arch1_game_win_rate": 0.5,
-      "arch2_game_win_rate": 0.5
+      "arch1_wins": 2,
+      "arch2_wins": 0,
+      "arch1_games": 4,
+      "arch2_games": 0,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 1.0,
+      "arch2_game_win_rate": 0.0
     },
     "Izzet Lessons vs Simic Ouroboroid": {
       "archetype1": "Simic Ouroboroid",
       "archetype2": "Izzet Lessons",
-      "arch1_wins": 4,
-      "arch2_wins": 8,
-      "arch1_games": 12,
-      "arch2_games": 22,
-      "total_matches": 12,
+      "arch1_wins": 2,
+      "arch2_wins": 4,
+      "arch1_games": 6,
+      "arch2_games": 10,
+      "total_matches": 6,
       "arch1_win_rate": 0.3333333333333333,
       "arch2_win_rate": 0.6666666666666666,
-      "arch1_game_win_rate": 0.35294117647058826,
-      "arch2_game_win_rate": 0.6470588235294118
+      "arch1_game_win_rate": 0.375,
+      "arch2_game_win_rate": 0.625
     },
     "Golgari Dragons vs Orzhov Demons": {
       "archetype1": "Golgari Dragons",
@@ -9324,28 +5382,28 @@
     "Golgari Ouroboroid vs Izzet Prowess": {
       "archetype1": "Golgari Ouroboroid",
       "archetype2": "Izzet Prowess",
-      "arch1_wins": 6,
+      "arch1_wins": 4,
       "arch2_wins": 0,
-      "arch1_games": 12,
+      "arch1_games": 8,
       "arch2_games": 2,
-      "total_matches": 6,
+      "total_matches": 4,
       "arch1_win_rate": 1.0,
       "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 0.8571428571428571,
-      "arch2_game_win_rate": 0.14285714285714285
+      "arch1_game_win_rate": 0.8,
+      "arch2_game_win_rate": 0.2
     },
     "Izzet Prowess vs Jeskai Control": {
       "archetype1": "Izzet Prowess",
       "archetype2": "Jeskai Control",
       "arch1_wins": 4,
-      "arch2_wins": 2,
-      "arch1_games": 10,
-      "arch2_games": 6,
-      "total_matches": 6,
-      "arch1_win_rate": 0.6666666666666666,
-      "arch2_win_rate": 0.3333333333333333,
-      "arch1_game_win_rate": 0.625,
-      "arch2_game_win_rate": 0.375
+      "arch2_wins": 0,
+      "arch1_games": 8,
+      "arch2_games": 2,
+      "total_matches": 4,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.8,
+      "arch2_game_win_rate": 0.2
     },
     "Boros Mobilize vs Mono-Red Aggro": {
       "archetype1": "Mono-Red Aggro",
@@ -9360,44 +5418,31 @@
       "arch1_game_win_rate": 1.0,
       "arch2_game_win_rate": 0.0
     },
-    "Izzet Prowess vs Izzet Prowess": {
-      "archetype1": "Izzet Prowess",
-      "archetype2": "Izzet Prowess",
-      "arch1_wins": 1,
-      "arch2_wins": 1,
-      "arch1_games": 4,
-      "arch2_games": 4,
-      "total_matches": 2,
-      "arch1_win_rate": 0.5,
-      "arch2_win_rate": 0.5,
-      "arch1_game_win_rate": 0.5,
-      "arch2_game_win_rate": 0.5
-    },
     "Dimir Midrange vs Izzet Lessons": {
       "archetype1": "Izzet Lessons",
       "archetype2": "Dimir Midrange",
-      "arch1_wins": 8,
+      "arch1_wins": 6,
       "arch2_wins": 2,
-      "arch1_games": 18,
-      "arch2_games": 10,
-      "total_matches": 10,
-      "arch1_win_rate": 0.8,
-      "arch2_win_rate": 0.2,
-      "arch1_game_win_rate": 0.6428571428571429,
-      "arch2_game_win_rate": 0.35714285714285715
+      "arch1_games": 14,
+      "arch2_games": 8,
+      "total_matches": 8,
+      "arch1_win_rate": 0.75,
+      "arch2_win_rate": 0.25,
+      "arch1_game_win_rate": 0.6363636363636364,
+      "arch2_game_win_rate": 0.36363636363636365
     },
     "Bant Airbending vs Jeskai Artifacts": {
       "archetype1": "Bant Airbending",
       "archetype2": "Jeskai Artifacts",
-      "arch1_wins": 4,
-      "arch2_wins": 2,
-      "arch1_games": 8,
-      "arch2_games": 6,
-      "total_matches": 6,
-      "arch1_win_rate": 0.6666666666666666,
-      "arch2_win_rate": 0.3333333333333333,
-      "arch1_game_win_rate": 0.5714285714285714,
-      "arch2_game_win_rate": 0.42857142857142855
+      "arch1_wins": 2,
+      "arch2_wins": 0,
+      "arch1_games": 4,
+      "arch2_games": 0,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 1.0,
+      "arch2_game_win_rate": 0.0
     },
     "Golgari Dragons vs Simic Ouroboroid": {
       "archetype1": "Simic Ouroboroid",
@@ -9429,27 +5474,27 @@
       "archetype1": "Izzet Prowess",
       "archetype2": "Jeskai Artifacts",
       "arch1_wins": 2,
-      "arch2_wins": 2,
+      "arch2_wins": 0,
       "arch1_games": 4,
-      "arch2_games": 4,
-      "total_matches": 4,
-      "arch1_win_rate": 0.5,
-      "arch2_win_rate": 0.5,
-      "arch1_game_win_rate": 0.5,
-      "arch2_game_win_rate": 0.5
+      "arch2_games": 0,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 1.0,
+      "arch2_game_win_rate": 0.0
     },
     "Simic Ouroboroid vs Sultai Reanimator": {
       "archetype1": "Sultai Reanimator",
       "archetype2": "Simic Ouroboroid",
       "arch1_wins": 2,
-      "arch2_wins": 2,
-      "arch1_games": 6,
-      "arch2_games": 6,
-      "total_matches": 4,
-      "arch1_win_rate": 0.5,
-      "arch2_win_rate": 0.5,
-      "arch1_game_win_rate": 0.5,
-      "arch2_game_win_rate": 0.5
+      "arch2_wins": 0,
+      "arch1_games": 4,
+      "arch2_games": 2,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.6666666666666666,
+      "arch2_game_win_rate": 0.3333333333333333
     },
     "Golgari Dragons vs Jeskai Control": {
       "archetype1": "Jeskai Control",
@@ -9481,14 +5526,14 @@
       "archetype1": "Izzet Lessons",
       "archetype2": "Dimir Bounce",
       "arch1_wins": 2,
-      "arch2_wins": 4,
-      "arch1_games": 8,
-      "arch2_games": 8,
-      "total_matches": 6,
-      "arch1_win_rate": 0.3333333333333333,
-      "arch2_win_rate": 0.6666666666666666,
-      "arch1_game_win_rate": 0.5,
-      "arch2_game_win_rate": 0.5
+      "arch2_wins": 0,
+      "arch1_games": 4,
+      "arch2_games": 0,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 1.0,
+      "arch2_game_win_rate": 0.0
     },
     "Izzet Prowess vs Simic Otters": {
       "archetype1": "Simic Otters",
@@ -9507,227 +5552,6 @@
       "archetype1": "Simic Ouroboroid",
       "archetype2": "Dimir Bounce",
       "arch1_wins": 2,
-      "arch2_wins": 2,
-      "arch1_games": 6,
-      "arch2_games": 6,
-      "total_matches": 4,
-      "arch1_win_rate": 0.5,
-      "arch2_win_rate": 0.5,
-      "arch1_game_win_rate": 0.5,
-      "arch2_game_win_rate": 0.5
-    },
-    "Jeskai Artifacts vs Temur Otters": {
-      "archetype1": "Jeskai Artifacts",
-      "archetype2": "Temur Otters",
-      "arch1_wins": 2,
-      "arch2_wins": 8,
-      "arch1_games": 8,
-      "arch2_games": 18,
-      "total_matches": 10,
-      "arch1_win_rate": 0.2,
-      "arch2_win_rate": 0.8,
-      "arch1_game_win_rate": 0.3076923076923077,
-      "arch2_game_win_rate": 0.6923076923076923
-    },
-    "Golgari Dragons vs Temur Otters": {
-      "archetype1": "Temur Otters",
-      "archetype2": "Golgari Dragons",
-      "arch1_wins": 2,
-      "arch2_wins": 0,
-      "arch1_games": 4,
-      "arch2_games": 0,
-      "total_matches": 2,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 1.0,
-      "arch2_game_win_rate": 0.0
-    },
-    "Bant Airbending vs Simic Otters": {
-      "archetype1": "Simic Otters",
-      "archetype2": "Bant Airbending",
-      "arch1_wins": 2,
-      "arch2_wins": 0,
-      "arch1_games": 4,
-      "arch2_games": 0,
-      "total_matches": 2,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 1.0,
-      "arch2_game_win_rate": 0.0
-    },
-    "Orzhov Demons vs Temur Otters": {
-      "archetype1": "Orzhov Demons",
-      "archetype2": "Temur Otters",
-      "arch1_wins": 2,
-      "arch2_wins": 0,
-      "arch1_games": 4,
-      "arch2_games": 2,
-      "total_matches": 2,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 0.6666666666666666,
-      "arch2_game_win_rate": 0.3333333333333333
-    },
-    "Golgari Dragons vs Izzet Prowess": {
-      "archetype1": "Izzet Prowess",
-      "archetype2": "Golgari Dragons",
-      "arch1_wins": 2,
-      "arch2_wins": 0,
-      "arch1_games": 4,
-      "arch2_games": 2,
-      "total_matches": 2,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 0.6666666666666666,
-      "arch2_game_win_rate": 0.3333333333333333
-    },
-    "Boros Mobilize vs Simic Ouroboroid": {
-      "archetype1": "Simic Ouroboroid",
-      "archetype2": "Boros Mobilize",
-      "arch1_wins": 2,
-      "arch2_wins": 0,
-      "arch1_games": 4,
-      "arch2_games": 0,
-      "total_matches": 2,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 1.0,
-      "arch2_game_win_rate": 0.0
-    },
-    "Golgari Ouroboroid vs Golgari Ouroboroid": {
-      "archetype1": "Golgari Ouroboroid",
-      "archetype2": "Golgari Ouroboroid",
-      "arch1_wins": 1,
-      "arch2_wins": 1,
-      "arch1_games": 3,
-      "arch2_games": 3,
-      "total_matches": 2,
-      "arch1_win_rate": 0.5,
-      "arch2_win_rate": 0.5,
-      "arch1_game_win_rate": 0.5,
-      "arch2_game_win_rate": 0.5
-    },
-    "Dimir Midrange vs Izzet Prowess": {
-      "archetype1": "Dimir Midrange",
-      "archetype2": "Izzet Prowess",
-      "arch1_wins": 4,
-      "arch2_wins": 0,
-      "arch1_games": 8,
-      "arch2_games": 4,
-      "total_matches": 4,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 0.6666666666666666,
-      "arch2_game_win_rate": 0.3333333333333333
-    },
-    "Izzet Lessons vs Orzhov Demons": {
-      "archetype1": "Orzhov Demons",
-      "archetype2": "Izzet Lessons",
-      "arch1_wins": 2,
-      "arch2_wins": 2,
-      "arch1_games": 6,
-      "arch2_games": 6,
-      "total_matches": 4,
-      "arch1_win_rate": 0.5,
-      "arch2_win_rate": 0.5,
-      "arch1_game_win_rate": 0.5,
-      "arch2_game_win_rate": 0.5
-    },
-    "Izzet Lessons vs Simic Otters": {
-      "archetype1": "Simic Otters",
-      "archetype2": "Izzet Lessons",
-      "arch1_wins": 2,
-      "arch2_wins": 0,
-      "arch1_games": 4,
-      "arch2_games": 0,
-      "total_matches": 2,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 1.0,
-      "arch2_game_win_rate": 0.0
-    },
-    "Izzet Prowess vs Mono-Red Aggro": {
-      "archetype1": "Izzet Prowess",
-      "archetype2": "Mono-Red Aggro",
-      "arch1_wins": 2,
-      "arch2_wins": 0,
-      "arch1_games": 4,
-      "arch2_games": 2,
-      "total_matches": 2,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 0.6666666666666666,
-      "arch2_game_win_rate": 0.3333333333333333
-    },
-    "Boros Mobilize vs Izzet Looting": {
-      "archetype1": "Izzet Looting",
-      "archetype2": "Boros Mobilize",
-      "arch1_wins": 2,
-      "arch2_wins": 0,
-      "arch1_games": 4,
-      "arch2_games": 2,
-      "total_matches": 2,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 0.6666666666666666,
-      "arch2_game_win_rate": 0.3333333333333333
-    },
-    "Bant Airbending vs Golgari Ouroboroid": {
-      "archetype1": "Golgari Ouroboroid",
-      "archetype2": "Bant Airbending",
-      "arch1_wins": 2,
-      "arch2_wins": 0,
-      "arch1_games": 4,
-      "arch2_games": 2,
-      "total_matches": 2,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 0.6666666666666666,
-      "arch2_game_win_rate": 0.3333333333333333
-    },
-    "Dimir Midrange vs Simic Ouroboroid": {
-      "archetype1": "Simic Ouroboroid",
-      "archetype2": "Dimir Midrange",
-      "arch1_wins": 2,
-      "arch2_wins": 0,
-      "arch1_games": 4,
-      "arch2_games": 0,
-      "total_matches": 2,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 1.0,
-      "arch2_game_win_rate": 0.0
-    },
-    "Jeskai Artifacts vs Simic Ouroboroid": {
-      "archetype1": "Jeskai Artifacts",
-      "archetype2": "Simic Ouroboroid",
-      "arch1_wins": 2,
-      "arch2_wins": 0,
-      "arch1_games": 4,
-      "arch2_games": 0,
-      "total_matches": 2,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 1.0,
-      "arch2_game_win_rate": 0.0
-    },
-    "Golgari Dragons vs Sultai Reanimator": {
-      "archetype1": "Sultai Reanimator",
-      "archetype2": "Golgari Dragons",
-      "arch1_wins": 2,
-      "arch2_wins": 0,
-      "arch1_games": 4,
-      "arch2_games": 2,
-      "total_matches": 2,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 0.6666666666666666,
-      "arch2_game_win_rate": 0.3333333333333333
-    },
-    "Dimir Midrange vs Jeskai Control": {
-      "archetype1": "Jeskai Control",
-      "archetype2": "Dimir Midrange",
-      "arch1_wins": 2,
       "arch2_wins": 0,
       "arch1_games": 4,
       "arch2_games": 2,
@@ -9739,5 +5563,5 @@
     }
   },
   "total_players": 126,
-  "total_matches": 462
+  "total_matches": 522
 }
