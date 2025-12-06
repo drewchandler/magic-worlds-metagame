@@ -14,3 +14,4 @@ export function Card({ children, variant = 'default', className = '' }: CardProp
 
   return <div className={`${baseClasses} ${variantClasses[variant]} ${className}`}>{children}</div>
 }
+

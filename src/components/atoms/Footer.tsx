@@ -8,3 +8,4 @@ export function Footer({ children, className = '' }: FooterProps) {
     <footer className={`text-center py-5 text-gray-600 bg-gray-50 ${className}`}>{children}</footer>
   )
 }
+

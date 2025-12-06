@@ -18,3 +18,4 @@ export function Alert({ children, variant = 'error', className = '' }: AlertProp
     </div>
   )
 }
+

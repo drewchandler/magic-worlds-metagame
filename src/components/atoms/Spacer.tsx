@@ -8,3 +8,4 @@ export function Spacer({ minLength, className = '' }: SpacerProps) {
 
   return <div className={`flex-1 ${className}`} style={style} />
 }
+

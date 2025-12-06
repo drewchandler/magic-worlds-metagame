@@ -11,3 +11,4 @@ export function Divider({ orientation = 'horizontal', className = '' }: DividerP
 
   return <div className={`${orientationClasses[orientation]} ${className}`} />
 }
+

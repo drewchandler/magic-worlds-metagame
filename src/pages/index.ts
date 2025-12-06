@@ -4,3 +4,4 @@ export { ErrorPage } from './ErrorPage'
 export { ArchetypeDetailPage } from './ArchetypeDetailPage'
 export { PlayerDetailPage } from './PlayerDetailPage'
 export { CardDetailPage } from './CardDetailPage'
+
