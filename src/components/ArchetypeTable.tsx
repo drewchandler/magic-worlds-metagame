@@ -165,14 +165,14 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
                         {arch}
                       </Link>
                     </td>
-                    <td className="p-4">{archetypeCounts[arch] || 0}</td>
-                    <td className="p-4">{stats.wins}-{stats.losses}</td>
+                    <td className="p-4 text-gray-900">{archetypeCounts[arch] || 0}</td>
+                    <td className="p-4 text-gray-900">{stats.wins}-{stats.losses}</td>
                     <td className="p-4">
                       <span className={`font-bold ${getWinRateClass(winRate)}`}>
                         {(winRate * 100).toFixed(1)}%
                       </span>
                     </td>
-                    <td className="p-4">{stats.games_won}-{stats.games_lost}</td>
+                    <td className="p-4 text-gray-900">{stats.games_won}-{stats.games_lost}</td>
                     <td className="p-4">
                       <span className={`font-bold ${getWinRateClass(gameWinRate)}`}>
                         {(gameWinRate * 100).toFixed(1)}%
