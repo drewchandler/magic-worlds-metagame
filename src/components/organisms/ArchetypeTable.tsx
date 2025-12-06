@@ -1,12 +1,18 @@
 import { useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import type { AnalysisData, ArchetypeStats } from '../types'
+import type { AnalysisData, ArchetypeStats } from '@/types'
 
 interface ArchetypeTableProps {
   data: AnalysisData | null
 }
 
-type SortColumn = 'archetype' | 'players' | 'matchRecord' | 'matchWinRate' | 'gameRecord' | 'gameWinRate'
+type SortColumn =
+  | 'archetype'
+  | 'players'
+  | 'matchRecord'
+  | 'matchWinRate'
+  | 'gameRecord'
+  | 'gameWinRate'
 type SortDirection = 'asc' | 'desc'
 
 function ArchetypeTable({ data }: ArchetypeTableProps) {
@@ -14,14 +20,14 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
   const [sortColumn, setSortColumn] = useState<SortColumn>('matchWinRate')
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc')
 
-  const archetypeStats = data?.archetype_stats || {}
-  const archetypeCounts = data?.archetype_counts || {}
+  const archetypeStats = useMemo(() => data?.archetype_stats || {}, [data?.archetype_stats])
+  const archetypeCounts = useMemo(() => data?.archetype_counts || {}, [data?.archetype_counts])
 
   const sortedArchetypes = useMemo(() => {
     let sorted = Object.entries(archetypeStats)
-      .filter(([arch, stats]: [string, ArchetypeStats]) => stats.total_matches > 0)
-      .filter(([arch]: [string, ArchetypeStats]) => 
-        arch.toLowerCase().includes(searchTerm.toLowerCase())
+      .filter(([_arch, stats]: [string, ArchetypeStats]) => stats.total_matches > 0)
+      .filter(([_arch, _stats]: [string, ArchetypeStats]) =>
+        _arch.toLowerCase().includes(searchTerm.toLowerCase())
       ) as Array<[string, ArchetypeStats]>
 
     // Sort based on selected column
@@ -38,13 +44,13 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
           comparison = (archetypeCounts[archA] || 0) - (archetypeCounts[archB] || 0)
           break
         case 'matchRecord':
-          comparison = (statsA.wins - statsA.losses) - (statsB.wins - statsB.losses)
+          comparison = statsA.wins - statsA.losses - (statsB.wins - statsB.losses)
           break
         case 'matchWinRate':
           comparison = statsA.win_rate - statsB.win_rate
           break
         case 'gameRecord':
-          comparison = (statsA.games_won - statsA.games_lost) - (statsB.games_won - statsB.games_lost)
+          comparison = statsA.games_won - statsA.games_lost - (statsB.games_won - statsB.games_lost)
           break
         case 'gameWinRate':
           comparison = statsA.game_win_rate - statsB.game_win_rate
@@ -76,19 +82,21 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
 
   return (
     <div className="p-10">
-      <h2 className="text-3xl font-bold mb-5 text-slate-800 border-b-4 border-indigo-500 pb-3">Archetype Performance</h2>
+      <h2 className="text-3xl font-bold mb-5 text-slate-800 border-b-4 border-indigo-500 pb-3">
+        Archetype Performance
+      </h2>
       <input
         type="text"
         className="w-full p-4 text-base border-2 border-gray-300 rounded-xl mb-5 focus:outline-none focus:border-indigo-500 transition-colors text-gray-900"
         placeholder="Search archetypes..."
         value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
+        onChange={e => setSearchTerm(e.target.value)}
       />
       <div className="overflow-x-auto rounded-xl shadow-lg">
         <table className="w-full bg-white border-collapse">
           <thead>
             <tr className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-              <th 
+              <th
                 className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'archetype' ? 'bg-indigo-600' : ''}`}
                 onClick={() => handleSort('archetype')}
               >
@@ -97,7 +105,7 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
                   <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 )}
               </th>
-              <th 
+              <th
                 className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'players' ? 'bg-indigo-600' : ''}`}
                 onClick={() => handleSort('players')}
               >
@@ -106,7 +114,7 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
                   <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 )}
               </th>
-              <th 
+              <th
                 className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'matchRecord' ? 'bg-indigo-600' : ''}`}
                 onClick={() => handleSort('matchRecord')}
               >
@@ -115,7 +123,7 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
                   <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 )}
               </th>
-              <th 
+              <th
                 className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'matchWinRate' ? 'bg-indigo-600' : ''}`}
                 onClick={() => handleSort('matchWinRate')}
               >
@@ -124,7 +132,7 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
                   <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 )}
               </th>
-              <th 
+              <th
                 className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'gameRecord' ? 'bg-indigo-600' : ''}`}
                 onClick={() => handleSort('gameRecord')}
               >
@@ -133,7 +141,7 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
                   <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 )}
               </th>
-              <th 
+              <th
                 className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'gameWinRate' ? 'bg-indigo-600' : ''}`}
                 onClick={() => handleSort('gameWinRate')}
               >
@@ -148,7 +156,9 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
             {sortedArchetypes.length === 0 ? (
               <tr>
                 <td colSpan={6} className="text-center py-10 text-gray-500">
-                  {searchTerm ? 'No archetypes found matching your search' : 'No archetype data available'}
+                  {searchTerm
+                    ? 'No archetypes found matching your search'
+                    : 'No archetype data available'}
                 </td>
               </tr>
             ) : (
@@ -158,8 +168,8 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
                 return (
                   <tr key={arch} className="hover:bg-gray-50 transition-colors">
                     <td className="p-4">
-                      <Link 
-                        to={`/archetype/${encodeURIComponent(arch)}`} 
+                      <Link
+                        to={`/archetype/${encodeURIComponent(arch)}`}
                         className="text-gray-900 font-semibold hover:text-indigo-600 hover:underline transition-colors"
                       >
                         {arch}
@@ -169,15 +179,16 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
                     <td className="p-4 text-gray-900">
                       {stats.draws && stats.draws > 0
                         ? `${stats.wins}-${stats.losses}-${stats.draws}`
-                        : `${stats.wins}-${stats.losses}`
-                      }
+                        : `${stats.wins}-${stats.losses}`}
                     </td>
                     <td className="p-4">
                       <span className={`font-bold ${getWinRateClass(winRate)}`}>
                         {(winRate * 100).toFixed(1)}%
                       </span>
                     </td>
-                    <td className="p-4 text-gray-900">{stats.games_won}-{stats.games_lost}</td>
+                    <td className="p-4 text-gray-900">
+                      {stats.games_won}-{stats.games_lost}
+                    </td>
                     <td className="p-4">
                       <span className={`font-bold ${getWinRateClass(gameWinRate)}`}>
                         {(gameWinRate * 100).toFixed(1)}%

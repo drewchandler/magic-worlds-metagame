@@ -1,16 +1,61 @@
-import { useState, useEffect } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
-import StatsGrid from './components/StatsGrid'
-import ArchetypeTable from './components/ArchetypeTable'
-import MatchupGrid from './components/MatchupGrid'
-import ArchetypeDetail from './components/ArchetypeDetail'
-import PlayerDetail from './components/PlayerDetail'
-import CardTable from './components/CardTable'
-import CardDetail from './components/CardDetail'
-import Loading from './components/Loading'
-import Error from './components/Error'
-import type { AnalysisData } from './types'
+import { createContext, useContext, useEffect, useState } from 'react'
+import { createBrowserRouter, RouterProvider, ScrollRestoration, Outlet } from 'react-router-dom'
+
+import { ArchetypeDetailPage } from '@pages/ArchetypeDetailPage'
+import { CardDetailPage } from '@pages/CardDetailPage'
+import { DashboardPage } from '@pages/DashboardPage'
+import { ErrorPage } from '@pages/ErrorPage'
+import { LoadingPage } from '@pages/LoadingPage'
+import { PlayerDetailPage } from '@pages/PlayerDetailPage'
+import type { AnalysisData } from '@/types'
+
+// Create context for sharing data across routes
+const DataContext = createContext<AnalysisData | null>(null)
+
+export function useData() {
+  return useContext(DataContext)
+}
+
+function RootLayout() {
+  return (
+    <>
+      <Outlet />
+      <ScrollRestoration
+        getKey={location => {
+          // Preserve scroll position for back/forward navigation
+          return location.key
+        }}
+      />
+    </>
+  )
+}
+
+// Create router once - static configuration
+// Data will be provided via Context
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <RootLayout />,
+    children: [
+      {
+        index: true,
+        element: <DashboardPage />,
+      },
+      {
+        path: 'archetype/:archetypeName',
+        element: <ArchetypeDetailPage />,
+      },
+      {
+        path: 'player/:playerName',
+        element: <PlayerDetailPage />,
+      },
+      {
+        path: 'card/:cardName',
+        element: <CardDetailPage />,
+      },
+    ],
+  },
+])
 
 function AppContent() {
   const [data, setData] = useState<AnalysisData | null>(null)
@@ -23,7 +68,9 @@ function AppContent() {
       setError(null)
       const response = await fetch('/analysis.json')
       if (!response.ok) {
-        throw new Error('Failed to load analysis data. Make sure you\'ve run the spider and analysis scripts first.')
+        throw new Error(
+          "Failed to load analysis data. Make sure you've run the spider and analysis scripts first."
+        )
       }
       const analysisData: AnalysisData = await response.json()
       setData(analysisData)
@@ -42,53 +89,23 @@ function AppContent() {
   }, [])
 
   if (loading) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600 p-5">
-        <Header />
-        <Loading />
-      </div>
-    )
+    return <LoadingPage />
   }
 
   if (error) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600 p-5">
-        <Header />
-        <Error message={error} onRetry={loadData} />
-      </div>
-    )
+    return <ErrorPage message={error} onRetry={loadData} />
   }
 
+  // Provide data via Context, router is static and created once
   return (
-    <Routes>
-      <Route path="/" element={
-        <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600 p-5">
-          <Header />
-          <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
-            <StatsGrid data={data} />
-            <ArchetypeTable data={data} />
-            <MatchupGrid data={data} />
-            <CardTable data={data} />
-            <footer className="text-center py-5 text-gray-600 bg-gray-50">
-              <p>Data from <a href="https://magic.gg/events/magic-world-championship-31" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">magic.gg</a></p>
-              <p className="mt-2">Last updated: {new Date().toLocaleString()}</p>
-            </footer>
-          </div>
-        </div>
-      } />
-      <Route path="/archetype/:archetypeName" element={<ArchetypeDetail data={data} />} />
-      <Route path="/player/:playerName" element={<PlayerDetail data={data} />} />
-      <Route path="/card/:cardName" element={<CardDetail data={data} />} />
-    </Routes>
+    <DataContext.Provider value={data}>
+      <RouterProvider router={router} />
+    </DataContext.Provider>
   )
 }
 
 function App() {
-  return (
-    <BrowserRouter>
-      <AppContent />
-    </BrowserRouter>
-  )
+  return <AppContent />
 }
 
 export default App

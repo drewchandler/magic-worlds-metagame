@@ -1,7 +1,8 @@
-import { useParams, Link } from 'react-router-dom'
-import CardTooltip from './CardTooltip'
 import { useState, useEffect, useMemo } from 'react'
-import type { AnalysisData } from '../types'
+import { Link, useParams } from 'react-router-dom'
+
+import CardTooltip from '@molecules/CardTooltip'
+import type { AnalysisData } from '@/types'
 
 interface ArchetypeDetailProps {
   data: AnalysisData | null
@@ -46,15 +47,20 @@ interface CardStats {
 }
 
 type SortColumn = 'player' | 'matchRecord' | 'winRate' | 'gameRecord' | 'gameWinRate' | 'matches'
-type CardSortColumn = 'name' | 'mainDeckAverage' | 'sideboardAverage' | 'mainDeckPercentage' | 'sideboardPercentage'
+type CardSortColumn =
+  | 'name'
+  | 'mainDeckAverage'
+  | 'sideboardAverage'
+  | 'mainDeckPercentage'
+  | 'sideboardPercentage'
 type SortDirection = 'asc' | 'desc'
 
 // Normalize player name for matching - handles both 'First Last' and 'Last, First' formats
 function normalizePlayerName(name: string): string {
   if (!name) return ''
-  
+
   name = name.trim()
-  
+
   // If it's in "Last, First" format, convert to "First Last"
   if (name.includes(',')) {
     const parts = name.split(',').map(p => p.trim())
@@ -62,7 +68,7 @@ function normalizePlayerName(name: string): string {
       name = `${parts[1]} ${parts[0]}`
     }
   }
-  
+
   // Normalize to lowercase and remove extra spaces
   return name.toLowerCase().split(/\s+/).join(' ')
 }
@@ -75,7 +81,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
   const [results, setResults] = useState<MatchResult[]>([])
   const [sortColumn, setSortColumn] = useState<SortColumn>('winRate')
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc')
-  const [cardSortColumn, setCardSortColumn] = useState<CardSortColumn>('averageCopies')
+  const [cardSortColumn, setCardSortColumn] = useState<CardSortColumn>('mainDeckAverage')
   const [cardSortDirection, setCardSortDirection] = useState<SortDirection>('desc')
 
   useEffect(() => {
@@ -122,7 +128,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
         draws: 0,
         gamesWon: 0,
         gamesLost: 0,
-        totalMatches: 0
+        totalMatches: 0,
       })
     })
 
@@ -130,7 +136,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
     results.forEach((match: MatchResult) => {
       const p1Normalized = normalizePlayerName(match.player1)
       const p2Normalized = normalizePlayerName(match.player2)
-      
+
       const p1Stats = statsMap.get(p1Normalized)
       const p2Stats = statsMap.get(p2Normalized)
 
@@ -174,21 +180,25 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
           comparison = a.player.localeCompare(b.player)
           break
         case 'matchRecord':
-          comparison = (a.wins - a.losses) - (b.wins - b.losses)
+          comparison = a.wins - a.losses - (b.wins - b.losses)
           break
-        case 'winRate':
+        case 'winRate': {
           const aRate = a.wins + a.losses > 0 ? a.wins / (a.wins + a.losses) : 0
           const bRate = b.wins + b.losses > 0 ? b.wins / (b.wins + b.losses) : 0
           comparison = aRate - bRate
           break
+        }
         case 'gameRecord':
-          comparison = (a.gamesWon - a.gamesLost) - (b.gamesWon - b.gamesLost)
+          comparison = a.gamesWon - a.gamesLost - (b.gamesWon - b.gamesLost)
           break
-        case 'gameWinRate':
-          const aGameRate = a.gamesWon + a.gamesLost > 0 ? a.gamesWon / (a.gamesWon + a.gamesLost) : 0
-          const bGameRate = b.gamesWon + b.gamesLost > 0 ? b.gamesWon / (b.gamesWon + b.gamesLost) : 0
+        case 'gameWinRate': {
+          const aGameRate =
+            a.gamesWon + a.gamesLost > 0 ? a.gamesWon / (a.gamesWon + a.gamesLost) : 0
+          const bGameRate =
+            b.gamesWon + b.gamesLost > 0 ? b.gamesWon / (b.gamesWon + b.gamesLost) : 0
           comparison = aGameRate - bGameRate
           break
+        }
         case 'matches':
           comparison = a.totalMatches - b.totalMatches
           break
@@ -217,12 +227,15 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
 
   // Calculate card statistics
   const cardStats = useMemo(() => {
-    const cardMap = new Map<string, {
-      mainDeckTotal: number
-      mainDeckDecksIncluded: number
-      sideboardTotal: number
-      sideboardDecksIncluded: number
-    }>()
+    const cardMap = new Map<
+      string,
+      {
+        mainDeckTotal: number
+        mainDeckDecksIncluded: number
+        sideboardTotal: number
+        sideboardDecksIncluded: number
+      }
+    >()
     const totalDecks = decklists.length
 
     decklists.forEach(decklist => {
@@ -233,7 +246,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
             mainDeckTotal: 0,
             mainDeckDecksIncluded: 0,
             sideboardTotal: 0,
-            sideboardDecksIncluded: 0
+            sideboardDecksIncluded: 0,
           }
           existing.mainDeckTotal += card.count
           existing.mainDeckDecksIncluded += 1
@@ -248,7 +261,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
             mainDeckTotal: 0,
             mainDeckDecksIncluded: 0,
             sideboardTotal: 0,
-            sideboardDecksIncluded: 0
+            sideboardDecksIncluded: 0,
           }
           existing.sideboardTotal += card.count
           existing.sideboardDecksIncluded += 1
@@ -258,7 +271,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
     })
 
     const stats: CardStats[] = []
-    
+
     cardMap.forEach((stat, name) => {
       stats.push({
         name,
@@ -269,7 +282,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
         sideboardTotal: stat.sideboardTotal,
         sideboardAverage: stat.sideboardTotal / totalDecks,
         sideboardDecksIncluded: stat.sideboardDecksIncluded,
-        sideboardPercentage: (stat.sideboardDecksIncluded / totalDecks) * 100
+        sideboardPercentage: (stat.sideboardDecksIncluded / totalDecks) * 100,
       })
     })
 
@@ -328,14 +341,19 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
     <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600 p-5">
       <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
         <div className="bg-gradient-to-r from-slate-800 to-blue-800 text-white p-10 rounded-t-3xl">
-          <Link to="/" className="text-white opacity-90 hover:opacity-100 hover:underline inline-block mb-3">
+          <Link
+            to="/"
+            className="text-white opacity-90 hover:opacity-100 hover:underline inline-block mb-3"
+          >
             ← Back to Dashboard
           </Link>
           <h1 className="text-4xl font-bold mb-3">{decodedName}</h1>
         </div>
 
         <div className="p-10 border-b border-gray-200">
-          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">Statistics</h2>
+          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">
+            Statistics
+          </h2>
           {archetypeStats ? (
             <div className="grid grid-cols-2 md:grid-cols-5 gap-5 mt-5">
               <div className="bg-gray-50 p-5 rounded-xl text-center">
@@ -346,21 +364,26 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                 <div className="text-3xl font-bold text-indigo-600 mb-2">
                   {archetypeStats.draws && archetypeStats.draws > 0
                     ? `${archetypeStats.wins}-${archetypeStats.losses}-${archetypeStats.draws}`
-                    : `${archetypeStats.wins}-${archetypeStats.losses}`
-                  }
+                    : `${archetypeStats.wins}-${archetypeStats.losses}`}
                 </div>
                 <div className="text-gray-600 text-sm uppercase tracking-wider">Match Record</div>
               </div>
               <div className="bg-gray-50 p-5 rounded-xl text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">{(archetypeStats.win_rate * 100).toFixed(1)}%</div>
+                <div className="text-3xl font-bold text-indigo-600 mb-2">
+                  {(archetypeStats.win_rate * 100).toFixed(1)}%
+                </div>
                 <div className="text-gray-600 text-sm uppercase tracking-wider">Match Win Rate</div>
               </div>
               <div className="bg-gray-50 p-5 rounded-xl text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">{archetypeStats.games_won}-{archetypeStats.games_lost}</div>
+                <div className="text-3xl font-bold text-indigo-600 mb-2">
+                  {archetypeStats.games_won}-{archetypeStats.games_lost}
+                </div>
                 <div className="text-gray-600 text-sm uppercase tracking-wider">Game Record</div>
               </div>
               <div className="bg-gray-50 p-5 rounded-xl text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">{(archetypeStats.game_win_rate * 100).toFixed(1)}%</div>
+                <div className="text-3xl font-bold text-indigo-600 mb-2">
+                  {(archetypeStats.game_win_rate * 100).toFixed(1)}%
+                </div>
                 <div className="text-gray-600 text-sm uppercase tracking-wider">Game Win Rate</div>
               </div>
             </div>
@@ -370,12 +393,14 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
         </div>
 
         <div className="p-10">
-          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">Players ({sortedPlayerStats.length})</h2>
+          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">
+            Players ({sortedPlayerStats.length})
+          </h2>
           <div className="overflow-x-auto rounded-xl shadow-lg mt-5">
             <table className="w-full bg-white border-collapse">
               <thead>
                 <tr className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-                  <th 
+                  <th
                     className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'player' ? 'bg-indigo-600' : ''}`}
                     onClick={() => handleSort('player')}
                   >
@@ -384,7 +409,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                       <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                     )}
                   </th>
-                  <th 
+                  <th
                     className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'matchRecord' ? 'bg-indigo-600' : ''}`}
                     onClick={() => handleSort('matchRecord')}
                   >
@@ -393,7 +418,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                       <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                     )}
                   </th>
-                  <th 
+                  <th
                     className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'winRate' ? 'bg-indigo-600' : ''}`}
                     onClick={() => handleSort('winRate')}
                   >
@@ -402,7 +427,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                       <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                     )}
                   </th>
-                  <th 
+                  <th
                     className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'gameRecord' ? 'bg-indigo-600' : ''}`}
                     onClick={() => handleSort('gameRecord')}
                   >
@@ -411,7 +436,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                       <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                     )}
                   </th>
-                  <th 
+                  <th
                     className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'gameWinRate' ? 'bg-indigo-600' : ''}`}
                     onClick={() => handleSort('gameWinRate')}
                   >
@@ -420,7 +445,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                       <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                     )}
                   </th>
-                  <th 
+                  <th
                     className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'matches' ? 'bg-indigo-600' : ''}`}
                     onClick={() => handleSort('matches')}
                   >
@@ -439,36 +464,39 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                     </td>
                   </tr>
                 ) : (
-                  sortedPlayerStats.map((playerStat) => {
-                    const winRate = playerStat.wins + playerStat.losses > 0
-                      ? playerStat.wins / (playerStat.wins + playerStat.losses)
-                      : 0
-                    const gameWinRate = playerStat.gamesWon + playerStat.gamesLost > 0
-                      ? playerStat.gamesWon / (playerStat.gamesWon + playerStat.gamesLost)
-                      : 0
+                  sortedPlayerStats.map(playerStat => {
+                    const winRate =
+                      playerStat.wins + playerStat.losses > 0
+                        ? playerStat.wins / (playerStat.wins + playerStat.losses)
+                        : 0
+                    const gameWinRate =
+                      playerStat.gamesWon + playerStat.gamesLost > 0
+                        ? playerStat.gamesWon / (playerStat.gamesWon + playerStat.gamesLost)
+                        : 0
 
                     return (
                       <tr key={playerStat.player} className="hover:bg-gray-50 transition-colors">
                         <td className="p-4">
-                          <Link 
-                            to={`/player/${encodeURIComponent(playerStat.player)}`} 
+                          <Link
+                            to={`/player/${encodeURIComponent(playerStat.player)}`}
                             className="text-indigo-600 hover:text-indigo-800 hover:underline font-medium"
                           >
                             {playerStat.player}
                           </Link>
                         </td>
                         <td className="p-4">
-                          {playerStat.draws > 0 
+                          {playerStat.draws > 0
                             ? `${playerStat.wins}-${playerStat.losses}-${playerStat.draws}`
-                            : `${playerStat.wins}-${playerStat.losses}`
-                          }
+                            : `${playerStat.wins}-${playerStat.losses}`}
                         </td>
                         <td className="p-4">
                           <span className={`font-bold ${getWinRateClass(winRate)}`}>
                             {(winRate * 100).toFixed(1)}%
                           </span>
                         </td>
-                        <td className="p-4">{playerStat.gamesWon}-{playerStat.gamesLost}</td>
+                        <td className="p-4">
+                          {playerStat.gamesWon}-{playerStat.gamesLost}
+                        </td>
                         <td className="p-4">
                           <span className={`font-bold ${getWinRateClass(gameWinRate)}`}>
                             {(gameWinRate * 100).toFixed(1)}%
@@ -486,12 +514,14 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
 
         {decklists.length > 0 && (
           <div className="p-10 border-t border-gray-200">
-            <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">Card Breakdown</h2>
+            <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">
+              Card Breakdown
+            </h2>
             <div className="mt-5 overflow-x-auto rounded-xl shadow-lg">
               <table className="w-full bg-white border-collapse">
                 <thead>
                   <tr className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-                    <th 
+                    <th
                       className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${cardSortColumn === 'name' ? 'bg-indigo-600' : ''}`}
                       onClick={() => handleCardSort('name')}
                     >
@@ -500,7 +530,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                         <span className="ml-2">{cardSortDirection === 'asc' ? '↑' : '↓'}</span>
                       )}
                     </th>
-                    <th 
+                    <th
                       className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${cardSortColumn === 'mainDeckAverage' ? 'bg-indigo-600' : ''}`}
                       onClick={() => handleCardSort('mainDeckAverage')}
                     >
@@ -509,7 +539,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                         <span className="ml-2">{cardSortDirection === 'asc' ? '↑' : '↓'}</span>
                       )}
                     </th>
-                    <th 
+                    <th
                       className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${cardSortColumn === 'mainDeckPercentage' ? 'bg-indigo-600' : ''}`}
                       onClick={() => handleCardSort('mainDeckPercentage')}
                     >
@@ -518,7 +548,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                         <span className="ml-2">{cardSortDirection === 'asc' ? '↑' : '↓'}</span>
                       )}
                     </th>
-                    <th 
+                    <th
                       className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${cardSortColumn === 'sideboardAverage' ? 'bg-indigo-600' : ''}`}
                       onClick={() => handleCardSort('sideboardAverage')}
                     >
@@ -527,7 +557,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                         <span className="ml-2">{cardSortDirection === 'asc' ? '↑' : '↓'}</span>
                       )}
                     </th>
-                    <th 
+                    <th
                       className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${cardSortColumn === 'sideboardPercentage' ? 'bg-indigo-600' : ''}`}
                       onClick={() => handleCardSort('sideboardPercentage')}
                     >
@@ -547,26 +577,35 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                     </tr>
                   ) : (
                     sortedCardStats.map((cardStat, idx) => (
-                      <tr key={`${cardStat.name}-${idx}`} className="hover:bg-gray-50 transition-colors">
+                      <tr
+                        key={`${cardStat.name}-${idx}`}
+                        className="hover:bg-gray-50 transition-colors"
+                      >
                         <td className="p-4">
-                          <Link 
-                            to={`/card/${encodeURIComponent(cardStat.name)}`} 
+                          <Link
+                            to={`/card/${encodeURIComponent(cardStat.name)}`}
                             className="text-indigo-600 hover:text-indigo-800 hover:underline font-medium"
                           >
-                            {cardStat.name}
+                            <CardTooltip cardName={cardStat.name}>{cardStat.name}</CardTooltip>
                           </Link>
                         </td>
                         <td className="p-4 text-gray-900">
                           {cardStat.mainDeckAverage > 0 ? cardStat.mainDeckAverage.toFixed(1) : '—'}
                         </td>
                         <td className="p-4 text-gray-900">
-                          {cardStat.mainDeckPercentage > 0 ? `${cardStat.mainDeckPercentage.toFixed(1)}%` : '—'}
+                          {cardStat.mainDeckPercentage > 0
+                            ? `${cardStat.mainDeckPercentage.toFixed(1)}%`
+                            : '—'}
                         </td>
                         <td className="p-4 text-gray-900">
-                          {cardStat.sideboardAverage > 0 ? cardStat.sideboardAverage.toFixed(1) : '—'}
+                          {cardStat.sideboardAverage > 0
+                            ? cardStat.sideboardAverage.toFixed(1)
+                            : '—'}
                         </td>
                         <td className="p-4 text-gray-900">
-                          {cardStat.sideboardPercentage > 0 ? `${cardStat.sideboardPercentage.toFixed(1)}%` : '—'}
+                          {cardStat.sideboardPercentage > 0
+                            ? `${cardStat.sideboardPercentage.toFixed(1)}%`
+                            : '—'}
                         </td>
                       </tr>
                     ))

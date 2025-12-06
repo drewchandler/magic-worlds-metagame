@@ -41,5 +41,3 @@ export interface AnalysisData {
   total_players: number
   total_matches: number
 }
-
-

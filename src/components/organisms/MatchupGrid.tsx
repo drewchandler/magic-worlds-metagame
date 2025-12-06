@@ -1,14 +1,14 @@
 import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import type { AnalysisData, MatchupStats } from '../types'
+import type { AnalysisData, MatchupStats } from '@/types'
 
 interface MatchupGridProps {
   data: AnalysisData | null
 }
 
 function MatchupGrid({ data }: MatchupGridProps) {
-  const matchupStats = data?.matchup_stats || {}
-  const archetypeCounts = data?.archetype_counts || {}
+  const matchupStats = useMemo(() => data?.matchup_stats || {}, [data?.matchup_stats])
+  const archetypeCounts = useMemo(() => data?.archetype_counts || {}, [data?.archetype_counts])
 
   // Get all unique archetypes, sorted
   const archetypes = useMemo(() => {
@@ -54,8 +54,12 @@ function MatchupGrid({ data }: MatchupGridProps) {
 
   return (
     <div className="p-10">
-      <h2 className="text-3xl font-bold mb-5 text-slate-800 border-b-4 border-indigo-500 pb-3">Matchup Grid</h2>
-      <p className="text-gray-600 text-sm italic mb-5">Win rates shown from the row archetype's perspective. Mirror matches are excluded.</p>
+      <h2 className="text-3xl font-bold mb-5 text-slate-800 border-b-4 border-indigo-500 pb-3">
+        Matchup Grid
+      </h2>
+      <p className="text-gray-600 text-sm italic mb-5">
+        Win rates shown from the row archetype&apos;s perspective. Mirror matches are excluded.
+      </p>
       <div className="overflow-auto rounded-xl shadow-lg max-h-[600px]">
         <table className="w-full bg-white border-collapse min-w-[800px]">
           <thead className="sticky top-0 z-20">
@@ -64,9 +68,18 @@ function MatchupGrid({ data }: MatchupGridProps) {
                 Archetype
               </th>
               {archetypes.map(arch => (
-                <th key={arch} className="p-3 text-center font-semibold text-xs uppercase tracking-wider">
-                  <Link to={`/archetype/${encodeURIComponent(arch)}`} className="text-white hover:opacity-90 hover:underline block">
-                    <div className="max-w-[30px] overflow-hidden text-ellipsis whitespace-nowrap mx-auto" style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}>
+                <th
+                  key={arch}
+                  className="p-3 text-center font-semibold text-xs uppercase tracking-wider"
+                >
+                  <Link
+                    to={`/archetype/${encodeURIComponent(arch)}`}
+                    className="text-white hover:opacity-90 hover:underline block"
+                  >
+                    <div
+                      className="max-w-[30px] overflow-hidden text-ellipsis whitespace-nowrap mx-auto"
+                      style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
+                    >
                       {arch}
                     </div>
                   </Link>
@@ -78,14 +91,20 @@ function MatchupGrid({ data }: MatchupGridProps) {
             {archetypes.map(rowArch => (
               <tr key={rowArch}>
                 <td className="p-3 bg-gradient-to-br from-slate-800 to-blue-800 text-white text-left sticky left-0 z-10 min-w-[150px]">
-                  <Link to={`/archetype/${encodeURIComponent(rowArch)}`} className="text-white hover:opacity-90 hover:underline font-semibold">
+                  <Link
+                    to={`/archetype/${encodeURIComponent(rowArch)}`}
+                    className="text-white hover:opacity-90 hover:underline font-semibold"
+                  >
                     {rowArch}
                   </Link>
                 </td>
                 {archetypes.map(colArch => {
                   if (rowArch === colArch) {
                     return (
-                      <td key={colArch} className="p-3 bg-gray-100 text-gray-500 italic text-center border border-gray-200">
+                      <td
+                        key={colArch}
+                        className="p-3 bg-gray-100 text-gray-500 italic text-center border border-gray-200"
+                      >
                         —
                       </td>
                     )
@@ -94,7 +113,10 @@ function MatchupGrid({ data }: MatchupGridProps) {
                   const matchup = getMatchup(rowArch, colArch)
                   if (!matchup) {
                     return (
-                      <td key={colArch} className="p-3 bg-gray-50 text-gray-400 text-center border border-gray-200">
+                      <td
+                        key={colArch}
+                        className="p-3 bg-gray-50 text-gray-400 text-center border border-gray-200"
+                      >
                         —
                       </td>
                     )
@@ -113,7 +135,9 @@ function MatchupGrid({ data }: MatchupGridProps) {
                       className={`p-3 text-center border border-gray-200 cursor-pointer transition-all hover:scale-105 hover:z-10 hover:shadow-md relative ${getWinRateBgClass(winRate)}`}
                       title={`${rowArch} vs ${colArch}: ${wins}-${losses} (${(winRate * 100).toFixed(1)}%)`}
                     >
-                      <div className="font-bold text-sm mb-1">{wins}-{losses}</div>
+                      <div className="font-bold text-sm mb-1">
+                        {wins}-{losses}
+                      </div>
                       <div className={`text-lg font-bold mb-1 ${getWinRateTextClass(winRate)}`}>
                         {(winRate * 100).toFixed(0)}%
                       </div>

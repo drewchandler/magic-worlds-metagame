@@ -1,7 +1,8 @@
-import { useParams, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import type { AnalysisData } from '../types'
-import CardTooltip from './CardTooltip'
+import { Link, useParams } from 'react-router-dom'
+
+import CardTooltip from '@molecules/CardTooltip'
+import type { AnalysisData } from '@/types'
 
 interface PlayerDetailProps {
   data: AnalysisData | null
@@ -25,9 +26,9 @@ interface MatchResult {
 // Normalize player name for matching - handles both 'First Last' and 'Last, First' formats
 function normalizePlayerName(name: string): string {
   if (!name) return ''
-  
+
   name = name.trim()
-  
+
   // If it's in "Last, First" format, convert to "First Last"
   if (name.includes(',')) {
     const parts = name.split(',').map(p => p.trim())
@@ -35,13 +36,26 @@ function normalizePlayerName(name: string): string {
       name = `${parts[1]} ${parts[0]}`
     }
   }
-  
+
   // Normalize to lowercase and remove extra spaces
   return name.toLowerCase().split(/\s+/).join(' ')
 }
 
 type SortColumn = 'round' | 'opponent' | 'result' | 'archetype'
 type SortDirection = 'asc' | 'desc'
+
+interface SortIconProps {
+  column: SortColumn
+  sortColumn: SortColumn
+  sortDirection: SortDirection
+}
+
+function SortIcon({ column, sortColumn, sortDirection }: SortIconProps) {
+  if (sortColumn !== column) {
+    return <span className="ml-1 text-gray-400">↕</span>
+  }
+  return <span className="ml-1">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+}
 
 function PlayerDetail({ data }: PlayerDetailProps) {
   const { playerName } = useParams<{ playerName: string }>()
@@ -101,7 +115,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
     losses: 0,
     draws: 0,
     gamesWon: 0,
-    gamesLost: 0
+    gamesLost: 0,
   }
 
   const normalizedPlayerName = normalizePlayerName(decodedName)
@@ -123,9 +137,10 @@ function PlayerDetail({ data }: PlayerDetailProps) {
     }
   })
 
-  const winRate = playerStats.wins + playerStats.losses > 0
-    ? playerStats.wins / (playerStats.wins + playerStats.losses)
-    : 0
+  const winRate =
+    playerStats.wins + playerStats.losses > 0
+      ? playerStats.wins / (playerStats.wins + playerStats.losses)
+      : 0
 
   // Sort matches
   const sortedMatches = [...playerMatches].sort((a, b) => {
@@ -138,7 +153,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
     const bPlayerWins = bIsPlayer1 ? b.p1_wins : b.p2_wins
     const aOpponentWins = aIsPlayer1 ? a.p2_wins : a.p1_wins
     const bOpponentWins = bIsPlayer1 ? b.p2_wins : b.p1_wins
-    
+
     // Try to find opponent archetypes
     const aOpponentNormalized = normalizePlayerName(aOpponent)
     const bOpponentNormalized = normalizePlayerName(bOpponent)
@@ -152,7 +167,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
         bOpponentArchetype = dl.archetype
       }
     }
-    
+
     let comparison = 0
     switch (sortColumn) {
       case 'round':
@@ -162,13 +177,13 @@ function PlayerDetail({ data }: PlayerDetailProps) {
         comparison = aOpponent.localeCompare(bOpponent)
         break
       case 'result':
-        comparison = (aPlayerWins - aOpponentWins) - (bPlayerWins - bOpponentWins)
+        comparison = aPlayerWins - aOpponentWins - (bPlayerWins - bOpponentWins)
         break
       case 'archetype':
         comparison = aOpponentArchetype.localeCompare(bOpponentArchetype)
         break
     }
-    
+
     return sortDirection === 'asc' ? comparison : -comparison
   })
 
@@ -181,18 +196,14 @@ function PlayerDetail({ data }: PlayerDetailProps) {
     }
   }
 
-  const SortIcon = ({ column }: { column: SortColumn }) => {
-    if (sortColumn !== column) {
-      return <span className="ml-1 text-gray-400">↕</span>
-    }
-    return <span className="ml-1">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-  }
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600 p-5">
       <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
         <div className="bg-gradient-to-r from-slate-800 to-blue-800 text-white p-10 rounded-t-3xl">
-          <Link to="/" className="text-white opacity-90 hover:opacity-100 hover:underline inline-block mb-3">
+          <Link
+            to="/"
+            className="text-white opacity-90 hover:opacity-100 hover:underline inline-block mb-3"
+          >
             ← Back to Dashboard
           </Link>
           <h1 className="text-4xl font-bold mb-3">{decodedName}</h1>
@@ -207,23 +218,28 @@ function PlayerDetail({ data }: PlayerDetailProps) {
         </div>
 
         <div className="p-10 border-b border-gray-200">
-          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">Match Statistics</h2>
+          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">
+            Match Statistics
+          </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-5">
             <div className="bg-gray-50 p-5 rounded-xl text-center">
               <div className="text-3xl font-bold text-indigo-600 mb-2">
-                {playerStats.draws > 0 
+                {playerStats.draws > 0
                   ? `${playerStats.wins}-${playerStats.losses}-${playerStats.draws}`
-                  : `${playerStats.wins}-${playerStats.losses}`
-                }
+                  : `${playerStats.wins}-${playerStats.losses}`}
               </div>
               <div className="text-gray-600 text-sm uppercase tracking-wider">Match Record</div>
             </div>
             <div className="bg-gray-50 p-5 rounded-xl text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">{(winRate * 100).toFixed(1)}%</div>
+              <div className="text-3xl font-bold text-indigo-600 mb-2">
+                {(winRate * 100).toFixed(1)}%
+              </div>
               <div className="text-gray-600 text-sm uppercase tracking-wider">Win Rate</div>
             </div>
             <div className="bg-gray-50 p-5 rounded-xl text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">{playerStats.gamesWon}-{playerStats.gamesLost}</div>
+              <div className="text-3xl font-bold text-indigo-600 mb-2">
+                {playerStats.gamesWon}-{playerStats.gamesLost}
+              </div>
               <div className="text-gray-600 text-sm uppercase tracking-wider">Game Record</div>
             </div>
             <div className="bg-gray-50 p-5 rounded-xl text-center">
@@ -234,34 +250,56 @@ function PlayerDetail({ data }: PlayerDetailProps) {
         </div>
 
         <div className="p-10 border-b border-gray-200">
-          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">Matches</h2>
+          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">
+            Matches
+          </h2>
           <div className="overflow-x-auto rounded-xl shadow-lg mt-5">
             <table className="w-full bg-white border-collapse">
               <thead>
                 <tr className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-                  <th 
+                  <th
                     className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
                     onClick={() => handleSort('round')}
                   >
-                    Round <SortIcon column="round" />
+                    Round{' '}
+                    <SortIcon
+                      column="round"
+                      sortColumn={sortColumn}
+                      sortDirection={sortDirection}
+                    />
                   </th>
-                  <th 
+                  <th
                     className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
                     onClick={() => handleSort('opponent')}
                   >
-                    Opponent <SortIcon column="opponent" />
+                    Opponent{' '}
+                    <SortIcon
+                      column="opponent"
+                      sortColumn={sortColumn}
+                      sortDirection={sortDirection}
+                    />
                   </th>
-                  <th 
+                  <th
                     className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
                     onClick={() => handleSort('result')}
                   >
-                    Result <SortIcon column="result" />
+                    Result{' '}
+                    <SortIcon
+                      column="result"
+                      sortColumn={sortColumn}
+                      sortDirection={sortDirection}
+                    />
                   </th>
-                  <th 
+                  <th
                     className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
                     onClick={() => handleSort('archetype')}
                   >
-                    Opponent Archetype <SortIcon column="archetype" />
+                    Opponent Archetype{' '}
+                    <SortIcon
+                      column="archetype"
+                      sortColumn={sortColumn}
+                      sortDirection={sortDirection}
+                    />
                   </th>
                 </tr>
               </thead>
@@ -281,7 +319,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
                     const opponentWins = isPlayer1 ? match.p2_wins : match.p1_wins
                     const won = playerWins > opponentWins
                     const draw = playerWins === opponentWins
-                    
+
                     // Try to find opponent's decklist using normalized matching
                     let opponentDecklist: DecklistData | undefined
                     const opponentNormalized = normalizePlayerName(opponent)
@@ -305,7 +343,10 @@ function PlayerDetail({ data }: PlayerDetailProps) {
                       <tr key={idx} className="hover:bg-gray-50 transition-colors">
                         <td className="p-4 text-gray-900">{match.round}</td>
                         <td className="p-4">
-                          <Link to={`/player/${encodeURIComponent(opponent)}`} className="text-indigo-600 hover:text-indigo-800 hover:underline font-medium">
+                          <Link
+                            to={`/player/${encodeURIComponent(opponent)}`}
+                            className="text-indigo-600 hover:text-indigo-800 hover:underline font-medium"
+                          >
                             {opponent}
                           </Link>
                         </td>
@@ -313,7 +354,10 @@ function PlayerDetail({ data }: PlayerDetailProps) {
                           {playerWins}-{opponentWins}
                         </td>
                         <td className="p-4">
-                          <Link to={`/archetype/${encodeURIComponent(opponentArchetype)}`} className="text-indigo-600 hover:text-indigo-800 hover:underline font-medium">
+                          <Link
+                            to={`/archetype/${encodeURIComponent(opponentArchetype)}`}
+                            className="text-indigo-600 hover:text-indigo-800 hover:underline font-medium"
+                          >
                             {opponentArchetype}
                           </Link>
                         </td>
@@ -328,7 +372,9 @@ function PlayerDetail({ data }: PlayerDetailProps) {
 
         {decklist && (
           <div className="p-10">
-            <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">Decklist</h2>
+            <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">
+              Decklist
+            </h2>
             <div className="mt-5 flex gap-8">
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-4 text-slate-700">
@@ -340,7 +386,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
                       <div key={idx} className="text-gray-900 whitespace-nowrap">
                         {card.count}{' '}
                         <CardTooltip cardName={card.name}>
-                          <Link 
+                          <Link
                             to={`/card/${encodeURIComponent(card.name)}`}
                             className="text-indigo-600 hover:text-indigo-800 hover:underline cursor-pointer"
                           >
@@ -364,7 +410,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
                       <div key={idx} className="text-gray-900 whitespace-nowrap">
                         {card.count}{' '}
                         <CardTooltip cardName={card.name}>
-                          <Link 
+                          <Link
                             to={`/card/${encodeURIComponent(card.name)}`}
                             className="text-indigo-600 hover:text-indigo-800 hover:underline cursor-pointer"
                           >

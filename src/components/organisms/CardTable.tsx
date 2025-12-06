@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import type { AnalysisData } from '../types'
+import type { AnalysisData } from '@/types'
 
 interface CardTableProps {
   data: AnalysisData | null
@@ -42,23 +42,26 @@ function CardTable({ data }: CardTableProps) {
   }, [])
 
   const cardStats = useMemo(() => {
-    const cardMap = new Map<string, {
-      totalCopies: number
-      mainDeckCopies: number
-      sideboardCopies: number
-      decksIncluded: Set<string>
-    }>()
+    const cardMap = new Map<
+      string,
+      {
+        totalCopies: number
+        mainDeckCopies: number
+        sideboardCopies: number
+        decksIncluded: Set<string>
+      }
+    >()
 
     Object.values(decklists).forEach((decklist: DecklistData) => {
       const deckKey = `${decklist.player}-${decklist.archetype}`
-      
+
       if (decklist.main_deck) {
         decklist.main_deck.forEach(card => {
           const existing = cardMap.get(card.name) || {
             totalCopies: 0,
             mainDeckCopies: 0,
             sideboardCopies: 0,
-            decksIncluded: new Set<string>()
+            decksIncluded: new Set<string>(),
           }
           existing.totalCopies += card.count
           existing.mainDeckCopies += card.count
@@ -73,7 +76,7 @@ function CardTable({ data }: CardTableProps) {
             totalCopies: 0,
             mainDeckCopies: 0,
             sideboardCopies: 0,
-            decksIncluded: new Set<string>()
+            decksIncluded: new Set<string>(),
           }
           existing.totalCopies += card.count
           existing.sideboardCopies += card.count
@@ -90,7 +93,7 @@ function CardTable({ data }: CardTableProps) {
         totalCopies: stat.totalCopies,
         mainDeckCopies: stat.mainDeckCopies,
         sideboardCopies: stat.sideboardCopies,
-        decksIncluded: stat.decksIncluded.size
+        decksIncluded: stat.decksIncluded.size,
       })
     })
 
@@ -132,11 +135,6 @@ function CardTable({ data }: CardTableProps) {
   const endIndex = startIndex + itemsPerPage
   const paginatedCardStats = sortedCardStats.slice(startIndex, endIndex)
 
-  useEffect(() => {
-    // Reset to page 1 when search term changes
-    setCurrentPage(1)
-  }, [searchTerm])
-
   const handleSort = (column: SortColumn) => {
     if (sortColumn === column) {
       setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc')
@@ -150,19 +148,24 @@ function CardTable({ data }: CardTableProps) {
 
   return (
     <div className="p-10">
-      <h2 className="text-3xl font-bold mb-5 text-slate-800 border-b-4 border-indigo-500 pb-3">Card Statistics</h2>
+      <h2 className="text-3xl font-bold mb-5 text-slate-800 border-b-4 border-indigo-500 pb-3">
+        Card Statistics
+      </h2>
       <input
         type="text"
         className="w-full p-4 text-base border-2 border-gray-300 rounded-xl mb-5 focus:outline-none focus:border-indigo-500 transition-colors text-gray-900"
         placeholder="Search cards..."
         value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
+        onChange={e => {
+          setSearchTerm(e.target.value)
+          setCurrentPage(1)
+        }}
       />
       <div className="overflow-x-auto rounded-xl shadow-lg">
         <table className="w-full bg-white border-collapse">
           <thead>
             <tr className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-              <th 
+              <th
                 className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'name' ? 'bg-indigo-600' : ''}`}
                 onClick={() => handleSort('name')}
               >
@@ -171,7 +174,7 @@ function CardTable({ data }: CardTableProps) {
                   <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 )}
               </th>
-              <th 
+              <th
                 className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'totalCopies' ? 'bg-indigo-600' : ''}`}
                 onClick={() => handleSort('totalCopies')}
               >
@@ -180,7 +183,7 @@ function CardTable({ data }: CardTableProps) {
                   <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 )}
               </th>
-              <th 
+              <th
                 className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'mainDeckCopies' ? 'bg-indigo-600' : ''}`}
                 onClick={() => handleSort('mainDeckCopies')}
               >
@@ -189,7 +192,7 @@ function CardTable({ data }: CardTableProps) {
                   <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 )}
               </th>
-              <th 
+              <th
                 className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'sideboardCopies' ? 'bg-indigo-600' : ''}`}
                 onClick={() => handleSort('sideboardCopies')}
               >
@@ -198,7 +201,7 @@ function CardTable({ data }: CardTableProps) {
                   <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 )}
               </th>
-              <th 
+              <th
                 className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'decksIncluded' ? 'bg-indigo-600' : ''}`}
                 onClick={() => handleSort('decksIncluded')}
               >
@@ -217,11 +220,11 @@ function CardTable({ data }: CardTableProps) {
                 </td>
               </tr>
             ) : (
-              paginatedCardStats.map((cardStat) => (
+              paginatedCardStats.map(cardStat => (
                 <tr key={cardStat.name} className="hover:bg-gray-50 transition-colors">
                   <td className="p-4">
-                    <Link 
-                      to={`/card/${encodeURIComponent(cardStat.name)}`} 
+                    <Link
+                      to={`/card/${encodeURIComponent(cardStat.name)}`}
                       className="text-indigo-600 hover:text-indigo-800 hover:underline font-medium"
                     >
                       {cardStat.name}
@@ -263,4 +266,3 @@ function CardTable({ data }: CardTableProps) {
 }
 
 export default CardTable
-

@@ -1,10 +1,12 @@
-import type { AnalysisData } from '../types'
+import { Container } from '@atoms/Container'
+import { StatCard } from '@molecules/StatCard'
+import type { AnalysisData } from '@/types'
 
 interface StatsGridProps {
   data: AnalysisData | null
 }
 
-function StatsGrid({ data }: StatsGridProps) {
+export function StatsGrid({ data }: StatsGridProps) {
   if (!data) return null
 
   const archetypeCounts = data.archetype_counts || {}
@@ -21,15 +23,10 @@ function StatsGrid({ data }: StatsGridProps) {
   ]
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-8 bg-gray-50">
+    <Container variant="grid" padding="lg" background="gray">
       {stats.map((stat, index) => (
-        <div key={index} className="bg-white p-5 rounded-xl shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all">
-          <div className="text-4xl font-bold text-indigo-600 mb-2">{stat.value}</div>
-          <div className="text-gray-600 text-sm uppercase tracking-wider">{stat.label}</div>
-        </div>
+        <StatCard key={index} label={stat.label} value={stat.value} />
       ))}
-    </div>
+    </Container>
   )
 }
-
-export default StatsGrid
