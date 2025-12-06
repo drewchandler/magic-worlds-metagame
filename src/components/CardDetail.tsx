@@ -26,10 +26,15 @@ interface ArchetypeCardStat {
   percentageIncluded: number
 }
 
+type SortColumn = 'archetype' | 'totalCopies' | 'averageMainDeck' | 'averageSideboard' | 'decksIncluded' | 'percentageIncluded'
+type SortDirection = 'asc' | 'desc'
+
 function CardDetail({ data }: CardDetailProps) {
   const { cardName } = useParams<{ cardName: string }>()
   const decodedName = decodeURIComponent(cardName || '')
   const [decklists, setDecklists] = useState<Record<string, DecklistData>>({})
+  const [sortColumn, setSortColumn] = useState<SortColumn>('percentageIncluded')
+  const [sortDirection, setSortDirection] = useState<SortDirection>('desc')
 
   useEffect(() => {
     fetch('/decklists.json')
@@ -160,6 +165,50 @@ function CardDetail({ data }: CardDetailProps) {
     }
   }, [decklists, decodedName])
 
+  const sortedArchetypeStats = useMemo(() => {
+    const sorted = [...archetypeStats].sort((a, b) => {
+      let comparison = 0
+      switch (sortColumn) {
+        case 'archetype':
+          comparison = a.archetype.localeCompare(b.archetype)
+          break
+        case 'totalCopies':
+          comparison = a.totalCopies - b.totalCopies
+          break
+        case 'averageMainDeck':
+          comparison = a.averageMainDeck - b.averageMainDeck
+          break
+        case 'averageSideboard':
+          comparison = a.averageSideboard - b.averageSideboard
+          break
+        case 'decksIncluded':
+          comparison = a.decksIncluded - b.decksIncluded
+          break
+        case 'percentageIncluded':
+          comparison = a.percentageIncluded - b.percentageIncluded
+          break
+      }
+      return sortDirection === 'asc' ? comparison : -comparison
+    })
+    return sorted
+  }, [archetypeStats, sortColumn, sortDirection])
+
+  const handleSort = (column: SortColumn) => {
+    if (sortColumn === column) {
+      setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc')
+    } else {
+      setSortColumn(column)
+      setSortDirection('desc')
+    }
+  }
+
+  const SortIcon = ({ column }: { column: SortColumn }) => {
+    if (sortColumn !== column) {
+      return <span className="ml-1 text-gray-400">↕</span>
+    }
+    return <span className="ml-1">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+  }
+
   if (!data) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600 p-5">
@@ -212,28 +261,58 @@ function CardDetail({ data }: CardDetailProps) {
         </div>
 
         <div className="p-10">
-          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">Archetypes ({archetypeStats.length})</h2>
+          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">Archetypes ({sortedArchetypeStats.length})</h2>
           <div className="overflow-x-auto rounded-xl shadow-lg mt-5">
             <table className="w-full bg-white border-collapse">
               <thead>
                 <tr className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-                  <th className="p-4 text-left font-semibold text-xs uppercase tracking-wider">Archetype</th>
-                  <th className="p-4 text-left font-semibold text-xs uppercase tracking-wider">Total Copies</th>
-                  <th className="p-4 text-left font-semibold text-xs uppercase tracking-wider">Avg Main Deck</th>
-                  <th className="p-4 text-left font-semibold text-xs uppercase tracking-wider">Avg Sideboard</th>
-                  <th className="p-4 text-left font-semibold text-xs uppercase tracking-wider">Decks Included</th>
-                  <th className="p-4 text-left font-semibold text-xs uppercase tracking-wider">% of Archetype</th>
+                  <th 
+                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
+                    onClick={() => handleSort('archetype')}
+                  >
+                    Archetype <SortIcon column="archetype" />
+                  </th>
+                  <th 
+                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
+                    onClick={() => handleSort('totalCopies')}
+                  >
+                    Total Copies <SortIcon column="totalCopies" />
+                  </th>
+                  <th 
+                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
+                    onClick={() => handleSort('averageMainDeck')}
+                  >
+                    Avg Main Deck <SortIcon column="averageMainDeck" />
+                  </th>
+                  <th 
+                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
+                    onClick={() => handleSort('averageSideboard')}
+                  >
+                    Avg Sideboard <SortIcon column="averageSideboard" />
+                  </th>
+                  <th 
+                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
+                    onClick={() => handleSort('decksIncluded')}
+                  >
+                    Decks Included <SortIcon column="decksIncluded" />
+                  </th>
+                  <th 
+                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
+                    onClick={() => handleSort('percentageIncluded')}
+                  >
+                    % of Archetype <SortIcon column="percentageIncluded" />
+                  </th>
                 </tr>
               </thead>
               <tbody>
-                {archetypeStats.length === 0 ? (
+                {sortedArchetypeStats.length === 0 ? (
                   <tr>
                     <td colSpan={6} className="text-center py-10 text-gray-500">
                       No archetypes found using this card
                     </td>
                   </tr>
                 ) : (
-                  archetypeStats.map((stat) => (
+                  sortedArchetypeStats.map((stat) => (
                     <tr key={stat.archetype} className="hover:bg-gray-50 transition-colors">
                       <td className="p-4">
                         <Link 

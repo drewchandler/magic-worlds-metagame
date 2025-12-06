@@ -412,8 +412,11 @@ class MagicSpider:
                             continue
                         
                         # Parse result text like "Dang, Nam won 2-0-0" or "Garcia-Romo, Andy won 2-1-0"
-                        # Format: "{Winner} won {wins}-{losses}-{draws}"
+                        # Or "1-1-0 Draw" for draws
+                        # Format: "{Winner} won {wins}-{losses}-{draws}" or "{wins}-{losses}-{draws} Draw"
                         result_match = re.search(r'(\w+(?:\s+\w+)*)\s+won\s+(\d+)-(\d+)-(\d+)', result_text)
+                        draw_match = re.search(r'(\d+)-(\d+)-(\d+)\s+Draw', result_text, re.IGNORECASE)
+                        
                         if result_match:
                             winner = result_match.group(1)
                             winner_wins = int(result_match.group(2))
@@ -444,6 +447,21 @@ class MagicSpider:
                                     # Default: assume first player won (shouldn't happen often)
                                     p1_wins = winner_wins
                                     p2_wins = loser_wins
+                            
+                            results.append({
+                                'round': round_num,
+                                'player1': player1,
+                                'player2': player2,
+                                'p1_wins': p1_wins,
+                                'p2_wins': p2_wins,
+                                'p1_games': p1_wins,
+                                'p2_games': p2_wins
+                            })
+                        elif draw_match:
+                            # Handle draws: "1-1-0 Draw" means both players have same wins
+                            p1_wins = int(draw_match.group(1))
+                            p2_wins = int(draw_match.group(2))
+                            draws = int(draw_match.group(3))
                             
                             results.append({
                                 'round': round_num,
