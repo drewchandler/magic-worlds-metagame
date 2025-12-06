@@ -117,6 +117,7 @@ def analyze_metagame(decklists: Dict, results: List) -> Dict:
     matchup_stats = defaultdict(lambda: {
         'wins': 0,
         'losses': 0,
+        'draws': 0,
         'games_won': 0,
         'games_lost': 0,
         'matches': []
@@ -160,10 +161,9 @@ def analyze_metagame(decklists: Dict, results: List) -> Dict:
             matchup_stats[arch2_key]['wins'] += 1
             matchup_stats[arch1_key]['losses'] += 1
         else:
-            # Draw
-            if not is_mirror:
-                match_stats[p1_arch]['draws'] += 1
-                match_stats[p2_arch]['draws'] += 1
+            # Draw - count draws even for mirror matches
+            match_stats[p1_arch]['draws'] += 1
+            match_stats[p2_arch]['draws'] += 1
             matchup_stats[arch1_key]['draws'] = matchup_stats[arch1_key].get('draws', 0) + 1
             matchup_stats[arch2_key]['draws'] = matchup_stats[arch2_key].get('draws', 0) + 1
         
