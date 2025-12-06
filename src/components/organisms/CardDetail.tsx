@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
+import { Link } from '@atoms/Link'
 import CardTooltip from '@molecules/CardTooltip'
 import type { AnalysisData } from '@/types'
 
@@ -233,7 +234,8 @@ function CardDetail({ data }: CardDetailProps) {
         <div className="bg-gradient-to-r from-slate-800 to-blue-800 text-white p-10 rounded-t-3xl">
           <Link
             to="/"
-            className="text-white opacity-90 hover:opacity-100 hover:underline inline-block mb-3"
+            variant="nav"
+            className="inline-block mb-3"
           >
             ← Back to Dashboard
           </Link>
@@ -344,7 +346,7 @@ function CardDetail({ data }: CardDetailProps) {
                       <td className="p-4">
                         <Link
                           to={`/archetype/${encodeURIComponent(stat.archetype)}`}
-                          className="text-indigo-600 hover:text-indigo-800 hover:underline font-medium"
+                          className="font-medium"
                         >
                           {stat.archetype}
                         </Link>

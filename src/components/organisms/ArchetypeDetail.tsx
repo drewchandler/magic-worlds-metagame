@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
+import { Link } from '@atoms/Link'
 import CardTooltip from '@molecules/CardTooltip'
 import type { AnalysisData } from '@/types'
 
@@ -343,7 +344,8 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
         <div className="bg-gradient-to-r from-slate-800 to-blue-800 text-white p-10 rounded-t-3xl">
           <Link
             to="/"
-            className="text-white opacity-90 hover:opacity-100 hover:underline inline-block mb-3"
+            variant="nav"
+            className="inline-block mb-3"
           >
             ← Back to Dashboard
           </Link>
@@ -479,7 +481,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                         <td className="p-4">
                           <Link
                             to={`/player/${encodeURIComponent(playerStat.player)}`}
-                            className="text-indigo-600 hover:text-indigo-800 hover:underline font-medium"
+                            className="font-medium"
                           >
                             {playerStat.player}
                           </Link>
@@ -584,7 +586,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                         <td className="p-4">
                           <Link
                             to={`/card/${encodeURIComponent(cardStat.name)}`}
-                            className="text-indigo-600 hover:text-indigo-800 hover:underline font-medium"
+                            className="font-medium"
                           >
                             <CardTooltip cardName={cardStat.name}>{cardStat.name}</CardTooltip>
                           </Link>

@@ -20,8 +20,8 @@ export function Header({
   className = '',
 }: HeaderProps) {
   const variantClasses = {
-    page: 'bg-gradient-to-r from-slate-800 to-blue-800 text-white',
-    section: 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white',
+    page: 'bg-gradient-to-r from-neutral-800 to-info-800 text-white',
+    section: 'bg-gradient-to-r from-primary-500 to-accent-600 text-white',
   }
 
   const paddingClasses = {

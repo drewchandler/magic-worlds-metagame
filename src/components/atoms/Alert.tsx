@@ -6,10 +6,10 @@ interface AlertProps {
 
 export function Alert({ children, variant = 'error', className = '' }: AlertProps) {
   const variantClasses = {
-    error: 'bg-red-50 border-2 border-red-200 text-red-800',
-    warning: 'bg-yellow-50 border-2 border-yellow-200 text-yellow-800',
-    info: 'bg-blue-50 border-2 border-blue-200 text-blue-800',
-    success: 'bg-green-50 border-2 border-green-200 text-green-800',
+    error: 'bg-danger-50 border-2 border-danger-200 text-danger-800',
+    warning: 'bg-warning-50 border-2 border-warning-200 text-warning-800',
+    info: 'bg-info-50 border-2 border-info-200 text-info-800',
+    success: 'bg-success-50 border-2 border-success-200 text-success-800',
   }
 
   return (

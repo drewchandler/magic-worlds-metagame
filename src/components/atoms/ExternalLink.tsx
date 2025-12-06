@@ -12,8 +12,8 @@ export function ExternalLink({
   className = '',
 }: ExternalLinkProps) {
   const variantClasses = {
-    primary: 'text-indigo-600 hover:text-indigo-800 hover:underline',
-    secondary: 'text-gray-600 hover:text-gray-800 hover:underline',
+    primary: 'text-primary hover:text-primary-800 hover:underline',
+    secondary: 'text-secondary hover:text-secondary-800 hover:underline',
   }
 
   return (

@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
-import { Link } from 'react-router-dom'
+
+import { Link } from '@atoms/Link'
 import type { AnalysisData, ArchetypeStats } from '@/types'
 
 interface ArchetypeTableProps {
@@ -168,10 +169,7 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
                 return (
                   <tr key={arch} className="hover:bg-gray-50 transition-colors">
                     <td className="p-4">
-                      <Link
-                        to={`/archetype/${encodeURIComponent(arch)}`}
-                        className="text-gray-900 font-semibold hover:text-indigo-600 hover:underline transition-colors"
-                      >
+                      <Link to={`/archetype/${encodeURIComponent(arch)}`} className="font-semibold">
                         {arch}
                       </Link>
                     </td>

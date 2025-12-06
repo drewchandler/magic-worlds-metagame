@@ -15,9 +15,9 @@ export function Button({
 }: ButtonProps) {
   const baseClasses = 'font-medium transition-colors'
   const variantClasses = {
-    primary: 'bg-indigo-600 text-white hover:bg-indigo-700 rounded',
-    secondary: 'bg-gray-200 text-gray-900 hover:bg-gray-300 rounded',
-    link: 'text-indigo-600 hover:text-indigo-800 hover:underline',
+    primary: 'bg-primary text-white hover:bg-primary-700 rounded',
+    secondary: 'bg-neutral-200 text-neutral-900 hover:bg-neutral-300 rounded',
+    link: 'text-primary hover:text-primary-800 hover:underline',
   }
 
   const sizeClasses = {

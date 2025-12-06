@@ -2,6 +2,7 @@ interface HStackProps {
   children: React.ReactNode
   spacing?: 'none' | 'sm' | 'md' | 'lg'
   align?: 'start' | 'center' | 'end' | 'stretch'
+  justify?: 'start' | 'center' | 'end' | 'between' | 'around' | 'evenly'
   className?: string
 }
 
@@ -9,6 +10,7 @@ export function HStack({
   children,
   spacing = 'md',
   align = 'center',
+  justify,
   className = '',
 }: HStackProps) {
   const spacingClasses = {
@@ -25,8 +27,19 @@ export function HStack({
     stretch: 'items-stretch',
   }
 
+  const justifyClasses = {
+    start: 'justify-start',
+    center: 'justify-center',
+    end: 'justify-end',
+    between: 'justify-between',
+    around: 'justify-around',
+    evenly: 'justify-evenly',
+  }
+
+  const justifyClass = justify ? justifyClasses[justify] : ''
+
   return (
-    <div className={`flex flex-row ${spacingClasses[spacing]} ${alignClasses[align]} ${className}`}>
+    <div className={`flex flex-row ${spacingClasses[spacing]} ${alignClasses[align]} ${justifyClass} ${className}`}>
       {children}
     </div>
   )

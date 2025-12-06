@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
-import { Link } from 'react-router-dom'
+
+import { Link } from '@atoms/Link'
 import type { AnalysisData, MatchupStats } from '@/types'
 
 interface MatchupGridProps {
@@ -74,7 +75,8 @@ function MatchupGrid({ data }: MatchupGridProps) {
                 >
                   <Link
                     to={`/archetype/${encodeURIComponent(arch)}`}
-                    className="text-white hover:opacity-90 hover:underline block"
+                    variant="nav"
+                    className="block"
                   >
                     <div
                       className="max-w-[30px] overflow-hidden text-ellipsis whitespace-nowrap mx-auto"
@@ -93,7 +95,8 @@ function MatchupGrid({ data }: MatchupGridProps) {
                 <td className="p-3 bg-gradient-to-br from-slate-800 to-blue-800 text-white text-left sticky left-0 z-10 min-w-[150px]">
                   <Link
                     to={`/archetype/${encodeURIComponent(rowArch)}`}
-                    className="text-white hover:opacity-90 hover:underline font-semibold"
+                    variant="nav"
+                    className="font-semibold"
                   >
                     {rowArch}
                   </Link>

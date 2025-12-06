@@ -19,9 +19,14 @@ export function TableRow({
   children,
   className = '',
   onClick,
-}: TableProps & { onClick?: () => void }) {
+  variant,
+}: TableProps & { onClick?: () => void; variant?: 'default' | 'header' }) {
+  const variantClasses = {
+    default: 'hover:bg-neutral-50 transition-colors',
+    header: 'bg-gradient-to-r from-primary-500 to-accent-600',
+  }
   return (
-    <tr className={`hover:bg-gray-50 transition-colors ${className}`} onClick={onClick}>
+    <tr className={`${variantClasses[variant || 'default']} ${className}`} onClick={onClick}>
       {children}
     </tr>
   )
@@ -32,12 +37,14 @@ export function TableHeader({
   className = '',
   onClick,
   active,
-}: TableProps & { onClick?: () => void; active?: boolean }) {
-  const activeClass = active ? 'bg-indigo-600' : ''
-  const interactiveClass = onClick ? 'cursor-pointer hover:bg-indigo-600 transition-colors' : ''
+  textColor,
+}: TableProps & { onClick?: () => void; active?: boolean; textColor?: 'default' | 'inverse' }) {
+  const activeClass = active ? 'bg-primary' : ''
+  const interactiveClass = onClick ? 'cursor-pointer hover:bg-primary transition-colors' : ''
+  const textColorClass = textColor === 'inverse' ? 'text-white' : ''
   return (
     <th
-      className={`p-4 text-left font-semibold text-xs uppercase tracking-wider ${interactiveClass} ${activeClass} ${className}`}
+      className={`p-4 text-left font-semibold text-xs uppercase tracking-wider ${interactiveClass} ${activeClass} ${textColorClass} ${className}`}
       onClick={onClick}
     >
       {children}
@@ -45,6 +52,46 @@ export function TableHeader({
   )
 }
 
-export function TableCell({ children, className = '' }: TableProps) {
-  return <td className={`p-4 text-gray-900 ${className}`}>{children}</td>
+export function TableCell({
+  children,
+  className = '',
+  colSpan,
+  textAlign,
+  padding,
+  textColor,
+}: TableProps & {
+  colSpan?: number
+  textAlign?: 'left' | 'center' | 'right'
+  padding?: 'none' | 'sm' | 'md' | 'lg'
+  textColor?: 'default' | 'secondary' | 'muted'
+}) {
+  const paddingClasses = padding
+    ? padding === 'none'
+      ? ''
+      : padding === 'sm'
+        ? 'p-2'
+        : padding === 'md'
+          ? 'p-4'
+          : 'p-6'
+    : 'p-4'
+  const textAlignClasses = textAlign
+    ? textAlign === 'left'
+      ? 'text-left'
+      : textAlign === 'center'
+        ? 'text-center'
+        : 'text-right'
+    : ''
+  const textColorClasses = textColor
+    ? textColor === 'secondary'
+      ? 'text-secondary'
+      : textColor === 'muted'
+        ? 'text-muted'
+        : 'text-neutral-900'
+    : 'text-neutral-900'
+
+  return (
+    <td colSpan={colSpan} className={`${paddingClasses} ${textAlignClasses} ${textColorClasses} ${className}`}>
+      {children}
+    </td>
+  )
 }

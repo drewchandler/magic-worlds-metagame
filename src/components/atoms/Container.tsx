@@ -2,7 +2,7 @@ interface ContainerProps {
   children: React.ReactNode
   variant?: 'page' | 'section' | 'grid'
   padding?: 'none' | 'sm' | 'md' | 'lg'
-  background?: 'default' | 'gray'
+  background?: 'default' | 'neutral'
   className?: string
 }
 
@@ -14,7 +14,7 @@ export function Container({
   className = '',
 }: ContainerProps) {
   const variantClasses = {
-    page: 'min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600',
+    page: 'min-h-screen bg-gradient-to-br from-primary-500 via-accent-500 to-accent-600',
     section: '',
     grid: 'grid grid-cols-2 md:grid-cols-4 gap-5',
   }
@@ -28,7 +28,7 @@ export function Container({
 
   const backgroundClasses = {
     default: '',
-    gray: 'bg-gray-50',
+    neutral: 'bg-neutral-50',
   }
 
   return (

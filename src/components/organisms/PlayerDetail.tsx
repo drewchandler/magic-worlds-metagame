@@ -1,7 +1,20 @@
 import { useState, useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { ArrowDownTrayIcon } from '@heroicons/react/24/outline'
 
+import { Card } from '@atoms/Card'
+import { Text } from '@atoms/Text'
+import { Grid } from '@atoms/Grid'
+import { VStack } from '@atoms/VStack'
+import { HStack } from '@atoms/HStack'
+import { Container } from '@atoms/Container'
+import { Box } from '@atoms/Box'
+import { Button } from '@atoms/Button'
+import { Link } from '@atoms/Link'
+import { Badge } from '@atoms/Badge'
+import { Table, TableHead, TableBody, TableRow, TableHeader, TableCell } from '@atoms/Table'
+import { Divider } from '@atoms/Divider'
+import { SortIcon } from '@atoms/SortIcon'
 import CardTooltip from '@molecules/CardTooltip'
 import type { AnalysisData } from '@/types'
 
@@ -44,19 +57,6 @@ function normalizePlayerName(name: string): string {
 
 type SortColumn = 'round' | 'opponent' | 'result' | 'archetype'
 type SortDirection = 'asc' | 'desc'
-
-interface SortIconProps {
-  column: SortColumn
-  sortColumn: SortColumn
-  sortDirection: SortDirection
-}
-
-function SortIcon({ column, sortColumn, sortDirection }: SortIconProps) {
-  if (sortColumn !== column) {
-    return <span className="ml-1 text-gray-400">↕</span>
-  }
-  return <span className="ml-1">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-}
 
 function PlayerDetail({ data }: PlayerDetailProps) {
   const { playerName } = useParams<{ playerName: string }>()
@@ -104,15 +104,26 @@ function PlayerDetail({ data }: PlayerDetailProps) {
 
   if (!data) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600 p-5">
-        <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl p-8">
-          <p>Loading...</p>
-        </div>
-      </div>
+      <Container variant="page" padding="md">
+        <Card variant="page" padding="lg">
+          <Text>Loading...</Text>
+        </Card>
+      </Container>
     )
   }
 
-  const playerStats = {
+  // Separate draft and constructed rounds
+  const DRAFT_ROUNDS = new Set([1, 2, 3, 8, 9, 10])
+  
+  const draftStats = {
+    wins: 0,
+    losses: 0,
+    draws: 0,
+    gamesWon: 0,
+    gamesLost: 0,
+  }
+  
+  const constructedStats = {
     wins: 0,
     losses: 0,
     draws: 0,
@@ -122,26 +133,47 @@ function PlayerDetail({ data }: PlayerDetailProps) {
 
   const normalizedPlayerName = normalizePlayerName(decodedName)
   playerMatches.forEach((match: MatchResult) => {
+    const isDraft = DRAFT_ROUNDS.has(match.round)
+    const stats = isDraft ? draftStats : constructedStats
+    
     const p1Normalized = normalizePlayerName(match.player1)
     const isPlayer1 = p1Normalized === normalizedPlayerName
     if (isPlayer1) {
-      if (match.p1_wins > match.p2_wins) playerStats.wins++
-      else if (match.p2_wins > match.p1_wins) playerStats.losses++
-      else playerStats.draws++
-      playerStats.gamesWon += match.p1_wins
-      playerStats.gamesLost += match.p2_wins
+      if (match.p1_wins > match.p2_wins) stats.wins++
+      else if (match.p2_wins > match.p1_wins) stats.losses++
+      else stats.draws++
+      stats.gamesWon += match.p1_wins
+      stats.gamesLost += match.p2_wins
     } else {
-      if (match.p2_wins > match.p1_wins) playerStats.wins++
-      else if (match.p1_wins > match.p2_wins) playerStats.losses++
-      else playerStats.draws++
-      playerStats.gamesWon += match.p2_wins
-      playerStats.gamesLost += match.p1_wins
+      if (match.p2_wins > match.p1_wins) stats.wins++
+      else if (match.p1_wins > match.p2_wins) stats.losses++
+      else stats.draws++
+      stats.gamesWon += match.p2_wins
+      stats.gamesLost += match.p1_wins
     }
   })
 
-  const winRate =
-    playerStats.wins + playerStats.losses > 0
-      ? playerStats.wins / (playerStats.wins + playerStats.losses)
+  const draftWinRate =
+    draftStats.wins + draftStats.losses > 0
+      ? draftStats.wins / (draftStats.wins + draftStats.losses)
+      : 0
+      
+  const constructedWinRate =
+    constructedStats.wins + constructedStats.losses > 0
+      ? constructedStats.wins / (constructedStats.wins + constructedStats.losses)
+      : 0
+      
+  const totalStats = {
+    wins: draftStats.wins + constructedStats.wins,
+    losses: draftStats.losses + constructedStats.losses,
+    draws: draftStats.draws + constructedStats.draws,
+    gamesWon: draftStats.gamesWon + constructedStats.gamesWon,
+    gamesLost: draftStats.gamesLost + constructedStats.gamesLost,
+  }
+  
+  const totalWinRate =
+    totalStats.wins + totalStats.losses > 0
+      ? totalStats.wins / (totalStats.wins + totalStats.losses)
       : 0
 
   // Sort matches
@@ -249,244 +281,294 @@ function PlayerDetail({ data }: PlayerDetailProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600 p-5">
-      <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
-        <div className="bg-gradient-to-r from-slate-800 to-blue-800 text-white p-10 rounded-t-3xl">
-          <Link
-            to="/"
-            className="text-white opacity-90 hover:opacity-100 hover:underline inline-block mb-3"
-          >
-            ← Back to Dashboard
-          </Link>
-          <h1 className="text-4xl font-bold mb-3">{decodedName}</h1>
-          {decklist && (
-            <Link
-              to={`/archetype/${encodeURIComponent(decklist.archetype)}`}
-              className="inline-block mt-3 px-4 py-2 bg-white rounded-lg font-semibold hover:bg-gray-100 transition-all border border-gray-300 hover:underline text-gray-900"
-            >
-              {decklist.archetype}
+    <Container variant="page" padding="md">
+      <Card variant="page">
+        <Box padding="lg" background="gradient-slate-blue" className="rounded-none" style={{ marginTop: '-4px', marginLeft: '-4px', marginRight: '-4px', marginBottom: '0' }}>
+          <VStack spacing="sm" align="start">
+            <Link to="/" variant="nav">
+              ← Back to Dashboard
             </Link>
-          )}
-        </div>
+            <Text variant="h1" color="inverse">{decodedName}</Text>
+            {decklist && (
+              <Link
+                to={`/archetype/${encodeURIComponent(decklist.archetype)}`}
+                variant="badge"
+              >
+                {decklist.archetype}
+              </Link>
+            )}
+          </VStack>
+        </Box>
 
-        <div className="p-10 border-b border-gray-200">
-          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">
-            Match Statistics
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-5">
-            <div className="bg-gray-50 p-5 rounded-xl text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">
-                {playerStats.draws > 0
-                  ? `${playerStats.wins}-${playerStats.losses}-${playerStats.draws}`
-                  : `${playerStats.wins}-${playerStats.losses}`}
-              </div>
-              <div className="text-gray-600 text-sm uppercase tracking-wider">Match Record</div>
-            </div>
-            <div className="bg-gray-50 p-5 rounded-xl text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">
-                {(winRate * 100).toFixed(1)}%
-              </div>
-              <div className="text-gray-600 text-sm uppercase tracking-wider">Win Rate</div>
-            </div>
-            <div className="bg-gray-50 p-5 rounded-xl text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">
-                {playerStats.gamesWon}-{playerStats.gamesLost}
-              </div>
-              <div className="text-gray-600 text-sm uppercase tracking-wider">Game Record</div>
-            </div>
-            <div className="bg-gray-50 p-5 rounded-xl text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">{playerMatches.length}</div>
-              <div className="text-gray-600 text-sm uppercase tracking-wider">Total Matches</div>
-            </div>
-          </div>
-        </div>
+        <Box padding="lg">
+          <VStack spacing="md">
+            <Box padding="none" margin="none">
+              <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
+                Match Statistics
+              </Text>
+            </Box>
+            
+            {/* Condensed Stats - All in one row */}
+            <Grid columns={{ sm: 1, md: 3 }} spacing="md">
+              {/* Overall Stats */}
+              <Card background="neutral" padding="md">
+                <VStack spacing="sm">
+                  <Text variant="label">Overall</Text>
+                  <Text variant="h2" color="primary">
+                    {totalStats.draws > 0
+                      ? `${totalStats.wins}-${totalStats.losses}-${totalStats.draws}`
+                      : `${totalStats.wins}-${totalStats.losses}`}
+                  </Text>
+                  <Text variant="small" color="secondary">
+                    {(totalWinRate * 100).toFixed(1)}% WR • {totalStats.gamesWon}-{totalStats.gamesLost} Games • {playerMatches.length} Matches
+                  </Text>
+                </VStack>
+              </Card>
+              
+              {/* Draft Stats */}
+              <Card background="info" padding="md">
+                <VStack spacing="sm">
+                  <Text variant="label">Draft</Text>
+                  <Text variant="h2" color="info">
+                    {draftStats.draws > 0
+                      ? `${draftStats.wins}-${draftStats.losses}-${draftStats.draws}`
+                      : `${draftStats.wins}-${draftStats.losses}`}
+                  </Text>
+                  <Text variant="small" color="secondary">
+                    {draftStats.wins + draftStats.losses > 0
+                      ? (draftWinRate * 100).toFixed(1) + '% WR'
+                      : 'N/A'} • {draftStats.gamesWon}-{draftStats.gamesLost} Games • {playerMatches.filter(m => DRAFT_ROUNDS.has(m.round)).length} Matches
+                  </Text>
+                </VStack>
+              </Card>
+              
+              {/* Constructed Stats */}
+              <Card background="accent" padding="md">
+                <VStack spacing="sm">
+                  <Text variant="label">Constructed</Text>
+                  <Text variant="h2" color="accent">
+                    {constructedStats.draws > 0
+                      ? `${constructedStats.wins}-${constructedStats.losses}-${constructedStats.draws}`
+                      : `${constructedStats.wins}-${constructedStats.losses}`}
+                  </Text>
+                  <Text variant="small" color="secondary">
+                    {constructedStats.wins + constructedStats.losses > 0
+                      ? (constructedWinRate * 100).toFixed(1) + '% WR'
+                      : 'N/A'} • {constructedStats.gamesWon}-{constructedStats.gamesLost} Games • {playerMatches.filter(m => !DRAFT_ROUNDS.has(m.round)).length} Matches
+                  </Text>
+                </VStack>
+              </Card>
+            </Grid>
+          </VStack>
+        </Box>
+        
+        <Divider />
 
-        <div className="p-10 border-b border-gray-200">
-          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">
-            Matches
-          </h2>
-          <div className="overflow-x-auto rounded-xl shadow-lg mt-5">
-            <table className="w-full bg-white border-collapse">
-              <thead>
-                <tr className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-                  <th
-                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
-                    onClick={() => handleSort('round')}
-                  >
-                    Round{' '}
-                    <SortIcon
-                      column="round"
-                      sortColumn={sortColumn}
-                      sortDirection={sortDirection}
-                    />
-                  </th>
-                  <th
-                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
-                    onClick={() => handleSort('opponent')}
-                  >
-                    Opponent{' '}
-                    <SortIcon
-                      column="opponent"
-                      sortColumn={sortColumn}
-                      sortDirection={sortDirection}
-                    />
-                  </th>
-                  <th
-                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
-                    onClick={() => handleSort('result')}
-                  >
-                    Result{' '}
-                    <SortIcon
-                      column="result"
-                      sortColumn={sortColumn}
-                      sortDirection={sortDirection}
-                    />
-                  </th>
-                  <th
-                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
-                    onClick={() => handleSort('archetype')}
-                  >
-                    Opponent Archetype{' '}
-                    <SortIcon
-                      column="archetype"
-                      sortColumn={sortColumn}
-                      sortDirection={sortDirection}
-                    />
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {sortedMatches.length === 0 ? (
-                  <tr>
-                    <td colSpan={4} className="text-center py-10 text-gray-500">
-                      No matches found
-                    </td>
-                  </tr>
-                ) : (
-                  sortedMatches.map((match: MatchResult, idx: number) => {
-                    const p1Normalized = normalizePlayerName(match.player1)
-                    const isPlayer1 = p1Normalized === normalizedPlayerName
-                    const opponent = isPlayer1 ? match.player2 : match.player1
-                    const playerWins = isPlayer1 ? match.p1_wins : match.p2_wins
-                    const opponentWins = isPlayer1 ? match.p2_wins : match.p1_wins
-                    const won = playerWins > opponentWins
-                    const draw = playerWins === opponentWins
+        <Box padding="lg">
+          <VStack spacing="md">
+            <Box padding="none" margin="none">
+              <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
+                Matches
+              </Text>
+            </Box>
+            <Card overflow shadow="lg" rounded="xl">
+              <Table>
+                <TableHead>
+                  <TableRow variant="header">
+                    <TableHeader
+                      onClick={() => handleSort('round')}
+                      active={sortColumn === 'round'}
+                      textColor="inverse"
+                    >
+                      Round{' '}
+                      <SortIcon
+                        column="round"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                    <TableHeader
+                      onClick={() => handleSort('opponent')}
+                      active={sortColumn === 'opponent'}
+                      textColor="inverse"
+                    >
+                      Opponent{' '}
+                      <SortIcon
+                        column="opponent"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                    <TableHeader
+                      onClick={() => handleSort('result')}
+                      active={sortColumn === 'result'}
+                      textColor="inverse"
+                    >
+                      Result{' '}
+                      <SortIcon
+                        column="result"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                    <TableHeader
+                      onClick={() => handleSort('archetype')}
+                      active={sortColumn === 'archetype'}
+                      textColor="inverse"
+                    >
+                      Opponent Archetype{' '}
+                      <SortIcon
+                        column="archetype"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {sortedMatches.length === 0 ? (
+                    <TableRow>
+                      <TableCell colSpan={4} textAlign="center" padding="lg" textColor="muted">
+                        No matches found
+                      </TableCell>
+                    </TableRow>
+                  ) : (
+                    sortedMatches.map((match: MatchResult, idx: number) => {
+                      const p1Normalized = normalizePlayerName(match.player1)
+                      const isPlayer1 = p1Normalized === normalizedPlayerName
+                      const opponent = isPlayer1 ? match.player2 : match.player1
+                      const playerWins = isPlayer1 ? match.p1_wins : match.p2_wins
+                      const opponentWins = isPlayer1 ? match.p2_wins : match.p1_wins
+                      const won = playerWins > opponentWins
+                      const draw = playerWins === opponentWins
+                      const isDraft = DRAFT_ROUNDS.has(match.round)
 
-                    // Try to find opponent's decklist using normalized matching
-                    let opponentDecklist: DecklistData | undefined
-                    const opponentNormalized = normalizePlayerName(opponent)
-                    for (const dl of Object.values(decklists)) {
-                      if (normalizePlayerName(dl.player) === opponentNormalized) {
-                        opponentDecklist = dl
-                        break
+                      // Try to find opponent's decklist using normalized matching
+                      let opponentDecklist: DecklistData | undefined
+                      const opponentNormalized = normalizePlayerName(opponent)
+                      for (const dl of Object.values(decklists)) {
+                        if (normalizePlayerName(dl.player) === opponentNormalized) {
+                          opponentDecklist = dl
+                          break
+                        }
                       }
-                    }
-                    const opponentArchetype = opponentDecklist?.archetype || 'Unknown'
+                      const opponentArchetype = opponentDecklist?.archetype || 'Unknown'
 
-                    // Determine result color
-                    let resultColor = 'text-red-600'
-                    if (won) {
-                      resultColor = 'text-green-600'
-                    } else if (draw) {
-                      resultColor = 'text-yellow-600'
-                    }
+                      // Determine result badge variant
+                      let resultVariant: 'success' | 'warning' | 'danger' = 'danger'
+                      if (won) {
+                        resultVariant = 'success'
+                      } else if (draw) {
+                        resultVariant = 'warning'
+                      }
 
-                    return (
-                      <tr key={idx} className="hover:bg-gray-50 transition-colors">
-                        <td className="p-4 text-gray-900">{match.round}</td>
-                        <td className="p-4">
-                          <Link
-                            to={`/player/${encodeURIComponent(opponent)}`}
-                            className="text-indigo-600 hover:text-indigo-800 hover:underline font-medium"
-                          >
-                            {opponent}
-                          </Link>
-                        </td>
-                        <td className={`p-4 font-bold ${resultColor}`}>
-                          {playerWins}-{opponentWins}
-                        </td>
-                        <td className="p-4">
-                          <Link
-                            to={`/archetype/${encodeURIComponent(opponentArchetype)}`}
-                            className="text-indigo-600 hover:text-indigo-800 hover:underline font-medium"
-                          >
-                            {opponentArchetype}
-                          </Link>
-                        </td>
-                      </tr>
-                    )
-                  })
-                )}
-              </tbody>
-            </table>
-          </div>
-        </div>
+                      return (
+                        <TableRow key={idx}>
+                          <TableCell>
+                            <Text>{match.round}</Text>
+                          </TableCell>
+                          <TableCell>
+                            <Link to={`/player/${encodeURIComponent(opponent)}`}>
+                              {opponent}
+                            </Link>
+                          </TableCell>
+                          <TableCell>
+                            <Badge variant={resultVariant}>
+                              {playerWins}-{opponentWins}
+                            </Badge>
+                          </TableCell>
+                          <TableCell>
+                            {isDraft ? (
+                              <Text color="info">Draft</Text>
+                            ) : (
+                              <Link to={`/archetype/${encodeURIComponent(opponentArchetype)}`}>
+                                {opponentArchetype}
+                              </Link>
+                            )}
+                          </TableCell>
+                        </TableRow>
+                      )
+                    })
+                  )}
+                </TableBody>
+              </Table>
+            </Card>
+          </VStack>
+        </Box>
+        
+        <Divider />
 
         {decklist && (
-          <div className="p-10">
-            <div className="flex items-center justify-between mb-5 border-b-2 border-indigo-500 pb-2">
-              <h2 className="text-2xl font-bold text-slate-800">Decklist</h2>
-              <button
-                onClick={handleExportToArena}
-                className="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition-colors"
-                title="Copy decklist to clipboard in Magic Arena format"
-              >
-                <ArrowDownTrayIcon className="w-5 h-5" />
-                {copied ? 'Copied!' : 'Export to Arena'}
-              </button>
-            </div>
-            <div className="mt-5 flex gap-8">
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-4 text-slate-700">
-                  Main Deck ({decklist.main_deck?.reduce((sum, c) => sum + c.count, 0) || 0} cards)
-                </h3>
-                <div className="relative">
-                  {decklist.main_deck && decklist.main_deck.length > 0 ? (
-                    decklist.main_deck.map((card, idx) => (
-                      <div key={idx} className="text-gray-900 whitespace-nowrap">
-                        {card.count}{' '}
-                        <CardTooltip cardName={card.name}>
-                          <Link
-                            to={`/card/${encodeURIComponent(card.name)}`}
-                            className="text-indigo-600 hover:text-indigo-800 hover:underline cursor-pointer"
-                          >
-                            {card.name}
-                          </Link>
-                        </CardTooltip>
-                      </div>
-                    ))
-                  ) : (
-                    <p className="text-gray-600">No main deck data available</p>
-                  )}
-                </div>
-              </div>
-              {decklist.sideboard && decklist.sideboard.length > 0 && (
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-4 text-slate-700">
-                    Sideboard ({decklist.sideboard.reduce((sum, c) => sum + c.count, 0)} cards)
-                  </h3>
-                  <div className="relative">
-                    {decklist.sideboard.map((card, idx) => (
-                      <div key={idx} className="text-gray-900 whitespace-nowrap">
-                        {card.count}{' '}
-                        <CardTooltip cardName={card.name}>
-                          <Link
-                            to={`/card/${encodeURIComponent(card.name)}`}
-                            className="text-indigo-600 hover:text-indigo-800 hover:underline cursor-pointer"
-                          >
-                            {card.name}
-                          </Link>
-                        </CardTooltip>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
+          <Box padding="lg">
+            <VStack spacing="md">
+              <HStack spacing="md" align="center" justify="between">
+                <Box padding="none" margin="none">
+                  <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
+                    Decklist
+                  </Text>
+                </Box>
+                <Button onClick={handleExportToArena} title="Copy decklist to clipboard in Magic Arena format">
+                  <HStack spacing="sm" align="center">
+                    <ArrowDownTrayIcon className="w-5 h-5" />
+                    <Text variant="body" color="inverse">{copied ? 'Copied!' : 'Export to Arena'}</Text>
+                  </HStack>
+                </Button>
+              </HStack>
+              <HStack spacing="lg" align="start">
+                <Box grow>
+                  <VStack spacing="sm">
+                    <Text variant="h3">
+                      Main Deck ({decklist.main_deck?.reduce((sum, c) => sum + c.count, 0) || 0} cards)
+                    </Text>
+                    <VStack spacing="xs">
+                      {decklist.main_deck && decklist.main_deck.length > 0 ? (
+                        decklist.main_deck.map((card, idx) => (
+                          <Box key={idx} whitespace="nowrap">
+                            <HStack spacing="xs" align="center">
+                              <Text>{card.count}</Text>
+                              <CardTooltip cardName={card.name}>
+                                <Link to={`/card/${encodeURIComponent(card.name)}`}>
+                                  {card.name}
+                                </Link>
+                              </CardTooltip>
+                            </HStack>
+                          </Box>
+                        ))
+                      ) : (
+                        <Text variant="small" color="secondary">No main deck data available</Text>
+                      )}
+                    </VStack>
+                  </VStack>
+                </Box>
+                {decklist.sideboard && decklist.sideboard.length > 0 && (
+                  <Box grow>
+                    <VStack spacing="sm">
+                      <Text variant="h3">
+                        Sideboard ({decklist.sideboard.reduce((sum, c) => sum + c.count, 0)} cards)
+                      </Text>
+                      <VStack spacing="xs">
+                        {decklist.sideboard.map((card, idx) => (
+                          <Box key={idx} whitespace="nowrap">
+                            <HStack spacing="xs" align="center">
+                              <Text>{card.count}</Text>
+                              <CardTooltip cardName={card.name}>
+                                <Link to={`/card/${encodeURIComponent(card.name)}`}>
+                                  {card.name}
+                                </Link>
+                              </CardTooltip>
+                            </HStack>
+                          </Box>
+                        ))}
+                      </VStack>
+                    </VStack>
+                  </Box>
+                )}
+              </HStack>
+            </VStack>
+          </Box>
         )}
-      </div>
-    </div>
+      </Card>
+    </Container>
   )
 }
 

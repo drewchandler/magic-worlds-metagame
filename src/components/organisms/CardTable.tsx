@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
-import { Link } from 'react-router-dom'
+
+import { Link } from '@atoms/Link'
 import type { AnalysisData } from '@/types'
 
 interface CardTableProps {
@@ -223,10 +224,7 @@ function CardTable({ data }: CardTableProps) {
               paginatedCardStats.map(cardStat => (
                 <tr key={cardStat.name} className="hover:bg-gray-50 transition-colors">
                   <td className="p-4">
-                    <Link
-                      to={`/card/${encodeURIComponent(cardStat.name)}`}
-                      className="text-indigo-600 hover:text-indigo-800 hover:underline font-medium"
-                    >
+                    <Link to={`/card/${encodeURIComponent(cardStat.name)}`}>
                       {cardStat.name}
                     </Link>
                   </td>

@@ -21,7 +21,7 @@ export function Input({
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className={`px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-gray-900 ${fullWidth ? 'w-full' : ''} ${className}`}
+      className={`px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-neutral-900 ${fullWidth ? 'w-full' : ''} ${className}`}
     />
   )
 }

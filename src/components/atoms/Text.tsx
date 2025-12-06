@@ -1,10 +1,13 @@
 interface TextProps {
   children: React.ReactNode
   variant?: 'h1' | 'h2' | 'h3' | 'body' | 'label' | 'small'
-  color?: 'default' | 'primary' | 'secondary' | 'muted' | 'inverse'
+  color?: 'default' | 'primary' | 'secondary' | 'muted' | 'inverse' | 'info' | 'accent'
   leading?: 'normal' | 'relaxed'
   shadow?: boolean
   opacity?: 'full' | 'high' | 'medium' | 'low'
+  borderBottom?: boolean
+  borderBottomColor?: 'primary' | 'neutral'
+  paddingBottom?: 'sm' | 'md' | 'lg'
   className?: string
 }
 
@@ -15,6 +18,9 @@ export function Text({
   leading = 'normal',
   shadow = false,
   opacity = 'full',
+  borderBottom = false,
+  borderBottomColor = 'primary',
+  paddingBottom,
   className = '',
 }: TextProps) {
   const variantClasses = {
@@ -22,16 +28,18 @@ export function Text({
     h2: 'text-2xl font-bold',
     h3: 'text-xl font-semibold',
     body: 'text-base',
-    label: 'text-sm uppercase tracking-wider text-gray-600',
-    small: 'text-xs text-gray-500',
+    label: 'text-sm uppercase tracking-wider text-secondary',
+    small: 'text-xs text-muted',
   }
 
   const colorClasses = {
     default: '',
-    primary: 'text-indigo-600',
-    secondary: 'text-gray-600',
-    muted: 'text-gray-500',
+    primary: 'text-primary',
+    secondary: 'text-secondary',
+    muted: 'text-muted',
     inverse: 'text-white',
+    info: 'text-info',
+    accent: 'text-accent',
   }
 
   const leadingClasses = {
@@ -48,11 +56,27 @@ export function Text({
     low: 'opacity-50',
   }
 
+  const borderBottomClasses = borderBottom
+    ? borderBottomColor === 'primary'
+      ? 'border-b-2 border-primary-500'
+      : 'border-b-2 border-neutral-200'
+    : ''
+
+  const paddingBottomClasses = paddingBottom
+    ? paddingBottom === 'sm'
+      ? 'pb-2'
+      : paddingBottom === 'md'
+        ? 'pb-3'
+        : 'pb-4'
+    : borderBottom
+      ? 'pb-2'
+      : ''
+
   const Component = variant.startsWith('h') ? (variant as 'h1' | 'h2' | 'h3') : 'p'
 
   return (
     <Component
-      className={`${variantClasses[variant]} ${colorClasses[color]} ${leadingClasses[leading]} ${getShadowClass(shadow)} ${opacityClasses[opacity]} ${className}`}
+      className={`${variantClasses[variant]} ${colorClasses[color]} ${leadingClasses[leading]} ${getShadowClass(shadow)} ${opacityClasses[opacity]} ${borderBottomClasses} ${paddingBottomClasses} ${className}`}
     >
       {children}
     </Component>

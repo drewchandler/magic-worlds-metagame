@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 
 BASE_URL = "https://magic.gg"
 EVENT_URL = f"{BASE_URL}/events/magic-world-championship-31"
-DRAFT_ROUNDS = {1, 2, 3, 8, 9, 10}  # Rounds to ignore
+DRAFT_ROUNDS = {1, 2, 3, 8, 9, 10}  # Draft rounds (still fetch them, just mark them)
 # Data directory relative to project root
 DATA_DIR = Path(__file__).parent.parent / "data"
 DATA_DIR.mkdir(exist_ok=True)
@@ -325,8 +325,7 @@ class MagicSpider:
     
     def get_round_results(self, round_num: int) -> List[Dict]:
         """Get results for a specific round"""
-        if round_num in DRAFT_ROUNDS:
-            return []
+        # Fetch all rounds including draft rounds
         
         # Try to find JSON API endpoint first
         api_urls = [
@@ -500,7 +499,7 @@ class MagicSpider:
                         round_match = re.search(r'round\s*(\d+)', row_text, re.I)
                         round_num = int(round_match.group(1)) if round_match else None
                         
-                        if round_num and round_num not in DRAFT_ROUNDS:
+                        if round_num:
                             player1 = cells[0].get_text(strip=True) if len(cells) > 0 else None
                             player2 = cells[1].get_text(strip=True) if len(cells) > 1 else None
                             result_text = cells[2].get_text(strip=True) if len(cells) > 2 else ''
@@ -527,7 +526,7 @@ class MagicSpider:
                         data = json.loads(json_str)
                         if isinstance(data, list):
                             for match in data:
-                                if isinstance(match, dict) and match.get('round') not in DRAFT_ROUNDS:
+                                if isinstance(match, dict):
                                     p1 = match.get('player1') or match.get('player_one')
                                     p2 = match.get('player2') or match.get('player_two')
                                     p1_wins = match.get('p1_wins') or match.get('wins1', 0)
@@ -573,9 +572,7 @@ class MagicSpider:
                 print(f"Skipping round {round_num} (already cached)")
                 continue
             
-            if round_num in DRAFT_ROUNDS:
-                continue
-            
+            # Fetch all rounds including draft rounds
             results = self.get_round_results(round_num)
             all_results.extend(results)
             time.sleep(1)  # Be polite
