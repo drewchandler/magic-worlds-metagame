@@ -17,7 +17,8 @@ from bs4 import BeautifulSoup
 BASE_URL = "https://magic.gg"
 EVENT_URL = f"{BASE_URL}/events/magic-world-championship-31"
 DRAFT_ROUNDS = {1, 2, 3, 8, 9, 10}  # Rounds to ignore
-DATA_DIR = Path("data")
+# Data directory relative to project root
+DATA_DIR = Path(__file__).parent.parent / "data"
 DATA_DIR.mkdir(exist_ok=True)
 
 # Cache files

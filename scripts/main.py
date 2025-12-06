@@ -6,6 +6,9 @@ Main script to run spider, analysis, and generate dashboard
 import sys
 from pathlib import Path
 
+# Add scripts directory to path so imports work
+sys.path.insert(0, str(Path(__file__).parent))
+
 from analyze import main as analyze_main
 from spider import MagicSpider
 
@@ -44,10 +47,9 @@ def main():
     print("=" * 60)
     print()
     print("To view the dashboard:")
-    print("  python serve.py")
+    print("  npm run dev")
     print()
-    print("Then open http://localhost:8000/dashboard.html in your browser")
-    print("The dashboard will automatically reload data from the JSON files.")
+    print("Then open http://localhost:5173 in your browser")
 
 
 if __name__ == "__main__":

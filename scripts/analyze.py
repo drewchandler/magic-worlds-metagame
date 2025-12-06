@@ -8,7 +8,8 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Dict, List, Tuple
 
-DATA_DIR = Path("data")
+# Data directory relative to project root
+DATA_DIR = Path(__file__).parent.parent / "data"
 DECKLISTS_FILE = DATA_DIR / "decklists.json"
 RESULTS_FILE = DATA_DIR / "results.json"
 OUTPUT_FILE = DATA_DIR / "analysis.json"
