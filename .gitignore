@@ -4,7 +4,7 @@ __pycache__/
 *.pyd
 .Python
 # data/  # Commented out - we need data/ for Vercel deployment
-*.html
+# index.html is needed for Vite/Vercel
 venv/
 env/
 .venv/
