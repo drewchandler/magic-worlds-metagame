@@ -130,7 +130,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
           {decklist && (
             <Link
               to={`/archetype/${encodeURIComponent(decklist.archetype)}`}
-              className="inline-block mt-3 px-4 py-2 bg-white bg-opacity-20 rounded-lg text-white font-semibold hover:bg-opacity-30 transition-all border border-white border-opacity-30 hover:underline"
+              className="inline-block mt-3 px-4 py-2 bg-white rounded-lg font-semibold hover:bg-gray-100 transition-all border border-gray-300 hover:underline text-gray-900"
             >
               {decklist.archetype}
             </Link>
