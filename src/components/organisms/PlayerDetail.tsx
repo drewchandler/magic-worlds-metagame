@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { ArrowDownTrayIcon } from '@heroicons/react/24/outline'
 
 import CardTooltip from '@molecules/CardTooltip'
 import type { AnalysisData } from '@/types'
@@ -65,6 +66,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
   const [decklists, setDecklists] = useState<Record<string, DecklistData>>({})
   const [sortColumn, setSortColumn] = useState<SortColumn>('round')
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc')
+  const [copied, setCopied] = useState(false)
 
   useEffect(() => {
     // Load decklist data
@@ -193,6 +195,56 @@ function PlayerDetail({ data }: PlayerDetailProps) {
     } else {
       setSortColumn(column)
       setSortDirection('asc')
+    }
+  }
+
+  const formatDecklistForArena = (decklist: DecklistData): string => {
+    const lines: string[] = []
+    
+    // Main deck
+    if (decklist.main_deck && decklist.main_deck.length > 0) {
+      decklist.main_deck.forEach(card => {
+        lines.push(`${card.count} ${card.name}`)
+      })
+    }
+    
+    // Sideboard
+    if (decklist.sideboard && decklist.sideboard.length > 0) {
+      lines.push('') // Blank line separator
+      decklist.sideboard.forEach(card => {
+        lines.push(`${card.count} ${card.name}`)
+      })
+    }
+    
+    return lines.join('\n')
+  }
+
+  const handleExportToArena = async () => {
+    if (!decklist) return
+    
+    const arenaFormat = formatDecklistForArena(decklist)
+    
+    try {
+      await navigator.clipboard.writeText(arenaFormat)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch (err) {
+      console.error('Failed to copy to clipboard:', err)
+      // Fallback: select text in a textarea
+      const textarea = document.createElement('textarea')
+      textarea.value = arenaFormat
+      textarea.style.position = 'fixed'
+      textarea.style.opacity = '0'
+      document.body.appendChild(textarea)
+      textarea.select()
+      try {
+        document.execCommand('copy')
+        setCopied(true)
+        setTimeout(() => setCopied(false), 2000)
+      } catch (fallbackErr) {
+        console.error('Fallback copy failed:', fallbackErr)
+      }
+      document.body.removeChild(textarea)
     }
   }
 
@@ -372,9 +424,17 @@ function PlayerDetail({ data }: PlayerDetailProps) {
 
         {decklist && (
           <div className="p-10">
-            <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">
-              Decklist
-            </h2>
+            <div className="flex items-center justify-between mb-5 border-b-2 border-indigo-500 pb-2">
+              <h2 className="text-2xl font-bold text-slate-800">Decklist</h2>
+              <button
+                onClick={handleExportToArena}
+                className="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition-colors"
+                title="Copy decklist to clipboard in Magic Arena format"
+              >
+                <ArrowDownTrayIcon className="w-5 h-5" />
+                {copied ? 'Copied!' : 'Export to Arena'}
+              </button>
+            </div>
             <div className="mt-5 flex gap-8">
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-4 text-slate-700">
