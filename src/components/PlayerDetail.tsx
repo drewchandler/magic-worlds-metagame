@@ -40,12 +40,17 @@ function normalizePlayerName(name: string): string {
   return name.toLowerCase().split(/\s+/).join(' ')
 }
 
+type SortColumn = 'round' | 'opponent' | 'result' | 'archetype'
+type SortDirection = 'asc' | 'desc'
+
 function PlayerDetail({ data }: PlayerDetailProps) {
   const { playerName } = useParams<{ playerName: string }>()
   const decodedName = decodeURIComponent(playerName || '')
   const [decklist, setDecklist] = useState<DecklistData | null>(null)
   const [playerMatches, setPlayerMatches] = useState<MatchResult[]>([])
   const [decklists, setDecklists] = useState<Record<string, DecklistData>>({})
+  const [sortColumn, setSortColumn] = useState<SortColumn>('round')
+  const [sortDirection, setSortDirection] = useState<SortDirection>('asc')
 
   useEffect(() => {
     // Load decklist data
@@ -119,6 +124,67 @@ function PlayerDetail({ data }: PlayerDetailProps) {
     ? playerStats.wins / (playerStats.wins + playerStats.losses)
     : 0
 
+  // Sort matches
+  const sortedMatches = [...playerMatches].sort((a, b) => {
+    const p1Normalized = normalizePlayerName(decodedName)
+    const aIsPlayer1 = normalizePlayerName(a.player1) === p1Normalized
+    const bIsPlayer1 = normalizePlayerName(b.player1) === p1Normalized
+    const aOpponent = aIsPlayer1 ? a.player2 : a.player1
+    const bOpponent = bIsPlayer1 ? b.player2 : b.player1
+    const aPlayerWins = aIsPlayer1 ? a.p1_wins : a.p2_wins
+    const bPlayerWins = bIsPlayer1 ? b.p1_wins : b.p2_wins
+    const aOpponentWins = aIsPlayer1 ? a.p2_wins : a.p1_wins
+    const bOpponentWins = bIsPlayer1 ? b.p2_wins : b.p1_wins
+    
+    // Try to find opponent archetypes
+    const aOpponentNormalized = normalizePlayerName(aOpponent)
+    const bOpponentNormalized = normalizePlayerName(bOpponent)
+    let aOpponentArchetype = 'Unknown'
+    let bOpponentArchetype = 'Unknown'
+    for (const dl of Object.values(decklists)) {
+      if (normalizePlayerName(dl.player) === aOpponentNormalized) {
+        aOpponentArchetype = dl.archetype
+      }
+      if (normalizePlayerName(dl.player) === bOpponentNormalized) {
+        bOpponentArchetype = dl.archetype
+      }
+    }
+    
+    let comparison = 0
+    switch (sortColumn) {
+      case 'round':
+        comparison = a.round - b.round
+        break
+      case 'opponent':
+        comparison = aOpponent.localeCompare(bOpponent)
+        break
+      case 'result':
+        comparison = (aPlayerWins - aOpponentWins) - (bPlayerWins - bOpponentWins)
+        break
+      case 'archetype':
+        comparison = aOpponentArchetype.localeCompare(bOpponentArchetype)
+        break
+    }
+    
+    return sortDirection === 'asc' ? comparison : -comparison
+  })
+
+  const handleSort = (column: SortColumn) => {
+    if (sortColumn === column) {
+      setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc')
+    } else {
+      setSortColumn(column)
+      setSortDirection('asc')
+    }
+  }
+
+  const SortIcon = ({ column }: { column: SortColumn }) => {
+    if (sortColumn !== column) {
+      return <span className="ml-1 text-gray-400">↕</span>
+    }
+    return <span className="ml-1">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600 p-5">
       <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
@@ -165,27 +231,48 @@ function PlayerDetail({ data }: PlayerDetailProps) {
             <table className="w-full bg-white border-collapse">
               <thead>
                 <tr className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-                  <th className="p-4 text-left font-semibold text-xs uppercase tracking-wider">Round</th>
-                  <th className="p-4 text-left font-semibold text-xs uppercase tracking-wider">Opponent</th>
-                  <th className="p-4 text-left font-semibold text-xs uppercase tracking-wider">Result</th>
-                  <th className="p-4 text-left font-semibold text-xs uppercase tracking-wider">Opponent Archetype</th>
+                  <th 
+                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
+                    onClick={() => handleSort('round')}
+                  >
+                    Round <SortIcon column="round" />
+                  </th>
+                  <th 
+                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
+                    onClick={() => handleSort('opponent')}
+                  >
+                    Opponent <SortIcon column="opponent" />
+                  </th>
+                  <th 
+                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
+                    onClick={() => handleSort('result')}
+                  >
+                    Result <SortIcon column="result" />
+                  </th>
+                  <th 
+                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
+                    onClick={() => handleSort('archetype')}
+                  >
+                    Opponent Archetype <SortIcon column="archetype" />
+                  </th>
                 </tr>
               </thead>
               <tbody>
-                {playerMatches.length === 0 ? (
+                {sortedMatches.length === 0 ? (
                   <tr>
                     <td colSpan={4} className="text-center py-10 text-gray-500">
                       No matches found
                     </td>
                   </tr>
                 ) : (
-                  playerMatches.map((match: MatchResult, idx: number) => {
+                  sortedMatches.map((match: MatchResult, idx: number) => {
                     const p1Normalized = normalizePlayerName(match.player1)
                     const isPlayer1 = p1Normalized === normalizedPlayerName
                     const opponent = isPlayer1 ? match.player2 : match.player1
                     const playerWins = isPlayer1 ? match.p1_wins : match.p2_wins
                     const opponentWins = isPlayer1 ? match.p2_wins : match.p1_wins
                     const won = playerWins > opponentWins
+                    const draw = playerWins === opponentWins
                     
                     // Try to find opponent's decklist using normalized matching
                     let opponentDecklist: DecklistData | undefined
@@ -198,6 +285,14 @@ function PlayerDetail({ data }: PlayerDetailProps) {
                     }
                     const opponentArchetype = opponentDecklist?.archetype || 'Unknown'
 
+                    // Determine result color
+                    let resultColor = 'text-red-600'
+                    if (won) {
+                      resultColor = 'text-green-600'
+                    } else if (draw) {
+                      resultColor = 'text-yellow-600'
+                    }
+
                     return (
                       <tr key={idx} className="hover:bg-gray-50 transition-colors">
                         <td className="p-4 text-gray-900">{match.round}</td>
@@ -206,7 +301,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
                             {opponent}
                           </Link>
                         </td>
-                        <td className={`p-4 font-bold ${won ? 'text-green-600' : 'text-red-600'}`}>
+                        <td className={`p-4 font-bold ${resultColor}`}>
                           {playerWins}-{opponentWins}
                         </td>
                         <td className="p-4">
