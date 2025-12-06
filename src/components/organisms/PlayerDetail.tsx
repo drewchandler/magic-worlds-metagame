@@ -74,14 +74,19 @@ function PlayerDetail({ data }: PlayerDetailProps) {
       .then(res => res.json())
       .then(decklistsData => {
         const decklistsMap: Record<string, DecklistData> = {}
+        const normalizedPlayerName = normalizePlayerName(decodedName)
+        let foundDecklist: DecklistData | null = null
+        
         for (const dl of Object.values(decklistsData)) {
           const d = dl as DecklistData
           decklistsMap[d.player] = d
-          if (d.player === decodedName) {
-            setDecklist(d)
+          // Use normalized matching to find current player's decklist
+          if (normalizePlayerName(d.player) === normalizedPlayerName && !foundDecklist) {
+            foundDecklist = d
           }
         }
         setDecklists(decklistsMap)
+        setDecklist(foundDecklist)
       })
       .catch(err => console.error('Error loading decklist:', err))
   }, [decodedName])
@@ -446,10 +451,15 @@ function PlayerDetail({ data }: PlayerDetailProps) {
                       // Try to find opponent's decklist using normalized matching
                       let opponentDecklist: DecklistData | undefined
                       const opponentNormalized = normalizePlayerName(opponent)
-                      for (const dl of Object.values(decklists)) {
-                        if (normalizePlayerName(dl.player) === opponentNormalized) {
-                          opponentDecklist = dl
-                          break
+                      // First try direct lookup
+                      opponentDecklist = decklists[opponent]
+                      // If not found, try normalized lookup
+                      if (!opponentDecklist) {
+                        for (const dl of Object.values(decklists)) {
+                          if (normalizePlayerName(dl.player) === opponentNormalized) {
+                            opponentDecklist = dl
+                            break
+                          }
                         }
                       }
                       const opponentArchetype = opponentDecklist?.archetype || 'Unknown'
