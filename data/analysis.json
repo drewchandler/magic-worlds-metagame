@@ -22,6 +22,7 @@
     "Izzet Lessons": {
       "wins": 53,
       "losses": 25,
+      "draws": 0,
       "games_won": 137,
       "games_lost": 95,
       "matches": [
@@ -861,6 +862,7 @@
     "Jeskai Control": {
       "wins": 21,
       "losses": 15,
+      "draws": 1,
       "games_won": 48,
       "games_lost": 39,
       "matches": [
@@ -1205,6 +1207,7 @@
     "Temur Otters": {
       "wins": 33,
       "losses": 31,
+      "draws": 0,
       "games_won": 100,
       "games_lost": 104,
       "matches": [
@@ -1936,6 +1939,7 @@
     "Izzet Looting": {
       "wins": 17,
       "losses": 25,
+      "draws": 0,
       "games_won": 51,
       "games_lost": 62,
       "matches": [
@@ -2361,6 +2365,7 @@
     "Golgari Ouroboroid": {
       "wins": 13,
       "losses": 7,
+      "draws": 0,
       "games_won": 30,
       "games_lost": 21,
       "matches": [
@@ -2552,6 +2557,7 @@
     "Simic Ouroboroid": {
       "wins": 8,
       "losses": 17,
+      "draws": 0,
       "games_won": 27,
       "games_lost": 39,
       "matches": [
@@ -2788,6 +2794,7 @@
     "Bant Airbending": {
       "wins": 20,
       "losses": 33,
+      "draws": 0,
       "games_won": 69,
       "games_lost": 84,
       "matches": [
@@ -3348,6 +3355,7 @@
     "Dimir Bounce": {
       "wins": 4,
       "losses": 8,
+      "draws": 0,
       "games_won": 11,
       "games_lost": 17,
       "matches": [
@@ -3467,6 +3475,7 @@
     "Sultai Reanimator": {
       "wins": 12,
       "losses": 12,
+      "draws": 0,
       "games_won": 28,
       "games_lost": 33,
       "matches": [
@@ -3694,6 +3703,7 @@
     "Jeskai Artifacts": {
       "wins": 6,
       "losses": 10,
+      "draws": 0,
       "games_won": 16,
       "games_lost": 23,
       "matches": [
@@ -3849,6 +3859,7 @@
     "Izzet Prowess": {
       "wins": 16,
       "losses": 17,
+      "draws": 0,
       "games_won": 45,
       "games_lost": 39,
       "matches": [
@@ -4157,6 +4168,7 @@
     "Dimir Midrange": {
       "wins": 2,
       "losses": 6,
+      "draws": 0,
       "games_won": 7,
       "games_lost": 13,
       "matches": [
@@ -4240,6 +4252,7 @@
     "Mono-Red Aggro": {
       "wins": 8,
       "losses": 4,
+      "draws": 0,
       "games_won": 19,
       "games_lost": 12,
       "matches": [
@@ -4359,6 +4372,7 @@
     "Simic Otters": {
       "wins": 1,
       "losses": 2,
+      "draws": 1,
       "games_won": 5,
       "games_lost": 6,
       "matches": [
@@ -4406,6 +4420,7 @@
     "Orzhov Demons": {
       "wins": 2,
       "losses": 2,
+      "draws": 0,
       "games_won": 5,
       "games_lost": 6,
       "matches": [
@@ -4453,6 +4468,7 @@
     "Golgari Dragons": {
       "wins": 2,
       "losses": 2,
+      "draws": 0,
       "games_won": 4,
       "games_lost": 6,
       "matches": [
@@ -4500,6 +4516,7 @@
     "Boros Mobilize": {
       "wins": 1,
       "losses": 3,
+      "draws": 0,
       "games_won": 3,
       "games_lost": 6,
       "matches": [

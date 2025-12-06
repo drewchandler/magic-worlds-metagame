@@ -12,6 +12,7 @@ interface PlayerData {
   archetype: string
   wins: number
   losses: number
+  draws: number
   gamesWon: number
   gamesLost: number
   totalMatches: number
@@ -118,6 +119,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
         archetype: p.archetype,
         wins: 0,
         losses: 0,
+        draws: 0,
         gamesWon: 0,
         gamesLost: 0,
         totalMatches: 0
@@ -138,6 +140,8 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
           p1Stats.wins++
         } else if (match.p2_wins > match.p1_wins) {
           p1Stats.losses++
+        } else {
+          p1Stats.draws++
         }
         p1Stats.gamesWon += match.p1_wins
         p1Stats.gamesLost += match.p2_wins
@@ -149,6 +153,8 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
           p2Stats.wins++
         } else if (match.p1_wins > match.p2_wins) {
           p2Stats.losses++
+        } else {
+          p2Stats.draws++
         }
         p2Stats.gamesWon += match.p2_wins
         p2Stats.gamesLost += match.p1_wins
@@ -337,7 +343,12 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                 <div className="text-gray-600 text-sm uppercase tracking-wider">Players</div>
               </div>
               <div className="bg-gray-50 p-5 rounded-xl text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">{archetypeStats.wins}-{archetypeStats.losses}</div>
+                <div className="text-3xl font-bold text-indigo-600 mb-2">
+                  {archetypeStats.draws && archetypeStats.draws > 0
+                    ? `${archetypeStats.wins}-${archetypeStats.losses}-${archetypeStats.draws}`
+                    : `${archetypeStats.wins}-${archetypeStats.losses}`
+                  }
+                </div>
                 <div className="text-gray-600 text-sm uppercase tracking-wider">Match Record</div>
               </div>
               <div className="bg-gray-50 p-5 rounded-xl text-center">
@@ -446,7 +457,12 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                             {playerStat.player}
                           </Link>
                         </td>
-                        <td className="p-4">{playerStat.wins}-{playerStat.losses}</td>
+                        <td className="p-4">
+                          {playerStat.draws > 0 
+                            ? `${playerStat.wins}-${playerStat.losses}-${playerStat.draws}`
+                            : `${playerStat.wins}-${playerStat.losses}`
+                          }
+                        </td>
                         <td className="p-4">
                           <span className={`font-bold ${getWinRateClass(winRate)}`}>
                             {(winRate * 100).toFixed(1)}%

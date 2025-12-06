@@ -1,6 +1,7 @@
 export interface ArchetypeStats {
   wins: number
   losses: number
+  draws?: number
   games_won: number
   games_lost: number
   win_rate: number

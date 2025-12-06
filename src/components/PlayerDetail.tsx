@@ -99,6 +99,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
   const playerStats = {
     wins: 0,
     losses: 0,
+    draws: 0,
     gamesWon: 0,
     gamesLost: 0
   }
@@ -110,11 +111,13 @@ function PlayerDetail({ data }: PlayerDetailProps) {
     if (isPlayer1) {
       if (match.p1_wins > match.p2_wins) playerStats.wins++
       else if (match.p2_wins > match.p1_wins) playerStats.losses++
+      else playerStats.draws++
       playerStats.gamesWon += match.p1_wins
       playerStats.gamesLost += match.p2_wins
     } else {
       if (match.p2_wins > match.p1_wins) playerStats.wins++
       else if (match.p1_wins > match.p2_wins) playerStats.losses++
+      else playerStats.draws++
       playerStats.gamesWon += match.p2_wins
       playerStats.gamesLost += match.p1_wins
     }
@@ -207,7 +210,12 @@ function PlayerDetail({ data }: PlayerDetailProps) {
           <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">Match Statistics</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-5">
             <div className="bg-gray-50 p-5 rounded-xl text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">{playerStats.wins}-{playerStats.losses}</div>
+              <div className="text-3xl font-bold text-indigo-600 mb-2">
+                {playerStats.draws > 0 
+                  ? `${playerStats.wins}-${playerStats.losses}-${playerStats.draws}`
+                  : `${playerStats.wins}-${playerStats.losses}`
+                }
+              </div>
               <div className="text-gray-600 text-sm uppercase tracking-wider">Match Record</div>
             </div>
             <div className="bg-gray-50 p-5 rounded-xl text-center">
