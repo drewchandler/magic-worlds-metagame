@@ -1,26 +1,21 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { ArrowDownTrayIcon } from '@heroicons/react/24/outline'
 
 import { Card } from '@atoms/Card'
-import { Text } from '@atoms/Text'
-import { Grid } from '@atoms/Grid'
-import { VStack } from '@atoms/VStack'
-import { HStack } from '@atoms/HStack'
 import { Container } from '@atoms/Container'
 import { Box } from '@atoms/Box'
-import { Button } from '@atoms/Button'
 import { Link } from '@atoms/Link'
-import { Badge } from '@atoms/Badge'
-import { Table, TableHead, TableBody, TableRow, TableHeader, TableCell } from '@atoms/Table'
 import { Divider } from '@atoms/Divider'
-import { SortIcon } from '@atoms/SortIcon'
+import { VStack } from '@atoms/VStack'
 import CardTooltip from '@molecules/CardTooltip'
 import { SectionHeader } from '@molecules/SectionHeader'
 import { PageHeader } from '@molecules/PageHeader'
 import { StatDisplay } from '@molecules/StatDisplay'
 import { EmptyState } from '@molecules/EmptyState'
 import { LoadingState } from '@molecules/LoadingState'
+import { MatchStatsGrid } from '@molecules/MatchStatsGrid'
+import { MatchesTable } from '@molecules/MatchesTable'
+import { DecklistDisplay } from '@molecules/DecklistDisplay'
 import type { AnalysisData } from '@/types'
 
 interface PlayerDetailProps {
@@ -60,8 +55,6 @@ function normalizePlayerName(name: string): string {
   return name.toLowerCase().split(/\s+/).join(' ')
 }
 
-type SortColumn = 'round' | 'opponent' | 'result' | 'archetype'
-type SortDirection = 'asc' | 'desc'
 
 function PlayerDetail({ data }: PlayerDetailProps) {
   const { playerName } = useParams<{ playerName: string }>()
@@ -69,9 +62,6 @@ function PlayerDetail({ data }: PlayerDetailProps) {
   const [decklist, setDecklist] = useState<DecklistData | null>(null)
   const [playerMatches, setPlayerMatches] = useState<MatchResult[]>([])
   const [decklists, setDecklists] = useState<Record<string, DecklistData>>({})
-  const [sortColumn, setSortColumn] = useState<SortColumn>('round')
-  const [sortDirection, setSortDirection] = useState<SortDirection>('asc')
-  const [copied, setCopied] = useState(false)
 
   useEffect(() => {
     // Load decklist data
@@ -95,6 +85,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
       })
       .catch(err => console.error('Error loading decklist:', err))
   }, [decodedName])
+
 
   useEffect(() => {
     // Load match results
@@ -180,109 +171,6 @@ function PlayerDetail({ data }: PlayerDetailProps) {
       ? totalStats.wins / (totalStats.wins + totalStats.losses)
       : 0
 
-  // Sort matches
-  const sortedMatches = [...playerMatches].sort((a, b) => {
-    const p1Normalized = normalizePlayerName(decodedName)
-    const aIsPlayer1 = normalizePlayerName(a.player1) === p1Normalized
-    const bIsPlayer1 = normalizePlayerName(b.player1) === p1Normalized
-    const aOpponent = aIsPlayer1 ? a.player2 : a.player1
-    const bOpponent = bIsPlayer1 ? b.player2 : b.player1
-    const aPlayerWins = aIsPlayer1 ? a.p1_wins : a.p2_wins
-    const bPlayerWins = bIsPlayer1 ? b.p1_wins : b.p2_wins
-    const aOpponentWins = aIsPlayer1 ? a.p2_wins : a.p1_wins
-    const bOpponentWins = bIsPlayer1 ? b.p2_wins : b.p1_wins
-
-    // Try to find opponent archetypes
-    const aOpponentNormalized = normalizePlayerName(aOpponent)
-    const bOpponentNormalized = normalizePlayerName(bOpponent)
-    let aOpponentArchetype = 'Unknown'
-    let bOpponentArchetype = 'Unknown'
-    for (const dl of Object.values(decklists)) {
-      if (normalizePlayerName(dl.player) === aOpponentNormalized) {
-        aOpponentArchetype = dl.archetype
-      }
-      if (normalizePlayerName(dl.player) === bOpponentNormalized) {
-        bOpponentArchetype = dl.archetype
-      }
-    }
-
-    let comparison = 0
-    switch (sortColumn) {
-      case 'round':
-        comparison = a.round - b.round
-        break
-      case 'opponent':
-        comparison = aOpponent.localeCompare(bOpponent)
-        break
-      case 'result':
-        comparison = aPlayerWins - aOpponentWins - (bPlayerWins - bOpponentWins)
-        break
-      case 'archetype':
-        comparison = aOpponentArchetype.localeCompare(bOpponentArchetype)
-        break
-    }
-
-    return sortDirection === 'asc' ? comparison : -comparison
-  })
-
-  const handleSort = (column: SortColumn) => {
-    if (sortColumn === column) {
-      setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc')
-    } else {
-      setSortColumn(column)
-      setSortDirection('asc')
-    }
-  }
-
-  const formatDecklistForArena = (decklist: DecklistData): string => {
-    const lines: string[] = []
-    
-    // Main deck
-    if (decklist.main_deck && decklist.main_deck.length > 0) {
-      decklist.main_deck.forEach(card => {
-        lines.push(`${card.count} ${card.name}`)
-      })
-    }
-    
-    // Sideboard
-    if (decklist.sideboard && decklist.sideboard.length > 0) {
-      lines.push('') // Blank line separator
-      decklist.sideboard.forEach(card => {
-        lines.push(`${card.count} ${card.name}`)
-      })
-    }
-    
-    return lines.join('\n')
-  }
-
-  const handleExportToArena = async () => {
-    if (!decklist) return
-    
-    const arenaFormat = formatDecklistForArena(decklist)
-    
-    try {
-      await navigator.clipboard.writeText(arenaFormat)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
-    } catch (err) {
-      console.error('Failed to copy to clipboard:', err)
-      // Fallback: select text in a textarea
-      const textarea = document.createElement('textarea')
-      textarea.value = arenaFormat
-      textarea.style.position = 'fixed'
-      textarea.style.opacity = '0'
-      document.body.appendChild(textarea)
-      textarea.select()
-      try {
-        document.execCommand('copy')
-        setCopied(true)
-        setTimeout(() => setCopied(false), 2000)
-      } catch (fallbackErr) {
-        console.error('Fallback copy failed:', fallbackErr)
-      }
-      document.body.removeChild(textarea)
-    }
-  }
 
   return (
     <Container variant="page" padding="md">
@@ -304,258 +192,45 @@ function PlayerDetail({ data }: PlayerDetailProps) {
         <Box padding="lg">
           <VStack spacing="md">
             <SectionHeader>Match Statistics</SectionHeader>
-            
-            {/* Condensed Stats - All in one row */}
-            <Grid columns={{ sm: 1, md: 3 }} spacing="md">
-              {/* Overall Stats */}
-              <Card background="neutral" padding="md">
-                <VStack spacing="sm">
-                  <Text variant="label">Overall</Text>
-                  <Text variant="h2" color="primary">
-                    {totalStats.draws > 0
-                      ? `${totalStats.wins}-${totalStats.losses}-${totalStats.draws}`
-                      : `${totalStats.wins}-${totalStats.losses}`}
-                  </Text>
-                  <Text variant="small" color="secondary">
-                    {(totalWinRate * 100).toFixed(1)}% WR • {totalStats.gamesWon}-{totalStats.gamesLost} Games • {playerMatches.length} Matches
-                  </Text>
-                </VStack>
-              </Card>
-              
-              {/* Draft Stats */}
-              <Card background="info" padding="md">
-                <VStack spacing="sm">
-                  <Text variant="label">Draft</Text>
-                  <Text variant="h2" color="info">
-                    {draftStats.draws > 0
-                      ? `${draftStats.wins}-${draftStats.losses}-${draftStats.draws}`
-                      : `${draftStats.wins}-${draftStats.losses}`}
-                  </Text>
-                  <Text variant="small" color="secondary">
-                    {draftStats.wins + draftStats.losses > 0
-                      ? (draftWinRate * 100).toFixed(1) + '% WR'
-                      : 'N/A'} • {draftStats.gamesWon}-{draftStats.gamesLost} Games • {playerMatches.filter(m => DRAFT_ROUNDS.has(m.round)).length} Matches
-                  </Text>
-                </VStack>
-              </Card>
-              
-              {/* Constructed Stats */}
-              <Card background="accent" padding="md">
-                <VStack spacing="sm">
-                  <Text variant="label">Constructed</Text>
-                  <Text variant="h2" color="accent">
-                    {constructedStats.draws > 0
-                      ? `${constructedStats.wins}-${constructedStats.losses}-${constructedStats.draws}`
-                      : `${constructedStats.wins}-${constructedStats.losses}`}
-                  </Text>
-                  <Text variant="small" color="secondary">
-                    {constructedStats.wins + constructedStats.losses > 0
-                      ? (constructedWinRate * 100).toFixed(1) + '% WR'
-                      : 'N/A'} • {constructedStats.gamesWon}-{constructedStats.gamesLost} Games • {playerMatches.filter(m => !DRAFT_ROUNDS.has(m.round)).length} Matches
-                  </Text>
-                </VStack>
-              </Card>
-            </Grid>
+            <MatchStatsGrid
+              overall={{
+                ...totalStats,
+                matches: playerMatches.length,
+              }}
+              draft={{
+                ...draftStats,
+                matches: playerMatches.filter(m => DRAFT_ROUNDS.has(m.round)).length,
+              }}
+              constructed={{
+                ...constructedStats,
+                matches: playerMatches.filter(m => !DRAFT_ROUNDS.has(m.round)).length,
+              }}
+              overallWinRate={totalWinRate}
+              draftWinRate={draftWinRate}
+              constructedWinRate={constructedWinRate}
+            />
           </VStack>
         </Box>
-        
+
         <Divider />
 
         <Box padding="lg">
           <VStack spacing="md">
             <SectionHeader>Matches</SectionHeader>
-            <Card overflow shadow="lg" rounded="xl">
-              <Table>
-                <TableHead>
-                  <TableRow variant="header">
-                    <TableHeader
-                      onClick={() => handleSort('round')}
-                      active={sortColumn === 'round'}
-                      textColor="inverse"
-                    >
-                      Round{' '}
-                      <SortIcon
-                        column="round"
-                        sortColumn={sortColumn}
-                        sortDirection={sortDirection}
-                      />
-                    </TableHeader>
-                    <TableHeader
-                      onClick={() => handleSort('opponent')}
-                      active={sortColumn === 'opponent'}
-                      textColor="inverse"
-                    >
-                      Opponent{' '}
-                      <SortIcon
-                        column="opponent"
-                        sortColumn={sortColumn}
-                        sortDirection={sortDirection}
-                      />
-                    </TableHeader>
-                    <TableHeader
-                      onClick={() => handleSort('result')}
-                      active={sortColumn === 'result'}
-                      textColor="inverse"
-                    >
-                      Result{' '}
-                      <SortIcon
-                        column="result"
-                        sortColumn={sortColumn}
-                        sortDirection={sortDirection}
-                      />
-                    </TableHeader>
-                    <TableHeader
-                      onClick={() => handleSort('archetype')}
-                      active={sortColumn === 'archetype'}
-                      textColor="inverse"
-                    >
-                      Opponent Archetype{' '}
-                      <SortIcon
-                        column="archetype"
-                        sortColumn={sortColumn}
-                        sortDirection={sortDirection}
-                      />
-                    </TableHeader>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {sortedMatches.length === 0 ? (
-                    <EmptyState message="No matches found" colSpan={4} />
-                  ) : (
-                    sortedMatches.map((match: MatchResult, idx: number) => {
-                      const p1Normalized = normalizePlayerName(match.player1)
-                      const isPlayer1 = p1Normalized === normalizedPlayerName
-                      const opponent = isPlayer1 ? match.player2 : match.player1
-                      const playerWins = isPlayer1 ? match.p1_wins : match.p2_wins
-                      const opponentWins = isPlayer1 ? match.p2_wins : match.p1_wins
-                      const won = playerWins > opponentWins
-                      const draw = playerWins === opponentWins
-                      const isDraft = DRAFT_ROUNDS.has(match.round)
-
-                      // Try to find opponent's decklist using normalized matching
-                      let opponentDecklist: DecklistData | undefined
-                      const opponentNormalized = normalizePlayerName(opponent)
-                      // First try direct lookup
-                      opponentDecklist = decklists[opponent]
-                      // If not found, try normalized lookup
-                      if (!opponentDecklist) {
-                        for (const dl of Object.values(decklists)) {
-                          if (normalizePlayerName(dl.player) === opponentNormalized) {
-                            opponentDecklist = dl
-                            break
-                          }
-                        }
-                      }
-                      const opponentArchetype = opponentDecklist?.archetype || 'Unknown'
-
-                      // Determine result badge variant
-                      let resultVariant: 'success' | 'warning' | 'danger' = 'danger'
-                      if (won) {
-                        resultVariant = 'success'
-                      } else if (draw) {
-                        resultVariant = 'warning'
-                      }
-
-                      return (
-                        <TableRow key={idx}>
-                          <TableCell>
-                            <Text>{match.round}</Text>
-                          </TableCell>
-                          <TableCell>
-                            <Link to={`/player/${encodeURIComponent(opponent)}`}>
-                              {opponent}
-                            </Link>
-                          </TableCell>
-                          <TableCell>
-                            <Badge variant={resultVariant}>
-                              {playerWins}-{opponentWins}
-                            </Badge>
-                          </TableCell>
-                          <TableCell>
-                            {isDraft ? (
-                              <Text color="info">Draft</Text>
-                            ) : (
-                              <Link to={`/archetype/${encodeURIComponent(opponentArchetype)}`}>
-                                {opponentArchetype}
-                              </Link>
-                            )}
-                          </TableCell>
-                        </TableRow>
-                      )
-                    })
-                  )}
-                </TableBody>
-              </Table>
-            </Card>
+            <MatchesTable
+              matches={playerMatches}
+              currentPlayerName={decodedName}
+              decklists={decklists}
+              normalizePlayerName={normalizePlayerName}
+              draftRounds={DRAFT_ROUNDS}
+            />
           </VStack>
         </Box>
-        
+
         <Divider />
 
         {decklist && (
-          <Box padding="lg">
-            <VStack spacing="md">
-              <HStack spacing="md" align="center" justify="between">
-                <SectionHeader>Decklist</SectionHeader>
-                <Button onClick={handleExportToArena} title="Copy decklist to clipboard in Magic Arena format">
-                  <HStack spacing="sm" align="center">
-                    <ArrowDownTrayIcon className="w-5 h-5" />
-                    <Text variant="body" color="inverse">{copied ? 'Copied!' : 'Export to Arena'}</Text>
-                  </HStack>
-                </Button>
-              </HStack>
-              <HStack spacing="lg" align="start">
-                <Box grow>
-                  <VStack spacing="sm">
-                    <Text variant="h3">
-                      Main Deck ({decklist.main_deck?.reduce((sum, c) => sum + c.count, 0) || 0} cards)
-                    </Text>
-                    <VStack spacing="xs">
-                      {decklist.main_deck && decklist.main_deck.length > 0 ? (
-                        decklist.main_deck.map((card, idx) => (
-                          <Box key={idx} whitespace="nowrap">
-                            <HStack spacing="xs" align="center">
-                              <Text>{card.count}</Text>
-                              <CardTooltip cardName={card.name}>
-                                <Link to={`/card/${encodeURIComponent(card.name)}`}>
-                                  {card.name}
-                                </Link>
-                              </CardTooltip>
-                            </HStack>
-                          </Box>
-                        ))
-                      ) : (
-                        <Text variant="small" color="secondary">No main deck data available</Text>
-                      )}
-                    </VStack>
-                  </VStack>
-                </Box>
-                {decklist.sideboard && decklist.sideboard.length > 0 && (
-                  <Box grow>
-                    <VStack spacing="sm">
-                      <Text variant="h3">
-                        Sideboard ({decklist.sideboard.reduce((sum, c) => sum + c.count, 0)} cards)
-                      </Text>
-                      <VStack spacing="xs">
-                        {decklist.sideboard.map((card, idx) => (
-                          <Box key={idx} whitespace="nowrap">
-                            <HStack spacing="xs" align="center">
-                              <Text>{card.count}</Text>
-                              <CardTooltip cardName={card.name}>
-                                <Link to={`/card/${encodeURIComponent(card.name)}`}>
-                                  {card.name}
-                                </Link>
-                              </CardTooltip>
-                            </HStack>
-                          </Box>
-                        ))}
-                      </VStack>
-                    </VStack>
-                  </Box>
-                )}
-              </HStack>
-            </VStack>
-          </Box>
+          <DecklistDisplay decklist={decklist} />
         )}
       </Card>
     </Container>

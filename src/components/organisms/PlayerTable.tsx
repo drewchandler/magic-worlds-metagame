@@ -1,9 +1,7 @@
 import { useState, useEffect, useMemo } from 'react'
 
 import { Box } from '@atoms/Box'
-import { Button } from '@atoms/Button'
 import { Card } from '@atoms/Card'
-import { HStack } from '@atoms/HStack'
 import { Input } from '@atoms/Input'
 import { Link } from '@atoms/Link'
 import { SortIcon } from '@atoms/SortIcon'
@@ -12,6 +10,7 @@ import { Text } from '@atoms/Text'
 import { VStack } from '@atoms/VStack'
 import { SectionHeader } from '@molecules/SectionHeader'
 import { EmptyState } from '@molecules/EmptyState'
+import { Pagination } from '@molecules/Pagination'
 import type { AnalysisData } from '@/types'
 
 interface PlayerTableProps {
@@ -402,27 +401,14 @@ function PlayerTable({ data }: PlayerTableProps) {
             </TableBody>
           </Table>
         </Card>
-        {totalPages > 1 && (
-          <Box padding="none" margin="none">
-            <HStack spacing="md" justify="center" align="center">
-              <Button
-                onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
-                disabled={currentPage === 1}
-              >
-                Previous
-              </Button>
-              <Text variant="body">
-                Page {currentPage} of {totalPages} ({filteredAndSortedPlayers.length} players)
-              </Text>
-              <Button
-                onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
-                disabled={currentPage === totalPages}
-              >
-                Next
-              </Button>
-            </HStack>
-          </Box>
-        )}
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          totalItems={filteredAndSortedPlayers.length}
+          itemLabel="players"
+          onPrevious={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+          onNext={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+        />
       </VStack>
     </Box>
   )

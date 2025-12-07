@@ -1,6 +1,6 @@
 interface HStackProps {
   children: React.ReactNode
-  spacing?: 'none' | 'sm' | 'md' | 'lg'
+  spacing?: 'none' | 'xs' | 'sm' | 'md' | 'lg'
   align?: 'start' | 'center' | 'end' | 'stretch'
   justify?: 'start' | 'center' | 'end' | 'between' | 'around' | 'evenly'
   className?: string
@@ -15,6 +15,7 @@ export function HStack({
 }: HStackProps) {
   const spacingClasses = {
     none: '',
+    xs: 'space-x-0.5',
     sm: 'space-x-1',
     md: 'space-x-2',
     lg: 'space-x-4',
