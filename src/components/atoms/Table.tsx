@@ -61,7 +61,6 @@ export function TableHeader({
   const interactiveClass = onClick ? 'cursor-pointer hover:bg-primary transition-colors' : ''
   const textColorClass = textColor === 'inverse' ? 'text-white' : ''
   const stickyClass = sticky ? 'sticky top-0' : ''
-  const zIndexClass = zIndex ? `z-${zIndex}` : ''
   
   const backgroundClasses = {
     default: '',
@@ -72,10 +71,21 @@ export function TableHeader({
   const style: React.CSSProperties = {}
   if (minWidth) style.minWidth = minWidth
   if (left !== undefined) style.left = left
+  if (zIndex) style.zIndex = zIndex // Use inline style for z-index to ensure it works
+  // Ensure sticky headers have a solid background to cover content underneath
+  // Use inline styles to override any Tailwind classes
+  if (sticky && background === 'gradient-dark') {
+    style.backgroundColor = '#1f2937' // neutral-800 solid background
+    style.backgroundImage = 'linear-gradient(to bottom right, #1f2937, #1e40af)' // gradient on top
+    style.backgroundAttachment = 'local' // Ensure background stays with element
+  }
+  
+  // Don't apply gradient class if we're using inline styles for sticky
+  const backgroundClass = (sticky && background === 'gradient-dark') ? '' : backgroundClasses[background || 'default']
 
   return (
     <th
-      className={`p-3 text-left font-semibold text-xs uppercase tracking-wider ${interactiveClass} ${activeClass} ${textColorClass} ${stickyClass} ${zIndexClass} ${backgroundClasses[background || 'default']} ${className}`}
+      className={`p-3 text-left font-semibold text-xs uppercase tracking-wider ${interactiveClass} ${activeClass} ${textColorClass} ${stickyClass} ${backgroundClass} ${className}`}
       onClick={onClick}
       style={style}
     >
@@ -151,14 +161,24 @@ export function TableCell({
   const cursorClass = cursor === 'pointer' ? 'cursor-pointer' : ''
   const hoverClass = hover ? 'transition-all hover:scale-105 hover:z-10 hover:shadow-md relative' : ''
   const stickyClass = sticky ? 'sticky' : ''
-  const zIndexClass = zIndex ? `z-${zIndex}` : ''
   
   const style: React.CSSProperties = {}
   if (minWidth) style.minWidth = minWidth
   if (left !== undefined) style.left = left
+  if (zIndex) style.zIndex = zIndex // Use inline style for z-index to ensure it works
+  // Ensure sticky cells have a solid background to cover content underneath
+  // Use inline styles to override any Tailwind classes
+  if (sticky && background === 'gradient-dark') {
+    style.backgroundColor = '#1f2937' // neutral-800 solid background
+    style.backgroundImage = 'linear-gradient(to bottom right, #1f2937, #1e40af)' // gradient on top
+    style.backgroundAttachment = 'local' // Ensure background stays with element
+  }
+  
+  // Don't apply gradient class if we're using inline styles for sticky
+  const backgroundClass = (sticky && background === 'gradient-dark') ? '' : backgroundClasses[background]
 
   return (
-    <td colSpan={colSpan} className={`${paddingClasses} ${textAlignClasses} ${textColorClasses} ${backgroundClasses[background]} ${borderClass} ${cursorClass} ${hoverClass} ${stickyClass} ${zIndexClass} ${className}`} style={style}>
+    <td colSpan={colSpan} className={`${paddingClasses} ${textAlignClasses} ${textColorClasses} ${backgroundClass} ${borderClass} ${cursorClass} ${hoverClass} ${stickyClass} ${className}`} style={style}>
       {children}
     </td>
   )

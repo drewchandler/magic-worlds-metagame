@@ -76,7 +76,7 @@ function MatchupGrid({ data }: MatchupGridProps) {
                     background="gradient-dark"
                     sticky
                     left="0"
-                    zIndex={30}
+                    zIndex={50}
                     minWidth="150px"
                   >
                     <Text variant="label" color="inverse">
@@ -110,7 +110,7 @@ function MatchupGrid({ data }: MatchupGridProps) {
                       textColor="inverse"
                       sticky
                       left="0"
-                      zIndex={10}
+                      zIndex={40}
                       minWidth="150px"
                     >
                       <Link to={`/archetype/${encodeURIComponent(rowArch)}`} variant="nav">
