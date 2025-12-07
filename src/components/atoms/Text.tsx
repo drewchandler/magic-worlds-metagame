@@ -10,6 +10,10 @@ interface TextProps {
   borderThickness?: 'sm' | 'md' | 'lg'
   paddingBottom?: 'sm' | 'md' | 'lg'
   italic?: boolean
+  fontWeight?: 'normal' | 'medium' | 'semibold' | 'bold'
+  fontSize?: 'xs' | 'sm' | 'base' | 'lg' | 'xl' | '2xl'
+  cursor?: 'default' | 'pointer'
+  hover?: string
   className?: string
 }
 
@@ -25,6 +29,10 @@ export function Text({
   borderThickness = 'md',
   paddingBottom,
   italic = false,
+  fontWeight,
+  fontSize,
+  cursor,
+  hover,
   className = '',
 }: TextProps) {
   const variantClasses = {
@@ -86,10 +94,36 @@ export function Text({
   const Component = variant.startsWith('h') ? (variant as 'h1' | 'h2' | 'h3') : 'p'
 
   const italicClass = italic ? 'italic' : ''
+  
+  const fontWeightClasses = {
+    normal: '',
+    medium: 'font-medium',
+    semibold: 'font-semibold',
+    bold: 'font-bold',
+  }
+  
+  const fontSizeClasses = {
+    xs: 'text-xs',
+    sm: 'text-sm',
+    base: 'text-base',
+    lg: 'text-lg',
+    xl: 'text-xl',
+    '2xl': 'text-2xl',
+  }
+  
+  const cursorClasses = {
+    default: 'cursor-default',
+    pointer: 'cursor-pointer',
+  }
+  
+  const fontWeightClass = fontWeight ? fontWeightClasses[fontWeight] : ''
+  const fontSizeClass = fontSize ? fontSizeClasses[fontSize] : ''
+  const cursorClass = cursor ? cursorClasses[cursor] : ''
+  const hoverClass = hover ? `hover:${hover}` : ''
 
   return (
     <Component
-      className={`${variantClasses[variant]} ${colorClasses[color]} ${leadingClasses[leading]} ${getShadowClass(shadow)} ${opacityClasses[opacity]} ${borderBottomClasses} ${paddingBottomClasses} ${italicClass} ${className}`}
+      className={`${variantClasses[variant]} ${colorClasses[color]} ${leadingClasses[leading]} ${getShadowClass(shadow)} ${opacityClasses[opacity]} ${borderBottomClasses} ${paddingBottomClasses} ${italicClass} ${fontWeightClass} ${fontSizeClass} ${cursorClass} ${hoverClass} ${className}`}
     >
       {children}
     </Component>

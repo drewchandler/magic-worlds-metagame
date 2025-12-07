@@ -252,7 +252,7 @@ function CardDetail({ data }: CardDetailProps) {
           title={decodedName}
           subtitle={
             <CardTooltip cardName={decodedName}>
-              <Text variant="body" color="inverse" opacity="high" className="hover:opacity-100 cursor-pointer text-2xl">
+              <Text variant="body" color="inverse" opacity="high" hover="opacity-100" cursor="pointer" fontSize="2xl">
                 🃏
               </Text>
             </CardTooltip>
@@ -269,7 +269,7 @@ function CardDetail({ data }: CardDetailProps) {
               rounded="lg"
               shadow="xl"
               background="white"
-              className="mx-auto"
+              marginX="auto"
             />
           </Box>
         )}
@@ -376,7 +376,7 @@ function CardDetail({ data }: CardDetailProps) {
                       <TableRow key={stat.archetype}>
                         <TableCell>
                           <Link to={`/archetype/${encodeURIComponent(stat.archetype)}`}>
-                            <Text variant="body" className="font-medium">
+                            <Text variant="body" fontWeight="medium">
                               {stat.archetype}
                             </Text>
                           </Link>

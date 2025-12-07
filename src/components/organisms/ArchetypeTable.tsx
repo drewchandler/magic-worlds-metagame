@@ -94,18 +94,21 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
   return (
     <Box padding="lg">
       <VStack spacing="md">
-        <SectionHeader>Archetype Performance</SectionHeader>
-        <Box padding="none" margin="none" width="full">
-          <HStack spacing="sm" align="center" justify="end">
-            <Text variant="small">Min matches:</Text>
-            <Select
-              value={minMatches}
-              onChange={e => setMinMatches(e.target.value)}
-              options={minMatchesOptions}
-              size="sm"
-            />
-          </HStack>
-        </Box>
+        <SectionHeader
+          actions={
+            <HStack spacing="sm" align="center">
+              <Text variant="small">Min matches:</Text>
+              <Select
+                value={minMatches}
+                onChange={e => setMinMatches(e.target.value)}
+                options={minMatchesOptions}
+                size="sm"
+              />
+            </HStack>
+          }
+        >
+          Archetype Performance
+        </SectionHeader>
         <Card overflow shadow="lg">
           <Table>
             <TableHead>

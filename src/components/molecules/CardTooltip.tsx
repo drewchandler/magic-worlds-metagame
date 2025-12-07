@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import React, { useState, useCallback } from 'react'
 import * as Tooltip from '@radix-ui/react-tooltip'
 
 import { Box } from '@atoms/Box'
@@ -13,11 +13,9 @@ interface CardTooltipProps {
 function CardTooltip({ cardName, children }: CardTooltipProps) {
   const [imageUrl, setImageUrl] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
-  const [open, setOpen] = useState(false)
 
   const handleOpenChange = useCallback(
     (newOpen: boolean) => {
-      setOpen(newOpen)
       if (newOpen && !imageUrl && !loading) {
         setLoading(true)
         const searchName = cardName.replace(/\/\/.*$/, '').trim()
@@ -39,19 +37,18 @@ function CardTooltip({ cardName, children }: CardTooltipProps) {
 
   return (
     <Tooltip.Provider delayDuration={300}>
-      <Tooltip.Root open={open} onOpenChange={handleOpenChange}>
-        <Tooltip.Trigger asChild>
-          <Box className="inline cursor-pointer">{children}</Box>
+      <Tooltip.Root onOpenChange={handleOpenChange}>
+        <Tooltip.Trigger className="inline-block cursor-pointer">
+          {children}
         </Tooltip.Trigger>
         <Tooltip.Portal>
           <Tooltip.Content side="right" sideOffset={10} className="z-[1000] pointer-events-none">
             {loading ? (
               <Box
                 padding="md"
-                background="default"
+                background="dark"
                 rounded="lg"
                 whitespace="nowrap"
-                className="bg-black bg-opacity-90"
               >
                 <Text color="inverse">Loading...</Text>
               </Box>
@@ -68,10 +65,9 @@ function CardTooltip({ cardName, children }: CardTooltipProps) {
             ) : (
               <Box
                 padding="md"
-                background="default"
+                background="dark"
                 rounded="lg"
                 whitespace="nowrap"
-                className="bg-black bg-opacity-90"
               >
                 <Text color="inverse">Image not found</Text>
               </Box>

@@ -79,17 +79,20 @@ export function DecklistDisplay({ decklist }: DecklistDisplayProps) {
   return (
     <Box padding="lg">
       <VStack spacing="md">
-        <HStack spacing="md" align="center" justify="between">
-          <SectionHeader>Decklist</SectionHeader>
-          <Button onClick={handleExportToArena} title="Copy decklist to clipboard in Magic Arena format">
-            <HStack spacing="sm" align="center">
-              <Icon>
-                <ArrowDownTrayIcon />
-              </Icon>
-              <Text variant="body" color="inverse">{copied ? 'Copied!' : 'Export to Arena'}</Text>
-            </HStack>
-          </Button>
-        </HStack>
+        <SectionHeader
+          actions={
+            <Button onClick={handleExportToArena} title="Copy decklist to clipboard in Magic Arena format">
+              <HStack spacing="sm" align="center">
+                <Icon>
+                  <ArrowDownTrayIcon />
+                </Icon>
+                <Text variant="body" color="inverse">{copied ? 'Copied!' : 'Export to Arena'}</Text>
+              </HStack>
+            </Button>
+          }
+        >
+          Decklist
+        </SectionHeader>
         <HStack spacing="lg" align="start">
           <Box grow>
             <VStack spacing="sm">
