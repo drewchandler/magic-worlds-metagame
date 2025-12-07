@@ -13,6 +13,7 @@ interface BoxProps {
   overflow?: 'none' | 'auto' | 'hidden'
   maxHeight?: string
   minWidth?: string
+  width?: 'auto' | 'full'
   sticky?: boolean
   zIndex?: number
   className?: string
@@ -33,6 +34,7 @@ export function Box({
   overflow = 'none',
   maxHeight,
   minWidth,
+  width = 'auto',
   sticky = false,
   zIndex,
   className = '',
@@ -80,6 +82,11 @@ export function Box({
     hidden: 'overflow-hidden',
   }
 
+  const widthClasses = {
+    auto: '',
+    full: 'w-full',
+  }
+
   const stickyClass = sticky ? 'sticky' : ''
   const zIndexClass = zIndex ? `z-${zIndex}` : ''
 
@@ -110,7 +117,7 @@ export function Box({
 
   return (
     <div
-      className={`${paddingClasses[padding]} ${textAlignClasses[textAlign]} ${textColorClasses[textColor]} ${marginClasses[margin]} ${flexClasses} ${growClasses} ${whitespaceClasses} ${backgroundClasses[background]} ${finalRoundedClass} ${overflowClasses[overflow]} ${stickyClass} ${zIndexClass} ${className}`}
+      className={`${paddingClasses[padding]} ${textAlignClasses[textAlign]} ${textColorClasses[textColor]} ${marginClasses[margin]} ${flexClasses} ${growClasses} ${whitespaceClasses} ${backgroundClasses[background]} ${finalRoundedClass} ${overflowClasses[overflow]} ${widthClasses[width]} ${stickyClass} ${zIndexClass} ${className}`}
       style={style}
     >
       {children}

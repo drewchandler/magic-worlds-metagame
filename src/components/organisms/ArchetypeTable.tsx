@@ -2,11 +2,13 @@ import { useState, useMemo } from 'react'
 
 import { Box } from '@atoms/Box'
 import { Card } from '@atoms/Card'
+import { Select } from '@atoms/Select'
 import { Link } from '@atoms/Link'
 import { SortIcon } from '@atoms/SortIcon'
 import { Table, TableHead, TableBody, TableRow, TableHeader, TableCell } from '@atoms/Table'
 import { Text } from '@atoms/Text'
 import { VStack } from '@atoms/VStack'
+import { HStack } from '@atoms/HStack'
 import { SectionHeader } from '@molecules/SectionHeader'
 import { EmptyState } from '@molecules/EmptyState'
 import type { AnalysisData, ArchetypeStats } from '@/types'
@@ -26,13 +28,21 @@ type SortDirection = 'asc' | 'desc'
 function ArchetypeTable({ data }: ArchetypeTableProps) {
   const [sortColumn, setSortColumn] = useState<SortColumn>('matchWinRate')
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc')
+  const [minMatches, setMinMatches] = useState<string>('0')
+
+  const minMatchesOptions = [
+    { value: '0', label: 'All' },
+    { value: '25', label: '25+' },
+    { value: '50', label: '50+' },
+  ]
 
   const archetypeStats = useMemo(() => data?.archetype_stats || {}, [data?.archetype_stats])
   const archetypeCounts = useMemo(() => data?.archetype_counts || {}, [data?.archetype_counts])
 
   const sortedArchetypes = useMemo(() => {
+    const minMatchesNum = parseInt(minMatches, 10) || 0
     let sorted = Object.entries(archetypeStats)
-      .filter(([_arch, stats]: [string, ArchetypeStats]) => stats.total_matches > 0) as Array<[string, ArchetypeStats]>
+      .filter(([_arch, stats]: [string, ArchetypeStats]) => stats.total_matches >= minMatchesNum) as Array<[string, ArchetypeStats]>
 
     // Sort based on selected column
     sorted.sort((a, b) => {
@@ -62,7 +72,7 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
     })
 
     return sorted as Array<[string, ArchetypeStats]>
-  }, [archetypeStats, archetypeCounts, sortColumn, sortDirection])
+  }, [archetypeStats, archetypeCounts, sortColumn, sortDirection, minMatches])
 
   const handleSort = (column: SortColumn) => {
     if (sortColumn === column) {
@@ -85,6 +95,17 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
     <Box padding="lg">
       <VStack spacing="md">
         <SectionHeader>Archetype Performance</SectionHeader>
+        <Box padding="none" margin="none" width="full">
+          <HStack spacing="sm" align="center" justify="end">
+            <Text variant="small">Min matches:</Text>
+            <Select
+              value={minMatches}
+              onChange={e => setMinMatches(e.target.value)}
+              options={minMatchesOptions}
+              size="sm"
+            />
+          </HStack>
+        </Box>
         <Card overflow shadow="lg">
           <Table>
             <TableHead>
