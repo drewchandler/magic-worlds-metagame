@@ -24,7 +24,7 @@ export function Card({
     page: 'max-w-7xl mx-auto rounded-3xl shadow-2xl overflow-hidden',
   }
   const backgroundClasses = {
-    default: 'bg-white',
+    default: 'bg-neutral-50',
     neutral: 'bg-neutral-50',
     info: 'bg-info-50',
     accent: 'bg-accent-50',

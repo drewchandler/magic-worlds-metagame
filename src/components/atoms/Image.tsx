@@ -43,7 +43,7 @@ export function Image({
 
   const backgroundClasses = {
     default: '',
-    white: 'bg-white',
+    white: 'bg-neutral-50',
   }
 
   const marginXClasses = {

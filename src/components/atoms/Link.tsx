@@ -10,9 +10,9 @@ interface LinkProps {
 export function Link({ to, children, variant = 'default', className = '' }: LinkProps) {
   const variantClasses = {
     default: 'text-primary hover:text-primary-800 hover:underline',
-    nav: 'text-white hover:text-neutral-200 hover:underline',
+    nav: 'text-inverse hover:text-neutral-200 hover:underline',
     button:
-      'inline-block px-4 py-2 bg-white text-neutral-900 rounded-lg border border-neutral-300 hover:bg-neutral-50',
+      'inline-block px-4 py-2 bg-neutral-50 text-neutral-900 rounded-lg border border-neutral-300 hover:bg-neutral-100',
     badge: 'inline-block px-3 py-1 bg-primary-50 text-primary border border-primary-200 rounded-lg hover:bg-primary-100 font-bold',
   }
 

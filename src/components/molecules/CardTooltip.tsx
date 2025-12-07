@@ -72,7 +72,7 @@ function CardTooltip({ cardName, children }: CardTooltipProps) {
                 <Text color="inverse">Image not found</Text>
               </Box>
             )}
-            <Tooltip.Arrow className="fill-black" />
+            <Tooltip.Arrow className="fill-neutral-900" />
           </Tooltip.Content>
         </Tooltip.Portal>
       </Tooltip.Root>

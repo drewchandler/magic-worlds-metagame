@@ -7,12 +7,16 @@ interface TableProps {
 export function Table({ children, className = '', minWidth }: TableProps) {
   const style: React.CSSProperties = {}
   if (minWidth) style.minWidth = minWidth
-  return <table className={`w-full bg-white border-collapse ${className}`} style={style}>{children}</table>
+  return <table className={`w-full bg-neutral-50 border-collapse ${className}`} style={style}>{children}</table>
 }
 
 export function TableHead({ children, className = '', sticky }: TableProps & { sticky?: boolean }) {
-  const stickyClass = sticky ? 'sticky top-0 z-20' : ''
-  return <thead className={`${stickyClass} ${className}`}>{children}</thead>
+  const stickyClass = sticky ? 'sticky top-0' : ''
+  const style: React.CSSProperties = {}
+  if (sticky) {
+    style.zIndex = 50 // Higher than body sticky columns (40)
+  }
+  return <thead className={`${stickyClass} ${className}`} style={style}>{children}</thead>
 }
 
 export function TableBody({ children, className = '' }: TableProps) {
@@ -75,8 +79,8 @@ export function TableHeader({
   // Ensure sticky headers have a solid background to cover content underneath
   // Use inline styles to override any Tailwind classes
   if (sticky && background === 'gradient-dark') {
-    style.backgroundColor = '#1f2937' // neutral-800 solid background
-    style.backgroundImage = 'linear-gradient(to bottom right, #1f2937, #1e40af)' // gradient on top
+    style.backgroundColor = 'var(--color-neutral-800)' // neutral-800 solid background
+    style.backgroundImage = 'linear-gradient(to bottom right, var(--color-neutral-800), var(--color-info-800))' // gradient on top
     style.backgroundAttachment = 'local' // Ensure background stays with element
   }
   
@@ -169,8 +173,8 @@ export function TableCell({
   // Ensure sticky cells have a solid background to cover content underneath
   // Use inline styles to override any Tailwind classes
   if (sticky && background === 'gradient-dark') {
-    style.backgroundColor = '#1f2937' // neutral-800 solid background
-    style.backgroundImage = 'linear-gradient(to bottom right, #1f2937, #1e40af)' // gradient on top
+    style.backgroundColor = 'var(--color-neutral-800)' // neutral-800 solid background
+    style.backgroundImage = 'linear-gradient(to bottom right, var(--color-neutral-800), var(--color-info-800))' // gradient on top
     style.backgroundAttachment = 'local' // Ensure background stays with element
   }
   

@@ -125,7 +125,7 @@ const BoxComponent = React.forwardRef<HTMLDivElement | HTMLSpanElement, BoxProps
     'gradient-indigo-purple': 'bg-gradient-to-br from-primary-500 via-accent-500 to-accent-600',
     'neutral-100': 'bg-neutral-100',
     'neutral-50': 'bg-neutral-50',
-    dark: 'bg-black bg-opacity-90',
+    dark: 'bg-neutral-900 bg-opacity-90',
   }
 
   const overflowClasses = {

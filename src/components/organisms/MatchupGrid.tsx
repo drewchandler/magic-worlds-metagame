@@ -76,7 +76,7 @@ function MatchupGrid({ data }: MatchupGridProps) {
                     background="gradient-dark"
                     sticky
                     left="0"
-                    zIndex={50}
+                    zIndex={60}
                     minWidth="150px"
                   >
                     <Text variant="label" color="inverse">

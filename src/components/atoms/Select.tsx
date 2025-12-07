@@ -23,7 +23,7 @@ export function Select({
     <select
       value={value}
       onChange={onChange}
-      className={`${sizeClasses[size]} border-2 border-neutral-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors text-neutral-900 bg-white ${className}`}
+      className={`${sizeClasses[size]} border-2 border-neutral-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-colors text-neutral-900 bg-neutral-50 ${className}`}
     >
       {options.map(option => (
         <option key={option.value} value={option.value}>

@@ -19,7 +19,7 @@ export function Button({
   const variantClasses = {
     primary: disabled
       ? 'bg-neutral-300 text-neutral-500 cursor-not-allowed rounded'
-      : 'bg-primary text-white hover:bg-primary-700 rounded',
+      : 'bg-primary text-inverse hover:bg-primary-800 rounded',
     secondary: disabled
       ? 'bg-neutral-300 text-neutral-500 cursor-not-allowed rounded'
       : 'bg-neutral-200 text-neutral-900 hover:bg-neutral-300 rounded',

@@ -12,7 +12,7 @@ export function Spinner({ size = 'md', className = '' }: SpinnerProps) {
 
   return (
     <div
-      className={`inline-block ${sizeClasses[size]} border-white border-t-transparent rounded-full animate-spin ${className}`}
+      className={`inline-block ${sizeClasses[size]} border-neutral-50 border-t-transparent rounded-full animate-spin ${className}`}
     />
   )
 }
