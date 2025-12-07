@@ -8,6 +8,7 @@ import ArchetypeTable from '@organisms/ArchetypeTable'
 import CardTable from '@organisms/CardTable'
 import { PageHeader } from '@organisms/Header'
 import MatchupGrid from '@organisms/MatchupGrid'
+import MetagameBreakdown from '@organisms/MetagameBreakdown'
 import { StatsGrid } from '@organisms/StatsGrid'
 import { useData } from '@/App'
 
@@ -18,6 +19,7 @@ export function DashboardPage() {
       <PageHeader />
       <Card variant="page">
         <StatsGrid data={data} />
+        <MetagameBreakdown data={data} />
         <ArchetypeTable data={data} />
         <MatchupGrid data={data} />
         <CardTable data={data} />

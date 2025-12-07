@@ -2,7 +2,6 @@ import { useState, useMemo } from 'react'
 
 import { Box } from '@atoms/Box'
 import { Card } from '@atoms/Card'
-import { Input } from '@atoms/Input'
 import { Link } from '@atoms/Link'
 import { SortIcon } from '@atoms/SortIcon'
 import { Table, TableHead, TableBody, TableRow, TableHeader, TableCell } from '@atoms/Table'
@@ -26,7 +25,6 @@ type SortColumn =
 type SortDirection = 'asc' | 'desc'
 
 function ArchetypeTable({ data }: ArchetypeTableProps) {
-  const [searchTerm, setSearchTerm] = useState<string>('')
   const [sortColumn, setSortColumn] = useState<SortColumn>('matchWinRate')
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc')
 
@@ -35,10 +33,7 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
 
   const sortedArchetypes = useMemo(() => {
     let sorted = Object.entries(archetypeStats)
-      .filter(([_arch, stats]: [string, ArchetypeStats]) => stats.total_matches > 0)
-      .filter(([_arch, _stats]: [string, ArchetypeStats]) =>
-        _arch.toLowerCase().includes(searchTerm.toLowerCase())
-      ) as Array<[string, ArchetypeStats]>
+      .filter(([_arch, stats]: [string, ArchetypeStats]) => stats.total_matches > 0) as Array<[string, ArchetypeStats]>
 
     // Sort based on selected column
     sorted.sort((a, b) => {
@@ -71,7 +66,7 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
     })
 
     return sorted as Array<[string, ArchetypeStats]>
-  }, [archetypeStats, archetypeCounts, searchTerm, sortColumn, sortDirection])
+  }, [archetypeStats, archetypeCounts, sortColumn, sortDirection])
 
   const handleSort = (column: SortColumn) => {
     if (sortColumn === column) {
@@ -94,13 +89,6 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
     <Box padding="lg">
       <VStack spacing="md">
         <SectionHeader>Archetype Performance</SectionHeader>
-        <Input
-          fullWidth
-          size="lg"
-          placeholder="Search archetypes..."
-          value={searchTerm}
-          onChange={e => setSearchTerm(e.target.value)}
-        />
         <Card overflow shadow="lg">
           <Table>
             <TableHead>
@@ -182,11 +170,7 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
             <TableBody>
               {sortedArchetypes.length === 0 ? (
                 <EmptyState
-                  message={
-                    searchTerm
-                      ? 'No archetypes found matching your search'
-                      : 'No archetype data available'
-                  }
+                  message="No archetype data available"
                   colSpan={6}
                 />
               ) : (

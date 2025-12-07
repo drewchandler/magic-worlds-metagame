@@ -16,7 +16,6 @@ export function StatsGrid({ data }: StatsGridProps) {
   const numArchetypes = Object.keys(archetypeCounts).length
 
   const stats = [
-    { label: 'Players', value: totalPlayers },
     { label: 'Archetypes', value: numArchetypes },
     { label: 'Matches', value: totalMatches },
     { label: 'Total Decks', value: totalDecks },
