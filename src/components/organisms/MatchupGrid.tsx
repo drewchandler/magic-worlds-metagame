@@ -75,6 +75,7 @@ function MatchupGrid({ data }: MatchupGridProps) {
                     textColor="inverse"
                     background="gradient-dark"
                     sticky
+                    left="0"
                     zIndex={30}
                     minWidth="150px"
                   >
@@ -89,7 +90,7 @@ function MatchupGrid({ data }: MatchupGridProps) {
                           maxHeight="30px"
                           overflow="hidden"
                           whitespace="nowrap"
-                          className="mx-auto"
+                          marginX="auto"
                           style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
                         >
                           <Text variant="label" color="inverse">
@@ -108,6 +109,7 @@ function MatchupGrid({ data }: MatchupGridProps) {
                       background="gradient-dark"
                       textColor="inverse"
                       sticky
+                      left="0"
                       zIndex={10}
                       minWidth="150px"
                     >

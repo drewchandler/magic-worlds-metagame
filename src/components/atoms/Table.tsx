@@ -43,6 +43,7 @@ export function TableHeader({
   active,
   textColor,
   sticky,
+  left,
   zIndex,
   minWidth,
   background,
@@ -51,6 +52,7 @@ export function TableHeader({
   active?: boolean
   textColor?: 'default' | 'inverse'
   sticky?: boolean
+  left?: string
   zIndex?: number
   minWidth?: string
   background?: 'default' | 'gradient-primary' | 'gradient-dark'
@@ -58,7 +60,7 @@ export function TableHeader({
   const activeClass = active ? 'bg-primary' : ''
   const interactiveClass = onClick ? 'cursor-pointer hover:bg-primary transition-colors' : ''
   const textColorClass = textColor === 'inverse' ? 'text-white' : ''
-  const stickyClass = sticky ? 'sticky' : ''
+  const stickyClass = sticky ? 'sticky top-0' : ''
   const zIndexClass = zIndex ? `z-${zIndex}` : ''
   
   const backgroundClasses = {
@@ -69,6 +71,7 @@ export function TableHeader({
   
   const style: React.CSSProperties = {}
   if (minWidth) style.minWidth = minWidth
+  if (left !== undefined) style.left = left
 
   return (
     <th
@@ -93,6 +96,7 @@ export function TableCell({
   cursor = 'default',
   hover = false,
   sticky = false,
+  left,
   zIndex,
   minWidth,
 }: TableProps & {
@@ -105,6 +109,7 @@ export function TableCell({
   cursor?: 'default' | 'pointer'
   hover?: boolean
   sticky?: boolean
+  left?: string
   zIndex?: number
   minWidth?: string
 }) {
@@ -150,6 +155,7 @@ export function TableCell({
   
   const style: React.CSSProperties = {}
   if (minWidth) style.minWidth = minWidth
+  if (left !== undefined) style.left = left
 
   return (
     <td colSpan={colSpan} className={`${paddingClasses} ${textAlignClasses} ${textColorClasses} ${backgroundClasses[background]} ${borderClass} ${cursorClass} ${hoverClass} ${stickyClass} ${zIndexClass} ${className}`} style={style}>
