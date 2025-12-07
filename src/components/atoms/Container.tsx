@@ -16,7 +16,7 @@ export function Container({
   const variantClasses = {
     page: 'min-h-screen bg-gradient-to-br from-primary-500 via-accent-500 to-accent-600',
     section: '',
-    grid: 'grid grid-cols-2 md:grid-cols-4 gap-5',
+    grid: 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5',
   }
 
   const paddingClasses = {

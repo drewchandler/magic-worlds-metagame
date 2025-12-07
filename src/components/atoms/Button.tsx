@@ -3,6 +3,7 @@ interface ButtonProps {
   onClick?: () => void
   variant?: 'primary' | 'secondary' | 'link'
   size?: 'sm' | 'md' | 'lg'
+  disabled?: boolean
   className?: string
 }
 
@@ -11,13 +12,20 @@ export function Button({
   onClick,
   variant = 'primary',
   size = 'md',
+  disabled = false,
   className = '',
 }: ButtonProps) {
   const baseClasses = 'font-medium transition-colors'
   const variantClasses = {
-    primary: 'bg-primary text-white hover:bg-primary-700 rounded',
-    secondary: 'bg-neutral-200 text-neutral-900 hover:bg-neutral-300 rounded',
-    link: 'text-primary hover:text-primary-800 hover:underline',
+    primary: disabled
+      ? 'bg-neutral-300 text-neutral-500 cursor-not-allowed rounded'
+      : 'bg-primary text-white hover:bg-primary-700 rounded',
+    secondary: disabled
+      ? 'bg-neutral-300 text-neutral-500 cursor-not-allowed rounded'
+      : 'bg-neutral-200 text-neutral-900 hover:bg-neutral-300 rounded',
+    link: disabled
+      ? 'text-neutral-400 cursor-not-allowed'
+      : 'text-primary hover:text-primary-800 hover:underline',
   }
 
   const sizeClasses = {
@@ -29,6 +37,7 @@ export function Button({
   return (
     <button
       onClick={onClick}
+      disabled={disabled}
       className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
     >
       {children}

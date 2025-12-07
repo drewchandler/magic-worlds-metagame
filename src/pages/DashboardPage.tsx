@@ -9,6 +9,7 @@ import CardTable from '@organisms/CardTable'
 import { PageHeader } from '@organisms/Header'
 import MatchupGrid from '@organisms/MatchupGrid'
 import MetagameBreakdown from '@organisms/MetagameBreakdown'
+import PlayerTable from '@organisms/PlayerTable'
 import { StatsGrid } from '@organisms/StatsGrid'
 import { useData } from '@/App'
 
@@ -22,6 +23,7 @@ export function DashboardPage() {
         <MetagameBreakdown data={data} />
         <ArchetypeTable data={data} />
         <MatchupGrid data={data} />
+        <PlayerTable data={data} />
         <CardTable data={data} />
         <Footer>
           <VStack spacing="sm" align="center">

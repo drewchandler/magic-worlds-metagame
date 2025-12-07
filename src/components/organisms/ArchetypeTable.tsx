@@ -17,7 +17,6 @@ interface ArchetypeTableProps {
 
 type SortColumn =
   | 'archetype'
-  | 'players'
   | 'matchRecord'
   | 'matchWinRate'
   | 'gameRecord'
@@ -44,9 +43,6 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
       switch (sortColumn) {
         case 'archetype':
           comparison = archA.localeCompare(archB)
-          break
-        case 'players':
-          comparison = (archetypeCounts[archA] || 0) - (archetypeCounts[archB] || 0)
           break
         case 'matchRecord':
           comparison = statsA.wins - statsA.losses - (statsB.wins - statsB.losses)
@@ -106,18 +102,6 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
                   />
                 </TableHeader>
                 <TableHeader
-                  onClick={() => handleSort('players')}
-                  active={sortColumn === 'players'}
-                  textColor="inverse"
-                >
-                  Players{' '}
-                  <SortIcon
-                    column="players"
-                    sortColumn={sortColumn}
-                    sortDirection={sortDirection}
-                  />
-                </TableHeader>
-                <TableHeader
                   onClick={() => handleSort('matchRecord')}
                   active={sortColumn === 'matchRecord'}
                   textColor="inverse"
@@ -171,7 +155,7 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
               {sortedArchetypes.length === 0 ? (
                 <EmptyState
                   message="No archetype data available"
-                  colSpan={6}
+                  colSpan={5}
                 />
               ) : (
                 sortedArchetypes.map(([arch, stats]) => {
@@ -185,9 +169,6 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
                             {arch}
                           </Text>
                         </Link>
-                      </TableCell>
-                      <TableCell>
-                        <Text>{archetypeCounts[arch] || 0}</Text>
                       </TableCell>
                       <TableCell>
                         <Text>
