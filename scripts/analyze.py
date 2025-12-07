@@ -57,6 +57,40 @@ def normalize_player_name(name: str) -> str:
     return ' '.join(name.lower().split())
 
 
+def detect_special_archetypes(decklists: Dict) -> Dict:
+    """
+    Detect special archetype variants based on card presence.
+    Returns a modified copy of decklists with updated archetypes.
+    """
+    modified_decklists = {}
+    
+    for key, decklist in decklists.items():
+        archetype = decklist.get('archetype', '')
+        main_deck = decklist.get('main_deck', [])
+        sideboard = decklist.get('sideboard', [])
+        
+        # Check for Izzet Lessons with Monument to Endurance
+        if 'izzet lessons' in archetype.lower():
+            # Check if Monument to Endurance is in main deck or sideboard
+            has_monument = False
+            for card in main_deck + sideboard:
+                if card.get('name', '').lower() == 'monument to endurance':
+                    has_monument = True
+                    break
+            
+            if has_monument:
+                # Rename to Izzet Lessons (Monument)
+                decklist_copy = decklist.copy()
+                decklist_copy['archetype'] = 'Izzet Lessons (Monument)'
+                modified_decklists[key] = decklist_copy
+            else:
+                modified_decklists[key] = decklist
+        else:
+            modified_decklists[key] = decklist
+    
+    return modified_decklists
+
+
 def get_player_archetype(player_name: str, decklists: Dict) -> str:
     """Get archetype for a player"""
     normalized = normalize_player_name(player_name)
@@ -93,6 +127,9 @@ def get_player_archetype(player_name: str, decklists: Dict) -> str:
 
 def analyze_metagame(decklists: Dict, results: List) -> Dict:
     """Analyze the metagame and generate statistics"""
+    
+    # Detect and rename special archetype variants
+    decklists = detect_special_archetypes(decklists)
     
     # Build player -> archetype mapping
     player_archetypes = {}

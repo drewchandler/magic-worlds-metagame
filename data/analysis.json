@@ -2,12 +2,13 @@
   "archetype_counts": {
     "Temur Otters": 20,
     "Mono-Red Aggro": 3,
-    "Izzet Lessons": 23,
+    "Izzet Lessons": 8,
     "Izzet Looting": 14,
     "Jeskai Control": 10,
     "Izzet Prowess": 9,
     "Bant Airbending": 16,
     "Simic Ouroboroid": 7,
+    "Izzet Lessons (Monument)": 15,
     "Golgari Ouroboroid": 5,
     "Dimir Bounce": 3,
     "Sultai Reanimator": 6,
@@ -19,19 +20,19 @@
     "Orzhov Demons": 1
   },
   "archetype_stats": {
-    "Izzet Lessons": {
-      "wins": 65,
-      "losses": 49,
+    "Izzet Lessons (Monument)": {
+      "wins": 53,
+      "losses": 34,
       "draws": 0,
-      "games_won": 191,
-      "games_lost": 163,
+      "games_won": 138,
+      "games_lost": 98,
       "matches": [
         {
           "round": 4,
           "player1": "Burkhart, Corey",
           "player2": "Dang, Nam",
           "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -40,7 +41,7 @@
           "player1": "Buonadonna, Mason",
           "player2": "Noah, Ma",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -48,25 +49,16 @@
           "round": 4,
           "player1": "Duke, Reid",
           "player2": "Garcia-Romo, Andy",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Jeskai Control",
           "p1_wins": 1,
           "p2_wins": 2
         },
         {
           "round": 4,
-          "player1": "Klepatch, Andrei",
-          "player2": "Dota, Arch",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 4,
           "player1": "Manfield, Seth",
           "player2": "Baker, Christian",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 1
@@ -76,16 +68,7 @@
           "player1": "Choo, Clement",
           "player2": "Pardee, Sam",
           "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 4,
-          "player1": "Choo, Clement",
-          "player2": "Pardee, Sam",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -93,7 +76,7 @@
           "round": 4,
           "player1": "David, Julian",
           "player2": "Korfine, Julian",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Bant Airbending",
           "p1_wins": 1,
           "p2_wins": 2
@@ -102,54 +85,27 @@
           "round": 4,
           "player1": "Nass, Matthew",
           "player2": "Botelho, Chris",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Jeskai Control",
           "p1_wins": 2,
           "p2_wins": 0
         },
         {
           "round": 4,
-          "player1": "Kikidis, Charis",
-          "player2": "Torres, Bernardo",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Jeskai Artifacts",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 4,
           "player1": "Wang, Kunrui",
           "player2": "Nassif, Gabriel",
           "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
-        },
-        {
-          "round": 4,
-          "player1": "Davis, Derrick",
-          "player2": "Offman, No\u00e9",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
         },
         {
           "round": 4,
           "player1": "Ramboa, Thierry",
           "player2": "Shibata, Akira",
           "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 4,
-          "player1": "To, Chun Him",
-          "player2": "Flores, Pedro",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 1,
           "p2_wins": 2
         },
         {
@@ -157,7 +113,7 @@
           "player1": "Henry, Shaun",
           "player2": "Dore, Max",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -166,7 +122,7 @@
           "player1": "Kuisma, Matti",
           "player2": "Lack, Cory",
           "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -174,7 +130,7 @@
           "round": 4,
           "player1": "Wright, Matthew",
           "player2": "Pham, Ha",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Sultai Reanimator",
           "p1_wins": 2,
           "p2_wins": 0
@@ -184,7 +140,7 @@
           "player1": "Tamblyn, Mitchell",
           "player2": "Kans, Alexander",
           "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -193,60 +149,24 @@
           "player1": "Cordob\u00e9s, Albert",
           "player2": "Magalhaes, Edgar",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
         },
         {
           "round": 4,
-          "player1": "Stark, Ben",
-          "player2": "Schnake, Abe",
-          "archetype1": "Golgari Dragons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 4,
-          "player1": "Asano, Tatsuro",
-          "player2": "Schabel, Justin",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 4,
-          "player1": "Asano, Tatsuro",
-          "player2": "Schabel, Justin",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 4,
           "player1": "Costa, Matthew",
           "player2": "Mazza, Raffaele",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Looting",
           "p1_wins": 2,
           "p2_wins": 1
         },
         {
           "round": 5,
-          "player1": "Schnake, Abe",
-          "player2": "Inoue, Toru",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 5,
           "player1": "Shibata, Akira",
           "player2": "Rohan, Alex",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 1,
           "p2_wins": 2
@@ -255,7 +175,7 @@
           "round": 5,
           "player1": "Lack, Cory",
           "player2": "Robkin, Jesse",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Bant Airbending",
           "p1_wins": 2,
           "p2_wins": 1
@@ -265,33 +185,15 @@
           "player1": "Green, Paul",
           "player2": "Duke, Reid",
           "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
         {
           "round": 5,
-          "player1": "Dota, Arch",
-          "player2": "Rood, David",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 5,
           "player1": "Wright, Matthew",
           "player2": "Kikidis, Charis",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 5,
-          "player1": "Wright, Matthew",
-          "player2": "Kikidis, Charis",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Lessons",
           "p1_wins": 2,
           "p2_wins": 0
@@ -300,7 +202,7 @@
           "round": 5,
           "player1": "Magalhaes, Edgar",
           "player2": "Bot, Tom",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 1,
           "p2_wins": 2
@@ -310,7 +212,7 @@
           "player1": "Nagao, Yasutaka",
           "player2": "Manfield, Seth",
           "archetype1": "Jeskai Artifacts",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -318,7 +220,7 @@
           "round": 5,
           "player1": "Nass, Matthew",
           "player2": "Dominguez, Javier",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Bant Airbending",
           "p1_wins": 2,
           "p2_wins": 1
@@ -328,16 +230,7 @@
           "player1": "Fang, Percy",
           "player2": "Costa, Matthew",
           "archetype1": "Mono-Red Aggro",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 5,
-          "player1": "To, Chun Him",
-          "player2": "Lip, Quinton",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -346,7 +239,7 @@
           "player1": "Sch\u00fctz, Stefan",
           "player2": "David, Julian",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
         },
@@ -355,25 +248,7 @@
           "player1": "Davis, Derrick",
           "player2": "Dore, Max",
           "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 5,
-          "player1": "Davis, Derrick",
-          "player2": "Dore, Max",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 5,
-          "player1": "Dimitrov, James",
-          "player2": "Choo, Clement",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -381,25 +256,16 @@
           "round": 5,
           "player1": "Kans, Alexander",
           "player2": "Flores, Pedro",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Prowess",
           "p1_wins": 1,
           "p2_wins": 2
         },
         {
           "round": 5,
-          "player1": "Schabel, Justin",
-          "player2": "Ramboa, Thierry",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 5,
           "player1": "Noah, Ma",
           "player2": "Sato, Keisuke",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Simic Ouroboroid",
           "p1_wins": 1,
           "p2_wins": 2
@@ -409,7 +275,7 @@
           "player1": "Knorr, Jackson",
           "player2": "Dang, Nam",
           "archetype1": "Jeskai Artifacts",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -418,16 +284,7 @@
           "player1": "Asano, Tatsuro",
           "player2": "Pardee, Sam",
           "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 5,
-          "player1": "Asano, Tatsuro",
-          "player2": "Pardee, Sam",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
         },
@@ -436,24 +293,15 @@
           "player1": "Burkhart, Corey",
           "player2": "Nassif, Gabriel",
           "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
         },
         {
           "round": 6,
-          "player1": "Schnake, Abe",
-          "player2": "Wang, Kunrui",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 6,
           "player1": "Kans, Alexander",
           "player2": "Nollen, Dylan",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Looting",
           "p1_wins": 2,
           "p2_wins": 1
@@ -463,16 +311,7 @@
           "player1": "Choo, Clement",
           "player2": "Noah, Ma",
           "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 6,
-          "player1": "Choo, Clement",
-          "player2": "Noah, Ma",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -481,7 +320,7 @@
           "player1": "Zhang, Rei",
           "player2": "Dore, Max",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -489,25 +328,16 @@
           "round": 6,
           "player1": "Pardee, Sam",
           "player2": "Depraz, Jean-Emmanuel",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Looting",
           "p1_wins": 2,
           "p2_wins": 1
         },
         {
           "round": 6,
-          "player1": "Dota, Arch",
-          "player2": "Nielsen, Simon",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 6,
           "player1": "Lack, Cory",
           "player2": "Ichikawa, Yuuki",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Looting",
           "p1_wins": 2,
           "p2_wins": 1
@@ -516,44 +346,17 @@
           "round": 6,
           "player1": "Nassif, Gabriel",
           "player2": "Waligora, Ryan",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Looting",
           "p1_wins": 2,
           "p2_wins": 0
         },
         {
           "round": 6,
-          "player1": "To, Chun Him",
-          "player2": "Gimenez, Sergio",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 6,
           "player1": "Rohan, Alex",
           "player2": "Nass, Matthew",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 6,
-          "player1": "Brace, Adam",
-          "player2": "Asano, Tatsuro",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 6,
-          "player1": "Kikidis, Charis",
-          "player2": "Miyaji-Thorne, Zen",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -562,7 +365,7 @@
           "player1": "Rappaport, Max",
           "player2": "Shibata, Akira",
           "archetype1": "Dimir Midrange",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
         },
@@ -571,24 +374,15 @@
           "player1": "Faust, Zevin",
           "player2": "Costa, Matthew",
           "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
         {
           "round": 6,
-          "player1": "Schabel, Justin",
-          "player2": "Carvalho, Marcio",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Prowess",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 6,
           "player1": "Duke, Reid",
           "player2": "Botelho, Chris",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Jeskai Control",
           "p1_wins": 1,
           "p2_wins": 2
@@ -597,8 +391,8 @@
           "round": 6,
           "player1": "Wright, Matthew",
           "player2": "Dang, Nam",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -606,25 +400,16 @@
           "round": 6,
           "player1": "Wright, Matthew",
           "player2": "Dang, Nam",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
         {
           "round": 6,
-          "player1": "Davis, Derrick",
-          "player2": "Harane, Kenta",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Sultai Reanimator",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 6,
           "player1": "Manfield, Seth",
           "player2": "Kuisma, Matti",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Golgari Ouroboroid",
           "p1_wins": 2,
           "p2_wins": 1
@@ -633,7 +418,7 @@
           "round": 6,
           "player1": "Magalhaes, Edgar",
           "player2": "Masukado, Kenta",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Dimir Midrange",
           "p1_wins": 0,
           "p2_wins": 2
@@ -642,7 +427,7 @@
           "round": 6,
           "player1": "David, Julian",
           "player2": "Robb, Ian",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Bant Airbending",
           "p1_wins": 2,
           "p2_wins": 1
@@ -652,52 +437,25 @@
           "player1": "Nielsen, Simon",
           "player2": "Lack, Cory",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
         {
           "round": 7,
-          "player1": "Davis, Derrick",
-          "player2": "Wong, Charles",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 7,
           "player1": "Magalhaes, Edgar",
           "player2": "Buonadonna, Mason",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 0
         },
         {
           "round": 7,
-          "player1": "Kikidis, Charis",
-          "player2": "Rappaport, Max",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Dimir Midrange",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 7,
           "player1": "Burkhart, Corey",
           "player2": "Costa, Matthew",
           "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 7,
-          "player1": "To, Chun Him",
-          "player2": "Moriyama, Masahide",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Simic Ouroboroid",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -705,17 +463,8 @@
           "round": 7,
           "player1": "Shibata, Akira",
           "player2": "Kassis, Eli",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 7,
-          "player1": "Husisian, Peter",
-          "player2": "Choo, Clement",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -724,7 +473,7 @@
           "player1": "Cordob\u00e9s, Albert",
           "player2": "Dore, Max",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -733,25 +482,16 @@
           "player1": "Sarap, Karl",
           "player2": "Pardee, Sam",
           "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
-        },
-        {
-          "round": 7,
-          "player1": "Asano, Tatsuro",
-          "player2": "Kuisma, Matti",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Golgari Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 0
         },
         {
           "round": 7,
           "player1": "Tonole, Quinn",
           "player2": "Noah, Ma",
           "archetype1": "Mono-Red Aggro",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -760,16 +500,7 @@
           "player1": "Faust, Zevin",
           "player2": "David, Julian",
           "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 7,
-          "player1": "Palmero Garc\u00eda, Fernando",
-          "player2": "Schnake, Abe",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -778,7 +509,7 @@
           "player1": "Friedrichsen, Alex",
           "player2": "Wright, Matthew",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -786,7 +517,7 @@
           "round": 7,
           "player1": "Duke, Reid",
           "player2": "Litman, Randall",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Looting",
           "p1_wins": 2,
           "p2_wins": 0
@@ -795,17 +526,8 @@
           "round": 7,
           "player1": "Nass, Matthew",
           "player2": "Masukado, Kenta",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Dimir Midrange",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 7,
-          "player1": "Nasri, Bassel",
-          "player2": "Schabel, Justin",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
           "p1_wins": 1,
           "p2_wins": 2
         },
@@ -814,7 +536,7 @@
           "player1": "Ogasawara, Tomoaki",
           "player2": "Kans, Alexander",
           "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -823,17 +545,8 @@
           "player1": "Leonard Huu Nguyen, Christopher",
           "player2": "Manfield, Seth",
           "archetype1": "Dimir Bounce",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 7,
-          "player1": "Dota, Arch",
-          "player2": "Garcia-Romo, Andy",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Jeskai Control",
-          "p1_wins": 1,
           "p2_wins": 2
         },
         {
@@ -841,7 +554,7 @@
           "player1": "Sulimovich, Guillermo",
           "player2": "Dang, Nam",
           "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -849,7 +562,7 @@
           "round": 7,
           "player1": "Nassif, Gabriel",
           "player2": "Inoue, Toru",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Jeskai Control",
           "p1_wins": 2,
           "p2_wins": 0
@@ -858,7 +571,7 @@
           "round": 11,
           "player1": "Manfield, Seth",
           "player2": "Portolan, Toni",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 1
@@ -868,16 +581,7 @@
           "player1": "Davis, Derrick",
           "player2": "Pardee, Sam",
           "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 11,
-          "player1": "Davis, Derrick",
-          "player2": "Pardee, Sam",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -885,7 +589,7 @@
           "round": 11,
           "player1": "Nass, Matthew",
           "player2": "Cordob\u00e9s, Albert",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 0
@@ -895,7 +599,7 @@
           "player1": "Wong, Charles",
           "player2": "Duke, Reid",
           "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -904,16 +608,7 @@
           "player1": "Schabel, Justin",
           "player2": "Magalhaes, Edgar",
           "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 11,
-          "player1": "Schabel, Justin",
-          "player2": "Magalhaes, Edgar",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -922,7 +617,7 @@
           "player1": "Karam, Vin\u00edcius",
           "player2": "Dore, Max",
           "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -930,7 +625,7 @@
           "round": 11,
           "player1": "Shibata, Akira",
           "player2": "Depraz, Jean-Emmanuel",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Looting",
           "p1_wins": 1,
           "p2_wins": 2
@@ -939,17 +634,8 @@
           "round": 11,
           "player1": "Dang, Nam",
           "player2": "Kassis, Eli",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 11,
-          "player1": "Dimitrov, James",
-          "player2": "Dota, Arch",
-          "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -958,7 +644,7 @@
           "player1": "Ogasawara, Tomoaki",
           "player2": "Lack, Cory",
           "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -966,7 +652,7 @@
           "round": 11,
           "player1": "Nassif, Gabriel",
           "player2": "Stark, Ben",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Golgari Dragons",
           "p1_wins": 2,
           "p2_wins": 1
@@ -976,7 +662,7 @@
           "player1": "Soto, Roberto",
           "player2": "Dang, Nam",
           "archetype1": "Simic Ouroboroid",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -984,16 +670,7 @@
           "round": 12,
           "player1": "Magalhaes, Edgar",
           "player2": "Asano, Tatsuro",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 12,
-          "player1": "Magalhaes, Edgar",
-          "player2": "Asano, Tatsuro",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Lessons",
           "p1_wins": 2,
           "p2_wins": 0
@@ -1002,17 +679,8 @@
           "round": 12,
           "player1": "Dore, Max",
           "player2": "Portolan, Toni",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 12,
-          "player1": "Bot, Tom",
-          "player2": "Dota, Arch",
-          "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
           "p1_wins": 1,
           "p2_wins": 2
         },
@@ -1021,7 +689,7 @@
           "player1": "Zhang, Rei",
           "player2": "Nassif, Gabriel",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -1030,7 +698,7 @@
           "player1": "Sarap, Karl",
           "player2": "Duke, Reid",
           "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -1038,7 +706,7 @@
           "round": 12,
           "player1": "Nass, Matthew",
           "player2": "Klepatch, Andrei",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 0
@@ -1047,7 +715,7 @@
           "round": 12,
           "player1": "Shibata, Akira",
           "player2": "Yukuhiro, Ken",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Sultai Reanimator",
           "p1_wins": 0,
           "p2_wins": 2
@@ -1056,26 +724,8 @@
           "round": 12,
           "player1": "Manfield, Seth",
           "player2": "Davis, Derrick",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 12,
-          "player1": "Manfield, Seth",
-          "player2": "Davis, Derrick",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 12,
-          "player1": "Schabel, Justin",
-          "player2": "Airaksinen, Mikko",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -1084,16 +734,7 @@
           "player1": "Holloway, Jennifer-Rose",
           "player2": "Lack, Cory",
           "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 13,
-          "player1": "Yukuhiro, Ken",
-          "player2": "Davis, Derrick",
-          "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -1101,17 +742,17 @@
           "round": 13,
           "player1": "Nass, Matthew",
           "player2": "Moriyama, Masahide",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Simic Ouroboroid",
           "p1_wins": 2,
           "p2_wins": 1
         },
         {
           "round": 13,
-          "player1": "Stark, Ben",
-          "player2": "Schabel, Justin",
-          "archetype1": "Golgari Dragons",
-          "archetype2": "Izzet Lessons",
+          "player1": "Shibata, Akira",
+          "player2": "Nassif, Gabriel",
+          "archetype1": "Izzet Lessons (Monument)",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -1119,17 +760,8 @@
           "round": 13,
           "player1": "Shibata, Akira",
           "player2": "Nassif, Gabriel",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 13,
-          "player1": "Shibata, Akira",
-          "player2": "Nassif, Gabriel",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -1137,8 +769,8 @@
           "round": 13,
           "player1": "Dang, Nam",
           "player2": "Lack, Cory",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -1146,8 +778,8 @@
           "round": 13,
           "player1": "Dang, Nam",
           "player2": "Lack, Cory",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -1155,35 +787,17 @@
           "round": 13,
           "player1": "Duke, Reid",
           "player2": "Ogasawara, Tomoaki",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Sultai Reanimator",
           "p1_wins": 1,
           "p2_wins": 2
         },
         {
           "round": 13,
-          "player1": "Ikawa, Yoshihiko",
-          "player2": "Dota, Arch",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 0
-        },
-        {
-          "round": 13,
           "player1": "Dominguez, Javier",
           "player2": "Dore, Max",
           "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 2,
-          "p2_wins": 1
-        },
-        {
-          "round": 13,
-          "player1": "Asano, Tatsuro",
-          "player2": "Offman, No\u00e9",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Bant Airbending",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -1192,7 +806,7 @@
           "player1": "Mackenzie, Connor",
           "player2": "Magalhaes, Edgar",
           "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -1200,7 +814,7 @@
           "round": 14,
           "player1": "Duke, Reid",
           "player2": "Rappaport, Max",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Dimir Midrange",
           "p1_wins": 1,
           "p2_wins": 2
@@ -1209,8 +823,8 @@
           "round": 14,
           "player1": "Magalhaes, Edgar",
           "player2": "Dang, Nam",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -1218,18 +832,9 @@
           "round": 14,
           "player1": "Magalhaes, Edgar",
           "player2": "Dang, Nam",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 14,
-          "player1": "Dota, Arch",
-          "player2": "Tobiasch, Marc",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Simic Otters",
-          "p1_wins": 1,
           "p2_wins": 2
         },
         {
@@ -1237,7 +842,7 @@
           "player1": "Dimitrov, James",
           "player2": "Dore, Max",
           "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -1246,34 +851,7 @@
           "player1": "Lin, Shih Feng",
           "player2": "Lack, Cory",
           "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 14,
-          "player1": "Sulimovich, Guillermo",
-          "player2": "Schabel, Justin",
-          "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
-          "p1_wins": 1,
-          "p2_wins": 2
-        },
-        {
-          "round": 14,
-          "player1": "Asano, Tatsuro",
-          "player2": "Bodewes, Jelco",
-          "archetype1": "Izzet Lessons",
-          "archetype2": "Izzet Looting",
-          "p1_wins": 0,
-          "p2_wins": 2
-        },
-        {
-          "round": 14,
-          "player1": "Tamblyn, Mitchell",
-          "player2": "Davis, Derrick",
-          "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
         },
@@ -1282,7 +860,7 @@
           "player1": "Hori, Masataka",
           "player2": "Nass, Matthew",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -1291,7 +869,7 @@
           "player1": "Ogasawara, Tomoaki",
           "player2": "Nassif, Gabriel",
           "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -1299,15 +877,15 @@
           "round": 14,
           "player1": "Shibata, Akira",
           "player2": "Portolan, Toni",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 0
         }
       ],
-      "win_rate": 0.5701754385964912,
-      "game_win_rate": 0.53954802259887,
-      "total_matches": 114
+      "win_rate": 0.6091954022988506,
+      "game_win_rate": 0.5847457627118644,
+      "total_matches": 87
     },
     "Jeskai Control": {
       "wins": 33,
@@ -1321,7 +899,7 @@
           "player1": "Burkhart, Corey",
           "player2": "Dang, Nam",
           "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -1338,7 +916,7 @@
           "round": 4,
           "player1": "Duke, Reid",
           "player2": "Garcia-Romo, Andy",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Jeskai Control",
           "p1_wins": 1,
           "p2_wins": 2
@@ -1383,7 +961,7 @@
           "round": 4,
           "player1": "Nass, Matthew",
           "player2": "Botelho, Chris",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Jeskai Control",
           "p1_wins": 2,
           "p2_wins": 0
@@ -1402,7 +980,7 @@
           "player1": "Tamblyn, Mitchell",
           "player2": "Kans, Alexander",
           "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -1483,7 +1061,7 @@
           "player1": "Burkhart, Corey",
           "player2": "Nassif, Gabriel",
           "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
         },
@@ -1545,7 +1123,7 @@
           "round": 6,
           "player1": "Duke, Reid",
           "player2": "Botelho, Chris",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Jeskai Control",
           "p1_wins": 1,
           "p2_wins": 2
@@ -1591,7 +1169,7 @@
           "player1": "Burkhart, Corey",
           "player2": "Costa, Matthew",
           "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -1662,7 +1240,7 @@
           "round": 7,
           "player1": "Nassif, Gabriel",
           "player2": "Inoue, Toru",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Jeskai Control",
           "p1_wins": 2,
           "p2_wins": 0
@@ -1762,7 +1340,7 @@
           "player1": "Holloway, Jennifer-Rose",
           "player2": "Lack, Cory",
           "archetype1": "Jeskai Control",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -1909,7 +1487,7 @@
           "player1": "Buonadonna, Mason",
           "player2": "Noah, Ma",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -1944,7 +1522,7 @@
           "round": 4,
           "player1": "Manfield, Seth",
           "player2": "Baker, Christian",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 1
@@ -1999,7 +1577,7 @@
           "player1": "Henry, Shaun",
           "player2": "Dore, Max",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -2017,7 +1595,7 @@
           "player1": "Cordob\u00e9s, Albert",
           "player2": "Magalhaes, Edgar",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
         },
@@ -2124,7 +1702,7 @@
           "round": 5,
           "player1": "Shibata, Akira",
           "player2": "Rohan, Alex",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 1,
           "p2_wins": 2
@@ -2178,7 +1756,7 @@
           "round": 5,
           "player1": "Magalhaes, Edgar",
           "player2": "Bot, Tom",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 1,
           "p2_wins": 2
@@ -2197,7 +1775,7 @@
           "player1": "Sch\u00fctz, Stefan",
           "player2": "David, Julian",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
         },
@@ -2287,7 +1865,7 @@
           "player1": "Zhang, Rei",
           "player2": "Dore, Max",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -2359,7 +1937,7 @@
           "player1": "Rohan, Alex",
           "player2": "Nass, Matthew",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -2440,7 +2018,7 @@
           "player1": "Nielsen, Simon",
           "player2": "Lack, Cory",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -2457,7 +2035,7 @@
           "round": 7,
           "player1": "Magalhaes, Edgar",
           "player2": "Buonadonna, Mason",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 0
@@ -2502,7 +2080,7 @@
           "round": 7,
           "player1": "Shibata, Akira",
           "player2": "Kassis, Eli",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 0
@@ -2521,7 +2099,7 @@
           "player1": "Cordob\u00e9s, Albert",
           "player2": "Dore, Max",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -2548,7 +2126,7 @@
           "player1": "Friedrichsen, Alex",
           "player2": "Wright, Matthew",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -2619,7 +2197,7 @@
           "round": 11,
           "player1": "Manfield, Seth",
           "player2": "Portolan, Toni",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 1
@@ -2655,7 +2233,7 @@
           "round": 11,
           "player1": "Nass, Matthew",
           "player2": "Cordob\u00e9s, Albert",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 0
@@ -2682,7 +2260,7 @@
           "round": 11,
           "player1": "Dang, Nam",
           "player2": "Kassis, Eli",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 0
@@ -2754,7 +2332,7 @@
           "round": 12,
           "player1": "Dore, Max",
           "player2": "Portolan, Toni",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 1,
           "p2_wins": 2
@@ -2800,7 +2378,7 @@
           "player1": "Zhang, Rei",
           "player2": "Nassif, Gabriel",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -2808,7 +2386,7 @@
           "round": 12,
           "player1": "Nass, Matthew",
           "player2": "Klepatch, Andrei",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 0
@@ -2989,7 +2567,7 @@
           "player1": "Hori, Masataka",
           "player2": "Nass, Matthew",
           "archetype1": "Temur Otters",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -3042,7 +2620,7 @@
           "round": 14,
           "player1": "Shibata, Akira",
           "player2": "Portolan, Toni",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Temur Otters",
           "p1_wins": 2,
           "p2_wins": 0
@@ -3189,7 +2767,7 @@
           "round": 4,
           "player1": "Costa, Matthew",
           "player2": "Mazza, Raffaele",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Looting",
           "p1_wins": 2,
           "p2_wins": 1
@@ -3315,7 +2893,7 @@
           "round": 6,
           "player1": "Kans, Alexander",
           "player2": "Nollen, Dylan",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Looting",
           "p1_wins": 2,
           "p2_wins": 1
@@ -3324,7 +2902,7 @@
           "round": 6,
           "player1": "Pardee, Sam",
           "player2": "Depraz, Jean-Emmanuel",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Looting",
           "p1_wins": 2,
           "p2_wins": 1
@@ -3333,7 +2911,7 @@
           "round": 6,
           "player1": "Lack, Cory",
           "player2": "Ichikawa, Yuuki",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Looting",
           "p1_wins": 2,
           "p2_wins": 1
@@ -3351,7 +2929,7 @@
           "round": 6,
           "player1": "Nassif, Gabriel",
           "player2": "Waligora, Ryan",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Looting",
           "p1_wins": 2,
           "p2_wins": 0
@@ -3486,7 +3064,7 @@
           "round": 7,
           "player1": "Duke, Reid",
           "player2": "Litman, Randall",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Looting",
           "p1_wins": 2,
           "p2_wins": 0
@@ -3504,7 +3082,7 @@
           "round": 11,
           "player1": "Shibata, Akira",
           "player2": "Depraz, Jean-Emmanuel",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Looting",
           "p1_wins": 1,
           "p2_wins": 2
@@ -3559,7 +3137,7 @@
           "player1": "Mackenzie, Connor",
           "player2": "Magalhaes, Edgar",
           "archetype1": "Izzet Looting",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -3634,7 +3212,7 @@
           "player1": "Kuisma, Matti",
           "player2": "Lack, Cory",
           "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -3706,7 +3284,7 @@
           "player1": "Faust, Zevin",
           "player2": "Costa, Matthew",
           "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -3723,7 +3301,7 @@
           "round": 6,
           "player1": "Manfield, Seth",
           "player2": "Kuisma, Matti",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Golgari Ouroboroid",
           "p1_wins": 2,
           "p2_wins": 1
@@ -3751,7 +3329,7 @@
           "player1": "Sarap, Karl",
           "player2": "Pardee, Sam",
           "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
         },
@@ -3769,7 +3347,7 @@
           "player1": "Faust, Zevin",
           "player2": "David, Julian",
           "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -3778,7 +3356,7 @@
           "player1": "Wong, Charles",
           "player2": "Duke, Reid",
           "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -3805,7 +3383,7 @@
           "player1": "Sarap, Karl",
           "player2": "Duke, Reid",
           "archetype1": "Golgari Ouroboroid",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -3960,7 +3538,7 @@
           "round": 5,
           "player1": "Noah, Ma",
           "player2": "Sato, Keisuke",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Simic Ouroboroid",
           "p1_wins": 1,
           "p2_wins": 2
@@ -4105,7 +3683,7 @@
           "player1": "Soto, Roberto",
           "player2": "Dang, Nam",
           "archetype1": "Simic Ouroboroid",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -4122,7 +3700,7 @@
           "round": 13,
           "player1": "Nass, Matthew",
           "player2": "Moriyama, Masahide",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Simic Ouroboroid",
           "p1_wins": 2,
           "p2_wins": 1
@@ -4224,7 +3802,7 @@
           "round": 4,
           "player1": "David, Julian",
           "player2": "Korfine, Julian",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Bant Airbending",
           "p1_wins": 1,
           "p2_wins": 2
@@ -4243,7 +3821,7 @@
           "player1": "Ramboa, Thierry",
           "player2": "Shibata, Akira",
           "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -4341,7 +3919,7 @@
           "round": 5,
           "player1": "Lack, Cory",
           "player2": "Robkin, Jesse",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Bant Airbending",
           "p1_wins": 2,
           "p2_wins": 1
@@ -4351,7 +3929,7 @@
           "player1": "Green, Paul",
           "player2": "Duke, Reid",
           "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -4368,7 +3946,7 @@
           "round": 5,
           "player1": "Nass, Matthew",
           "player2": "Dominguez, Javier",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Bant Airbending",
           "p1_wins": 2,
           "p2_wins": 1
@@ -4566,7 +4144,7 @@
           "round": 6,
           "player1": "David, Julian",
           "player2": "Robb, Ian",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Bant Airbending",
           "p1_wins": 2,
           "p2_wins": 1
@@ -4702,7 +4280,7 @@
           "player1": "Sulimovich, Guillermo",
           "player2": "Dang, Nam",
           "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -4738,7 +4316,7 @@
           "player1": "Karam, Vin\u00edcius",
           "player2": "Dore, Max",
           "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -4819,7 +4397,7 @@
           "player1": "Dominguez, Javier",
           "player2": "Dore, Max",
           "archetype1": "Bant Airbending",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -5002,7 +4580,7 @@
           "player1": "Leonard Huu Nguyen, Christopher",
           "player2": "Manfield, Seth",
           "archetype1": "Dimir Bounce",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -5056,6 +4634,441 @@
       "game_win_rate": 0.40540540540540543,
       "total_matches": 16
     },
+    "Izzet Lessons": {
+      "wins": 21,
+      "losses": 24,
+      "draws": 0,
+      "games_won": 53,
+      "games_lost": 65,
+      "matches": [
+        {
+          "round": 4,
+          "player1": "Klepatch, Andrei",
+          "player2": "Dota, Arch",
+          "archetype1": "Temur Otters",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 4,
+          "player1": "Choo, Clement",
+          "player2": "Pardee, Sam",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 4,
+          "player1": "Kikidis, Charis",
+          "player2": "Torres, Bernardo",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Jeskai Artifacts",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 4,
+          "player1": "Davis, Derrick",
+          "player2": "Offman, No\u00e9",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Bant Airbending",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 4,
+          "player1": "To, Chun Him",
+          "player2": "Flores, Pedro",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 4,
+          "player1": "Stark, Ben",
+          "player2": "Schnake, Abe",
+          "archetype1": "Golgari Dragons",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 4,
+          "player1": "Asano, Tatsuro",
+          "player2": "Schabel, Justin",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 4,
+          "player1": "Asano, Tatsuro",
+          "player2": "Schabel, Justin",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 5,
+          "player1": "Schnake, Abe",
+          "player2": "Inoue, Toru",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Jeskai Control",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 5,
+          "player1": "Dota, Arch",
+          "player2": "Rood, David",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Bant Airbending",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 5,
+          "player1": "Wright, Matthew",
+          "player2": "Kikidis, Charis",
+          "archetype1": "Izzet Lessons (Monument)",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 5,
+          "player1": "To, Chun Him",
+          "player2": "Lip, Quinton",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Bant Airbending",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 5,
+          "player1": "Davis, Derrick",
+          "player2": "Dore, Max",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 5,
+          "player1": "Dimitrov, James",
+          "player2": "Choo, Clement",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 5,
+          "player1": "Schabel, Justin",
+          "player2": "Ramboa, Thierry",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Bant Airbending",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 5,
+          "player1": "Asano, Tatsuro",
+          "player2": "Pardee, Sam",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 6,
+          "player1": "Schnake, Abe",
+          "player2": "Wang, Kunrui",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 6,
+          "player1": "Choo, Clement",
+          "player2": "Noah, Ma",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 6,
+          "player1": "Dota, Arch",
+          "player2": "Nielsen, Simon",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Temur Otters",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 6,
+          "player1": "To, Chun Him",
+          "player2": "Gimenez, Sergio",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Simic Ouroboroid",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 6,
+          "player1": "Brace, Adam",
+          "player2": "Asano, Tatsuro",
+          "archetype1": "Jeskai Control",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 6,
+          "player1": "Kikidis, Charis",
+          "player2": "Miyaji-Thorne, Zen",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Bant Airbending",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 6,
+          "player1": "Schabel, Justin",
+          "player2": "Carvalho, Marcio",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Prowess",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 6,
+          "player1": "Davis, Derrick",
+          "player2": "Harane, Kenta",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Sultai Reanimator",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 7,
+          "player1": "Davis, Derrick",
+          "player2": "Wong, Charles",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Golgari Ouroboroid",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 7,
+          "player1": "Kikidis, Charis",
+          "player2": "Rappaport, Max",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Dimir Midrange",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 7,
+          "player1": "To, Chun Him",
+          "player2": "Moriyama, Masahide",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Simic Ouroboroid",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 7,
+          "player1": "Husisian, Peter",
+          "player2": "Choo, Clement",
+          "archetype1": "Temur Otters",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 7,
+          "player1": "Asano, Tatsuro",
+          "player2": "Kuisma, Matti",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Golgari Ouroboroid",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 7,
+          "player1": "Palmero Garc\u00eda, Fernando",
+          "player2": "Schnake, Abe",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 7,
+          "player1": "Nasri, Bassel",
+          "player2": "Schabel, Justin",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 7,
+          "player1": "Dota, Arch",
+          "player2": "Garcia-Romo, Andy",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Jeskai Control",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 11,
+          "player1": "Davis, Derrick",
+          "player2": "Pardee, Sam",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 11,
+          "player1": "Schabel, Justin",
+          "player2": "Magalhaes, Edgar",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 11,
+          "player1": "Dimitrov, James",
+          "player2": "Dota, Arch",
+          "archetype1": "Izzet Prowess",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 12,
+          "player1": "Magalhaes, Edgar",
+          "player2": "Asano, Tatsuro",
+          "archetype1": "Izzet Lessons (Monument)",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 12,
+          "player1": "Bot, Tom",
+          "player2": "Dota, Arch",
+          "archetype1": "Temur Otters",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 12,
+          "player1": "Manfield, Seth",
+          "player2": "Davis, Derrick",
+          "archetype1": "Izzet Lessons (Monument)",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 12,
+          "player1": "Schabel, Justin",
+          "player2": "Airaksinen, Mikko",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Temur Otters",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 13,
+          "player1": "Yukuhiro, Ken",
+          "player2": "Davis, Derrick",
+          "archetype1": "Sultai Reanimator",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 13,
+          "player1": "Stark, Ben",
+          "player2": "Schabel, Justin",
+          "archetype1": "Golgari Dragons",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 13,
+          "player1": "Ikawa, Yoshihiko",
+          "player2": "Dota, Arch",
+          "archetype1": "Jeskai Control",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 2,
+          "p2_wins": 0
+        },
+        {
+          "round": 13,
+          "player1": "Asano, Tatsuro",
+          "player2": "Offman, No\u00e9",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Bant Airbending",
+          "p1_wins": 2,
+          "p2_wins": 1
+        },
+        {
+          "round": 14,
+          "player1": "Dota, Arch",
+          "player2": "Tobiasch, Marc",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Simic Otters",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 14,
+          "player1": "Sulimovich, Guillermo",
+          "player2": "Schabel, Justin",
+          "archetype1": "Bant Airbending",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 1,
+          "p2_wins": 2
+        },
+        {
+          "round": 14,
+          "player1": "Asano, Tatsuro",
+          "player2": "Bodewes, Jelco",
+          "archetype1": "Izzet Lessons",
+          "archetype2": "Izzet Looting",
+          "p1_wins": 0,
+          "p2_wins": 2
+        },
+        {
+          "round": 14,
+          "player1": "Tamblyn, Mitchell",
+          "player2": "Davis, Derrick",
+          "archetype1": "Jeskai Control",
+          "archetype2": "Izzet Lessons",
+          "p1_wins": 1,
+          "p2_wins": 2
+        }
+      ],
+      "win_rate": 0.4666666666666667,
+      "game_win_rate": 0.4491525423728814,
+      "total_matches": 45
+    },
     "Sultai Reanimator": {
       "wins": 25,
       "losses": 16,
@@ -5103,7 +5116,7 @@
           "round": 4,
           "player1": "Wright, Matthew",
           "player2": "Pham, Ha",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Sultai Reanimator",
           "p1_wins": 2,
           "p2_wins": 0
@@ -5257,7 +5270,7 @@
           "player1": "Ogasawara, Tomoaki",
           "player2": "Kans, Alexander",
           "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -5320,7 +5333,7 @@
           "player1": "Ogasawara, Tomoaki",
           "player2": "Lack, Cory",
           "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -5364,7 +5377,7 @@
           "round": 12,
           "player1": "Shibata, Akira",
           "player2": "Yukuhiro, Ken",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Sultai Reanimator",
           "p1_wins": 0,
           "p2_wins": 2
@@ -5400,7 +5413,7 @@
           "round": 13,
           "player1": "Duke, Reid",
           "player2": "Ogasawara, Tomoaki",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Sultai Reanimator",
           "p1_wins": 1,
           "p2_wins": 2
@@ -5419,7 +5432,7 @@
           "player1": "Lin, Shih Feng",
           "player2": "Lack, Cory",
           "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
         },
@@ -5446,7 +5459,7 @@
           "player1": "Ogasawara, Tomoaki",
           "player2": "Nassif, Gabriel",
           "archetype1": "Sultai Reanimator",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         }
@@ -5512,7 +5525,7 @@
           "player1": "Nagao, Yasutaka",
           "player2": "Manfield, Seth",
           "archetype1": "Jeskai Artifacts",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -5530,7 +5543,7 @@
           "player1": "Knorr, Jackson",
           "player2": "Dang, Nam",
           "archetype1": "Jeskai Artifacts",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -5668,7 +5681,7 @@
           "player1": "Wang, Kunrui",
           "player2": "Nassif, Gabriel",
           "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
         },
@@ -5784,7 +5797,7 @@
           "round": 5,
           "player1": "Kans, Alexander",
           "player2": "Flores, Pedro",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Izzet Prowess",
           "p1_wins": 1,
           "p2_wins": 2
@@ -6073,7 +6086,7 @@
           "player1": "Dimitrov, James",
           "player2": "Dore, Max",
           "archetype1": "Izzet Prowess",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 0,
           "p2_wins": 2
         },
@@ -6157,7 +6170,7 @@
           "player1": "Rappaport, Max",
           "player2": "Shibata, Akira",
           "archetype1": "Dimir Midrange",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 1,
           "p2_wins": 2
         },
@@ -6165,7 +6178,7 @@
           "round": 6,
           "player1": "Magalhaes, Edgar",
           "player2": "Masukado, Kenta",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Dimir Midrange",
           "p1_wins": 0,
           "p2_wins": 2
@@ -6183,7 +6196,7 @@
           "round": 7,
           "player1": "Nass, Matthew",
           "player2": "Masukado, Kenta",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Dimir Midrange",
           "p1_wins": 1,
           "p2_wins": 2
@@ -6246,7 +6259,7 @@
           "round": 14,
           "player1": "Duke, Reid",
           "player2": "Rappaport, Max",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Dimir Midrange",
           "p1_wins": 1,
           "p2_wins": 2
@@ -6313,7 +6326,7 @@
           "player1": "Fang, Percy",
           "player2": "Costa, Matthew",
           "archetype1": "Mono-Red Aggro",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 1
         },
@@ -6376,7 +6389,7 @@
           "player1": "Tonole, Quinn",
           "player2": "Noah, Ma",
           "archetype1": "Mono-Red Aggro",
-          "archetype2": "Izzet Lessons",
+          "archetype2": "Izzet Lessons (Monument)",
           "p1_wins": 2,
           "p2_wins": 0
         },
@@ -6600,7 +6613,7 @@
           "round": 11,
           "player1": "Nassif, Gabriel",
           "player2": "Stark, Ben",
-          "archetype1": "Izzet Lessons",
+          "archetype1": "Izzet Lessons (Monument)",
           "archetype2": "Golgari Dragons",
           "p1_wins": 2,
           "p2_wins": 1
@@ -6687,18 +6700,18 @@
     }
   },
   "matchup_stats": {
-    "Izzet Lessons vs Jeskai Control": {
-      "archetype1": "Izzet Lessons",
+    "Izzet Lessons (Monument) vs Jeskai Control": {
+      "archetype1": "Izzet Lessons (Monument)",
       "archetype2": "Jeskai Control",
-      "arch1_wins": 12,
-      "arch2_wins": 16,
-      "arch1_games": 30,
-      "arch2_games": 36,
-      "total_matches": 28,
-      "arch1_win_rate": 0.42857142857142855,
-      "arch2_win_rate": 0.5714285714285714,
-      "arch1_game_win_rate": 0.45454545454545453,
-      "arch2_game_win_rate": 0.5454545454545454
+      "arch1_wins": 10,
+      "arch2_wins": 8,
+      "arch1_games": 24,
+      "arch2_games": 18,
+      "total_matches": 18,
+      "arch1_win_rate": 0.5555555555555556,
+      "arch2_win_rate": 0.4444444444444444,
+      "arch1_game_win_rate": 0.5714285714285714,
+      "arch2_game_win_rate": 0.42857142857142855
     },
     "Jeskai Control vs Temur Otters": {
       "archetype1": "Temur Otters",
@@ -6713,18 +6726,18 @@
       "arch1_game_win_rate": 0.38095238095238093,
       "arch2_game_win_rate": 0.6190476190476191
     },
-    "Izzet Lessons vs Temur Otters": {
-      "archetype1": "Izzet Lessons",
+    "Izzet Lessons (Monument) vs Temur Otters": {
+      "archetype1": "Izzet Lessons (Monument)",
       "archetype2": "Temur Otters",
-      "arch1_wins": 40,
-      "arch2_wins": 14,
-      "arch1_games": 92,
-      "arch2_games": 40,
-      "total_matches": 54,
-      "arch1_win_rate": 0.7407407407407407,
-      "arch2_win_rate": 0.25925925925925924,
-      "arch1_game_win_rate": 0.696969696969697,
-      "arch2_game_win_rate": 0.30303030303030304
+      "arch1_wins": 32,
+      "arch2_wins": 12,
+      "arch1_games": 76,
+      "arch2_games": 32,
+      "total_matches": 44,
+      "arch1_win_rate": 0.7272727272727273,
+      "arch2_win_rate": 0.2727272727272727,
+      "arch1_game_win_rate": 0.7037037037037037,
+      "arch2_game_win_rate": 0.2962962962962963
     },
     "Izzet Looting vs Izzet Looting": {
       "archetype1": "Izzet Looting",
@@ -6804,6 +6817,19 @@
       "arch1_game_win_rate": 0.6666666666666666,
       "arch2_game_win_rate": 0.3333333333333333
     },
+    "Izzet Lessons vs Temur Otters": {
+      "archetype1": "Izzet Lessons",
+      "archetype2": "Temur Otters",
+      "arch1_wins": 8,
+      "arch2_wins": 2,
+      "arch1_games": 16,
+      "arch2_games": 8,
+      "total_matches": 10,
+      "arch1_win_rate": 0.8,
+      "arch2_win_rate": 0.2,
+      "arch1_game_win_rate": 0.6666666666666666,
+      "arch2_game_win_rate": 0.3333333333333333
+    },
     "Sultai Reanimator vs Temur Otters": {
       "archetype1": "Sultai Reanimator",
       "archetype2": "Temur Otters",
@@ -6817,18 +6843,18 @@
       "arch1_game_win_rate": 0.5909090909090909,
       "arch2_game_win_rate": 0.4090909090909091
     },
-    "Izzet Lessons vs Izzet Lessons": {
-      "archetype1": "Izzet Lessons",
+    "Izzet Lessons vs Izzet Lessons (Monument)": {
+      "archetype1": "Izzet Lessons (Monument)",
       "archetype2": "Izzet Lessons",
       "arch1_wins": 14,
-      "arch2_wins": 14,
-      "arch1_games": 31,
-      "arch2_games": 31,
-      "total_matches": 28,
-      "arch1_win_rate": 0.5,
-      "arch2_win_rate": 0.5,
-      "arch1_game_win_rate": 0.5,
-      "arch2_game_win_rate": 0.5
+      "arch2_wins": 4,
+      "arch1_games": 28,
+      "arch2_games": 12,
+      "total_matches": 18,
+      "arch1_win_rate": 0.7777777777777778,
+      "arch2_win_rate": 0.2222222222222222,
+      "arch1_game_win_rate": 0.7,
+      "arch2_game_win_rate": 0.3
     },
     "Jeskai Control vs Simic Ouroboroid": {
       "archetype1": "Jeskai Control",
@@ -6882,18 +6908,18 @@
       "arch1_game_win_rate": 0.3888888888888889,
       "arch2_game_win_rate": 0.6111111111111112
     },
-    "Bant Airbending vs Izzet Lessons": {
+    "Bant Airbending vs Izzet Lessons (Monument)": {
       "archetype1": "Bant Airbending",
-      "archetype2": "Izzet Lessons",
+      "archetype2": "Izzet Lessons (Monument)",
       "arch1_wins": 6,
-      "arch2_wins": 26,
-      "arch1_games": 32,
-      "arch2_games": 58,
-      "total_matches": 32,
-      "arch1_win_rate": 0.1875,
-      "arch2_win_rate": 0.8125,
-      "arch1_game_win_rate": 0.35555555555555557,
-      "arch2_game_win_rate": 0.6444444444444445
+      "arch2_wins": 12,
+      "arch1_games": 18,
+      "arch2_games": 30,
+      "total_matches": 18,
+      "arch1_win_rate": 0.3333333333333333,
+      "arch2_win_rate": 0.6666666666666666,
+      "arch1_game_win_rate": 0.375,
+      "arch2_game_win_rate": 0.625
     },
     "Jeskai Artifacts vs Sultai Reanimator": {
       "archetype1": "Sultai Reanimator",
@@ -6963,15 +6989,15 @@
     "Izzet Lessons vs Jeskai Artifacts": {
       "archetype1": "Izzet Lessons",
       "archetype2": "Jeskai Artifacts",
-      "arch1_wins": 6,
+      "arch1_wins": 2,
       "arch2_wins": 0,
-      "arch1_games": 12,
+      "arch1_games": 4,
       "arch2_games": 2,
-      "total_matches": 6,
+      "total_matches": 2,
       "arch1_win_rate": 1.0,
       "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 0.8571428571428571,
-      "arch2_game_win_rate": 0.14285714285714285
+      "arch1_game_win_rate": 0.6666666666666666,
+      "arch2_game_win_rate": 0.3333333333333333
     },
     "Izzet Prowess vs Sultai Reanimator": {
       "archetype1": "Izzet Prowess",
@@ -6986,18 +7012,18 @@
       "arch1_game_win_rate": 0.625,
       "arch2_game_win_rate": 0.375
     },
-    "Izzet Lessons vs Izzet Prowess": {
-      "archetype1": "Izzet Lessons",
+    "Izzet Lessons (Monument) vs Izzet Prowess": {
+      "archetype1": "Izzet Lessons (Monument)",
       "archetype2": "Izzet Prowess",
-      "arch1_wins": 8,
-      "arch2_wins": 12,
-      "arch1_games": 22,
-      "arch2_games": 28,
-      "total_matches": 20,
-      "arch1_win_rate": 0.4,
-      "arch2_win_rate": 0.6,
-      "arch1_game_win_rate": 0.44,
-      "arch2_game_win_rate": 0.56
+      "arch1_wins": 4,
+      "arch2_wins": 2,
+      "arch1_games": 10,
+      "arch2_games": 6,
+      "total_matches": 6,
+      "arch1_win_rate": 0.6666666666666666,
+      "arch2_win_rate": 0.3333333333333333,
+      "arch1_game_win_rate": 0.625,
+      "arch2_game_win_rate": 0.375
     },
     "Golgari Ouroboroid vs Jeskai Artifacts": {
       "archetype1": "Jeskai Artifacts",
@@ -7064,6 +7090,32 @@
       "arch1_game_win_rate": 1.0,
       "arch2_game_win_rate": 0.0
     },
+    "Bant Airbending vs Izzet Lessons": {
+      "archetype1": "Izzet Lessons",
+      "archetype2": "Bant Airbending",
+      "arch1_wins": 14,
+      "arch2_wins": 0,
+      "arch1_games": 28,
+      "arch2_games": 14,
+      "total_matches": 14,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.6666666666666666,
+      "arch2_game_win_rate": 0.3333333333333333
+    },
+    "Izzet Lessons vs Izzet Prowess": {
+      "archetype1": "Izzet Prowess",
+      "archetype2": "Izzet Lessons",
+      "arch1_wins": 10,
+      "arch2_wins": 4,
+      "arch1_games": 22,
+      "arch2_games": 12,
+      "total_matches": 14,
+      "arch1_win_rate": 0.7142857142857143,
+      "arch2_win_rate": 0.2857142857142857,
+      "arch1_game_win_rate": 0.6470588235294118,
+      "arch2_game_win_rate": 0.35294117647058826
+    },
     "Simic Otters vs Temur Otters": {
       "archetype1": "Temur Otters",
       "archetype2": "Simic Otters",
@@ -7090,31 +7142,31 @@
       "arch1_game_win_rate": 0.6666666666666666,
       "arch2_game_win_rate": 0.3333333333333333
     },
-    "Golgari Ouroboroid vs Izzet Lessons": {
+    "Golgari Ouroboroid vs Izzet Lessons (Monument)": {
       "archetype1": "Golgari Ouroboroid",
-      "archetype2": "Izzet Lessons",
+      "archetype2": "Izzet Lessons (Monument)",
       "arch1_wins": 8,
-      "arch2_wins": 10,
-      "arch1_games": 22,
-      "arch2_games": 24,
-      "total_matches": 18,
-      "arch1_win_rate": 0.4444444444444444,
-      "arch2_win_rate": 0.5555555555555556,
-      "arch1_game_win_rate": 0.4782608695652174,
-      "arch2_game_win_rate": 0.5217391304347826
+      "arch2_wins": 6,
+      "arch1_games": 20,
+      "arch2_games": 16,
+      "total_matches": 14,
+      "arch1_win_rate": 0.5714285714285714,
+      "arch2_win_rate": 0.42857142857142855,
+      "arch1_game_win_rate": 0.5555555555555556,
+      "arch2_game_win_rate": 0.4444444444444444
     },
-    "Izzet Lessons vs Sultai Reanimator": {
-      "archetype1": "Izzet Lessons",
+    "Izzet Lessons (Monument) vs Sultai Reanimator": {
+      "archetype1": "Izzet Lessons (Monument)",
       "archetype2": "Sultai Reanimator",
-      "arch1_wins": 6,
-      "arch2_wins": 12,
-      "arch1_games": 16,
-      "arch2_games": 28,
-      "total_matches": 18,
-      "arch1_win_rate": 0.3333333333333333,
-      "arch2_win_rate": 0.6666666666666666,
-      "arch1_game_win_rate": 0.36363636363636365,
-      "arch2_game_win_rate": 0.6363636363636364
+      "arch1_wins": 4,
+      "arch2_wins": 10,
+      "arch1_games": 12,
+      "arch2_games": 22,
+      "total_matches": 14,
+      "arch1_win_rate": 0.2857142857142857,
+      "arch2_win_rate": 0.7142857142857143,
+      "arch1_game_win_rate": 0.35294117647058826,
+      "arch2_game_win_rate": 0.6470588235294118
     },
     "Izzet Looting vs Mono-Red Aggro": {
       "archetype1": "Mono-Red Aggro",
@@ -7172,14 +7224,14 @@
       "archetype1": "Golgari Dragons",
       "archetype2": "Izzet Lessons",
       "arch1_wins": 4,
-      "arch2_wins": 2,
-      "arch1_games": 10,
-      "arch2_games": 8,
-      "total_matches": 6,
-      "arch1_win_rate": 0.6666666666666666,
-      "arch2_win_rate": 0.3333333333333333,
-      "arch1_game_win_rate": 0.5555555555555556,
-      "arch2_game_win_rate": 0.4444444444444444
+      "arch2_wins": 0,
+      "arch1_games": 8,
+      "arch2_games": 4,
+      "total_matches": 4,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.6666666666666666,
+      "arch2_game_win_rate": 0.3333333333333333
     },
     "Temur Otters vs Temur Otters": {
       "archetype1": "Temur Otters",
@@ -7194,18 +7246,31 @@
       "arch1_game_win_rate": 0.5,
       "arch2_game_win_rate": 0.5
     },
-    "Izzet Lessons vs Izzet Looting": {
+    "Izzet Lessons vs Izzet Lessons": {
       "archetype1": "Izzet Lessons",
+      "archetype2": "Izzet Lessons",
+      "arch1_wins": 1,
+      "arch2_wins": 1,
+      "arch1_games": 2,
+      "arch2_games": 2,
+      "total_matches": 2,
+      "arch1_win_rate": 0.5,
+      "arch2_win_rate": 0.5,
+      "arch1_game_win_rate": 0.5,
+      "arch2_game_win_rate": 0.5
+    },
+    "Izzet Lessons (Monument) vs Izzet Looting": {
+      "archetype1": "Izzet Lessons (Monument)",
       "archetype2": "Izzet Looting",
       "arch1_wins": 12,
-      "arch2_wins": 6,
+      "arch2_wins": 4,
       "arch1_games": 28,
-      "arch2_games": 20,
-      "total_matches": 18,
-      "arch1_win_rate": 0.6666666666666666,
-      "arch2_win_rate": 0.3333333333333333,
-      "arch1_game_win_rate": 0.5833333333333334,
-      "arch2_game_win_rate": 0.4166666666666667
+      "arch2_games": 16,
+      "total_matches": 16,
+      "arch1_win_rate": 0.75,
+      "arch2_win_rate": 0.25,
+      "arch1_game_win_rate": 0.6363636363636364,
+      "arch2_game_win_rate": 0.36363636363636365
     },
     "Dimir Bounce vs Temur Otters": {
       "archetype1": "Temur Otters",
@@ -7285,6 +7350,19 @@
       "arch1_game_win_rate": 0.5454545454545454,
       "arch2_game_win_rate": 0.45454545454545453
     },
+    "Izzet Lessons vs Jeskai Control": {
+      "archetype1": "Jeskai Control",
+      "archetype2": "Izzet Lessons",
+      "arch1_wins": 8,
+      "arch2_wins": 2,
+      "arch1_games": 18,
+      "arch2_games": 6,
+      "total_matches": 10,
+      "arch1_win_rate": 0.8,
+      "arch2_win_rate": 0.2,
+      "arch1_game_win_rate": 0.75,
+      "arch2_game_win_rate": 0.25
+    },
     "Mono-Red Aggro vs Temur Otters": {
       "archetype1": "Mono-Red Aggro",
       "archetype2": "Temur Otters",
@@ -7363,6 +7441,19 @@
       "arch1_game_win_rate": 1.0,
       "arch2_game_win_rate": 0.0
     },
+    "Izzet Lessons (Monument) vs Jeskai Artifacts": {
+      "archetype1": "Izzet Lessons (Monument)",
+      "archetype2": "Jeskai Artifacts",
+      "arch1_wins": 4,
+      "arch2_wins": 0,
+      "arch1_games": 8,
+      "arch2_games": 0,
+      "total_matches": 4,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 1.0,
+      "arch2_game_win_rate": 0.0
+    },
     "Dimir Bounce vs Sultai Reanimator": {
       "archetype1": "Sultai Reanimator",
       "archetype2": "Dimir Bounce",
@@ -7376,9 +7467,9 @@
       "arch1_game_win_rate": 0.4,
       "arch2_game_win_rate": 0.6
     },
-    "Izzet Lessons vs Mono-Red Aggro": {
+    "Izzet Lessons (Monument) vs Mono-Red Aggro": {
       "archetype1": "Mono-Red Aggro",
-      "archetype2": "Izzet Lessons",
+      "archetype2": "Izzet Lessons (Monument)",
       "arch1_wins": 4,
       "arch2_wins": 0,
       "arch1_games": 8,
@@ -7441,18 +7532,18 @@
       "arch1_game_win_rate": 1.0,
       "arch2_game_win_rate": 0.0
     },
-    "Izzet Lessons vs Simic Ouroboroid": {
+    "Izzet Lessons (Monument) vs Simic Ouroboroid": {
       "archetype1": "Simic Ouroboroid",
-      "archetype2": "Izzet Lessons",
-      "arch1_wins": 6,
-      "arch2_wins": 4,
-      "arch1_games": 16,
-      "arch2_games": 12,
-      "total_matches": 10,
-      "arch1_win_rate": 0.6,
-      "arch2_win_rate": 0.4,
-      "arch1_game_win_rate": 0.5714285714285714,
-      "arch2_game_win_rate": 0.42857142857142855
+      "archetype2": "Izzet Lessons (Monument)",
+      "arch1_wins": 4,
+      "arch2_wins": 2,
+      "arch1_games": 10,
+      "arch2_games": 8,
+      "total_matches": 6,
+      "arch1_win_rate": 0.6666666666666666,
+      "arch2_win_rate": 0.3333333333333333,
+      "arch1_game_win_rate": 0.5555555555555556,
+      "arch2_game_win_rate": 0.4444444444444444
     },
     "Golgari Dragons vs Orzhov Demons": {
       "archetype1": "Golgari Dragons",
@@ -7493,6 +7584,19 @@
       "arch1_game_win_rate": 0.7,
       "arch2_game_win_rate": 0.3
     },
+    "Izzet Lessons vs Simic Ouroboroid": {
+      "archetype1": "Izzet Lessons",
+      "archetype2": "Simic Ouroboroid",
+      "arch1_wins": 2,
+      "arch2_wins": 2,
+      "arch1_games": 4,
+      "arch2_games": 6,
+      "total_matches": 4,
+      "arch1_win_rate": 0.5,
+      "arch2_win_rate": 0.5,
+      "arch1_game_win_rate": 0.4,
+      "arch2_game_win_rate": 0.6
+    },
     "Boros Mobilize vs Mono-Red Aggro": {
       "archetype1": "Mono-Red Aggro",
       "archetype2": "Boros Mobilize",
@@ -7519,18 +7623,18 @@
       "arch1_game_win_rate": 0.5,
       "arch2_game_win_rate": 0.5
     },
-    "Dimir Midrange vs Izzet Lessons": {
-      "archetype1": "Izzet Lessons",
+    "Dimir Midrange vs Izzet Lessons (Monument)": {
+      "archetype1": "Izzet Lessons (Monument)",
       "archetype2": "Dimir Midrange",
       "arch1_wins": 2,
-      "arch2_wins": 8,
-      "arch1_games": 10,
-      "arch2_games": 18,
-      "total_matches": 10,
-      "arch1_win_rate": 0.2,
-      "arch2_win_rate": 0.8,
-      "arch1_game_win_rate": 0.35714285714285715,
-      "arch2_game_win_rate": 0.6428571428571429
+      "arch2_wins": 6,
+      "arch1_games": 8,
+      "arch2_games": 14,
+      "total_matches": 8,
+      "arch1_win_rate": 0.25,
+      "arch2_win_rate": 0.75,
+      "arch1_game_win_rate": 0.36363636363636365,
+      "arch2_game_win_rate": 0.6363636363636364
     },
     "Bant Airbending vs Jeskai Artifacts": {
       "archetype1": "Bant Airbending",
@@ -7571,6 +7675,19 @@
       "arch1_game_win_rate": 1.0,
       "arch2_game_win_rate": 0.0
     },
+    "Izzet Lessons (Monument) vs Izzet Lessons (Monument)": {
+      "archetype1": "Izzet Lessons (Monument)",
+      "archetype2": "Izzet Lessons (Monument)",
+      "arch1_wins": 4,
+      "arch2_wins": 4,
+      "arch1_games": 9,
+      "arch2_games": 9,
+      "total_matches": 8,
+      "arch1_win_rate": 0.5,
+      "arch2_win_rate": 0.5,
+      "arch1_game_win_rate": 0.5,
+      "arch2_game_win_rate": 0.5
+    },
     "Mono-Red Aggro vs Orzhov Demons": {
       "archetype1": "Orzhov Demons",
       "archetype2": "Mono-Red Aggro",
@@ -7584,6 +7701,19 @@
       "arch1_game_win_rate": 0.6666666666666666,
       "arch2_game_win_rate": 0.3333333333333333
     },
+    "Izzet Lessons vs Sultai Reanimator": {
+      "archetype1": "Izzet Lessons",
+      "archetype2": "Sultai Reanimator",
+      "arch1_wins": 2,
+      "arch2_wins": 2,
+      "arch1_games": 4,
+      "arch2_games": 6,
+      "total_matches": 4,
+      "arch1_win_rate": 0.5,
+      "arch2_win_rate": 0.5,
+      "arch1_game_win_rate": 0.4,
+      "arch2_game_win_rate": 0.6
+    },
     "Izzet Prowess vs Jeskai Artifacts": {
       "archetype1": "Izzet Prowess",
       "archetype2": "Jeskai Artifacts",
@@ -7596,6 +7726,32 @@
       "arch2_win_rate": 0.0,
       "arch1_game_win_rate": 1.0,
       "arch2_game_win_rate": 0.0
+    },
+    "Golgari Ouroboroid vs Izzet Lessons": {
+      "archetype1": "Izzet Lessons",
+      "archetype2": "Golgari Ouroboroid",
+      "arch1_wins": 4,
+      "arch2_wins": 0,
+      "arch1_games": 8,
+      "arch2_games": 2,
+      "total_matches": 4,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.8,
+      "arch2_game_win_rate": 0.2
+    },
+    "Dimir Midrange vs Izzet Lessons": {
+      "archetype1": "Dimir Midrange",
+      "archetype2": "Izzet Lessons",
+      "arch1_wins": 2,
+      "arch2_wins": 0,
+      "arch1_games": 4,
+      "arch2_games": 2,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.6666666666666666,
+      "arch2_game_win_rate": 0.3333333333333333
     },
     "Simic Ouroboroid vs Sultai Reanimator": {
       "archetype1": "Sultai Reanimator",
@@ -7636,8 +7792,8 @@
       "arch1_game_win_rate": 1.0,
       "arch2_game_win_rate": 0.0
     },
-    "Dimir Bounce vs Izzet Lessons": {
-      "archetype1": "Izzet Lessons",
+    "Dimir Bounce vs Izzet Lessons (Monument)": {
+      "archetype1": "Izzet Lessons (Monument)",
       "archetype2": "Dimir Bounce",
       "arch1_wins": 2,
       "arch2_wins": 0,
@@ -7713,6 +7869,19 @@
       "arch2_win_rate": 0.0,
       "arch1_game_win_rate": 0.8,
       "arch2_game_win_rate": 0.2
+    },
+    "Golgari Dragons vs Izzet Lessons (Monument)": {
+      "archetype1": "Izzet Lessons (Monument)",
+      "archetype2": "Golgari Dragons",
+      "arch1_wins": 2,
+      "arch2_wins": 0,
+      "arch1_games": 4,
+      "arch2_games": 2,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.6666666666666666,
+      "arch2_game_win_rate": 0.3333333333333333
     },
     "Sultai Reanimator vs Sultai Reanimator": {
       "archetype1": "Sultai Reanimator",
@@ -7817,6 +7986,19 @@
       "arch2_win_rate": 0.0,
       "arch1_game_win_rate": 0.6666666666666666,
       "arch2_game_win_rate": 0.3333333333333333
+    },
+    "Izzet Lessons vs Izzet Looting": {
+      "archetype1": "Izzet Looting",
+      "archetype2": "Izzet Lessons",
+      "arch1_wins": 2,
+      "arch2_wins": 0,
+      "arch1_games": 4,
+      "arch2_games": 0,
+      "total_matches": 2,
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 1.0,
+      "arch2_game_win_rate": 0.0
     },
     "Jeskai Control vs Mono-Red Aggro": {
       "archetype1": "Jeskai Control",
