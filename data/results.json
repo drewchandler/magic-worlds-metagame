@@ -1,5 +1,1706 @@
 [
   {
+    "round": 1,
+    "player1": "Sanfeliu, Josep",
+    "player2": "Klepatch, Andrei",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Knorr, Jackson",
+    "player2": "Hori, Masataka",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Flores, Pedro",
+    "player2": "Depraz, Jean-Emmanuel",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Waligora, Ryan",
+    "player2": "Green, Paul",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Moriyama, Masahide",
+    "player2": "Husisian, Peter",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 1,
+    "player1": "Liu, Yuchen",
+    "player2": "Burkhart, Corey",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Araujo, William",
+    "player2": "Budisanjaya, Albert",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 1,
+    "player1": "Nagao, Yasutaka",
+    "player2": "Wang, Kunrui",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 1,
+    "player1": "Koot, Linden",
+    "player2": "Stark, Ben",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Zhang, Rei",
+    "player2": "Torres, Bernardo",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 1,
+    "player1": "Nass, Matthew",
+    "player2": "Kuisma, Matti",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 1,
+    "player1": "Tobiasch, Marc",
+    "player2": "Lip, Quinton",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 1,
+    "player1": "David, Julian",
+    "player2": "Plummer, Michael",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Korfine, Julian",
+    "player2": "Davis, Derrick",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Wong, Charles",
+    "player2": "Miller, Casey",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Nakamura, Shuhei",
+    "player2": "Schnake, Abe",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 1,
+    "player1": "Rappaport, Max",
+    "player2": "Condon, Ryan",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 1,
+    "player1": "S\u00e1nchez, Francisco",
+    "player2": "Dota, Arch",
+    "p1_wins": 1,
+    "p2_wins": 1,
+    "p1_games": 1,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Nielsen, Simon",
+    "player2": "Brace, Adam",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "To, Chun Him",
+    "player2": "Kassis, Eli",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Buonadonna, Mason",
+    "player2": "Choo, Clement",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Ogasawara, Tomoaki",
+    "player2": "Duchow, Lucas",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Leonard Huu Nguyen, Christopher",
+    "player2": "Pich\u00e9, Simon",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Harane, Kenta",
+    "player2": "Inoue, Toru",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Kikidis, Charis",
+    "player2": "Castell\u00e1n, Javier",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Bot, Tom",
+    "player2": "Bodewes, Jelco",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Tamblyn, Mitchell",
+    "player2": "Flores, Mario",
+    "p1_wins": 1,
+    "p2_wins": 1,
+    "p1_games": 1,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Asano, Tatsuro",
+    "player2": "Mackenzie, Connor",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 1,
+    "player1": "Pardee, Sam",
+    "player2": "Fang, Percy",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Soto, Roberto",
+    "player2": "Tonole, Quinn",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Lack, Cory",
+    "player2": "Kans, Alexander",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Schwartz, Adam",
+    "player2": "Holloway, Jennifer-Rose",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Duke, Reid",
+    "player2": "Magalhaes, Edgar",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 1,
+    "player1": "Karam, Vin\u00edcius",
+    "player2": "Miyaji-Thorne, Zen",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Sulimovich, Guillermo",
+    "player2": "Lindqvist, Kristoffer",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Dang, Nam",
+    "player2": "Nassif, Gabriel",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Nollen, Dylan",
+    "player2": "Lausevic, Ivan",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Yukuhiro, Ken",
+    "player2": "Masukado, Kenta",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Nasri, Bassel",
+    "player2": "Wright, Matthew",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Sarap, Karl",
+    "player2": "Ichikawa, Yuuki",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 1,
+    "player1": "Zhang, Yuxuan",
+    "player2": "Rohan, Alex",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Manfield, Seth",
+    "player2": "Garcia-Romo, Andy",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Chang, Samuel",
+    "player2": "Noah, Ma",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Shibata, Akira",
+    "player2": "Dore, Max",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Palmero Garc\u00eda, Fernando",
+    "player2": "Del Pivo, Marco",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Litman, Randall",
+    "player2": "Yasooka, Shota",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Baker, Christian",
+    "player2": "Faust, Zevin",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Friedrichsen, Alex",
+    "player2": "Kane, Liam",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Giardini, Federico",
+    "player2": "Horiuchi, Makoto",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Ikawa, Yoshihiko",
+    "player2": "Costa, Matthew",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 1,
+    "player1": "Sch\u00fctz, Stefan",
+    "player2": "Rood, David",
+    "p1_wins": 1,
+    "p2_wins": 1,
+    "p1_games": 1,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Moore, James",
+    "player2": "Botelho, Chris",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Schabel, Justin",
+    "player2": "Mazza, Raffaele",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Robb, Ian",
+    "player2": "Lin, Shih Feng",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Pham, Ha",
+    "player2": "Cordob\u00e9s, Albert",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Robkin, Jesse",
+    "player2": "Huschenbeth, Arne",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Ramboa, Thierry",
+    "player2": "Chen, Szu-Yuan",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Sato, Keisuke",
+    "player2": "Guttman, Jonny",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 1,
+    "player1": "Henry, Shaun",
+    "player2": "Peral, Marc",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 1,
+    "player1": "Perrini, Pedro",
+    "player2": "Offman, No\u00e9",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Carvalho, Marcio",
+    "player2": "Dominguez, Javier",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Gimenez, Sergio",
+    "player2": "Dimitrov, James",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 1,
+    "player1": "Portolan, Toni",
+    "player2": "Airaksinen, Mikko",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Klepatch, Andrei",
+    "player2": "Giardini, Federico",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Cordob\u00e9s, Albert",
+    "player2": "Araujo, William",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Bodewes, Jelco",
+    "player2": "Hori, Masataka",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Moore, James",
+    "player2": "Dimitrov, James",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Lausevic, Ivan",
+    "player2": "Tamblyn, Mitchell",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Plummer, Michael",
+    "player2": "Stark, Ben",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 2,
+    "player1": "Pich\u00e9, Simon",
+    "player2": "Dota, Arch",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Sato, Keisuke",
+    "player2": "Lindqvist, Kristoffer",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Costa, Matthew",
+    "player2": "Miyaji-Thorne, Zen",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Mackenzie, Connor",
+    "player2": "Budisanjaya, Albert",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Pham, Ha",
+    "player2": "Airaksinen, Mikko",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Nielsen, Simon",
+    "player2": "Inoue, Toru",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Korfine, Julian",
+    "player2": "Torres, Bernardo",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Wong, Charles",
+    "player2": "Sarap, Karl",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 2,
+    "player1": "Del Pivo, Marco",
+    "player2": "Rappaport, Max",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Sanfeliu, Josep",
+    "player2": "Nass, Matthew",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Litman, Randall",
+    "player2": "Duchow, Lucas",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 2,
+    "player1": "Depraz, Jean-Emmanuel",
+    "player2": "Ikawa, Yoshihiko",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Nagao, Yasutaka",
+    "player2": "Wright, Matthew",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Moriyama, Masahide",
+    "player2": "Lin, Shih Feng",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 2,
+    "player1": "Nakamura, Shuhei",
+    "player2": "Dominguez, Javier",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "David, Julian",
+    "player2": "Zhang, Yuxuan",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Kans, Alexander",
+    "player2": "Dore, Max",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Robb, Ian",
+    "player2": "Kikidis, Charis",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Burkhart, Corey",
+    "player2": "Choo, Clement",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Kassis, Eli",
+    "player2": "Sch\u00fctz, Stefan",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Perrini, Pedro",
+    "player2": "Wang, Kunrui",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 2,
+    "player1": "Green, Paul",
+    "player2": "Huschenbeth, Arne",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Karam, Vin\u00edcius",
+    "player2": "Henry, Shaun",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Condon, Ryan",
+    "player2": "Tonole, Quinn",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Flores, Mario",
+    "player2": "Robkin, Jesse",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Rohan, Alex",
+    "player2": "Duke, Reid",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Harane, Kenta",
+    "player2": "Ramboa, Thierry",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 2,
+    "player1": "Koot, Linden",
+    "player2": "Magalhaes, Edgar",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Waligora, Ryan",
+    "player2": "Nollen, Dylan",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Gimenez, Sergio",
+    "player2": "Botelho, Chris",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Chang, Samuel",
+    "player2": "Fang, Percy",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Leonard Huu Nguyen, Christopher",
+    "player2": "Lip, Quinton",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Chen, Szu-Yuan",
+    "player2": "Friedrichsen, Alex",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Offman, No\u00e9",
+    "player2": "Garcia-Romo, Andy",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 2,
+    "player1": "Horiuchi, Makoto",
+    "player2": "Kuisma, Matti",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Davis, Derrick",
+    "player2": "Zhang, Rei",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Bot, Tom",
+    "player2": "Buonadonna, Mason",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 2,
+    "player1": "Rood, David",
+    "player2": "To, Chun Him",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Castell\u00e1n, Javier",
+    "player2": "Holloway, Jennifer-Rose",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Dang, Nam",
+    "player2": "Tobiasch, Marc",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Noah, Ma",
+    "player2": "Pardee, Sam",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Portolan, Toni",
+    "player2": "Asano, Tatsuro",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 2,
+    "player1": "Sulimovich, Guillermo",
+    "player2": "Miller, Casey",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 2,
+    "player1": "S\u00e1nchez, Francisco",
+    "player2": "Nassif, Gabriel",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 2,
+    "player1": "Peral, Marc",
+    "player2": "Flores, Pedro",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Masukado, Kenta",
+    "player2": "Schabel, Justin",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Knorr, Jackson",
+    "player2": "Liu, Yuchen",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Ichikawa, Yuuki",
+    "player2": "Guttman, Jonny",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Manfield, Seth",
+    "player2": "Nasri, Bassel",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Husisian, Peter",
+    "player2": "Schwartz, Adam",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Brace, Adam",
+    "player2": "Kane, Liam",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Faust, Zevin",
+    "player2": "Palmero Garc\u00eda, Fernando",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Carvalho, Marcio",
+    "player2": "Schnake, Abe",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Baker, Christian",
+    "player2": "Soto, Roberto",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 2,
+    "player1": "Yasooka, Shota",
+    "player2": "Ogasawara, Tomoaki",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 2,
+    "player1": "Shibata, Akira",
+    "player2": "Lack, Cory",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 2,
+    "player1": "Yukuhiro, Ken",
+    "player2": "Mazza, Raffaele",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Tonole, Quinn",
+    "player2": "Palmero Garc\u00eda, Fernando",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Rohan, Alex",
+    "player2": "Plummer, Michael",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Lindqvist, Kristoffer",
+    "player2": "Ichikawa, Yuuki",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Nasri, Bassel",
+    "player2": "Perrini, Pedro",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Flores, Mario",
+    "player2": "Waligora, Ryan",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Condon, Ryan",
+    "player2": "Faust, Zevin",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Zhang, Rei",
+    "player2": "Carvalho, Marcio",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Nakamura, Shuhei",
+    "player2": "Torres, Bernardo",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Duke, Reid",
+    "player2": "Stark, Ben",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Litman, Randall",
+    "player2": "Sch\u00fctz, Stefan",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "S\u00e1nchez, Francisco",
+    "player2": "Leonard Huu Nguyen, Christopher",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Wright, Matthew",
+    "player2": "Garcia-Romo, Andy",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Pham, Ha",
+    "player2": "Mackenzie, Connor",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Ramboa, Thierry",
+    "player2": "Kane, Liam",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Cordob\u00e9s, Albert",
+    "player2": "Portolan, Toni",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Botelho, Chris",
+    "player2": "Yukuhiro, Ken",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Lack, Cory",
+    "player2": "Fang, Percy",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Airaksinen, Mikko",
+    "player2": "Budisanjaya, Albert",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Koot, Linden",
+    "player2": "David, Julian",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Dang, Nam",
+    "player2": "Dota, Arch",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Shibata, Akira",
+    "player2": "Chang, Samuel",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Lausevic, Ivan",
+    "player2": "Green, Paul",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Henry, Shaun",
+    "player2": "Depraz, Jean-Emmanuel",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Buonadonna, Mason",
+    "player2": "Liu, Yuchen",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "To, Chun Him",
+    "player2": "Duchow, Lucas",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Holloway, Jennifer-Rose",
+    "player2": "Moriyama, Masahide",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Offman, No\u00e9",
+    "player2": "Nagao, Yasutaka",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Harane, Kenta",
+    "player2": "Brace, Adam",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Bot, Tom",
+    "player2": "Knorr, Jackson",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Sulimovich, Guillermo",
+    "player2": "Sarap, Karl",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Robb, Ian",
+    "player2": "Husisian, Peter",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Araujo, William",
+    "player2": "Asano, Tatsuro",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Tobiasch, Marc",
+    "player2": "Pich\u00e9, Simon",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Baker, Christian",
+    "player2": "Del Pivo, Marco",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Miyaji-Thorne, Zen",
+    "player2": "Peral, Marc",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Klepatch, Andrei",
+    "player2": "Kuisma, Matti",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Rappaport, Max",
+    "player2": "Soto, Roberto",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Masukado, Kenta",
+    "player2": "Dimitrov, James",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Dore, Max",
+    "player2": "Pardee, Sam",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Huschenbeth, Arne",
+    "player2": "Tamblyn, Mitchell",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Bodewes, Jelco",
+    "player2": "Burkhart, Corey",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Schabel, Justin",
+    "player2": "Moore, James",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Noah, Ma",
+    "player2": "Kans, Alexander",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Sanfeliu, Josep",
+    "player2": "Giardini, Federico",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Lip, Quinton",
+    "player2": "Nassif, Gabriel",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Nass, Matthew",
+    "player2": "Horiuchi, Makoto",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Inoue, Toru",
+    "player2": "Chen, Szu-Yuan",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Costa, Matthew",
+    "player2": "Flores, Pedro",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Karam, Vin\u00edcius",
+    "player2": "Ikawa, Yoshihiko",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Gimenez, Sergio",
+    "player2": "Mazza, Raffaele",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Hori, Masataka",
+    "player2": "Choo, Clement",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Sato, Keisuke",
+    "player2": "Wong, Charles",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Lin, Shih Feng",
+    "player2": "Castell\u00e1n, Javier",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Friedrichsen, Alex",
+    "player2": "Nielsen, Simon",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Korfine, Julian",
+    "player2": "Schnake, Abe",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Kassis, Eli",
+    "player2": "Yasooka, Shota",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Rood, David",
+    "player2": "Ogasawara, Tomoaki",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 3,
+    "player1": "Guttman, Jonny",
+    "player2": "Miller, Casey",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Magalhaes, Edgar",
+    "player2": "Zhang, Yuxuan",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 3,
+    "player1": "Manfield, Seth",
+    "player2": "Wang, Kunrui",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Nollen, Dylan",
+    "player2": "Robkin, Jesse",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Davis, Derrick",
+    "player2": "Dominguez, Javier",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 3,
+    "player1": "Kikidis, Charis",
+    "player2": "Schwartz, Adam",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
     "round": 4,
     "player1": "Burkhart, Corey",
     "player2": "Dang, Nam",
@@ -21,10 +1722,10 @@
     "round": 4,
     "player1": "Buonadonna, Mason",
     "player2": "Noah, Ma",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
   },
   {
     "round": 4,
@@ -129,10 +1830,10 @@
     "round": 4,
     "player1": "Choo, Clement",
     "player2": "Pardee, Sam",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
   },
   {
     "round": 4,
@@ -174,10 +1875,10 @@
     "round": 4,
     "player1": "David, Julian",
     "player2": "Korfine, Julian",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 4,
@@ -327,10 +2028,10 @@
     "round": 4,
     "player1": "To, Chun Him",
     "player2": "Flores, Pedro",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 4,
@@ -705,10 +2406,10 @@
     "round": 5,
     "player1": "Shibata, Akira",
     "player2": "Rohan, Alex",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 5,
@@ -741,10 +2442,10 @@
     "round": 5,
     "player1": "Lin, Shih Feng",
     "player2": "Masukado, Kenta",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 5,
@@ -795,10 +2496,10 @@
     "round": 5,
     "player1": "Magalhaes, Edgar",
     "player2": "Bot, Tom",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 5,
@@ -975,10 +2676,10 @@
     "round": 5,
     "player1": "Henry, Shaun",
     "player2": "Nakamura, Shuhei",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
   },
   {
     "round": 5,
@@ -1011,10 +2712,10 @@
     "round": 5,
     "player1": "Kans, Alexander",
     "player2": "Flores, Pedro",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 5,
@@ -1065,10 +2766,10 @@
     "round": 5,
     "player1": "Asano, Tatsuro",
     "player2": "Pardee, Sam",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 5,
@@ -1164,10 +2865,10 @@
     "round": 6,
     "player1": "Leonard Huu Nguyen, Christopher",
     "player2": "Bot, Tom",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
   },
   {
     "round": 6,
@@ -1290,10 +2991,10 @@
     "round": 6,
     "player1": "Baker, Christian",
     "player2": "Castell\u00e1n, Javier",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
   },
   {
     "round": 6,
@@ -1515,10 +3216,10 @@
     "round": 6,
     "player1": "Sato, Keisuke",
     "player2": "Stark, Ben",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
   },
   {
     "round": 6,
@@ -1569,19 +3270,19 @@
     "round": 6,
     "player1": "Magalhaes, Edgar",
     "player2": "Masukado, Kenta",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
   },
   {
     "round": 6,
     "player1": "Korfine, Julian",
     "player2": "Lin, Shih Feng",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
   },
   {
     "round": 6,
@@ -1641,10 +3342,10 @@
     "round": 6,
     "player1": "Moriyama, Masahide",
     "player2": "Offman, No\u00e9",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
   },
   {
     "round": 6,
@@ -1722,10 +3423,10 @@
     "round": 7,
     "player1": "Nollen, Dylan",
     "player2": "Fang, Percy",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 7,
@@ -1785,10 +3486,10 @@
     "round": 7,
     "player1": "To, Chun Him",
     "player2": "Moriyama, Masahide",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
   },
   {
     "round": 7,
@@ -1866,10 +3567,10 @@
     "round": 7,
     "player1": "Robb, Ian",
     "player2": "Chen, Szu-Yuan",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 7,
@@ -1884,10 +3585,10 @@
     "round": 7,
     "player1": "Sarap, Karl",
     "player2": "Pardee, Sam",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 7,
@@ -2028,10 +3729,10 @@
     "round": 7,
     "player1": "Nass, Matthew",
     "player2": "Masukado, Kenta",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 7,
@@ -2091,10 +3792,10 @@
     "round": 7,
     "player1": "Sanfeliu, Josep",
     "player2": "Lin, Shih Feng",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 7,
@@ -2145,10 +3846,10 @@
     "round": 7,
     "player1": "Miller, Casey",
     "player2": "Knorr, Jackson",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 7,
@@ -2163,10 +3864,10 @@
     "round": 7,
     "player1": "Flores, Mario",
     "player2": "S\u00e1nchez, Francisco",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
   },
   {
     "round": 7,
@@ -2187,1707 +3888,6 @@
     "p2_games": 0
   },
   {
-    "round": 1,
-    "player1": "Sanfeliu, Josep",
-    "player2": "Klepatch, Andrei",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Knorr, Jackson",
-    "player2": "Hori, Masataka",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Flores, Pedro",
-    "player2": "Depraz, Jean-Emmanuel",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Waligora, Ryan",
-    "player2": "Green, Paul",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Moriyama, Masahide",
-    "player2": "Husisian, Peter",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "Liu, Yuchen",
-    "player2": "Burkhart, Corey",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Araujo, William",
-    "player2": "Budisanjaya, Albert",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "Nagao, Yasutaka",
-    "player2": "Wang, Kunrui",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "Koot, Linden",
-    "player2": "Stark, Ben",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "Zhang, Rei",
-    "player2": "Torres, Bernardo",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "Nass, Matthew",
-    "player2": "Kuisma, Matti",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "Tobiasch, Marc",
-    "player2": "Lip, Quinton",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "David, Julian",
-    "player2": "Plummer, Michael",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Korfine, Julian",
-    "player2": "Davis, Derrick",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Wong, Charles",
-    "player2": "Miller, Casey",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Nakamura, Shuhei",
-    "player2": "Schnake, Abe",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "Rappaport, Max",
-    "player2": "Condon, Ryan",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "S\u00e1nchez, Francisco",
-    "player2": "Dota, Arch",
-    "p1_wins": 1,
-    "p2_wins": 1,
-    "p1_games": 1,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Nielsen, Simon",
-    "player2": "Brace, Adam",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "To, Chun Him",
-    "player2": "Kassis, Eli",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Buonadonna, Mason",
-    "player2": "Choo, Clement",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "Ogasawara, Tomoaki",
-    "player2": "Duchow, Lucas",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Leonard Huu Nguyen, Christopher",
-    "player2": "Pich\u00e9, Simon",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Harane, Kenta",
-    "player2": "Inoue, Toru",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Kikidis, Charis",
-    "player2": "Castell\u00e1n, Javier",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Bot, Tom",
-    "player2": "Bodewes, Jelco",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Tamblyn, Mitchell",
-    "player2": "Flores, Mario",
-    "p1_wins": 1,
-    "p2_wins": 1,
-    "p1_games": 1,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Asano, Tatsuro",
-    "player2": "Mackenzie, Connor",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "Pardee, Sam",
-    "player2": "Fang, Percy",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Soto, Roberto",
-    "player2": "Tonole, Quinn",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Lack, Cory",
-    "player2": "Kans, Alexander",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Schwartz, Adam",
-    "player2": "Holloway, Jennifer-Rose",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Duke, Reid",
-    "player2": "Magalhaes, Edgar",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "Karam, Vin\u00edcius",
-    "player2": "Miyaji-Thorne, Zen",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Sulimovich, Guillermo",
-    "player2": "Lindqvist, Kristoffer",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Dang, Nam",
-    "player2": "Nassif, Gabriel",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Nollen, Dylan",
-    "player2": "Lausevic, Ivan",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Yukuhiro, Ken",
-    "player2": "Masukado, Kenta",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Nasri, Bassel",
-    "player2": "Wright, Matthew",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Sarap, Karl",
-    "player2": "Ichikawa, Yuuki",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "Zhang, Yuxuan",
-    "player2": "Rohan, Alex",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Manfield, Seth",
-    "player2": "Garcia-Romo, Andy",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Chang, Samuel",
-    "player2": "Noah, Ma",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Shibata, Akira",
-    "player2": "Dore, Max",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Palmero Garc\u00eda, Fernando",
-    "player2": "Del Pivo, Marco",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Litman, Randall",
-    "player2": "Yasooka, Shota",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Baker, Christian",
-    "player2": "Faust, Zevin",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Friedrichsen, Alex",
-    "player2": "Kane, Liam",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Giardini, Federico",
-    "player2": "Horiuchi, Makoto",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Ikawa, Yoshihiko",
-    "player2": "Costa, Matthew",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "Sch\u00fctz, Stefan",
-    "player2": "Rood, David",
-    "p1_wins": 1,
-    "p2_wins": 1,
-    "p1_games": 1,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Moore, James",
-    "player2": "Botelho, Chris",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Schabel, Justin",
-    "player2": "Mazza, Raffaele",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Robb, Ian",
-    "player2": "Lin, Shih Feng",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Pham, Ha",
-    "player2": "Cordob\u00e9s, Albert",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Robkin, Jesse",
-    "player2": "Huschenbeth, Arne",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Ramboa, Thierry",
-    "player2": "Chen, Szu-Yuan",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Sato, Keisuke",
-    "player2": "Guttman, Jonny",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Henry, Shaun",
-    "player2": "Peral, Marc",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 1,
-    "player1": "Perrini, Pedro",
-    "player2": "Offman, No\u00e9",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 1,
-    "player1": "Carvalho, Marcio",
-    "player2": "Dominguez, Javier",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Gimenez, Sergio",
-    "player2": "Dimitrov, James",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 1,
-    "player1": "Portolan, Toni",
-    "player2": "Airaksinen, Mikko",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Klepatch, Andrei",
-    "player2": "Giardini, Federico",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Cordob\u00e9s, Albert",
-    "player2": "Araujo, William",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Bodewes, Jelco",
-    "player2": "Hori, Masataka",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Moore, James",
-    "player2": "Dimitrov, James",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Lausevic, Ivan",
-    "player2": "Tamblyn, Mitchell",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Plummer, Michael",
-    "player2": "Stark, Ben",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 2,
-    "player1": "Pich\u00e9, Simon",
-    "player2": "Dota, Arch",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Sato, Keisuke",
-    "player2": "Lindqvist, Kristoffer",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Costa, Matthew",
-    "player2": "Miyaji-Thorne, Zen",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Mackenzie, Connor",
-    "player2": "Budisanjaya, Albert",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Pham, Ha",
-    "player2": "Airaksinen, Mikko",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Nielsen, Simon",
-    "player2": "Inoue, Toru",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Korfine, Julian",
-    "player2": "Torres, Bernardo",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Wong, Charles",
-    "player2": "Sarap, Karl",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 2,
-    "player1": "Del Pivo, Marco",
-    "player2": "Rappaport, Max",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Sanfeliu, Josep",
-    "player2": "Nass, Matthew",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Litman, Randall",
-    "player2": "Duchow, Lucas",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 2,
-    "player1": "Depraz, Jean-Emmanuel",
-    "player2": "Ikawa, Yoshihiko",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Nagao, Yasutaka",
-    "player2": "Wright, Matthew",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Moriyama, Masahide",
-    "player2": "Lin, Shih Feng",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 2,
-    "player1": "Nakamura, Shuhei",
-    "player2": "Dominguez, Javier",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "David, Julian",
-    "player2": "Zhang, Yuxuan",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Kans, Alexander",
-    "player2": "Dore, Max",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Robb, Ian",
-    "player2": "Kikidis, Charis",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Burkhart, Corey",
-    "player2": "Choo, Clement",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Kassis, Eli",
-    "player2": "Sch\u00fctz, Stefan",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Perrini, Pedro",
-    "player2": "Wang, Kunrui",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 2,
-    "player1": "Green, Paul",
-    "player2": "Huschenbeth, Arne",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Karam, Vin\u00edcius",
-    "player2": "Henry, Shaun",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Condon, Ryan",
-    "player2": "Tonole, Quinn",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Flores, Mario",
-    "player2": "Robkin, Jesse",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Rohan, Alex",
-    "player2": "Duke, Reid",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Harane, Kenta",
-    "player2": "Ramboa, Thierry",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 2,
-    "player1": "Koot, Linden",
-    "player2": "Magalhaes, Edgar",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Waligora, Ryan",
-    "player2": "Nollen, Dylan",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Gimenez, Sergio",
-    "player2": "Botelho, Chris",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Chang, Samuel",
-    "player2": "Fang, Percy",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Leonard Huu Nguyen, Christopher",
-    "player2": "Lip, Quinton",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Chen, Szu-Yuan",
-    "player2": "Friedrichsen, Alex",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Offman, No\u00e9",
-    "player2": "Garcia-Romo, Andy",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 2,
-    "player1": "Horiuchi, Makoto",
-    "player2": "Kuisma, Matti",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Davis, Derrick",
-    "player2": "Zhang, Rei",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Bot, Tom",
-    "player2": "Buonadonna, Mason",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 2,
-    "player1": "Rood, David",
-    "player2": "To, Chun Him",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Castell\u00e1n, Javier",
-    "player2": "Holloway, Jennifer-Rose",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Dang, Nam",
-    "player2": "Tobiasch, Marc",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Noah, Ma",
-    "player2": "Pardee, Sam",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Portolan, Toni",
-    "player2": "Asano, Tatsuro",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 2,
-    "player1": "Sulimovich, Guillermo",
-    "player2": "Miller, Casey",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 2,
-    "player1": "S\u00e1nchez, Francisco",
-    "player2": "Nassif, Gabriel",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 2,
-    "player1": "Peral, Marc",
-    "player2": "Flores, Pedro",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Masukado, Kenta",
-    "player2": "Schabel, Justin",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Knorr, Jackson",
-    "player2": "Liu, Yuchen",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Ichikawa, Yuuki",
-    "player2": "Guttman, Jonny",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Manfield, Seth",
-    "player2": "Nasri, Bassel",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Husisian, Peter",
-    "player2": "Schwartz, Adam",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Brace, Adam",
-    "player2": "Kane, Liam",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Faust, Zevin",
-    "player2": "Palmero Garc\u00eda, Fernando",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Carvalho, Marcio",
-    "player2": "Schnake, Abe",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Baker, Christian",
-    "player2": "Soto, Roberto",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 2,
-    "player1": "Yasooka, Shota",
-    "player2": "Ogasawara, Tomoaki",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 2,
-    "player1": "Shibata, Akira",
-    "player2": "Lack, Cory",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 2,
-    "player1": "Yukuhiro, Ken",
-    "player2": "Mazza, Raffaele",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Tonole, Quinn",
-    "player2": "Palmero Garc\u00eda, Fernando",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Rohan, Alex",
-    "player2": "Plummer, Michael",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Lindqvist, Kristoffer",
-    "player2": "Ichikawa, Yuuki",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Nasri, Bassel",
-    "player2": "Perrini, Pedro",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Flores, Mario",
-    "player2": "Waligora, Ryan",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Condon, Ryan",
-    "player2": "Faust, Zevin",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Zhang, Rei",
-    "player2": "Carvalho, Marcio",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Nakamura, Shuhei",
-    "player2": "Torres, Bernardo",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Duke, Reid",
-    "player2": "Stark, Ben",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Litman, Randall",
-    "player2": "Sch\u00fctz, Stefan",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "S\u00e1nchez, Francisco",
-    "player2": "Leonard Huu Nguyen, Christopher",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Wright, Matthew",
-    "player2": "Garcia-Romo, Andy",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Pham, Ha",
-    "player2": "Mackenzie, Connor",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Ramboa, Thierry",
-    "player2": "Kane, Liam",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Cordob\u00e9s, Albert",
-    "player2": "Portolan, Toni",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Botelho, Chris",
-    "player2": "Yukuhiro, Ken",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Lack, Cory",
-    "player2": "Fang, Percy",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Airaksinen, Mikko",
-    "player2": "Budisanjaya, Albert",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Koot, Linden",
-    "player2": "David, Julian",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Dang, Nam",
-    "player2": "Dota, Arch",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Shibata, Akira",
-    "player2": "Chang, Samuel",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Lausevic, Ivan",
-    "player2": "Green, Paul",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Henry, Shaun",
-    "player2": "Depraz, Jean-Emmanuel",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Buonadonna, Mason",
-    "player2": "Liu, Yuchen",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "To, Chun Him",
-    "player2": "Duchow, Lucas",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Holloway, Jennifer-Rose",
-    "player2": "Moriyama, Masahide",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Offman, No\u00e9",
-    "player2": "Nagao, Yasutaka",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Harane, Kenta",
-    "player2": "Brace, Adam",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Bot, Tom",
-    "player2": "Knorr, Jackson",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Sulimovich, Guillermo",
-    "player2": "Sarap, Karl",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Robb, Ian",
-    "player2": "Husisian, Peter",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Araujo, William",
-    "player2": "Asano, Tatsuro",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Tobiasch, Marc",
-    "player2": "Pich\u00e9, Simon",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Baker, Christian",
-    "player2": "Del Pivo, Marco",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Miyaji-Thorne, Zen",
-    "player2": "Peral, Marc",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Klepatch, Andrei",
-    "player2": "Kuisma, Matti",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Rappaport, Max",
-    "player2": "Soto, Roberto",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Masukado, Kenta",
-    "player2": "Dimitrov, James",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Dore, Max",
-    "player2": "Pardee, Sam",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Huschenbeth, Arne",
-    "player2": "Tamblyn, Mitchell",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Bodewes, Jelco",
-    "player2": "Burkhart, Corey",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Schabel, Justin",
-    "player2": "Moore, James",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Noah, Ma",
-    "player2": "Kans, Alexander",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Sanfeliu, Josep",
-    "player2": "Giardini, Federico",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Lip, Quinton",
-    "player2": "Nassif, Gabriel",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Nass, Matthew",
-    "player2": "Horiuchi, Makoto",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Inoue, Toru",
-    "player2": "Chen, Szu-Yuan",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Costa, Matthew",
-    "player2": "Flores, Pedro",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Karam, Vin\u00edcius",
-    "player2": "Ikawa, Yoshihiko",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Gimenez, Sergio",
-    "player2": "Mazza, Raffaele",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Hori, Masataka",
-    "player2": "Choo, Clement",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Sato, Keisuke",
-    "player2": "Wong, Charles",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Lin, Shih Feng",
-    "player2": "Castell\u00e1n, Javier",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Friedrichsen, Alex",
-    "player2": "Nielsen, Simon",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Korfine, Julian",
-    "player2": "Schnake, Abe",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Kassis, Eli",
-    "player2": "Yasooka, Shota",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Rood, David",
-    "player2": "Ogasawara, Tomoaki",
-    "p1_wins": 0,
-    "p2_wins": 2,
-    "p1_games": 0,
-    "p2_games": 2
-  },
-  {
-    "round": 3,
-    "player1": "Guttman, Jonny",
-    "player2": "Miller, Casey",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Magalhaes, Edgar",
-    "player2": "Zhang, Yuxuan",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
-  },
-  {
-    "round": 3,
-    "player1": "Manfield, Seth",
-    "player2": "Wang, Kunrui",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Nollen, Dylan",
-    "player2": "Robkin, Jesse",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Davis, Derrick",
-    "player2": "Dominguez, Javier",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
-  },
-  {
-    "round": 3,
-    "player1": "Kikidis, Charis",
-    "player2": "Schwartz, Adam",
-    "p1_wins": 1,
-    "p2_wins": 2,
-    "p1_games": 1,
-    "p2_games": 2
-  },
-  {
     "round": 8,
     "player1": "Zhang, Rei",
     "player2": "Hori, Masataka",
@@ -3900,10 +3900,10 @@
     "round": 8,
     "player1": "Lin, Shih Feng",
     "player2": "Stark, Ben",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 8,
@@ -3963,19 +3963,19 @@
     "round": 8,
     "player1": "Duke, Reid",
     "player2": "Moriyama, Masahide",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
   },
   {
     "round": 8,
     "player1": "Plummer, Michael",
     "player2": "Rohan, Alex",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 8,
@@ -4035,10 +4035,10 @@
     "round": 8,
     "player1": "Brace, Adam",
     "player2": "Masukado, Kenta",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 8,
@@ -4251,10 +4251,10 @@
     "round": 9,
     "player1": "Davis, Derrick",
     "player2": "Pardee, Sam",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 9,
@@ -4332,10 +4332,10 @@
     "round": 9,
     "player1": "Plummer, Michael",
     "player2": "Nakamura, Shuhei",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 9,
@@ -4449,10 +4449,10 @@
     "round": 10,
     "player1": "Del Pivo, Marco",
     "player2": "Moriyama, Masahide",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 10,
@@ -4512,10 +4512,10 @@
     "round": 10,
     "player1": "Sulimovich, Guillermo",
     "player2": "Offman, No\u00e9",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 10,
@@ -4692,9 +4692,1053 @@
     "round": 10,
     "player1": "Portolan, Toni",
     "player2": "Pardee, Sam",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Manfield, Seth",
+    "player2": "Portolan, Toni",
     "p1_wins": 2,
     "p2_wins": 1,
     "p1_games": 2,
     "p2_games": 1
+  },
+  {
+    "round": 11,
+    "player1": "Davis, Derrick",
+    "player2": "Pardee, Sam",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Moore, James",
+    "player2": "Friedrichsen, Alex",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Mackenzie, Connor",
+    "player2": "Offman, No\u00e9",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 11,
+    "player1": "Bot, Tom",
+    "player2": "Tamblyn, Mitchell",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Nass, Matthew",
+    "player2": "Cordob\u00e9s, Albert",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 11,
+    "player1": "Botelho, Chris",
+    "player2": "Nakamura, Shuhei",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 11,
+    "player1": "Rohan, Alex",
+    "player2": "Del Pivo, Marco",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 11,
+    "player1": "Wong, Charles",
+    "player2": "Duke, Reid",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Rappaport, Max",
+    "player2": "Carvalho, Marcio",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Sarap, Karl",
+    "player2": "Yukuhiro, Ken",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Ikawa, Yoshihiko",
+    "player2": "Tobiasch, Marc",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 11,
+    "player1": "Schabel, Justin",
+    "player2": "Magalhaes, Edgar",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 11,
+    "player1": "Garcia-Romo, Andy",
+    "player2": "Masukado, Kenta",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Harane, Kenta",
+    "player2": "Dominguez, Javier",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Karam, Vin\u00edcius",
+    "player2": "Dore, Max",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Shibata, Akira",
+    "player2": "Depraz, Jean-Emmanuel",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Hori, Masataka",
+    "player2": "Moriyama, Masahide",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 11,
+    "player1": "Bodewes, Jelco",
+    "player2": "Soto, Roberto",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Dang, Nam",
+    "player2": "Kassis, Eli",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 11,
+    "player1": "Huschenbeth, Arne",
+    "player2": "Zhang, Rei",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 11,
+    "player1": "Dimitrov, James",
+    "player2": "Dota, Arch",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 11,
+    "player1": "Airaksinen, Mikko",
+    "player2": "Plummer, Michael",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Lin, Shih Feng",
+    "player2": "Nagao, Yasutaka",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 11,
+    "player1": "Leonard Huu Nguyen, Christopher",
+    "player2": "Chang, Samuel",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 11,
+    "player1": "Holloway, Jennifer-Rose",
+    "player2": "Brace, Adam",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 11,
+    "player1": "Tonole, Quinn",
+    "player2": "Sulimovich, Guillermo",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Ogasawara, Tomoaki",
+    "player2": "Lack, Cory",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 11,
+    "player1": "Klepatch, Andrei",
+    "player2": "Henry, Shaun",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 11,
+    "player1": "Nassif, Gabriel",
+    "player2": "Stark, Ben",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 12,
+    "player1": "Offman, No\u00e9",
+    "player2": "Kassis, Eli",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 12,
+    "player1": "Soto, Roberto",
+    "player2": "Dang, Nam",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 12,
+    "player1": "Magalhaes, Edgar",
+    "player2": "Asano, Tatsuro",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 12,
+    "player1": "Moore, James",
+    "player2": "Tonole, Quinn",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 12,
+    "player1": "Wong, Charles",
+    "player2": "Mackenzie, Connor",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 12,
+    "player1": "Dore, Max",
+    "player2": "Portolan, Toni",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 12,
+    "player1": "Garcia-Romo, Andy",
+    "player2": "Ikawa, Yoshihiko",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 12,
+    "player1": "Nakamura, Shuhei",
+    "player2": "Lin, Shih Feng",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 12,
+    "player1": "Botelho, Chris",
+    "player2": "Moriyama, Masahide",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 12,
+    "player1": "Bot, Tom",
+    "player2": "Dota, Arch",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 12,
+    "player1": "Chang, Samuel",
+    "player2": "Del Pivo, Marco",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 12,
+    "player1": "Tamblyn, Mitchell",
+    "player2": "Dimitrov, James",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 12,
+    "player1": "Rappaport, Max",
+    "player2": "Nagao, Yasutaka",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 12,
+    "player1": "Harane, Kenta",
+    "player2": "Plummer, Michael",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 12,
+    "player1": "Friedrichsen, Alex",
+    "player2": "Stark, Ben",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 12,
+    "player1": "Ogasawara, Tomoaki",
+    "player2": "Leonard Huu Nguyen, Christopher",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 12,
+    "player1": "Depraz, Jean-Emmanuel",
+    "player2": "Hori, Masataka",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 12,
+    "player1": "Karam, Vin\u00edcius",
+    "player2": "Rohan, Alex",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 12,
+    "player1": "Zhang, Rei",
+    "player2": "Nassif, Gabriel",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 12,
+    "player1": "Tobiasch, Marc",
+    "player2": "Bodewes, Jelco",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 12,
+    "player1": "Sarap, Karl",
+    "player2": "Duke, Reid",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 12,
+    "player1": "Nass, Matthew",
+    "player2": "Klepatch, Andrei",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 12,
+    "player1": "Shibata, Akira",
+    "player2": "Yukuhiro, Ken",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 12,
+    "player1": "Henry, Shaun",
+    "player2": "Masukado, Kenta",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 12,
+    "player1": "Manfield, Seth",
+    "player2": "Davis, Derrick",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 12,
+    "player1": "Huschenbeth, Arne",
+    "player2": "Dominguez, Javier",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 12,
+    "player1": "Cordob\u00e9s, Albert",
+    "player2": "Sulimovich, Guillermo",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 12,
+    "player1": "Schabel, Justin",
+    "player2": "Airaksinen, Mikko",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 12,
+    "player1": "Holloway, Jennifer-Rose",
+    "player2": "Lack, Cory",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 12,
+    "player1": "Carvalho, Marcio",
+    "player2": "Brace, Adam",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 13,
+    "player1": "Lin, Shih Feng",
+    "player2": "Kassis, Eli",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 13,
+    "player1": "Yukuhiro, Ken",
+    "player2": "Davis, Derrick",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 13,
+    "player1": "Nakamura, Shuhei",
+    "player2": "Holloway, Jennifer-Rose",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 13,
+    "player1": "Nass, Matthew",
+    "player2": "Moriyama, Masahide",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 13,
+    "player1": "Garcia-Romo, Andy",
+    "player2": "Bot, Tom",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 13,
+    "player1": "Brace, Adam",
+    "player2": "Nagao, Yasutaka",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 13,
+    "player1": "Stark, Ben",
+    "player2": "Schabel, Justin",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 13,
+    "player1": "Shibata, Akira",
+    "player2": "Nassif, Gabriel",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 13,
+    "player1": "Leonard Huu Nguyen, Christopher",
+    "player2": "Masukado, Kenta",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 13,
+    "player1": "Dang, Nam",
+    "player2": "Lack, Cory",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 13,
+    "player1": "Henry, Shaun",
+    "player2": "Hori, Masataka",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 13,
+    "player1": "Plummer, Michael",
+    "player2": "Rohan, Alex",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 13,
+    "player1": "Sulimovich, Guillermo",
+    "player2": "Botelho, Chris",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 13,
+    "player1": "Cordob\u00e9s, Albert",
+    "player2": "Friedrichsen, Alex",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 13,
+    "player1": "Duke, Reid",
+    "player2": "Ogasawara, Tomoaki",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 13,
+    "player1": "Ikawa, Yoshihiko",
+    "player2": "Dota, Arch",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 13,
+    "player1": "Dominguez, Javier",
+    "player2": "Dore, Max",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 13,
+    "player1": "Tobiasch, Marc",
+    "player2": "Airaksinen, Mikko",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 13,
+    "player1": "Bodewes, Jelco",
+    "player2": "Moore, James",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 13,
+    "player1": "Asano, Tatsuro",
+    "player2": "Offman, No\u00e9",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 13,
+    "player1": "Rappaport, Max",
+    "player2": "Tonole, Quinn",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 13,
+    "player1": "Karam, Vin\u00edcius",
+    "player2": "Soto, Roberto",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 13,
+    "player1": "Huschenbeth, Arne",
+    "player2": "Portolan, Toni",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 13,
+    "player1": "Carvalho, Marcio",
+    "player2": "Del Pivo, Marco",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 13,
+    "player1": "Tamblyn, Mitchell",
+    "player2": "Sarap, Karl",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 13,
+    "player1": "Dimitrov, James",
+    "player2": "Wong, Charles",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 13,
+    "player1": "Mackenzie, Connor",
+    "player2": "Magalhaes, Edgar",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 13,
+    "player1": "Chang, Samuel",
+    "player2": "Zhang, Rei",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 13,
+    "player1": "Harane, Kenta",
+    "player2": "Klepatch, Andrei",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Moore, James",
+    "player2": "Offman, No\u00e9",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Duke, Reid",
+    "player2": "Rappaport, Max",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Magalhaes, Edgar",
+    "player2": "Dang, Nam",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Dota, Arch",
+    "player2": "Tobiasch, Marc",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Dimitrov, James",
+    "player2": "Dore, Max",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Cordob\u00e9s, Albert",
+    "player2": "Holloway, Jennifer-Rose",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Lin, Shih Feng",
+    "player2": "Lack, Cory",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Dominguez, Javier",
+    "player2": "Plummer, Michael",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Nakamura, Shuhei",
+    "player2": "Sarap, Karl",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 14,
+    "player1": "Sulimovich, Guillermo",
+    "player2": "Schabel, Justin",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Wong, Charles",
+    "player2": "Chang, Samuel",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 14,
+    "player1": "Asano, Tatsuro",
+    "player2": "Bodewes, Jelco",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Tamblyn, Mitchell",
+    "player2": "Davis, Derrick",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Brace, Adam",
+    "player2": "Tonole, Quinn",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 14,
+    "player1": "Hori, Masataka",
+    "player2": "Nass, Matthew",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Airaksinen, Mikko",
+    "player2": "Del Pivo, Marco",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Garcia-Romo, Andy",
+    "player2": "Harane, Kenta",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Leonard Huu Nguyen, Christopher",
+    "player2": "Stark, Ben",
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Botelho, Chris",
+    "player2": "Klepatch, Andrei",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 14,
+    "player1": "Karam, Vin\u00edcius",
+    "player2": "Carvalho, Marcio",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 14,
+    "player1": "Moriyama, Masahide",
+    "player2": "Soto, Roberto",
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
+  },
+  {
+    "round": 14,
+    "player1": "Mackenzie, Connor",
+    "player2": "Bot, Tom",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 14,
+    "player1": "Rohan, Alex",
+    "player2": "Zhang, Rei",
+    "p1_wins": 0,
+    "p2_wins": 0,
+    "p1_games": 0,
+    "p2_games": 0
+  },
+  {
+    "round": 14,
+    "player1": "Ogasawara, Tomoaki",
+    "player2": "Nassif, Gabriel",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 14,
+    "player1": "Shibata, Akira",
+    "player2": "Portolan, Toni",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
+  },
+  {
+    "round": 14,
+    "player1": "Masukado, Kenta",
+    "player2": "Ikawa, Yoshihiko",
+    "p1_wins": 2,
+    "p2_wins": 1,
+    "p1_games": 2,
+    "p2_games": 1
+  },
+  {
+    "round": 14,
+    "player1": "Kassis, Eli",
+    "player2": "Friedrichsen, Alex",
+    "p1_wins": 2,
+    "p2_wins": 0,
+    "p1_games": 2,
+    "p2_games": 0
   }
 ]

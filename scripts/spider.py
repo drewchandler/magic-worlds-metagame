@@ -414,7 +414,8 @@ class MagicSpider:
                         # Parse result text like "Dang, Nam won 2-0-0" or "Garcia-Romo, Andy won 2-1-0"
                         # Or "1-1-0 Draw" for draws
                         # Format: "{Winner} won {wins}-{losses}-{draws}" or "{wins}-{losses}-{draws} Draw"
-                        result_match = re.search(r'(\w+(?:\s+\w+)*)\s+won\s+(\d+)-(\d+)-(\d+)', result_text)
+                        # Note: Winner name can contain commas, hyphens, and spaces (e.g., "Pardee, Samuel")
+                        result_match = re.search(r'([\w\s,.-]+?)\s+won\s+(\d+)-(\d+)-(\d+)', result_text)
                         draw_match = re.search(r'(\d+)-(\d+)-(\d+)\s+Draw', result_text, re.IGNORECASE)
                         
                         if result_match:
@@ -423,28 +424,51 @@ class MagicSpider:
                             loser_wins = int(result_match.group(3))
                             draws = int(result_match.group(4))
                             
+                            # Normalize names for matching (handle "Last, First" format)
+                            def get_last_name(name):
+                                """Extract last name from 'Last, First' or 'First Last' format"""
+                                if ',' in name:
+                                    return name.split(',')[0].strip().lower()
+                                else:
+                                    parts = name.split()
+                                    return parts[-1].lower() if parts else ''
+                            
+                            def names_match(name1, name2):
+                                """Check if two names match (handles variations like Sam/Samuel)"""
+                                # Direct substring match
+                                if name1.lower() in name2.lower() or name2.lower() in name1.lower():
+                                    return True
+                                # Last name match
+                                last1 = get_last_name(name1)
+                                last2 = get_last_name(name2)
+                                if last1 and last2 and last1 == last2:
+                                    return True
+                                return False
+                            
                             # Determine which player won
-                            if winner in player1:
+                            if names_match(winner, player1):
                                 p1_wins = winner_wins
                                 p2_wins = loser_wins
-                            elif winner in player2:
+                            elif names_match(winner, player2):
                                 p1_wins = loser_wins
                                 p2_wins = winner_wins
                             else:
-                                # Try fuzzy matching - check if winner's last name matches
-                                winner_parts = winner.split()
-                                player1_parts = player1.split(',')
-                                player2_parts = player2.split(',')
+                                # Try more aggressive matching - check if any part of winner matches
+                                winner_lower = winner.lower()
+                                player1_lower = player1.lower()
+                                player2_lower = player2.lower()
                                 
-                                # Check if winner matches player1 (format is usually "Last, First")
-                                if len(player1_parts) > 0 and winner_parts[-1] in player1_parts[0]:
+                                # Check if winner's last name appears in either player name
+                                winner_last = get_last_name(winner)
+                                if winner_last and winner_last in player1_lower:
                                     p1_wins = winner_wins
                                     p2_wins = loser_wins
-                                elif len(player2_parts) > 0 and winner_parts[-1] in player2_parts[0]:
+                                elif winner_last and winner_last in player2_lower:
                                     p1_wins = loser_wins
                                     p2_wins = winner_wins
                                 else:
                                     # Default: assume first player won (shouldn't happen often)
+                                    print(f"Warning: Could not match winner '{winner}' to players '{player1}' or '{player2}'")
                                     p1_wins = winner_wins
                                     p2_wins = loser_wins
                             
