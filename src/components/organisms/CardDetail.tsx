@@ -1,7 +1,16 @@
 import { useState, useEffect, useMemo } from 'react'
 import { useParams } from 'react-router-dom'
 
+import { Box } from '@atoms/Box'
+import { Card } from '@atoms/Card'
+import { Container } from '@atoms/Container'
+import { Grid } from '@atoms/Grid'
+import { HStack } from '@atoms/HStack'
 import { Link } from '@atoms/Link'
+import { SortIcon } from '@atoms/SortIcon'
+import { Table, TableHead, TableBody, TableRow, TableHeader, TableCell } from '@atoms/Table'
+import { Text } from '@atoms/Text'
+import { VStack } from '@atoms/VStack'
 import CardTooltip from '@molecules/CardTooltip'
 import type { AnalysisData } from '@/types'
 
@@ -211,166 +220,204 @@ function CardDetail({ data }: CardDetailProps) {
     }
   }
 
-  const SortIcon = ({ column }: { column: SortColumn }) => {
-    if (sortColumn !== column) {
-      return <span className="ml-1 text-gray-400">↕</span>
-    }
-    return <span className="ml-1">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-  }
-
   if (!data) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600 p-5">
-        <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl p-8">
-          <p>Loading...</p>
-        </div>
-      </div>
+      <Container variant="page" padding="md">
+        <Card variant="page" padding="lg">
+          <Text>Loading...</Text>
+        </Card>
+      </Container>
     )
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600 p-5">
-      <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
-        <div className="bg-gradient-to-r from-slate-800 to-blue-800 text-white p-10 rounded-t-3xl">
-          <Link
-            to="/"
-            variant="nav"
-            className="inline-block mb-3"
-          >
-            ← Back to Dashboard
-          </Link>
-          <div className="flex items-center gap-4">
-            <h1 className="text-4xl font-bold">{decodedName}</h1>
-            <CardTooltip cardName={decodedName}>
-              <span className="text-white opacity-90 hover:opacity-100 cursor-pointer text-2xl">
-                🃏
-              </span>
-            </CardTooltip>
-          </div>
-        </div>
+    <Container variant="page" padding="md">
+      <Card variant="page">
+        <Box padding="lg" background="gradient-slate-blue" roundedTop="3xl" className="-mx-4 -mt-4 -mb-0">
+          <VStack spacing="sm" align="start">
+            <Link to="/" variant="nav">
+              ← Back to Dashboard
+            </Link>
+            <HStack spacing="md" align="center">
+              <Text variant="h1" color="inverse">{decodedName}</Text>
+              <CardTooltip cardName={decodedName}>
+                <Text variant="body" color="inverse" className="opacity-90 hover:opacity-100 cursor-pointer text-2xl">
+                  🃏
+                </Text>
+              </CardTooltip>
+            </HStack>
+          </VStack>
+        </Box>
 
-        <div className="p-10 border-b border-gray-200">
-          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">
-            Overall Statistics
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-5 mt-5">
-            <div className="bg-gray-50 p-5 rounded-xl text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">
-                {totalStats.totalCopies}
-              </div>
-              <div className="text-gray-600 text-sm uppercase tracking-wider">Total Copies</div>
-            </div>
-            <div className="bg-gray-50 p-5 rounded-xl text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">
-                {totalStats.mainDeckCopies}
-              </div>
-              <div className="text-gray-600 text-sm uppercase tracking-wider">Main Deck</div>
-            </div>
-            <div className="bg-gray-50 p-5 rounded-xl text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">
-                {totalStats.sideboardCopies}
-              </div>
-              <div className="text-gray-600 text-sm uppercase tracking-wider">Sideboard</div>
-            </div>
-            <div className="bg-gray-50 p-5 rounded-xl text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">
-                {totalStats.decksIncluded}
-              </div>
-              <div className="text-gray-600 text-sm uppercase tracking-wider">Decks Included</div>
-            </div>
-            <div className="bg-gray-50 p-5 rounded-xl text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">
-                {totalStats.percentageIncluded.toFixed(1)}%
-              </div>
-              <div className="text-gray-600 text-sm uppercase tracking-wider">% of Decks</div>
-            </div>
-          </div>
-        </div>
+        <Box padding="lg">
+          <VStack spacing="md">
+            <Box padding="none" margin="none">
+              <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
+                Overall Statistics
+              </Text>
+            </Box>
+            <Grid columns={{ sm: 2, md: 5 }} spacing="md">
+              <Card background="neutral" padding="md">
+                <VStack spacing="sm" align="center">
+                  <Text variant="h2" color="primary">{totalStats.totalCopies}</Text>
+                  <Text variant="label">Total Copies</Text>
+                </VStack>
+              </Card>
+              <Card background="neutral" padding="md">
+                <VStack spacing="sm" align="center">
+                  <Text variant="h2" color="primary">{totalStats.mainDeckCopies}</Text>
+                  <Text variant="label">Main Deck</Text>
+                </VStack>
+              </Card>
+              <Card background="neutral" padding="md">
+                <VStack spacing="sm" align="center">
+                  <Text variant="h2" color="primary">{totalStats.sideboardCopies}</Text>
+                  <Text variant="label">Sideboard</Text>
+                </VStack>
+              </Card>
+              <Card background="neutral" padding="md">
+                <VStack spacing="sm" align="center">
+                  <Text variant="h2" color="primary">{totalStats.decksIncluded}</Text>
+                  <Text variant="label">Decks Included</Text>
+                </VStack>
+              </Card>
+              <Card background="neutral" padding="md">
+                <VStack spacing="sm" align="center">
+                  <Text variant="h2" color="primary">{totalStats.percentageIncluded.toFixed(1)}%</Text>
+                  <Text variant="label">% of Decks</Text>
+                </VStack>
+              </Card>
+            </Grid>
+          </VStack>
+        </Box>
 
-        <div className="p-10">
-          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">
-            Archetypes ({sortedArchetypeStats.length})
-          </h2>
-          <div className="overflow-x-auto rounded-xl shadow-lg mt-5">
-            <table className="w-full bg-white border-collapse">
-              <thead>
-                <tr className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-                  <th
-                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
-                    onClick={() => handleSort('archetype')}
-                  >
-                    Archetype <SortIcon column="archetype" />
-                  </th>
-                  <th
-                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
-                    onClick={() => handleSort('totalCopies')}
-                  >
-                    Total Copies <SortIcon column="totalCopies" />
-                  </th>
-                  <th
-                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
-                    onClick={() => handleSort('averageMainDeck')}
-                  >
-                    Avg Main Deck <SortIcon column="averageMainDeck" />
-                  </th>
-                  <th
-                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
-                    onClick={() => handleSort('averageSideboard')}
-                  >
-                    Avg Sideboard <SortIcon column="averageSideboard" />
-                  </th>
-                  <th
-                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
-                    onClick={() => handleSort('decksIncluded')}
-                  >
-                    Decks Included <SortIcon column="decksIncluded" />
-                  </th>
-                  <th
-                    className="p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors"
-                    onClick={() => handleSort('percentageIncluded')}
-                  >
-                    % of Archetype <SortIcon column="percentageIncluded" />
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {sortedArchetypeStats.length === 0 ? (
-                  <tr>
-                    <td colSpan={6} className="text-center py-10 text-gray-500">
-                      No archetypes found using this card
-                    </td>
-                  </tr>
-                ) : (
-                  sortedArchetypeStats.map(stat => (
-                    <tr key={stat.archetype} className="hover:bg-gray-50 transition-colors">
-                      <td className="p-4">
-                        <Link
-                          to={`/archetype/${encodeURIComponent(stat.archetype)}`}
-                          className="font-medium"
-                        >
-                          {stat.archetype}
-                        </Link>
-                      </td>
-                      <td className="p-4 text-gray-900">{stat.totalCopies}</td>
-                      <td className="p-4 text-gray-900">
-                        {stat.averageMainDeck > 0 ? stat.averageMainDeck.toFixed(1) : '—'}
-                      </td>
-                      <td className="p-4 text-gray-900">
-                        {stat.averageSideboard > 0 ? stat.averageSideboard.toFixed(1) : '—'}
-                      </td>
-                      <td className="p-4 text-gray-900">
-                        {stat.decksIncluded} / {stat.totalDecks}
-                      </td>
-                      <td className="p-4 text-gray-900">{stat.percentageIncluded.toFixed(1)}%</td>
-                    </tr>
-                  ))
-                )}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
+        <Box padding="lg">
+          <VStack spacing="md">
+            <Box padding="none" margin="none">
+              <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
+                Archetypes ({sortedArchetypeStats.length})
+              </Text>
+            </Box>
+            <Card overflow shadow="lg">
+              <Table>
+                <TableHead>
+                  <TableRow variant="header">
+                    <TableHeader
+                      onClick={() => handleSort('archetype')}
+                      active={sortColumn === 'archetype'}
+                      textColor="inverse"
+                    >
+                      Archetype{' '}
+                      <SortIcon
+                        column="archetype"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                    <TableHeader
+                      onClick={() => handleSort('totalCopies')}
+                      active={sortColumn === 'totalCopies'}
+                      textColor="inverse"
+                    >
+                      Total Copies{' '}
+                      <SortIcon
+                        column="totalCopies"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                    <TableHeader
+                      onClick={() => handleSort('averageMainDeck')}
+                      active={sortColumn === 'averageMainDeck'}
+                      textColor="inverse"
+                    >
+                      Avg Main Deck{' '}
+                      <SortIcon
+                        column="averageMainDeck"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                    <TableHeader
+                      onClick={() => handleSort('averageSideboard')}
+                      active={sortColumn === 'averageSideboard'}
+                      textColor="inverse"
+                    >
+                      Avg Sideboard{' '}
+                      <SortIcon
+                        column="averageSideboard"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                    <TableHeader
+                      onClick={() => handleSort('decksIncluded')}
+                      active={sortColumn === 'decksIncluded'}
+                      textColor="inverse"
+                    >
+                      Decks Included{' '}
+                      <SortIcon
+                        column="decksIncluded"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                    <TableHeader
+                      onClick={() => handleSort('percentageIncluded')}
+                      active={sortColumn === 'percentageIncluded'}
+                      textColor="inverse"
+                    >
+                      % of Archetype{' '}
+                      <SortIcon
+                        column="percentageIncluded"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {sortedArchetypeStats.length === 0 ? (
+                    <TableRow>
+                      <TableCell colSpan={6} textAlign="center" padding="lg" textColor="muted">
+                        No archetypes found using this card
+                      </TableCell>
+                    </TableRow>
+                  ) : (
+                    sortedArchetypeStats.map(stat => (
+                      <TableRow key={stat.archetype}>
+                        <TableCell>
+                          <Link to={`/archetype/${encodeURIComponent(stat.archetype)}`}>
+                            <Text variant="body" className="font-medium">
+                              {stat.archetype}
+                            </Text>
+                          </Link>
+                        </TableCell>
+                        <TableCell>
+                          <Text>{stat.totalCopies}</Text>
+                        </TableCell>
+                        <TableCell>
+                          <Text>{stat.averageMainDeck > 0 ? stat.averageMainDeck.toFixed(1) : '—'}</Text>
+                        </TableCell>
+                        <TableCell>
+                          <Text>{stat.averageSideboard > 0 ? stat.averageSideboard.toFixed(1) : '—'}</Text>
+                        </TableCell>
+                        <TableCell>
+                          <Text>{stat.decksIncluded} / {stat.totalDecks}</Text>
+                        </TableCell>
+                        <TableCell>
+                          <Text>{stat.percentageIncluded.toFixed(1)}%</Text>
+                        </TableCell>
+                      </TableRow>
+                    ))
+                  )}
+                </TableBody>
+              </Table>
+            </Card>
+          </VStack>
+        </Box>
+      </Card>
+    </Container>
   )
 }
 

@@ -1,7 +1,15 @@
 import { useState, useEffect, useMemo } from 'react'
 import { useParams } from 'react-router-dom'
 
+import { Box } from '@atoms/Box'
+import { Card } from '@atoms/Card'
+import { Container } from '@atoms/Container'
+import { Grid } from '@atoms/Grid'
 import { Link } from '@atoms/Link'
+import { SortIcon } from '@atoms/SortIcon'
+import { Table, TableHead, TableBody, TableRow, TableHeader, TableCell } from '@atoms/Table'
+import { Text } from '@atoms/Text'
+import { VStack } from '@atoms/VStack'
 import CardTooltip from '@molecules/CardTooltip'
 import type { AnalysisData } from '@/types'
 
@@ -228,10 +236,10 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
     }
   }
 
-  const getWinRateClass = (rate: number): string => {
-    if (rate >= 0.6) return 'text-green-600'
-    if (rate >= 0.4) return 'text-yellow-600'
-    return 'text-red-600'
+  const getWinRateColor = (rate: number): 'success' | 'warning' | 'danger' => {
+    if (rate >= 0.6) return 'success'
+    if (rate >= 0.4) return 'warning'
+    return 'danger'
   }
 
   // Calculate card statistics
@@ -333,13 +341,19 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
     }
   }
 
+  const getWinRateColor = (rate: number): 'success' | 'warning' | 'danger' => {
+    if (rate >= 0.6) return 'success'
+    if (rate >= 0.4) return 'warning'
+    return 'danger'
+  }
+
   if (!data) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600 p-5">
-        <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl p-8">
-          <p>Loading...</p>
-        </div>
-      </div>
+      <Container variant="page" padding="md">
+        <Card variant="page" padding="lg">
+          <Text>Loading...</Text>
+        </Card>
+      </Container>
     )
   }
 
@@ -347,286 +361,350 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
   const archetypeCount = data.archetype_counts[decodedName] || 0
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600 p-5">
-      <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
-        <div className="bg-gradient-to-r from-slate-800 to-blue-800 text-white p-10 rounded-t-3xl">
-          <Link
-            to="/"
-            variant="nav"
-            className="inline-block mb-3"
-          >
-            ← Back to Dashboard
-          </Link>
-          <h1 className="text-4xl font-bold mb-3">{decodedName}</h1>
-        </div>
+    <Container variant="page" padding="md">
+      <Card variant="page">
+        <Box padding="lg" background="gradient-slate-blue" roundedTop="3xl" className="-mx-4 -mt-4 -mb-0">
+          <VStack spacing="sm" align="start">
+            <Link to="/" variant="nav">
+              ← Back to Dashboard
+            </Link>
+            <Text variant="h1" color="inverse">{decodedName}</Text>
+          </VStack>
+        </Box>
 
-        <div className="p-10 border-b border-gray-200">
-          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">
-            Statistics
-          </h2>
-          {archetypeStats ? (
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-5 mt-5">
-              <div className="bg-gray-50 p-5 rounded-xl text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">{archetypeCount}</div>
-                <div className="text-gray-600 text-sm uppercase tracking-wider">Players</div>
-              </div>
-              <div className="bg-gray-50 p-5 rounded-xl text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">
-                  {archetypeStats.draws && archetypeStats.draws > 0
-                    ? `${archetypeStats.wins}-${archetypeStats.losses}-${archetypeStats.draws}`
-                    : `${archetypeStats.wins}-${archetypeStats.losses}`}
-                </div>
-                <div className="text-gray-600 text-sm uppercase tracking-wider">Match Record</div>
-              </div>
-              <div className="bg-gray-50 p-5 rounded-xl text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">
-                  {(archetypeStats.win_rate * 100).toFixed(1)}%
-                </div>
-                <div className="text-gray-600 text-sm uppercase tracking-wider">Match Win Rate</div>
-              </div>
-              <div className="bg-gray-50 p-5 rounded-xl text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">
-                  {archetypeStats.games_won}-{archetypeStats.games_lost}
-                </div>
-                <div className="text-gray-600 text-sm uppercase tracking-wider">Game Record</div>
-              </div>
-              <div className="bg-gray-50 p-5 rounded-xl text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">
-                  {(archetypeStats.game_win_rate * 100).toFixed(1)}%
-                </div>
-                <div className="text-gray-600 text-sm uppercase tracking-wider">Game Win Rate</div>
-              </div>
-            </div>
-          ) : (
-            <p className="text-gray-600">No statistics available</p>
-          )}
-        </div>
+        <Box padding="lg">
+          <VStack spacing="md">
+            <Box padding="none" margin="none">
+              <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
+                Statistics
+              </Text>
+            </Box>
+            {archetypeStats ? (
+              <Grid columns={{ sm: 2, md: 5 }} spacing="md">
+                <Card background="neutral" padding="md">
+                  <VStack spacing="sm" align="center">
+                    <Text variant="h2" color="primary">{archetypeCount}</Text>
+                    <Text variant="label">Players</Text>
+                  </VStack>
+                </Card>
+                <Card background="neutral" padding="md">
+                  <VStack spacing="sm" align="center">
+                    <Text variant="h2" color="primary">
+                      {archetypeStats.draws && archetypeStats.draws > 0
+                        ? `${archetypeStats.wins}-${archetypeStats.losses}-${archetypeStats.draws}`
+                        : `${archetypeStats.wins}-${archetypeStats.losses}`}
+                    </Text>
+                    <Text variant="label">Match Record</Text>
+                  </VStack>
+                </Card>
+                <Card background="neutral" padding="md">
+                  <VStack spacing="sm" align="center">
+                    <Text variant="h2" color="primary">
+                      {(archetypeStats.win_rate * 100).toFixed(1)}%
+                    </Text>
+                    <Text variant="label">Match Win Rate</Text>
+                  </VStack>
+                </Card>
+                <Card background="neutral" padding="md">
+                  <VStack spacing="sm" align="center">
+                    <Text variant="h2" color="primary">
+                      {archetypeStats.games_won}-{archetypeStats.games_lost}
+                    </Text>
+                    <Text variant="label">Game Record</Text>
+                  </VStack>
+                </Card>
+                <Card background="neutral" padding="md">
+                  <VStack spacing="sm" align="center">
+                    <Text variant="h2" color="primary">
+                      {(archetypeStats.game_win_rate * 100).toFixed(1)}%
+                    </Text>
+                    <Text variant="label">Game Win Rate</Text>
+                  </VStack>
+                </Card>
+              </Grid>
+            ) : (
+              <Text color="secondary">No statistics available</Text>
+            )}
+          </VStack>
+        </Box>
 
-        <div className="p-10">
-          <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">
-            Players ({sortedPlayerStats.length})
-          </h2>
-          <div className="overflow-x-auto rounded-xl shadow-lg mt-5">
-            <table className="w-full bg-white border-collapse">
-              <thead>
-                <tr className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-                  <th
-                    className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'player' ? 'bg-indigo-600' : ''}`}
-                    onClick={() => handleSort('player')}
-                  >
-                    Player
-                    {sortColumn === 'player' && (
-                      <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                    )}
-                  </th>
-                  <th
-                    className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'matchRecord' ? 'bg-indigo-600' : ''}`}
-                    onClick={() => handleSort('matchRecord')}
-                  >
-                    Match Record
-                    {sortColumn === 'matchRecord' && (
-                      <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                    )}
-                  </th>
-                  <th
-                    className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'winRate' ? 'bg-indigo-600' : ''}`}
-                    onClick={() => handleSort('winRate')}
-                  >
-                    Win Rate
-                    {sortColumn === 'winRate' && (
-                      <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                    )}
-                  </th>
-                  <th
-                    className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'gameRecord' ? 'bg-indigo-600' : ''}`}
-                    onClick={() => handleSort('gameRecord')}
-                  >
-                    Game Record
-                    {sortColumn === 'gameRecord' && (
-                      <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                    )}
-                  </th>
-                  <th
-                    className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'gameWinRate' ? 'bg-indigo-600' : ''}`}
-                    onClick={() => handleSort('gameWinRate')}
-                  >
-                    Game Win Rate
-                    {sortColumn === 'gameWinRate' && (
-                      <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                    )}
-                  </th>
-                  <th
-                    className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'matches' ? 'bg-indigo-600' : ''}`}
-                    onClick={() => handleSort('matches')}
-                  >
-                    Matches
-                    {sortColumn === 'matches' && (
-                      <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                    )}
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {sortedPlayerStats.length === 0 ? (
-                  <tr>
-                    <td colSpan={6} className="text-center py-10 text-gray-500">
-                      No players found for this archetype
-                    </td>
-                  </tr>
-                ) : (
-                  sortedPlayerStats.map(playerStat => {
-                    const winRate =
-                      playerStat.wins + playerStat.losses > 0
-                        ? playerStat.wins / (playerStat.wins + playerStat.losses)
-                        : 0
-                    const gameWinRate =
-                      playerStat.gamesWon + playerStat.gamesLost > 0
-                        ? playerStat.gamesWon / (playerStat.gamesWon + playerStat.gamesLost)
-                        : 0
+        <Box padding="lg">
+          <VStack spacing="md">
+            <Box padding="none" margin="none">
+              <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
+                Players ({sortedPlayerStats.length})
+              </Text>
+            </Box>
+            <Card overflow shadow="lg">
+              <Table>
+                <TableHead>
+                  <TableRow variant="header">
+                    <TableHeader
+                      onClick={() => handleSort('player')}
+                      active={sortColumn === 'player'}
+                      textColor="inverse"
+                    >
+                      Player{' '}
+                      <SortIcon
+                        column="player"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                    <TableHeader
+                      onClick={() => handleSort('matchRecord')}
+                      active={sortColumn === 'matchRecord'}
+                      textColor="inverse"
+                    >
+                      Match Record{' '}
+                      <SortIcon
+                        column="matchRecord"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                    <TableHeader
+                      onClick={() => handleSort('winRate')}
+                      active={sortColumn === 'winRate'}
+                      textColor="inverse"
+                    >
+                      Win Rate{' '}
+                      <SortIcon
+                        column="winRate"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                    <TableHeader
+                      onClick={() => handleSort('gameRecord')}
+                      active={sortColumn === 'gameRecord'}
+                      textColor="inverse"
+                    >
+                      Game Record{' '}
+                      <SortIcon
+                        column="gameRecord"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                    <TableHeader
+                      onClick={() => handleSort('gameWinRate')}
+                      active={sortColumn === 'gameWinRate'}
+                      textColor="inverse"
+                    >
+                      Game Win Rate{' '}
+                      <SortIcon
+                        column="gameWinRate"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                    <TableHeader
+                      onClick={() => handleSort('matches')}
+                      active={sortColumn === 'matches'}
+                      textColor="inverse"
+                    >
+                      Matches{' '}
+                      <SortIcon
+                        column="matches"
+                        sortColumn={sortColumn}
+                        sortDirection={sortDirection}
+                      />
+                    </TableHeader>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {sortedPlayerStats.length === 0 ? (
+                    <TableRow>
+                      <TableCell colSpan={6} textAlign="center" padding="lg" textColor="muted">
+                        No players found for this archetype
+                      </TableCell>
+                    </TableRow>
+                  ) : (
+                    sortedPlayerStats.map(playerStat => {
+                      const winRate =
+                        playerStat.wins + playerStat.losses > 0
+                          ? playerStat.wins / (playerStat.wins + playerStat.losses)
+                          : 0
+                      const gameWinRate =
+                        playerStat.gamesWon + playerStat.gamesLost > 0
+                          ? playerStat.gamesWon / (playerStat.gamesWon + playerStat.gamesLost)
+                          : 0
 
-                    return (
-                      <tr key={playerStat.player} className="hover:bg-gray-50 transition-colors">
-                        <td className="p-4">
-                          <Link
-                            to={`/player/${encodeURIComponent(playerStat.player)}`}
-                            className="font-medium"
-                          >
-                            {playerStat.player}
-                          </Link>
-                        </td>
-                        <td className="p-4">
-                          {playerStat.draws > 0
-                            ? `${playerStat.wins}-${playerStat.losses}-${playerStat.draws}`
-                            : `${playerStat.wins}-${playerStat.losses}`}
-                        </td>
-                        <td className="p-4">
-                          <span className={`font-bold ${getWinRateClass(winRate)}`}>
-                            {(winRate * 100).toFixed(1)}%
-                          </span>
-                        </td>
-                        <td className="p-4">
-                          {playerStat.gamesWon}-{playerStat.gamesLost}
-                        </td>
-                        <td className="p-4">
-                          <span className={`font-bold ${getWinRateClass(gameWinRate)}`}>
-                            {(gameWinRate * 100).toFixed(1)}%
-                          </span>
-                        </td>
-                        <td className="p-4">{playerStat.totalMatches}</td>
-                      </tr>
-                    )
-                  })
-                )}
-              </tbody>
-            </table>
-          </div>
-        </div>
+                      return (
+                        <TableRow key={playerStat.player}>
+                          <TableCell>
+                            <Link to={`/player/${encodeURIComponent(playerStat.player)}`}>
+                              <Text variant="body" className="font-medium">
+                                {playerStat.player}
+                              </Text>
+                            </Link>
+                          </TableCell>
+                          <TableCell>
+                            <Text>
+                              {playerStat.draws > 0
+                                ? `${playerStat.wins}-${playerStat.losses}-${playerStat.draws}`
+                                : `${playerStat.wins}-${playerStat.losses}`}
+                            </Text>
+                          </TableCell>
+                          <TableCell>
+                            <Text color={getWinRateColor(winRate)} className="font-bold">
+                              {(winRate * 100).toFixed(1)}%
+                            </Text>
+                          </TableCell>
+                          <TableCell>
+                            <Text>
+                              {playerStat.gamesWon}-{playerStat.gamesLost}
+                            </Text>
+                          </TableCell>
+                          <TableCell>
+                            <Text color={getWinRateColor(gameWinRate)} className="font-bold">
+                              {(gameWinRate * 100).toFixed(1)}%
+                            </Text>
+                          </TableCell>
+                          <TableCell>
+                            <Text>{playerStat.totalMatches}</Text>
+                          </TableCell>
+                        </TableRow>
+                      )
+                    })
+                  )}
+                </TableBody>
+              </Table>
+            </Card>
+          </VStack>
+        </Box>
 
         {decklists.length > 0 && (
-          <div className="p-10 border-t border-gray-200">
-            <h2 className="text-2xl font-bold mb-5 text-slate-800 border-b-2 border-indigo-500 pb-2">
-              Card Breakdown
-            </h2>
-            <div className="mt-5 overflow-x-auto rounded-xl shadow-lg">
-              <table className="w-full bg-white border-collapse">
-                <thead>
-                  <tr className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-                    <th
-                      className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${cardSortColumn === 'name' ? 'bg-indigo-600' : ''}`}
-                      onClick={() => handleCardSort('name')}
-                    >
-                      Card Name
-                      {cardSortColumn === 'name' && (
-                        <span className="ml-2">{cardSortDirection === 'asc' ? '↑' : '↓'}</span>
-                      )}
-                    </th>
-                    <th
-                      className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${cardSortColumn === 'mainDeckAverage' ? 'bg-indigo-600' : ''}`}
-                      onClick={() => handleCardSort('mainDeckAverage')}
-                    >
-                      Avg Main Deck
-                      {cardSortColumn === 'mainDeckAverage' && (
-                        <span className="ml-2">{cardSortDirection === 'asc' ? '↑' : '↓'}</span>
-                      )}
-                    </th>
-                    <th
-                      className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${cardSortColumn === 'mainDeckPercentage' ? 'bg-indigo-600' : ''}`}
-                      onClick={() => handleCardSort('mainDeckPercentage')}
-                    >
-                      Main Deck %
-                      {cardSortColumn === 'mainDeckPercentage' && (
-                        <span className="ml-2">{cardSortDirection === 'asc' ? '↑' : '↓'}</span>
-                      )}
-                    </th>
-                    <th
-                      className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${cardSortColumn === 'sideboardAverage' ? 'bg-indigo-600' : ''}`}
-                      onClick={() => handleCardSort('sideboardAverage')}
-                    >
-                      Avg Sideboard
-                      {cardSortColumn === 'sideboardAverage' && (
-                        <span className="ml-2">{cardSortDirection === 'asc' ? '↑' : '↓'}</span>
-                      )}
-                    </th>
-                    <th
-                      className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${cardSortColumn === 'sideboardPercentage' ? 'bg-indigo-600' : ''}`}
-                      onClick={() => handleCardSort('sideboardPercentage')}
-                    >
-                      Sideboard %
-                      {cardSortColumn === 'sideboardPercentage' && (
-                        <span className="ml-2">{cardSortDirection === 'asc' ? '↑' : '↓'}</span>
-                      )}
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {sortedCardStats.length === 0 ? (
-                    <tr>
-                      <td colSpan={5} className="text-center py-10 text-gray-500">
-                        No card data available
-                      </td>
-                    </tr>
-                  ) : (
-                    sortedCardStats.map((cardStat, idx) => (
-                      <tr
-                        key={`${cardStat.name}-${idx}`}
-                        className="hover:bg-gray-50 transition-colors"
+          <Box padding="lg">
+            <VStack spacing="md">
+              <Box padding="none" margin="none">
+                <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
+                  Card Breakdown
+                </Text>
+              </Box>
+              <Card overflow shadow="lg">
+                <Table>
+                  <TableHead>
+                    <TableRow variant="header">
+                      <TableHeader
+                        onClick={() => handleCardSort('name')}
+                        active={cardSortColumn === 'name'}
+                        textColor="inverse"
                       >
-                        <td className="p-4">
-                          <Link
-                            to={`/card/${encodeURIComponent(cardStat.name)}`}
-                            className="font-medium"
-                          >
-                            <CardTooltip cardName={cardStat.name}>{cardStat.name}</CardTooltip>
-                          </Link>
-                        </td>
-                        <td className="p-4 text-gray-900">
-                          {cardStat.mainDeckAverage > 0 ? cardStat.mainDeckAverage.toFixed(1) : '—'}
-                        </td>
-                        <td className="p-4 text-gray-900">
-                          {cardStat.mainDeckPercentage > 0
-                            ? `${cardStat.mainDeckPercentage.toFixed(1)}%`
-                            : '—'}
-                        </td>
-                        <td className="p-4 text-gray-900">
-                          {cardStat.sideboardAverage > 0
-                            ? cardStat.sideboardAverage.toFixed(1)
-                            : '—'}
-                        </td>
-                        <td className="p-4 text-gray-900">
-                          {cardStat.sideboardPercentage > 0
-                            ? `${cardStat.sideboardPercentage.toFixed(1)}%`
-                            : '—'}
-                        </td>
-                      </tr>
-                    ))
-                  )}
-                </tbody>
-              </table>
-            </div>
-          </div>
+                        Card Name{' '}
+                        <SortIcon
+                          column="name"
+                          sortColumn={cardSortColumn}
+                          sortDirection={cardSortDirection}
+                        />
+                      </TableHeader>
+                      <TableHeader
+                        onClick={() => handleCardSort('mainDeckAverage')}
+                        active={cardSortColumn === 'mainDeckAverage'}
+                        textColor="inverse"
+                      >
+                        Avg Main Deck{' '}
+                        <SortIcon
+                          column="mainDeckAverage"
+                          sortColumn={cardSortColumn}
+                          sortDirection={cardSortDirection}
+                        />
+                      </TableHeader>
+                      <TableHeader
+                        onClick={() => handleCardSort('mainDeckPercentage')}
+                        active={cardSortColumn === 'mainDeckPercentage'}
+                        textColor="inverse"
+                      >
+                        Main Deck %{' '}
+                        <SortIcon
+                          column="mainDeckPercentage"
+                          sortColumn={cardSortColumn}
+                          sortDirection={cardSortDirection}
+                        />
+                      </TableHeader>
+                      <TableHeader
+                        onClick={() => handleCardSort('sideboardAverage')}
+                        active={cardSortColumn === 'sideboardAverage'}
+                        textColor="inverse"
+                      >
+                        Avg Sideboard{' '}
+                        <SortIcon
+                          column="sideboardAverage"
+                          sortColumn={cardSortColumn}
+                          sortDirection={cardSortDirection}
+                        />
+                      </TableHeader>
+                      <TableHeader
+                        onClick={() => handleCardSort('sideboardPercentage')}
+                        active={cardSortColumn === 'sideboardPercentage'}
+                        textColor="inverse"
+                      >
+                        Sideboard %{' '}
+                        <SortIcon
+                          column="sideboardPercentage"
+                          sortColumn={cardSortColumn}
+                          sortDirection={cardSortDirection}
+                        />
+                      </TableHeader>
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    {sortedCardStats.length === 0 ? (
+                      <TableRow>
+                        <TableCell colSpan={5} textAlign="center" padding="lg" textColor="muted">
+                          No card data available
+                        </TableCell>
+                      </TableRow>
+                    ) : (
+                      sortedCardStats.map((cardStat, idx) => (
+                        <TableRow key={`${cardStat.name}-${idx}`}>
+                          <TableCell>
+                            <Link to={`/card/${encodeURIComponent(cardStat.name)}`}>
+                              <CardTooltip cardName={cardStat.name}>
+                                <Text variant="body" className="font-medium">
+                                  {cardStat.name}
+                                </Text>
+                              </CardTooltip>
+                            </Link>
+                          </TableCell>
+                          <TableCell>
+                            <Text>
+                              {cardStat.mainDeckAverage > 0 ? cardStat.mainDeckAverage.toFixed(1) : '—'}
+                            </Text>
+                          </TableCell>
+                          <TableCell>
+                            <Text>
+                              {cardStat.mainDeckPercentage > 0
+                                ? `${cardStat.mainDeckPercentage.toFixed(1)}%`
+                                : '—'}
+                            </Text>
+                          </TableCell>
+                          <TableCell>
+                            <Text>
+                              {cardStat.sideboardAverage > 0
+                                ? cardStat.sideboardAverage.toFixed(1)
+                                : '—'}
+                            </Text>
+                          </TableCell>
+                          <TableCell>
+                            <Text>
+                              {cardStat.sideboardPercentage > 0
+                                ? `${cardStat.sideboardPercentage.toFixed(1)}%`
+                                : '—'}
+                            </Text>
+                          </TableCell>
+                        </TableRow>
+                      ))
+                    )}
+                  </TableBody>
+                </Table>
+              </Card>
+            </VStack>
+          </Box>
         )}
-      </div>
-    </div>
+      </Card>
+    </Container>
   )
 }
 

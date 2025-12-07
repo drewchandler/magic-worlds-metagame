@@ -1,7 +1,7 @@
 interface TextProps {
   children: React.ReactNode
   variant?: 'h1' | 'h2' | 'h3' | 'body' | 'label' | 'small'
-  color?: 'default' | 'primary' | 'secondary' | 'muted' | 'inverse' | 'info' | 'accent'
+  color?: 'default' | 'primary' | 'secondary' | 'muted' | 'inverse' | 'info' | 'accent' | 'success' | 'warning' | 'danger'
   leading?: 'normal' | 'relaxed'
   shadow?: boolean
   opacity?: 'full' | 'high' | 'medium' | 'low'
@@ -40,6 +40,9 @@ export function Text({
     inverse: 'text-white',
     info: 'text-info',
     accent: 'text-accent',
+    success: 'text-success',
+    warning: 'text-warning',
+    danger: 'text-danger',
   }
 
   const leadingClasses = {

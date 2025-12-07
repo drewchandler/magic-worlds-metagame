@@ -1,6 +1,13 @@
 import { useState, useMemo } from 'react'
 
+import { Box } from '@atoms/Box'
+import { Card } from '@atoms/Card'
+import { Input } from '@atoms/Input'
 import { Link } from '@atoms/Link'
+import { SortIcon } from '@atoms/SortIcon'
+import { Table, TableHead, TableBody, TableRow, TableHeader, TableCell } from '@atoms/Table'
+import { Text } from '@atoms/Text'
+import { VStack } from '@atoms/VStack'
 import type { AnalysisData, ArchetypeStats } from '@/types'
 
 interface ArchetypeTableProps {
@@ -73,133 +80,163 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
     }
   }
 
-  const getWinRateClass = (rate: number): string => {
-    if (rate >= 0.6) return 'text-green-600'
-    if (rate >= 0.4) return 'text-yellow-600'
-    return 'text-red-600'
+  const getWinRateColor = (rate: number): 'success' | 'warning' | 'danger' => {
+    if (rate >= 0.6) return 'success'
+    if (rate >= 0.4) return 'warning'
+    return 'danger'
   }
 
   if (!data) return null
 
   return (
-    <div className="p-10">
-      <h2 className="text-3xl font-bold mb-5 text-slate-800 border-b-4 border-indigo-500 pb-3">
-        Archetype Performance
-      </h2>
-      <input
-        type="text"
-        className="w-full p-4 text-base border-2 border-gray-300 rounded-xl mb-5 focus:outline-none focus:border-indigo-500 transition-colors text-gray-900"
-        placeholder="Search archetypes..."
-        value={searchTerm}
-        onChange={e => setSearchTerm(e.target.value)}
-      />
-      <div className="overflow-x-auto rounded-xl shadow-lg">
-        <table className="w-full bg-white border-collapse">
-          <thead>
-            <tr className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-              <th
-                className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'archetype' ? 'bg-indigo-600' : ''}`}
-                onClick={() => handleSort('archetype')}
-              >
-                Archetype
-                {sortColumn === 'archetype' && (
-                  <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                )}
-              </th>
-              <th
-                className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'players' ? 'bg-indigo-600' : ''}`}
-                onClick={() => handleSort('players')}
-              >
-                Players
-                {sortColumn === 'players' && (
-                  <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                )}
-              </th>
-              <th
-                className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'matchRecord' ? 'bg-indigo-600' : ''}`}
-                onClick={() => handleSort('matchRecord')}
-              >
-                Match Record
-                {sortColumn === 'matchRecord' && (
-                  <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                )}
-              </th>
-              <th
-                className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'matchWinRate' ? 'bg-indigo-600' : ''}`}
-                onClick={() => handleSort('matchWinRate')}
-              >
-                Match Win Rate
-                {sortColumn === 'matchWinRate' && (
-                  <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                )}
-              </th>
-              <th
-                className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'gameRecord' ? 'bg-indigo-600' : ''}`}
-                onClick={() => handleSort('gameRecord')}
-              >
-                Game Record
-                {sortColumn === 'gameRecord' && (
-                  <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                )}
-              </th>
-              <th
-                className={`p-4 text-left font-semibold text-xs uppercase tracking-wider cursor-pointer hover:bg-indigo-600 transition-colors ${sortColumn === 'gameWinRate' ? 'bg-indigo-600' : ''}`}
-                onClick={() => handleSort('gameWinRate')}
-              >
-                Game Win Rate
-                {sortColumn === 'gameWinRate' && (
-                  <span className="ml-2">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                )}
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {sortedArchetypes.length === 0 ? (
-              <tr>
-                <td colSpan={6} className="text-center py-10 text-gray-500">
-                  {searchTerm
-                    ? 'No archetypes found matching your search'
-                    : 'No archetype data available'}
-                </td>
-              </tr>
-            ) : (
-              sortedArchetypes.map(([arch, stats]) => {
-                const winRate = stats.win_rate || 0
-                const gameWinRate = stats.game_win_rate || 0
-                return (
-                  <tr key={arch} className="hover:bg-gray-50 transition-colors">
-                    <td className="p-4">
-                      <Link to={`/archetype/${encodeURIComponent(arch)}`} className="font-semibold">
-                        {arch}
-                      </Link>
-                    </td>
-                    <td className="p-4 text-gray-900">{archetypeCounts[arch] || 0}</td>
-                    <td className="p-4 text-gray-900">
-                      {stats.draws && stats.draws > 0
-                        ? `${stats.wins}-${stats.losses}-${stats.draws}`
-                        : `${stats.wins}-${stats.losses}`}
-                    </td>
-                    <td className="p-4">
-                      <span className={`font-bold ${getWinRateClass(winRate)}`}>
-                        {(winRate * 100).toFixed(1)}%
-                      </span>
-                    </td>
-                    <td className="p-4 text-gray-900">
-                      {stats.games_won}-{stats.games_lost}
-                    </td>
-                    <td className="p-4">
-                      <span className={`font-bold ${getWinRateClass(gameWinRate)}`}>
-                        {(gameWinRate * 100).toFixed(1)}%
-                      </span>
-                    </td>
-                  </tr>
-                )
-              })
-            )}
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <Box padding="lg">
+      <VStack spacing="md">
+        <Box padding="none" margin="none">
+          <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
+            Archetype Performance
+          </Text>
+        </Box>
+        <Input
+          fullWidth
+          size="lg"
+          placeholder="Search archetypes..."
+          value={searchTerm}
+          onChange={e => setSearchTerm(e.target.value)}
+        />
+        <Card overflow shadow="lg">
+          <Table>
+            <TableHead>
+              <TableRow variant="header">
+                <TableHeader
+                  onClick={() => handleSort('archetype')}
+                  active={sortColumn === 'archetype'}
+                  textColor="inverse"
+                >
+                  Archetype{' '}
+                  <SortIcon
+                    column="archetype"
+                    sortColumn={sortColumn}
+                    sortDirection={sortDirection}
+                  />
+                </TableHeader>
+                <TableHeader
+                  onClick={() => handleSort('players')}
+                  active={sortColumn === 'players'}
+                  textColor="inverse"
+                >
+                  Players{' '}
+                  <SortIcon
+                    column="players"
+                    sortColumn={sortColumn}
+                    sortDirection={sortDirection}
+                  />
+                </TableHeader>
+                <TableHeader
+                  onClick={() => handleSort('matchRecord')}
+                  active={sortColumn === 'matchRecord'}
+                  textColor="inverse"
+                >
+                  Match Record{' '}
+                  <SortIcon
+                    column="matchRecord"
+                    sortColumn={sortColumn}
+                    sortDirection={sortDirection}
+                  />
+                </TableHeader>
+                <TableHeader
+                  onClick={() => handleSort('matchWinRate')}
+                  active={sortColumn === 'matchWinRate'}
+                  textColor="inverse"
+                >
+                  Match Win Rate{' '}
+                  <SortIcon
+                    column="matchWinRate"
+                    sortColumn={sortColumn}
+                    sortDirection={sortDirection}
+                  />
+                </TableHeader>
+                <TableHeader
+                  onClick={() => handleSort('gameRecord')}
+                  active={sortColumn === 'gameRecord'}
+                  textColor="inverse"
+                >
+                  Game Record{' '}
+                  <SortIcon
+                    column="gameRecord"
+                    sortColumn={sortColumn}
+                    sortDirection={sortDirection}
+                  />
+                </TableHeader>
+                <TableHeader
+                  onClick={() => handleSort('gameWinRate')}
+                  active={sortColumn === 'gameWinRate'}
+                  textColor="inverse"
+                >
+                  Game Win Rate{' '}
+                  <SortIcon
+                    column="gameWinRate"
+                    sortColumn={sortColumn}
+                    sortDirection={sortDirection}
+                  />
+                </TableHeader>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {sortedArchetypes.length === 0 ? (
+                <TableRow>
+                  <TableCell colSpan={6} textAlign="center" padding="lg" textColor="muted">
+                    {searchTerm
+                      ? 'No archetypes found matching your search'
+                      : 'No archetype data available'}
+                  </TableCell>
+                </TableRow>
+              ) : (
+                sortedArchetypes.map(([arch, stats]) => {
+                  const winRate = stats.win_rate || 0
+                  const gameWinRate = stats.game_win_rate || 0
+                  return (
+                    <TableRow key={arch}>
+                      <TableCell>
+                        <Link to={`/archetype/${encodeURIComponent(arch)}`}>
+                          <Text variant="body" className="font-semibold">
+                            {arch}
+                          </Text>
+                        </Link>
+                      </TableCell>
+                      <TableCell>
+                        <Text>{archetypeCounts[arch] || 0}</Text>
+                      </TableCell>
+                      <TableCell>
+                        <Text>
+                          {stats.draws && stats.draws > 0
+                            ? `${stats.wins}-${stats.losses}-${stats.draws}`
+                            : `${stats.wins}-${stats.losses}`}
+                        </Text>
+                      </TableCell>
+                      <TableCell>
+                        <Text color={getWinRateColor(winRate)} className="font-bold">
+                          {(winRate * 100).toFixed(1)}%
+                        </Text>
+                      </TableCell>
+                      <TableCell>
+                        <Text>
+                          {stats.games_won}-{stats.games_lost}
+                        </Text>
+                      </TableCell>
+                      <TableCell>
+                        <Text color={getWinRateColor(gameWinRate)} className="font-bold">
+                          {(gameWinRate * 100).toFixed(1)}%
+                        </Text>
+                      </TableCell>
+                    </TableRow>
+                  )
+                })
+              )}
+            </TableBody>
+          </Table>
+        </Card>
+      </VStack>
+    </Box>
   )
 }
 
