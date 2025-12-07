@@ -7,6 +7,7 @@ interface TextProps {
   opacity?: 'full' | 'high' | 'medium' | 'low'
   borderBottom?: boolean
   borderBottomColor?: 'primary' | 'neutral'
+  borderThickness?: 'sm' | 'md' | 'lg'
   paddingBottom?: 'sm' | 'md' | 'lg'
   className?: string
 }
@@ -20,6 +21,7 @@ export function Text({
   opacity = 'full',
   borderBottom = false,
   borderBottomColor = 'primary',
+  borderThickness = 'md',
   paddingBottom,
   className = '',
 }: TextProps) {
@@ -59,10 +61,14 @@ export function Text({
     low: 'opacity-50',
   }
 
+  const borderThicknessClasses = {
+    sm: 'border-b',
+    md: 'border-b-2',
+    lg: 'border-b-4',
+  }
+  
   const borderBottomClasses = borderBottom
-    ? borderBottomColor === 'primary'
-      ? 'border-b-2 border-primary-500'
-      : 'border-b-2 border-neutral-200'
+    ? `${borderThicknessClasses[borderThickness]} ${borderBottomColor === 'primary' ? 'border-primary-500' : 'border-neutral-200'}`
     : ''
 
   const paddingBottomClasses = paddingBottom

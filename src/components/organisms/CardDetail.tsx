@@ -5,13 +5,17 @@ import { Box } from '@atoms/Box'
 import { Card } from '@atoms/Card'
 import { Container } from '@atoms/Container'
 import { Grid } from '@atoms/Grid'
-import { HStack } from '@atoms/HStack'
 import { Link } from '@atoms/Link'
 import { SortIcon } from '@atoms/SortIcon'
 import { Table, TableHead, TableBody, TableRow, TableHeader, TableCell } from '@atoms/Table'
 import { Text } from '@atoms/Text'
 import { VStack } from '@atoms/VStack'
 import CardTooltip from '@molecules/CardTooltip'
+import { SectionHeader } from '@molecules/SectionHeader'
+import { PageHeader } from '@molecules/PageHeader'
+import { StatDisplay } from '@molecules/StatDisplay'
+import { EmptyState } from '@molecules/EmptyState'
+import { LoadingState } from '@molecules/LoadingState'
 import type { AnalysisData } from '@/types'
 
 interface CardDetailProps {
@@ -221,83 +225,39 @@ function CardDetail({ data }: CardDetailProps) {
   }
 
   if (!data) {
-    return (
-      <Container variant="page" padding="md">
-        <Card variant="page" padding="lg">
-          <Text>Loading...</Text>
-        </Card>
-      </Container>
-    )
+    return <LoadingState />
   }
 
   return (
     <Container variant="page" padding="md">
       <Card variant="page">
-        <Box padding="lg" background="gradient-slate-blue" roundedTop="3xl" className="-mx-4 -mt-4 -mb-0">
-          <VStack spacing="sm" align="start">
-            <Link to="/" variant="nav">
-              ← Back to Dashboard
-            </Link>
-            <HStack spacing="md" align="center">
-              <Text variant="h1" color="inverse">{decodedName}</Text>
-              <CardTooltip cardName={decodedName}>
-                <Text variant="body" color="inverse" className="opacity-90 hover:opacity-100 cursor-pointer text-2xl">
-                  🃏
-                </Text>
-              </CardTooltip>
-            </HStack>
-          </VStack>
-        </Box>
+        <PageHeader
+          title={decodedName}
+          subtitle={
+            <CardTooltip cardName={decodedName}>
+              <Text variant="body" color="inverse" className="opacity-90 hover:opacity-100 cursor-pointer text-2xl">
+                🃏
+              </Text>
+            </CardTooltip>
+          }
+        />
 
         <Box padding="lg">
           <VStack spacing="md">
-            <Box padding="none" margin="none">
-              <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
-                Overall Statistics
-              </Text>
-            </Box>
+            <SectionHeader>Overall Statistics</SectionHeader>
             <Grid columns={{ sm: 2, md: 5 }} spacing="md">
-              <Card background="neutral" padding="md">
-                <VStack spacing="sm" align="center">
-                  <Text variant="h2" color="primary">{totalStats.totalCopies}</Text>
-                  <Text variant="label">Total Copies</Text>
-                </VStack>
-              </Card>
-              <Card background="neutral" padding="md">
-                <VStack spacing="sm" align="center">
-                  <Text variant="h2" color="primary">{totalStats.mainDeckCopies}</Text>
-                  <Text variant="label">Main Deck</Text>
-                </VStack>
-              </Card>
-              <Card background="neutral" padding="md">
-                <VStack spacing="sm" align="center">
-                  <Text variant="h2" color="primary">{totalStats.sideboardCopies}</Text>
-                  <Text variant="label">Sideboard</Text>
-                </VStack>
-              </Card>
-              <Card background="neutral" padding="md">
-                <VStack spacing="sm" align="center">
-                  <Text variant="h2" color="primary">{totalStats.decksIncluded}</Text>
-                  <Text variant="label">Decks Included</Text>
-                </VStack>
-              </Card>
-              <Card background="neutral" padding="md">
-                <VStack spacing="sm" align="center">
-                  <Text variant="h2" color="primary">{totalStats.percentageIncluded.toFixed(1)}%</Text>
-                  <Text variant="label">% of Decks</Text>
-                </VStack>
-              </Card>
+              <StatDisplay label="Total Copies" value={totalStats.totalCopies} />
+              <StatDisplay label="Main Deck" value={totalStats.mainDeckCopies} />
+              <StatDisplay label="Sideboard" value={totalStats.sideboardCopies} />
+              <StatDisplay label="Decks Included" value={totalStats.decksIncluded} />
+              <StatDisplay label="% of Decks" value={`${totalStats.percentageIncluded.toFixed(1)}%`} />
             </Grid>
           </VStack>
         </Box>
 
         <Box padding="lg">
           <VStack spacing="md">
-            <Box padding="none" margin="none">
-              <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
-                Archetypes ({sortedArchetypeStats.length})
-              </Text>
-            </Box>
+            <SectionHeader>Archetypes ({sortedArchetypeStats.length})</SectionHeader>
             <Card overflow shadow="lg">
               <Table>
                 <TableHead>
@@ -378,11 +338,7 @@ function CardDetail({ data }: CardDetailProps) {
                 </TableHead>
                 <TableBody>
                   {sortedArchetypeStats.length === 0 ? (
-                    <TableRow>
-                      <TableCell colSpan={6} textAlign="center" padding="lg" textColor="muted">
-                        No archetypes found using this card
-                      </TableCell>
-                    </TableRow>
+                    <EmptyState message="No archetypes found using this card" colSpan={6} />
                   ) : (
                     sortedArchetypeStats.map(stat => (
                       <TableRow key={stat.archetype}>

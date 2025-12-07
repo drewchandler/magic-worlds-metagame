@@ -11,6 +11,11 @@ import { Table, TableHead, TableBody, TableRow, TableHeader, TableCell } from '@
 import { Text } from '@atoms/Text'
 import { VStack } from '@atoms/VStack'
 import CardTooltip from '@molecules/CardTooltip'
+import { SectionHeader } from '@molecules/SectionHeader'
+import { PageHeader } from '@molecules/PageHeader'
+import { StatDisplay } from '@molecules/StatDisplay'
+import { EmptyState } from '@molecules/EmptyState'
+import { LoadingState } from '@molecules/LoadingState'
 import type { AnalysisData } from '@/types'
 
 interface ArchetypeDetailProps {
@@ -341,20 +346,8 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
     }
   }
 
-  const getWinRateColor = (rate: number): 'success' | 'warning' | 'danger' => {
-    if (rate >= 0.6) return 'success'
-    if (rate >= 0.4) return 'warning'
-    return 'danger'
-  }
-
   if (!data) {
-    return (
-      <Container variant="page" padding="md">
-        <Card variant="page" padding="lg">
-          <Text>Loading...</Text>
-        </Card>
-      </Container>
-    )
+    return <LoadingState />
   }
 
   const archetypeStats = data.archetype_stats[decodedName]
@@ -363,64 +356,34 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
   return (
     <Container variant="page" padding="md">
       <Card variant="page">
-        <Box padding="lg" background="gradient-slate-blue" roundedTop="3xl" className="-mx-4 -mt-4 -mb-0">
-          <VStack spacing="sm" align="start">
-            <Link to="/" variant="nav">
-              ← Back to Dashboard
-            </Link>
-            <Text variant="h1" color="inverse">{decodedName}</Text>
-          </VStack>
-        </Box>
+        <PageHeader title={decodedName} />
 
         <Box padding="lg">
           <VStack spacing="md">
-            <Box padding="none" margin="none">
-              <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
-                Statistics
-              </Text>
-            </Box>
+            <SectionHeader>Statistics</SectionHeader>
             {archetypeStats ? (
               <Grid columns={{ sm: 2, md: 5 }} spacing="md">
-                <Card background="neutral" padding="md">
-                  <VStack spacing="sm" align="center">
-                    <Text variant="h2" color="primary">{archetypeCount}</Text>
-                    <Text variant="label">Players</Text>
-                  </VStack>
-                </Card>
-                <Card background="neutral" padding="md">
-                  <VStack spacing="sm" align="center">
-                    <Text variant="h2" color="primary">
-                      {archetypeStats.draws && archetypeStats.draws > 0
-                        ? `${archetypeStats.wins}-${archetypeStats.losses}-${archetypeStats.draws}`
-                        : `${archetypeStats.wins}-${archetypeStats.losses}`}
-                    </Text>
-                    <Text variant="label">Match Record</Text>
-                  </VStack>
-                </Card>
-                <Card background="neutral" padding="md">
-                  <VStack spacing="sm" align="center">
-                    <Text variant="h2" color="primary">
-                      {(archetypeStats.win_rate * 100).toFixed(1)}%
-                    </Text>
-                    <Text variant="label">Match Win Rate</Text>
-                  </VStack>
-                </Card>
-                <Card background="neutral" padding="md">
-                  <VStack spacing="sm" align="center">
-                    <Text variant="h2" color="primary">
-                      {archetypeStats.games_won}-{archetypeStats.games_lost}
-                    </Text>
-                    <Text variant="label">Game Record</Text>
-                  </VStack>
-                </Card>
-                <Card background="neutral" padding="md">
-                  <VStack spacing="sm" align="center">
-                    <Text variant="h2" color="primary">
-                      {(archetypeStats.game_win_rate * 100).toFixed(1)}%
-                    </Text>
-                    <Text variant="label">Game Win Rate</Text>
-                  </VStack>
-                </Card>
+                <StatDisplay label="Players" value={archetypeCount} />
+                <StatDisplay
+                  label="Match Record"
+                  value={
+                    archetypeStats.draws && archetypeStats.draws > 0
+                      ? `${archetypeStats.wins}-${archetypeStats.losses}-${archetypeStats.draws}`
+                      : `${archetypeStats.wins}-${archetypeStats.losses}`
+                  }
+                />
+                <StatDisplay
+                  label="Match Win Rate"
+                  value={`${(archetypeStats.win_rate * 100).toFixed(1)}%`}
+                />
+                <StatDisplay
+                  label="Game Record"
+                  value={`${archetypeStats.games_won}-${archetypeStats.games_lost}`}
+                />
+                <StatDisplay
+                  label="Game Win Rate"
+                  value={`${(archetypeStats.game_win_rate * 100).toFixed(1)}%`}
+                />
               </Grid>
             ) : (
               <Text color="secondary">No statistics available</Text>
@@ -430,11 +393,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
 
         <Box padding="lg">
           <VStack spacing="md">
-            <Box padding="none" margin="none">
-              <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
-                Players ({sortedPlayerStats.length})
-              </Text>
-            </Box>
+            <SectionHeader>Players ({sortedPlayerStats.length})</SectionHeader>
             <Card overflow shadow="lg">
               <Table>
                 <TableHead>
@@ -515,11 +474,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                 </TableHead>
                 <TableBody>
                   {sortedPlayerStats.length === 0 ? (
-                    <TableRow>
-                      <TableCell colSpan={6} textAlign="center" padding="lg" textColor="muted">
-                        No players found for this archetype
-                      </TableCell>
-                    </TableRow>
+                    <EmptyState message="No players found for this archetype" colSpan={6} />
                   ) : (
                     sortedPlayerStats.map(playerStat => {
                       const winRate =
@@ -578,11 +533,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
         {decklists.length > 0 && (
           <Box padding="lg">
             <VStack spacing="md">
-              <Box padding="none" margin="none">
-                <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
-                  Card Breakdown
-                </Text>
-              </Box>
+              <SectionHeader>Card Breakdown</SectionHeader>
               <Card overflow shadow="lg">
                 <Table>
                   <TableHead>
@@ -651,11 +602,7 @@ function ArchetypeDetail({ data }: ArchetypeDetailProps) {
                   </TableHead>
                   <TableBody>
                     {sortedCardStats.length === 0 ? (
-                      <TableRow>
-                        <TableCell colSpan={5} textAlign="center" padding="lg" textColor="muted">
-                          No card data available
-                        </TableCell>
-                      </TableRow>
+                      <EmptyState message="No card data available" colSpan={5} />
                     ) : (
                       sortedCardStats.map((cardStat, idx) => (
                         <TableRow key={`${cardStat.name}-${idx}`}>

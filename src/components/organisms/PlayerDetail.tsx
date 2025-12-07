@@ -16,6 +16,11 @@ import { Table, TableHead, TableBody, TableRow, TableHeader, TableCell } from '@
 import { Divider } from '@atoms/Divider'
 import { SortIcon } from '@atoms/SortIcon'
 import CardTooltip from '@molecules/CardTooltip'
+import { SectionHeader } from '@molecules/SectionHeader'
+import { PageHeader } from '@molecules/PageHeader'
+import { StatDisplay } from '@molecules/StatDisplay'
+import { EmptyState } from '@molecules/EmptyState'
+import { LoadingState } from '@molecules/LoadingState'
 import type { AnalysisData } from '@/types'
 
 interface PlayerDetailProps {
@@ -108,13 +113,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
   }, [decodedName])
 
   if (!data) {
-    return (
-      <Container variant="page" padding="md">
-        <Card variant="page" padding="lg">
-          <Text>Loading...</Text>
-        </Card>
-      </Container>
-    )
+    return <LoadingState />
   }
 
   // Separate draft and constructed rounds
@@ -288,30 +287,23 @@ function PlayerDetail({ data }: PlayerDetailProps) {
   return (
     <Container variant="page" padding="md">
       <Card variant="page">
-        <Box padding="lg" background="gradient-slate-blue" className="rounded-none" style={{ marginTop: '-4px', marginLeft: '-4px', marginRight: '-4px', marginBottom: '0' }}>
-          <VStack spacing="sm" align="start">
-            <Link to="/" variant="nav">
-              ← Back to Dashboard
-            </Link>
-            <Text variant="h1" color="inverse">{decodedName}</Text>
-            {decklist && (
+        <PageHeader
+          title={decodedName}
+          subtitle={
+            decklist ? (
               <Link
                 to={`/archetype/${encodeURIComponent(decklist.archetype)}`}
                 variant="badge"
               >
                 {decklist.archetype}
               </Link>
-            )}
-          </VStack>
-        </Box>
+            ) : undefined
+          }
+        />
 
         <Box padding="lg">
           <VStack spacing="md">
-            <Box padding="none" margin="none">
-              <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
-                Match Statistics
-              </Text>
-            </Box>
+            <SectionHeader>Match Statistics</SectionHeader>
             
             {/* Condensed Stats - All in one row */}
             <Grid columns={{ sm: 1, md: 3 }} spacing="md">
@@ -371,11 +363,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
 
         <Box padding="lg">
           <VStack spacing="md">
-            <Box padding="none" margin="none">
-              <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
-                Matches
-              </Text>
-            </Box>
+            <SectionHeader>Matches</SectionHeader>
             <Card overflow shadow="lg" rounded="xl">
               <Table>
                 <TableHead>
@@ -432,11 +420,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
                 </TableHead>
                 <TableBody>
                   {sortedMatches.length === 0 ? (
-                    <TableRow>
-                      <TableCell colSpan={4} textAlign="center" padding="lg" textColor="muted">
-                        No matches found
-                      </TableCell>
-                    </TableRow>
+                    <EmptyState message="No matches found" colSpan={4} />
                   ) : (
                     sortedMatches.map((match: MatchResult, idx: number) => {
                       const p1Normalized = normalizePlayerName(match.player1)
@@ -512,11 +496,7 @@ function PlayerDetail({ data }: PlayerDetailProps) {
           <Box padding="lg">
             <VStack spacing="md">
               <HStack spacing="md" align="center" justify="between">
-                <Box padding="none" margin="none">
-                  <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
-                    Decklist
-                  </Text>
-                </Box>
+                <SectionHeader>Decklist</SectionHeader>
                 <Button onClick={handleExportToArena} title="Copy decklist to clipboard in Magic Arena format">
                   <HStack spacing="sm" align="center">
                     <ArrowDownTrayIcon className="w-5 h-5" />

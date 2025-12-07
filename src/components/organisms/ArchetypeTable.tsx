@@ -8,6 +8,8 @@ import { SortIcon } from '@atoms/SortIcon'
 import { Table, TableHead, TableBody, TableRow, TableHeader, TableCell } from '@atoms/Table'
 import { Text } from '@atoms/Text'
 import { VStack } from '@atoms/VStack'
+import { SectionHeader } from '@molecules/SectionHeader'
+import { EmptyState } from '@molecules/EmptyState'
 import type { AnalysisData, ArchetypeStats } from '@/types'
 
 interface ArchetypeTableProps {
@@ -91,11 +93,7 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
   return (
     <Box padding="lg">
       <VStack spacing="md">
-        <Box padding="none" margin="none">
-          <Text variant="h2" borderBottom borderBottomColor="primary" paddingBottom="sm">
-            Archetype Performance
-          </Text>
-        </Box>
+        <SectionHeader>Archetype Performance</SectionHeader>
         <Input
           fullWidth
           size="lg"
@@ -183,13 +181,14 @@ function ArchetypeTable({ data }: ArchetypeTableProps) {
             </TableHead>
             <TableBody>
               {sortedArchetypes.length === 0 ? (
-                <TableRow>
-                  <TableCell colSpan={6} textAlign="center" padding="lg" textColor="muted">
-                    {searchTerm
+                <EmptyState
+                  message={
+                    searchTerm
                       ? 'No archetypes found matching your search'
-                      : 'No archetype data available'}
-                  </TableCell>
-                </TableRow>
+                      : 'No archetype data available'
+                  }
+                  colSpan={6}
+                />
               ) : (
                 sortedArchetypes.map(([arch, stats]) => {
                   const winRate = stats.win_rate || 0
