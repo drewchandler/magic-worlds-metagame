@@ -313,6 +313,13 @@ def main():
     print(f"Loaded {len(decklists)} decklists")
     print(f"Loaded {len(results)} match results")
     
+    print("\nDetecting special archetypes...")
+    decklists = detect_special_archetypes(decklists)
+    
+    # Save updated decklists with detected archetypes
+    json.dump(decklists, open(DECKLISTS_FILE, 'w'), indent=2)
+    print(f"Updated decklists saved to {DECKLISTS_FILE}")
+    
     print("\nAnalyzing metagame...")
     analysis = analyze_metagame(decklists, results)
     
