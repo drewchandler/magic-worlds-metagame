@@ -9,6 +9,7 @@ interface TextProps {
   borderBottomColor?: 'primary' | 'neutral'
   borderThickness?: 'sm' | 'md' | 'lg'
   paddingBottom?: 'sm' | 'md' | 'lg'
+  italic?: boolean
   className?: string
 }
 
@@ -23,6 +24,7 @@ export function Text({
   borderBottomColor = 'primary',
   borderThickness = 'md',
   paddingBottom,
+  italic = false,
   className = '',
 }: TextProps) {
   const variantClasses = {
@@ -83,9 +85,11 @@ export function Text({
 
   const Component = variant.startsWith('h') ? (variant as 'h1' | 'h2' | 'h3') : 'p'
 
+  const italicClass = italic ? 'italic' : ''
+
   return (
     <Component
-      className={`${variantClasses[variant]} ${colorClasses[color]} ${leadingClasses[leading]} ${getShadowClass(shadow)} ${opacityClasses[opacity]} ${borderBottomClasses} ${paddingBottomClasses} ${className}`}
+      className={`${variantClasses[variant]} ${colorClasses[color]} ${leadingClasses[leading]} ${getShadowClass(shadow)} ${opacityClasses[opacity]} ${borderBottomClasses} ${paddingBottomClasses} ${italicClass} ${className}`}
     >
       {children}
     </Component>

@@ -8,36 +8,10 @@ import { Text } from '@atoms/Text'
 import { VStack } from '@atoms/VStack'
 import CardTooltip from '@molecules/CardTooltip'
 import { SectionHeader } from '@molecules/SectionHeader'
+import { extractSupertype, normalizeCardNameForScryfall, fetchCardTypes } from '@/utils/scryfall'
 import { ArrowDownTrayIcon } from '@heroicons/react/24/outline'
-
-interface DecklistData {
-  player: string
-  archetype: string
-  main_deck?: Array<{ count: number; name: string }>
-  sideboard?: Array<{ count: number; name: string }>
-}
-
-// Extract supertype from type_line (e.g., "Creature — Human Wizard" -> "Creature")
-function extractSupertype(typeLine: string): string {
-  if (!typeLine) return 'Other'
-  
-  // Common supertypes
-  const supertypes = ['Creature', 'Instant', 'Sorcery', 'Enchantment', 'Artifact', 'Planeswalker', 'Land']
-  for (const supertype of supertypes) {
-    if (typeLine.includes(supertype)) {
-      return supertype
-    }
-  }
-  
-  return 'Other'
-}
-
-// Normalize card name for Scryfall query (handle split cards and variations)
-function normalizeCardNameForScryfall(name: string): string {
-  // Handle split cards - normalize " // " to " // " (with spaces)
-  // Scryfall uses " // " (space-slash-slash-space) for split cards
-  return name.replace(/\s*\/\/\s*/g, ' // ')
-}
+import { Icon } from '@atoms/Icon'
+import type { DecklistData } from '@/types'
 
 interface DecklistDisplayProps {
   decklist: DecklistData
@@ -51,81 +25,13 @@ export function DecklistDisplay({ decklist }: DecklistDisplayProps) {
   useEffect(() => {
     if (!decklist?.main_deck || decklist.main_deck.length === 0) return
 
-    const fetchCardTypes = async () => {
+    const loadCardTypes = async () => {
       const uniqueCardNames = [...new Set(decklist.main_deck!.map(c => c.name))]
-      const typesMap: Record<string, string> = {}
-      const nameMapping: Record<string, string> = {} // Map original name to normalized name
-
-      // Normalize card names and create mapping
-      uniqueCardNames.forEach(originalName => {
-        const normalized = normalizeCardNameForScryfall(originalName)
-        nameMapping[normalized] = originalName
-      })
-
-      const normalizedNames = Object.keys(nameMapping)
-
-      // Scryfall collection API allows up to 75 cards per request
-      const batchSize = 75
-      for (let i = 0; i < normalizedNames.length; i += batchSize) {
-        const batch = normalizedNames.slice(i, i + batchSize)
-        const identifiers = batch.map(name => ({ name }))
-
-        try {
-          const response = await fetch('https://api.scryfall.com/cards/collection', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ identifiers }),
-          })
-
-          if (response.ok) {
-            const data = await response.json()
-            if (data.data) {
-              data.data.forEach((card: any) => {
-                const supertype = extractSupertype(card.type_line || '')
-                // Map back to original name
-                const originalName = nameMapping[card.name] || card.name
-                typesMap[originalName] = supertype
-              })
-            }
-            
-            // Handle cards not found - try fuzzy matching for split cards
-            if (data.not_found && data.not_found.length > 0) {
-              for (const notFound of data.not_found) {
-                const normalizedName = notFound.name
-                const originalName = nameMapping[normalizedName]
-                
-                // Try querying with fuzzy search for split cards
-                try {
-                  const fuzzyResponse = await fetch(
-                    `https://api.scryfall.com/cards/named?fuzzy=${encodeURIComponent(normalizedName)}`
-                  )
-                  if (fuzzyResponse.ok) {
-                    const fuzzyCard = await fuzzyResponse.json()
-                    const supertype = extractSupertype(fuzzyCard.type_line || '')
-                    if (originalName) {
-                      typesMap[originalName] = supertype
-                    }
-                  }
-                  await new Promise(resolve => setTimeout(resolve, 100))
-                } catch (err) {
-                  console.error(`Error fetching card ${normalizedName}:`, err)
-                }
-              }
-            }
-          }
-          // Add a small delay to respect rate limits
-          await new Promise(resolve => setTimeout(resolve, 100))
-        } catch (err) {
-          console.error('Error fetching card types:', err)
-        }
-      }
-
+      const typesMap = await fetchCardTypes(uniqueCardNames)
       setCardTypes(typesMap)
     }
 
-    fetchCardTypes()
+    loadCardTypes()
   }, [decklist])
 
   const formatDecklistForArena = (decklist: DecklistData): string => {
@@ -177,7 +83,9 @@ export function DecklistDisplay({ decklist }: DecklistDisplayProps) {
           <SectionHeader>Decklist</SectionHeader>
           <Button onClick={handleExportToArena} title="Copy decklist to clipboard in Magic Arena format">
             <HStack spacing="sm" align="center">
-              <ArrowDownTrayIcon className="w-5 h-5" />
+              <Icon>
+                <ArrowDownTrayIcon />
+              </Icon>
               <Text variant="body" color="inverse">{copied ? 'Copied!' : 'Export to Arena'}</Text>
             </HStack>
           </Button>

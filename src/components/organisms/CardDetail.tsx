@@ -252,7 +252,7 @@ function CardDetail({ data }: CardDetailProps) {
           title={decodedName}
           subtitle={
             <CardTooltip cardName={decodedName}>
-              <Text variant="body" color="inverse" className="opacity-90 hover:opacity-100 cursor-pointer text-2xl">
+              <Text variant="body" color="inverse" opacity="high" className="hover:opacity-100 cursor-pointer text-2xl">
                 🃏
               </Text>
             </CardTooltip>
@@ -261,11 +261,15 @@ function CardDetail({ data }: CardDetailProps) {
 
         {cardImageUrl && (
           <Box padding="lg" textAlign="center">
-            <img
+            <Image
               src={cardImageUrl}
               alt={decodedName}
-              className="mx-auto rounded-lg shadow-xl bg-white"
-              style={{ width: '223px', aspectRatio: '223/311' }}
+              width="223px"
+              aspectRatio="223/311"
+              rounded="lg"
+              shadow="xl"
+              background="white"
+              className="mx-auto"
             />
           </Box>
         )}

@@ -16,6 +16,8 @@ import { PageHeader } from '@molecules/PageHeader'
 import { StatDisplay } from '@molecules/StatDisplay'
 import { EmptyState } from '@molecules/EmptyState'
 import { LoadingState } from '@molecules/LoadingState'
+import { normalizePlayerName } from '@/utils/playerName'
+import { DRAFT_ROUNDS } from '@/utils/constants'
 import type { AnalysisData } from '@/types'
 
 interface ArchetypeDetailProps {
@@ -69,26 +71,6 @@ type CardSortColumn =
   | 'sideboardPercentage'
 type SortDirection = 'asc' | 'desc'
 
-// Draft rounds to exclude from constructed statistics
-const DRAFT_ROUNDS = new Set([1, 2, 3, 8, 9, 10])
-
-// Normalize player name for matching - handles both 'First Last' and 'Last, First' formats
-function normalizePlayerName(name: string): string {
-  if (!name) return ''
-
-  name = name.trim()
-
-  // If it's in "Last, First" format, convert to "First Last"
-  if (name.includes(',')) {
-    const parts = name.split(',').map(p => p.trim())
-    if (parts.length >= 2) {
-      name = `${parts[1]} ${parts[0]}`
-    }
-  }
-
-  // Normalize to lowercase and remove extra spaces
-  return name.toLowerCase().split(/\s+/).join(' ')
-}
 
 function ArchetypeDetail({ data }: ArchetypeDetailProps) {
   const { archetypeName } = useParams<{ archetypeName: string }>()

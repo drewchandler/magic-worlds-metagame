@@ -1,6 +1,12 @@
 import { useMemo } from 'react'
 
+import { Box } from '@atoms/Box'
+import { Card } from '@atoms/Card'
 import { Link } from '@atoms/Link'
+import { Table, TableHead, TableBody, TableRow, TableHeader, TableCell } from '@atoms/Table'
+import { Text } from '@atoms/Text'
+import { VStack } from '@atoms/VStack'
+import { SectionHeader } from '@molecules/SectionHeader'
 import type { AnalysisData, MatchupStats } from '@/types'
 
 interface MatchupGridProps {
@@ -39,121 +45,150 @@ function MatchupGrid({ data }: MatchupGridProps) {
     return matchupMap.get(key1) || matchupMap.get(key2) || null
   }
 
-  const getWinRateBgClass = (rate: number): string => {
-    if (rate >= 0.6) return 'bg-green-100'
-    if (rate >= 0.4) return 'bg-yellow-100'
-    return 'bg-red-100'
+  const getWinRateColor = (rate: number): 'success' | 'warning' | 'danger' => {
+    if (rate >= 0.6) return 'success'
+    if (rate >= 0.4) return 'warning'
+    return 'danger'
   }
 
-  const getWinRateTextClass = (rate: number): string => {
-    if (rate >= 0.6) return 'text-green-700'
-    if (rate >= 0.4) return 'text-yellow-600'
-    return 'text-red-700'
+  const getWinRateBackground = (rate: number): 'success-light' | 'warning-light' | 'danger-light' => {
+    if (rate >= 0.6) return 'success-light'
+    if (rate >= 0.4) return 'warning-light'
+    return 'danger-light'
   }
 
   if (!data || archetypes.length === 0) return null
 
   return (
-    <div className="p-10">
-      <h2 className="text-3xl font-bold mb-5 text-slate-800 border-b-4 border-indigo-500 pb-3">
-        Matchup Grid
-      </h2>
-      <p className="text-gray-600 text-sm italic mb-5">
-        Win rates shown from the row archetype&apos;s perspective. Mirror matches are excluded.
-      </p>
-      <div className="overflow-auto rounded-xl shadow-lg max-h-[600px]">
-        <table className="w-full bg-white border-collapse min-w-[800px]">
-          <thead className="sticky top-0 z-20">
-            <tr className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-              <th className="p-3 text-left font-semibold text-xs uppercase tracking-wider bg-gradient-to-br from-slate-800 to-blue-800 sticky left-0 z-30 min-w-[150px]">
-                Archetype
-              </th>
-              {archetypes.map(arch => (
-                <th
-                  key={arch}
-                  className="p-3 text-center font-semibold text-xs uppercase tracking-wider"
-                >
-                  <Link
-                    to={`/archetype/${encodeURIComponent(arch)}`}
-                    variant="nav"
-                    className="block"
+    <Box padding="lg">
+      <VStack spacing="md">
+        <SectionHeader>Matchup Grid</SectionHeader>
+        <Text variant="small" italic color="secondary">
+          Win rates shown from the row archetype&apos;s perspective. Mirror matches are excluded.
+        </Text>
+        <Card overflow shadow="lg" rounded="xl">
+          <Box overflow="auto" maxHeight="600px">
+            <Table minWidth="800px">
+              <TableHead sticky>
+                <TableRow variant="header">
+                  <TableHeader
+                    textColor="inverse"
+                    background="gradient-dark"
+                    sticky
+                    zIndex={30}
+                    minWidth="150px"
                   >
-                    <div
-                      className="max-w-[30px] overflow-hidden text-ellipsis whitespace-nowrap mx-auto"
-                      style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
+                    <Text variant="label" color="inverse">
+                      Archetype
+                    </Text>
+                  </TableHeader>
+                  {archetypes.map(arch => (
+                    <TableHeader key={arch} textColor="inverse" textAlign="center">
+                      <Link to={`/archetype/${encodeURIComponent(arch)}`} variant="nav">
+                        <Box
+                          maxHeight="30px"
+                          overflow="hidden"
+                          whitespace="nowrap"
+                          className="mx-auto"
+                          style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
+                        >
+                          <Text variant="label" color="inverse">
+                            {arch}
+                          </Text>
+                        </Box>
+                      </Link>
+                    </TableHeader>
+                  ))}
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {archetypes.map(rowArch => (
+                  <TableRow key={rowArch}>
+                    <TableCell
+                      background="gradient-dark"
+                      textColor="inverse"
+                      sticky
+                      zIndex={10}
+                      minWidth="150px"
                     >
-                      {arch}
-                    </div>
-                  </Link>
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {archetypes.map(rowArch => (
-              <tr key={rowArch}>
-                <td className="p-3 bg-gradient-to-br from-slate-800 to-blue-800 text-white text-left sticky left-0 z-10 min-w-[150px]">
-                  <Link
-                    to={`/archetype/${encodeURIComponent(rowArch)}`}
-                    variant="nav"
-                    className="font-semibold"
-                  >
-                    {rowArch}
-                  </Link>
-                </td>
-                {archetypes.map(colArch => {
-                  if (rowArch === colArch) {
-                    return (
-                      <td
-                        key={colArch}
-                        className="p-3 bg-gray-100 text-gray-500 italic text-center border border-gray-200"
-                      >
-                        —
-                      </td>
-                    )
-                  }
+                      <Link to={`/archetype/${encodeURIComponent(rowArch)}`} variant="nav">
+                        <Text variant="body" color="inverse" className="font-semibold">
+                          {rowArch}
+                        </Text>
+                      </Link>
+                    </TableCell>
+                    {archetypes.map(colArch => {
+                      if (rowArch === colArch) {
+                        return (
+                          <TableCell
+                            key={colArch}
+                            background="neutral-100"
+                            textColor="muted"
+                            textAlign="center"
+                            border
+                            italic
+                          >
+                            <Text>—</Text>
+                          </TableCell>
+                        )
+                      }
 
-                  const matchup = getMatchup(rowArch, colArch)
-                  if (!matchup) {
-                    return (
-                      <td
-                        key={colArch}
-                        className="p-3 bg-gray-50 text-gray-400 text-center border border-gray-200"
-                      >
-                        —
-                      </td>
-                    )
-                  }
+                      const matchup = getMatchup(rowArch, colArch)
+                      if (!matchup) {
+                        return (
+                          <TableCell
+                            key={colArch}
+                            background="neutral-50"
+                            textColor="muted"
+                            textAlign="center"
+                            border
+                          >
+                            <Text>—</Text>
+                          </TableCell>
+                        )
+                      }
 
-                  // Determine which archetype is which
-                  const isRowFirst = matchup.archetype1 === rowArch
-                  const wins = isRowFirst ? matchup.arch1_wins : matchup.arch2_wins
-                  const losses = isRowFirst ? matchup.arch2_wins : matchup.arch1_wins
-                  const winRate = isRowFirst ? matchup.arch1_win_rate : matchup.arch2_win_rate
-                  const totalMatches = matchup.total_matches
+                      // Determine which archetype is which
+                      const isRowFirst = matchup.archetype1 === rowArch
+                      const wins = isRowFirst ? matchup.arch1_wins : matchup.arch2_wins
+                      const losses = isRowFirst ? matchup.arch2_wins : matchup.arch1_wins
+                      const winRate = isRowFirst ? matchup.arch1_win_rate : matchup.arch2_win_rate
+                      const totalMatches = matchup.total_matches
+                      const winRateColor = getWinRateColor(winRate)
+                      const winRateBg = getWinRateBackground(winRate)
 
-                  return (
-                    <td
-                      key={colArch}
-                      className={`p-3 text-center border border-gray-200 cursor-pointer transition-all hover:scale-105 hover:z-10 hover:shadow-md relative ${getWinRateBgClass(winRate)}`}
-                      title={`${rowArch} vs ${colArch}: ${wins}-${losses} (${(winRate * 100).toFixed(1)}%)`}
-                    >
-                      <div className="font-bold text-sm mb-1">
-                        {wins}-{losses}
-                      </div>
-                      <div className={`text-lg font-bold mb-1 ${getWinRateTextClass(winRate)}`}>
-                        {(winRate * 100).toFixed(0)}%
-                      </div>
-                      <div className="text-xs text-gray-600 mt-1">({totalMatches})</div>
-                    </td>
-                  )
-                })}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
+                      return (
+                        <TableCell
+                          key={colArch}
+                          background={winRateBg}
+                          textAlign="center"
+                          border
+                          cursor="pointer"
+                          hover
+                          title={`${rowArch} vs ${colArch}: ${wins}-${losses} (${(winRate * 100).toFixed(1)}%)`}
+                        >
+                          <VStack spacing="xs" align="center">
+                            <Text variant="small" className="font-bold">
+                              {wins}-{losses}
+                            </Text>
+                            <Text variant="body" color={winRateColor} className="font-bold">
+                              {(winRate * 100).toFixed(0)}%
+                            </Text>
+                            <Text variant="small" color="secondary">
+                              ({totalMatches})
+                            </Text>
+                          </VStack>
+                        </TableCell>
+                      )
+                    })}
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </Box>
+        </Card>
+      </VStack>
+    </Box>
   )
 }
 

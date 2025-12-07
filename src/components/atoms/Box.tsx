@@ -7,9 +7,14 @@ interface BoxProps {
   flex?: boolean
   grow?: boolean
   whitespace?: 'normal' | 'nowrap'
-  background?: 'default' | 'gradient-slate-blue' | 'gradient-indigo-purple'
+  background?: 'default' | 'gradient-slate-blue' | 'gradient-indigo-purple' | 'neutral-100' | 'neutral-50'
   rounded?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | '3xl'
   roundedTop?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | '3xl'
+  overflow?: 'none' | 'auto' | 'hidden'
+  maxHeight?: string
+  minWidth?: string
+  sticky?: boolean
+  zIndex?: number
   className?: string
 }
 
@@ -25,6 +30,11 @@ export function Box({
   background = 'default',
   rounded = 'none',
   roundedTop = 'none',
+  overflow = 'none',
+  maxHeight,
+  minWidth,
+  sticky = false,
+  zIndex,
   className = '',
 }: BoxProps) {
   const paddingClasses = {
@@ -60,7 +70,18 @@ export function Box({
     default: '',
     'gradient-slate-blue': 'bg-gradient-to-r from-neutral-800 to-info-800',
     'gradient-indigo-purple': 'bg-gradient-to-br from-primary-500 via-accent-500 to-accent-600',
+    'neutral-100': 'bg-neutral-100',
+    'neutral-50': 'bg-neutral-50',
   }
+
+  const overflowClasses = {
+    none: '',
+    auto: 'overflow-auto',
+    hidden: 'overflow-hidden',
+  }
+
+  const stickyClass = sticky ? 'sticky' : ''
+  const zIndexClass = zIndex ? `z-${zIndex}` : ''
 
   const roundedClasses = {
     none: '',
@@ -83,9 +104,14 @@ export function Box({
   // Use roundedTop if specified, otherwise use rounded
   const finalRoundedClass = roundedTop !== 'none' ? roundedTopClasses[roundedTop] : roundedClasses[rounded]
 
+  const style: React.CSSProperties = {}
+  if (maxHeight) style.maxHeight = maxHeight
+  if (minWidth) style.minWidth = minWidth
+
   return (
     <div
-      className={`${paddingClasses[padding]} ${textAlignClasses[textAlign]} ${textColorClasses[textColor]} ${marginClasses[margin]} ${flexClasses} ${growClasses} ${whitespaceClasses} ${backgroundClasses[background]} ${finalRoundedClass} ${className}`}
+      className={`${paddingClasses[padding]} ${textAlignClasses[textAlign]} ${textColorClasses[textColor]} ${marginClasses[margin]} ${flexClasses} ${growClasses} ${whitespaceClasses} ${backgroundClasses[background]} ${finalRoundedClass} ${overflowClasses[overflow]} ${stickyClass} ${zIndexClass} ${className}`}
+      style={style}
     >
       {children}
     </div>

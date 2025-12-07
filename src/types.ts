@@ -34,6 +34,13 @@ export interface MatchupStats {
   total_matches: number
 }
 
+export interface DecklistData {
+  player: string
+  archetype: string
+  main_deck?: Array<{ count: number; name: string }>
+  sideboard?: Array<{ count: number; name: string }>
+}
+
 export interface AnalysisData {
   archetype_counts: Record<string, number>
   archetype_stats: Record<string, ArchetypeStats>

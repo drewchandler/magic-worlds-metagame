@@ -9,6 +9,8 @@ import { VStack } from '@atoms/VStack'
 import { Link } from '@atoms/Link'
 import { SectionHeader } from '@molecules/SectionHeader'
 import { EmptyState } from '@molecules/EmptyState'
+import { normalizePlayerName } from '@/utils/playerName'
+import { DAY_2_START_ROUND } from '@/utils/constants'
 import type { AnalysisData } from '@/types'
 
 interface MetagameBreakdownProps {
@@ -26,28 +28,6 @@ interface DecklistData {
   archetype: string
 }
 
-// Draft rounds: 1, 2, 3, 8, 9, 10
-// Day 1 constructed: 4, 5, 6, 7
-// Day 2 constructed: 11, 12, 13, 14+
-const DAY_2_START_ROUND = 11
-
-// Normalize player name for matching - handles both 'First Last' and 'Last, First' formats
-function normalizePlayerName(name: string): string {
-  if (!name) return ''
-
-  name = name.trim()
-
-  // If it's in "Last, First" format, convert to "First Last"
-  if (name.includes(',')) {
-    const parts = name.split(',').map(p => p.trim())
-    if (parts.length >= 2) {
-      name = `${parts[1]} ${parts[0]}`
-    }
-  }
-
-  // Normalize to lowercase and remove extra spaces
-  return name.toLowerCase().split(/\s+/).join(' ')
-}
 
 interface ArchetypeMetagameData {
   archetype: string
