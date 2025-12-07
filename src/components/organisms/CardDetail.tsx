@@ -56,6 +56,7 @@ function CardDetail({ data }: CardDetailProps) {
   const [decklists, setDecklists] = useState<Record<string, DecklistData>>({})
   const [sortColumn, setSortColumn] = useState<SortColumn>('percentageIncluded')
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc')
+  const [cardImageUrl, setCardImageUrl] = useState<string | null>(null)
 
   useEffect(() => {
     fetch('/decklists.json')
@@ -65,6 +66,22 @@ function CardDetail({ data }: CardDetailProps) {
       })
       .catch(err => console.error('Error loading decklists:', err))
   }, [])
+
+  useEffect(() => {
+    if (!decodedName) return
+
+    const searchName = decodedName.replace(/\/\/.*$/, '').trim()
+    fetch(`https://api.scryfall.com/cards/named?fuzzy=${encodeURIComponent(searchName)}`)
+      .then(res => res.json())
+      .then(data => {
+        if (data.image_uris && data.image_uris.normal) {
+          setCardImageUrl(data.image_uris.normal)
+        } else if (data.card_faces && data.card_faces[0]?.image_uris?.normal) {
+          setCardImageUrl(data.card_faces[0].image_uris.normal)
+        }
+      })
+      .catch(() => {})
+  }, [decodedName])
 
   const archetypeStats = useMemo(() => {
     const archetypeMap = new Map<
@@ -241,6 +258,17 @@ function CardDetail({ data }: CardDetailProps) {
             </CardTooltip>
           }
         />
+
+        {cardImageUrl && (
+          <Box padding="lg" textAlign="center">
+            <img
+              src={cardImageUrl}
+              alt={decodedName}
+              className="mx-auto rounded-lg shadow-xl bg-white"
+              style={{ width: '223px', aspectRatio: '223/311' }}
+            />
+          </Box>
+        )}
 
         <Box padding="lg">
           <VStack spacing="md">
