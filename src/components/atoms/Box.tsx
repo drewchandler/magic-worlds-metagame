@@ -197,8 +197,9 @@ const BoxComponent = React.forwardRef<HTMLDivElement | HTMLSpanElement, BoxProps
   if (maxHeight) style.maxHeight = maxHeight
   if (minWidth) style.minWidth = minWidth
 
-  const componentType = as || 'div'
   const classNames = `${finalPaddingClass} ${textAlignClasses[textAlign]} ${textColorClasses[textColor]} ${marginClasses[margin]} ${marginXClass} ${flexClasses} ${growClasses} ${whitespaceClasses} ${backgroundClasses[background]} ${finalRoundedClass} ${overflowClasses[overflow]} ${widthClasses[width]} ${stickyClass} ${zIndexClass} ${borderBottomClass} ${displayClass} ${cursorClass} ${className}`
+
+  const componentType = as || 'div'
 
   return React.createElement(
     componentType,
