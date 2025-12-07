@@ -219,10 +219,10 @@
     "round": 1,
     "player1": "Kikidis, Charis",
     "player2": "Castell\u00e1n, Javier",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 1,
@@ -2595,10 +2595,10 @@
     "round": 5,
     "player1": "Liu, Yuchen",
     "player2": "Flores, Mario",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
   },
   {
     "round": 5,
@@ -2991,10 +2991,10 @@
     "round": 6,
     "player1": "Baker, Christian",
     "player2": "Castell\u00e1n, Javier",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
   },
   {
     "round": 6,
@@ -3054,10 +3054,10 @@
     "round": 6,
     "player1": "Green, Paul",
     "player2": "Flores, Mario",
-    "p1_wins": 2,
-    "p2_wins": 0,
-    "p1_games": 2,
-    "p2_games": 0
+    "p1_wins": 0,
+    "p2_wins": 2,
+    "p1_games": 0,
+    "p2_games": 2
   },
   {
     "round": 6,
@@ -3864,10 +3864,10 @@
     "round": 7,
     "player1": "Flores, Mario",
     "player2": "S\u00e1nchez, Francisco",
-    "p1_wins": 2,
-    "p2_wins": 1,
-    "p1_games": 2,
-    "p2_games": 1
+    "p1_wins": 1,
+    "p2_wins": 2,
+    "p1_games": 1,
+    "p2_games": 2
   },
   {
     "round": 7,

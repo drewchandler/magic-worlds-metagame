@@ -6,6 +6,7 @@ Spider script to collect Magic World Championship 31 data from magic.gg
 import json
 import re
 import time
+import unicodedata
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 from urllib.parse import urljoin, urlparse
@@ -323,6 +324,102 @@ class MagicSpider:
         json.dump(existing, open(DECKLISTS_FILE, 'w'), indent=2)
         return existing
     
+    def normalize_name_for_matching(self, name: str) -> str:
+        """Normalize a name for fuzzy matching: convert weird characters, handle formats"""
+        if not name:
+            return ""
+        
+        # Convert to lowercase
+        name = name.lower().strip()
+        
+        # Handle "Last, First Middle" format - convert to "First Middle Last"
+        if ',' in name:
+            parts = [p.strip() for p in name.split(',')]
+            if len(parts) >= 2:
+                name = f"{parts[1]} {parts[0]}"
+        
+        # Normalize unicode characters (e.g., é -> e, ñ -> n)
+        name = unicodedata.normalize('NFKD', name)
+        name = ''.join(c for c in name if not unicodedata.combining(c))
+        
+        # Replace common punctuation and special characters with spaces
+        name = re.sub(r'[^\w\s]', ' ', name)
+        
+        # Normalize whitespace
+        name = ' '.join(name.split())
+        
+        return name
+    
+    def split_name_into_pieces(self, name: str) -> List[str]:
+        """Split a normalized name into pieces (words)"""
+        if not name:
+            return []
+        return [piece for piece in name.split() if piece]
+    
+    def count_matching_pieces(self, name1_pieces: List[str], name2_pieces: List[str]) -> int:
+        """Count how many pieces match between two names (order-independent)"""
+        if not name1_pieces or not name2_pieces:
+            return 0
+        
+        # Create sets for faster lookup
+        set1 = set(name1_pieces)
+        set2 = set(name2_pieces)
+        
+        # Count exact matches
+        exact_matches = len(set1 & set2)
+        
+        # Also count substring matches (e.g., "sam" matches "samuel")
+        substring_matches = 0
+        for piece1 in name1_pieces:
+            for piece2 in name2_pieces:
+                if piece1 != piece2:  # Don't double-count exact matches
+                    if piece1 in piece2 or piece2 in piece1:
+                        substring_matches += 1
+        
+        # Return total matches (exact + substring, but cap at reasonable number)
+        return exact_matches + min(substring_matches, len(name1_pieces))
+    
+    def find_closest_match(self, winner: str, player1: str, player2: str) -> Optional[str]:
+        """Find which player name is closest to the winner name using fuzzy matching"""
+        if not winner or not player1 or not player2:
+            return None
+        
+        # Normalize all names
+        winner_norm = self.normalize_name_for_matching(winner)
+        player1_norm = self.normalize_name_for_matching(player1)
+        player2_norm = self.normalize_name_for_matching(player2)
+        
+        # Split into pieces
+        winner_pieces = self.split_name_into_pieces(winner_norm)
+        player1_pieces = self.split_name_into_pieces(player1_norm)
+        player2_pieces = self.split_name_into_pieces(player2_norm)
+        
+        if not winner_pieces:
+            return None
+        
+        # Count matches for each player
+        p1_matches = self.count_matching_pieces(winner_pieces, player1_pieces)
+        p2_matches = self.count_matching_pieces(winner_pieces, player2_pieces)
+        
+        # Return the player with the most matches
+        if p1_matches > p2_matches:
+            return player1
+        elif p2_matches > p1_matches:
+            return player2
+        else:
+            # Tie - prefer the player with more pieces in common relative to their name length
+            # This helps when one name is longer (e.g., "Mario Alejandro Flores Silva" vs "Mario Flores")
+            if p1_matches > 0:
+                p1_ratio = p1_matches / max(len(player1_pieces), 1)
+                p2_ratio = p2_matches / max(len(player2_pieces), 1)
+                if p1_ratio > p2_ratio:
+                    return player1
+                elif p2_ratio > p1_ratio:
+                    return player2
+            
+            # Still tied - return None (can't determine)
+            return None
+    
     def get_round_results(self, round_num: int) -> List[Dict]:
         """Get results for a specific round"""
         # Fetch all rounds including draft rounds
@@ -424,25 +521,43 @@ class MagicSpider:
                             loser_wins = int(result_match.group(3))
                             draws = int(result_match.group(4))
                             
-                            # Normalize names for matching (handle "Last, First" format)
-                            def get_last_name(name):
-                                """Extract last name from 'Last, First' or 'First Last' format"""
-                                if ',' in name:
-                                    return name.split(',')[0].strip().lower()
-                                else:
-                                    parts = name.split()
-                                    return parts[-1].lower() if parts else ''
-                            
                             def names_match(name1, name2):
-                                """Check if two names match (handles variations like Sam/Samuel)"""
-                                # Direct substring match
-                                if name1.lower() in name2.lower() or name2.lower() in name1.lower():
+                                """Check if two names match (handles variations like Sam/Samuel, middle names)"""
+                                # Normalize both names for comparison
+                                def normalize_for_match(name):
+                                    """Normalize name for matching - remove extra spaces, handle commas"""
+                                    name = name.strip()
+                                    # If it's "Last, First Middle" format, convert to "First Middle Last"
+                                    if ',' in name:
+                                        parts = [p.strip() for p in name.split(',')]
+                                        if len(parts) >= 2:
+                                            return f"{parts[1]} {parts[0]}".lower()
+                                    return name.lower()
+                                
+                                n1_norm = normalize_for_match(name1)
+                                n2_norm = normalize_for_match(name2)
+                                
+                                # Direct exact match after normalization
+                                if n1_norm == n2_norm:
                                     return True
-                                # Last name match
-                                last1 = get_last_name(name1)
-                                last2 = get_last_name(name2)
-                                if last1 and last2 and last1 == last2:
+                                
+                                # Check if one name is contained in the other (handles middle names)
+                                if n1_norm in n2_norm or n2_norm in n1_norm:
                                     return True
+                                
+                                # Last name match - extract last word from normalized names
+                                n1_parts = n1_norm.split()
+                                n2_parts = n2_norm.split()
+                                if n1_parts and n2_parts:
+                                    # Last name is the last word
+                                    if n1_parts[-1] == n2_parts[-1]:
+                                        # Also check if first name matches (more reliable)
+                                        if n1_parts[0] == n2_parts[0]:
+                                            return True
+                                        # Or if one first name is contained in the other
+                                        if n1_parts[0] in n2_parts[0] or n2_parts[0] in n1_parts[0]:
+                                            return True
+                                
                                 return False
                             
                             # Determine which player won
@@ -453,21 +568,18 @@ class MagicSpider:
                                 p1_wins = loser_wins
                                 p2_wins = winner_wins
                             else:
-                                # Try more aggressive matching - check if any part of winner matches
-                                winner_lower = winner.lower()
-                                player1_lower = player1.lower()
-                                player2_lower = player2.lower()
-                                
-                                # Check if winner's last name appears in either player name
-                                winner_last = get_last_name(winner)
-                                if winner_last and winner_last in player1_lower:
+                                # Try fuzzy matching - find closest match by counting matching name pieces
+                                closest_match = self.find_closest_match(winner, player1, player2)
+                                if closest_match == player1:
                                     p1_wins = winner_wins
                                     p2_wins = loser_wins
-                                elif winner_last and winner_last in player2_lower:
+                                    print(f"Fuzzy match: '{winner}' matched to '{player1}'")
+                                elif closest_match == player2:
                                     p1_wins = loser_wins
                                     p2_wins = winner_wins
+                                    print(f"Fuzzy match: '{winner}' matched to '{player2}'")
                                 else:
-                                    # Default: assume first player won (shouldn't happen often)
+                                    # Still couldn't determine - default to first player (shouldn't happen often)
                                     print(f"Warning: Could not match winner '{winner}' to players '{player1}' or '{player2}'")
                                     p1_wins = winner_wins
                                     p2_wins = loser_wins

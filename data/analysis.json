@@ -1467,11 +1467,11 @@
       "total_matches": 56
     },
     "Temur Otters": {
-      "wins": 44,
-      "losses": 54,
+      "wins": 43,
+      "losses": 55,
       "draws": 2,
-      "games_won": 150,
-      "games_lost": 174,
+      "games_won": 148,
+      "games_lost": 176,
       "matches": [
         {
           "round": 4,
@@ -1929,8 +1929,8 @@
           "player2": "Castell\u00e1n, Javier",
           "archetype1": "Temur Otters",
           "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
+          "p1_wins": 0,
+          "p2_wins": 2
         },
         {
           "round": 6,
@@ -2644,16 +2644,16 @@
           "p2_wins": 0
         }
       ],
-      "win_rate": 0.4489795918367347,
-      "game_win_rate": 0.46296296296296297,
+      "win_rate": 0.4387755102040816,
+      "game_win_rate": 0.4567901234567901,
       "total_matches": 98
     },
     "Izzet Looting": {
-      "wins": 23,
-      "losses": 29,
+      "wins": 22,
+      "losses": 30,
       "draws": 0,
-      "games_won": 66,
-      "games_lost": 74,
+      "games_won": 64,
+      "games_lost": 76,
       "matches": [
         {
           "round": 4,
@@ -2859,8 +2859,8 @@
           "player2": "Flores, Mario",
           "archetype1": "Izzet Looting",
           "archetype2": "Dimir Bounce",
-          "p1_wins": 2,
-          "p2_wins": 0
+          "p1_wins": 0,
+          "p2_wins": 2
         },
         {
           "round": 5,
@@ -3160,8 +3160,8 @@
           "p2_wins": 0
         }
       ],
-      "win_rate": 0.4423076923076923,
-      "game_win_rate": 0.4714285714285714,
+      "win_rate": 0.4230769230769231,
+      "game_win_rate": 0.45714285714285713,
       "total_matches": 52
     },
     "Golgari Ouroboroid": {
@@ -3429,11 +3429,11 @@
       "total_matches": 28
     },
     "Simic Ouroboroid": {
-      "wins": 11,
-      "losses": 20,
+      "wins": 12,
+      "losses": 19,
       "draws": 0,
-      "games_won": 37,
-      "games_lost": 51,
+      "games_won": 38,
+      "games_lost": 50,
       "matches": [
         {
           "round": 4,
@@ -3657,8 +3657,8 @@
           "player2": "S\u00e1nchez, Francisco",
           "archetype1": "Dimir Bounce",
           "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
+          "p1_wins": 1,
+          "p2_wins": 2
         },
         {
           "round": 11,
@@ -3733,8 +3733,8 @@
           "p2_wins": 2
         }
       ],
-      "win_rate": 0.3548387096774194,
-      "game_win_rate": 0.42045454545454547,
+      "win_rate": 0.3870967741935484,
+      "game_win_rate": 0.4318181818181818,
       "total_matches": 31
     },
     "Bant Airbending": {
@@ -4065,8 +4065,8 @@
           "player2": "Castell\u00e1n, Javier",
           "archetype1": "Temur Otters",
           "archetype2": "Bant Airbending",
-          "p1_wins": 2,
-          "p2_wins": 0
+          "p1_wins": 0,
+          "p2_wins": 2
         },
         {
           "round": 6,
@@ -4083,8 +4083,8 @@
           "player2": "Flores, Mario",
           "archetype1": "Bant Airbending",
           "archetype2": "Dimir Bounce",
-          "p1_wins": 2,
-          "p2_wins": 0
+          "p1_wins": 0,
+          "p2_wins": 2
         },
         {
           "round": 6,
@@ -4479,11 +4479,11 @@
       "total_matches": 73
     },
     "Dimir Bounce": {
-      "wins": 6,
-      "losses": 10,
+      "wins": 7,
+      "losses": 9,
       "draws": 0,
-      "games_won": 15,
-      "games_lost": 22,
+      "games_won": 18,
+      "games_lost": 19,
       "matches": [
         {
           "round": 4,
@@ -4536,8 +4536,8 @@
           "player2": "Flores, Mario",
           "archetype1": "Izzet Looting",
           "archetype2": "Dimir Bounce",
-          "p1_wins": 2,
-          "p2_wins": 0
+          "p1_wins": 0,
+          "p2_wins": 2
         },
         {
           "round": 6,
@@ -4554,8 +4554,8 @@
           "player2": "Flores, Mario",
           "archetype1": "Bant Airbending",
           "archetype2": "Dimir Bounce",
-          "p1_wins": 2,
-          "p2_wins": 0
+          "p1_wins": 0,
+          "p2_wins": 2
         },
         {
           "round": 6,
@@ -4590,8 +4590,8 @@
           "player2": "S\u00e1nchez, Francisco",
           "archetype1": "Dimir Bounce",
           "archetype2": "Simic Ouroboroid",
-          "p1_wins": 2,
-          "p2_wins": 1
+          "p1_wins": 1,
+          "p2_wins": 2
         },
         {
           "round": 11,
@@ -4630,8 +4630,8 @@
           "p2_wins": 2
         }
       ],
-      "win_rate": 0.375,
-      "game_win_rate": 0.40540540540540543,
+      "win_rate": 0.4375,
+      "game_win_rate": 0.4864864864864865,
       "total_matches": 16
     },
     "Izzet Lessons": {
@@ -6807,15 +6807,15 @@
     "Bant Airbending vs Dimir Bounce": {
       "archetype1": "Dimir Bounce",
       "archetype2": "Bant Airbending",
-      "arch1_wins": 6,
-      "arch2_wins": 2,
-      "arch1_games": 12,
-      "arch2_games": 6,
+      "arch1_wins": 8,
+      "arch2_wins": 0,
+      "arch1_games": 16,
+      "arch2_games": 2,
       "total_matches": 8,
-      "arch1_win_rate": 0.75,
-      "arch2_win_rate": 0.25,
-      "arch1_game_win_rate": 0.6666666666666666,
-      "arch2_game_win_rate": 0.3333333333333333
+      "arch1_win_rate": 1.0,
+      "arch2_win_rate": 0.0,
+      "arch1_game_win_rate": 0.8888888888888888,
+      "arch2_game_win_rate": 0.1111111111111111
     },
     "Izzet Lessons vs Temur Otters": {
       "archetype1": "Izzet Lessons",
@@ -6898,15 +6898,15 @@
     "Bant Airbending vs Temur Otters": {
       "archetype1": "Bant Airbending",
       "archetype2": "Temur Otters",
-      "arch1_wins": 8,
-      "arch2_wins": 20,
-      "arch1_games": 28,
-      "arch2_games": 44,
+      "arch1_wins": 10,
+      "arch2_wins": 18,
+      "arch1_games": 32,
+      "arch2_games": 40,
       "total_matches": 28,
-      "arch1_win_rate": 0.2857142857142857,
-      "arch2_win_rate": 0.7142857142857143,
-      "arch1_game_win_rate": 0.3888888888888889,
-      "arch2_game_win_rate": 0.6111111111111112
+      "arch1_win_rate": 0.35714285714285715,
+      "arch2_win_rate": 0.6428571428571429,
+      "arch1_game_win_rate": 0.4444444444444444,
+      "arch2_game_win_rate": 0.5555555555555556
     },
     "Bant Airbending vs Izzet Lessons (Monument)": {
       "archetype1": "Bant Airbending",
@@ -7314,15 +7314,15 @@
     "Dimir Bounce vs Izzet Looting": {
       "archetype1": "Izzet Looting",
       "archetype2": "Dimir Bounce",
-      "arch1_wins": 6,
-      "arch2_wins": 0,
-      "arch1_games": 12,
-      "arch2_games": 2,
+      "arch1_wins": 4,
+      "arch2_wins": 2,
+      "arch1_games": 8,
+      "arch2_games": 6,
       "total_matches": 6,
-      "arch1_win_rate": 1.0,
-      "arch2_win_rate": 0.0,
-      "arch1_game_win_rate": 0.8571428571428571,
-      "arch2_game_win_rate": 0.14285714285714285
+      "arch1_win_rate": 0.6666666666666666,
+      "arch2_win_rate": 0.3333333333333333,
+      "arch1_game_win_rate": 0.5714285714285714,
+      "arch2_game_win_rate": 0.42857142857142855
     },
     "Bant Airbending vs Bant Airbending": {
       "archetype1": "Bant Airbending",
@@ -7819,8 +7819,8 @@
       "arch2_game_win_rate": 0.3333333333333333
     },
     "Dimir Bounce vs Simic Ouroboroid": {
-      "archetype1": "Dimir Bounce",
-      "archetype2": "Simic Ouroboroid",
+      "archetype1": "Simic Ouroboroid",
+      "archetype2": "Dimir Bounce",
       "arch1_wins": 2,
       "arch2_wins": 0,
       "arch1_games": 4,
